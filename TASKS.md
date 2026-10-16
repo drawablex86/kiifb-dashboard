@@ -189,10 +189,11 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 - Evidence: Tracked all 8 restructuring recommendations (`REC-001` through `REC-008`) from Chapter VI. Each mapped to target authority, required legal instrument (Legislative Assembly Amendment, Executive GO, CAG Requisition), and official action status (0 of 8 fully implemented; 1 partially budgeted). Acceptance criterion satisfied and verified via unit tests (`test_legal_and_governance.py`) and UI.
 
 ### T052 — Build methodology and data-quality pages
-- Status: backlog
+- Status: done
 - Dependencies: T031, T041, T050
-- Outputs: source methodology, discrepancy log and caveats.
+- Outputs: source methodology, discrepancy log and caveats (`data/processed/methodology_and_quality.json`, `src/routes/governance/+page.svelte`).
 - Acceptance: source dates, calculations, matching rules and limitations are reproducible.
+- Evidence: Documented primary sources (`DS001`, `DS010`, `DS021`) with SHA-256 hashes and capture dates; established counting units hierarchy (sanctioned clusters vs institutional schools); published 6 itemized audit discrepancies (`DISC-001` through `DISC-006` including bank rounding, land repayment divergence, portal district omission, and SCSP/TSP deficit); and provided command-line reproducibility steps. Verified via unit tests (`test_legal_and_governance.py`), `npm run check`, and `npm run build`.
 
 ## Milestone 6 — Release readiness
 

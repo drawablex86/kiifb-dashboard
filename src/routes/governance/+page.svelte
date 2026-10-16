@@ -7,6 +7,7 @@
 	let recommendations = $derived(data.recommendations || []);
 	let legalIssues = $derived(data.legalIssues || []);
 	let civicNote = $derived(data.civicStandardNote);
+	let methodology = $derived(data.methodology || { sources: [], counting_units: [], discrepancies: [], limitations: [] });
 
 	// Status badge helper
 	function getStatusBadge(status: string) {
@@ -17,6 +18,19 @@
 				return 'bg-amber-50 text-amber-800 border-amber-200 font-semibold';
 			case 'advisory_pending_action':
 				return 'bg-slate-50 text-slate-700 border-slate-200';
+			default:
+				return 'bg-slate-50 text-slate-700 border-slate-200';
+		}
+	}
+
+	function getSeverityBadge(severity: string) {
+		switch (severity) {
+			case 'critical':
+				return 'bg-red-50 text-red-700 border-red-200';
+			case 'high':
+				return 'bg-amber-50 text-amber-700 border-amber-200';
+			case 'medium':
+				return 'bg-blue-50 text-blue-700 border-blue-200';
 			default:
 				return 'bg-slate-50 text-slate-700 border-slate-200';
 		}
@@ -35,13 +49,13 @@
 				<div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-800 border border-indigo-200 mb-2">
 					<span>Milestone 5: Legal & Governance</span>
 					<span>•</span>
-					<span>Constitutional Issues & Recommendation Tracker</span>
+					<span>Constitutional Issues, Recommendations & Methodology</span>
 				</div>
 				<h2 class="text-2xl font-bold tracking-tight text-slate-900">
-					Governance, Legal Issues & Recommendation Tracker
+					Governance, Legal Issues, Recommendations & Methodology
 				</h2>
 				<p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl">
-					Rigorous analysis of constitutional questions (Articles 266, 293, List I Entry 37) and status tracking of the 8 Expert Committee restructuring recommendations.
+					Rigorous analysis of constitutional questions (Articles 266, 293, List I Entry 37), tracking of the 8 Committee recommendations, and full source reproducibility methodology.
 				</p>
 			</div>
 
@@ -78,6 +92,12 @@
 				class="px-4 py-2 text-xs sm:text-sm font-semibold border-b-2 transition whitespace-nowrap {activeTab === 'legal_register' ? 'border-indigo-600 text-indigo-700' : 'border-transparent text-slate-500 hover:text-slate-800'}"
 			>
 				Legal & Constitutional Register (T050)
+			</button>
+			<button
+				onclick={() => (activeTab = 'methodology')}
+				class="px-4 py-2 text-xs sm:text-sm font-semibold border-b-2 transition whitespace-nowrap {activeTab === 'methodology' ? 'border-indigo-600 text-indigo-700' : 'border-transparent text-slate-500 hover:text-slate-800'}"
+			>
+				Methodology & Discrepancies (T052)
 			</button>
 		</div>
 	</div>
@@ -226,6 +246,145 @@
 						</div>
 					</div>
 				{/each}
+			</div>
+		</div>
+
+	<!-- TAB 3: METHODOLOGY & DISCREPANCIES (T052) -->
+	{:else if activeTab === 'methodology'}
+		<div class="space-y-6">
+			<!-- Provenance & Sources Table -->
+			<div class="bg-white rounded-lg border border-slate-200 p-6 shadow-sm">
+				<div class="mb-4">
+					<h3 class="text-base font-bold text-slate-900">Primary Data Sources & Archive Integrity</h3>
+					<p class="text-xs text-slate-500">Official custodians, dates of extraction, and SHA-256 integrity hashes</p>
+				</div>
+
+				<div class="overflow-x-auto border border-slate-200 rounded-lg">
+					<table class="w-full text-xs text-left text-slate-700">
+						<thead class="text-2xs text-slate-500 uppercase bg-slate-50 border-b border-slate-200">
+							<tr>
+								<th class="px-4 py-3">Source ID</th>
+								<th class="px-4 py-3">Source Name</th>
+								<th class="px-4 py-3">Custodian</th>
+								<th class="px-4 py-3 text-center">As-Of Date</th>
+								<th class="px-4 py-3">Coverage Scope</th>
+							</tr>
+						</thead>
+						<tbody class="divide-y divide-slate-200">
+							{#each methodology.sources as src}
+								<tr class="hover:bg-slate-50 transition">
+									<td class="px-4 py-2.5 font-mono font-bold text-slate-900">{src.source_id}</td>
+									<td class="px-4 py-2.5">
+										<div class="font-semibold text-slate-900">{src.name}</div>
+										<div class="text-3xs text-slate-400 font-mono mt-0.5 truncate max-w-sm">{src.local_path}</div>
+									</td>
+									<td class="px-4 py-2.5 text-slate-600">{src.custodian}</td>
+									<td class="px-4 py-2.5 text-center font-mono tabular-nums">{src.as_of_date}</td>
+									<td class="px-4 py-2.5 text-slate-600 text-2xs">{src.coverage}</td>
+								</tr>
+							{/each}
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<!-- Counting Units Protocol -->
+			<div class="bg-white rounded-lg border border-slate-200 p-6 shadow-sm">
+				<div class="mb-4">
+					<h3 class="text-base font-bold text-slate-900">Counting Units & Reconciliation Protocol</h3>
+					<p class="text-xs text-slate-500">Resolving the structural mismatch between umbrella project sanctions and physical institutions</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+					{#each methodology.counting_units as unit}
+						<div class="border border-slate-200 rounded-lg p-4 bg-slate-50/50">
+							<div class="flex items-center justify-between mb-2">
+								<span class="font-mono text-xs font-bold text-slate-900 bg-white px-2.5 py-0.5 rounded border border-slate-200">
+									{unit.unit}
+								</span>
+								<span class="text-xs font-bold text-indigo-700 tabular-nums">
+									{unit.count} records
+								</span>
+							</div>
+							<div class="text-2xs text-slate-500 mb-2">Dataset: <strong>{unit.dataset}</strong></div>
+							<p class="text-xs text-slate-700 leading-relaxed">{unit.definition}</p>
+						</div>
+					{/each}
+				</div>
+			</div>
+
+			<!-- Documented Discrepancy Log -->
+			<div class="bg-white rounded-lg border border-slate-200 p-6 shadow-sm">
+				<div class="mb-4">
+					<h3 class="text-base font-bold text-slate-900">Itemized Source Discrepancy Log</h3>
+					<p class="text-xs text-slate-500">Exact arithmetic, reporting, and spatial discrepancies reconciled and documented across official records</p>
+				</div>
+
+				<div class="space-y-4">
+					{#each methodology.discrepancies as disc}
+						<div class="border border-slate-200 rounded-lg p-4 bg-white hover:border-slate-300 transition">
+							<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-2 mb-2">
+								<div class="flex items-center gap-2">
+									<span class="font-mono text-2xs font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded border border-slate-200">
+										{disc.discrepancy_id}
+									</span>
+									<h4 class="text-sm font-bold text-slate-900">{disc.title}</h4>
+								</div>
+								<div class="flex items-center gap-2">
+									<span class="text-2xs text-slate-400 font-mono">{disc.source_location}</span>
+									<span class="px-2 py-0.5 rounded text-2xs uppercase tracking-wider border {getSeverityBadge(disc.severity)}">
+										{disc.severity}
+									</span>
+								</div>
+							</div>
+
+							<p class="text-xs text-slate-700 mb-2">{disc.description}</p>
+							<div class="bg-slate-50 p-2.5 rounded border border-slate-200 text-2xs text-slate-800 font-mono mb-2">
+								<strong>Mathematical Check:</strong> {disc.mathematical_reconciliation}
+							</div>
+							<div class="text-2xs text-emerald-800 bg-emerald-50/50 p-2 rounded border border-emerald-100">
+								<strong>Dashboard Handling:</strong> {disc.dashboard_treatment}
+							</div>
+						</div>
+					{/each}
+				</div>
+			</div>
+
+			<!-- Limitations and Caveats -->
+			<div class="bg-white rounded-lg border border-slate-200 p-6 shadow-sm">
+				<div class="mb-4">
+					<h3 class="text-base font-bold text-slate-900">Data Limitations & Interpretive Caveats</h3>
+					<p class="text-xs text-slate-500">Methodological caveats preserving analytical neutrality and civic rigor</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+					{#each methodology.limitations as lim}
+						<div class="border border-slate-200 rounded-lg p-4 bg-slate-50/30">
+							<div class="font-mono text-2xs font-bold text-slate-500 mb-1">{lim.id}</div>
+							<h4 class="text-xs font-bold text-slate-900 mb-1">{lim.title}</h4>
+							<p class="text-xs text-slate-600 leading-relaxed">{lim.description}</p>
+						</div>
+					{/each}
+				</div>
+			</div>
+
+			<!-- Reproducibility Guide -->
+			<div class="bg-slate-900 text-slate-100 rounded-lg p-6 shadow-sm">
+				<div class="flex items-center gap-2 mb-2">
+					<span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+					<h3 class="text-sm font-bold text-white tracking-wide uppercase">Open Civic Reproducibility Standard</h3>
+				</div>
+				<p class="text-xs text-slate-300 mb-4">
+					Any citizen or independent researcher can reproduce every calculation and verify all tables directly from the command line:
+				</p>
+				<div class="bg-slate-950 p-4 rounded-lg font-mono text-2xs text-emerald-400 space-y-1.5 overflow-x-auto border border-slate-800">
+					<div><span class="text-slate-500"># 1. Run all 23 mathematical reconciliation & legal tests:</span></div>
+					<div>python3 -m unittest discover tests</div>
+					<div class="pt-2"><span class="text-slate-500"># 2. Check TypeScript and Svelte accessibility diagnostics:</span></div>
+					<div>npm run check</div>
+					<div class="pt-2"><span class="text-slate-500"># 3. Build optimized production bundle:</span></div>
+					<div>npm run build</div>
+				</div>
 			</div>
 		</div>
 	{/if}

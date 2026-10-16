@@ -77,6 +77,33 @@ class TestLegalAndGovernance(unittest.TestCase):
             self.assertTrue(len(rec["required_instrument"]) > 10)
             self.assertTrue(len(rec["official_evidence"]) > 15)
 
+    def test_methodology_and_discrepancies(self):
+        """T052: Acceptance - source dates, calculations, matching rules and limitations are reproducible."""
+        meth_path = DATA_DIR / "methodology_and_quality.json"
+        with open(meth_path, "r", encoding="utf-8") as f:
+            meth_data = json.load(f)
+
+        # Sources
+        sources = meth_data.get("sources", [])
+        self.assertGreaterEqual(len(sources), 3)
+        source_ids = [s["source_id"] for s in sources]
+        self.assertIn("DS001", source_ids)
+        self.assertIn("DS010", source_ids)
+        self.assertIn("DS021", source_ids)
+
+        # Discrepancies
+        discrepancies = meth_data.get("discrepancies", [])
+        self.assertGreaterEqual(len(discrepancies), 5)
+        disc_ids = [d["discrepancy_id"] for d in discrepancies]
+        self.assertIn("DISC-001", disc_ids) # 0.01 Cr bank rounding
+        self.assertIn("DISC-002", disc_ids) # 14.43 Cr land acquisition gap
+        self.assertIn("DISC-003", disc_ids) # 1408 missing portal districts
+        self.assertIn("DISC-004", disc_ids) # SC/ST statutory allocation deficit
+
+        # Limitations
+        limitations = meth_data.get("limitations", [])
+        self.assertGreaterEqual(len(limitations), 4)
+
 
 if __name__ == "__main__":
     unittest.main()
