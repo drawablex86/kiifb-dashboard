@@ -114,6 +114,37 @@ class TestEndToEndIntegrity(unittest.TestCase):
         d2 = next(d for d in discs if d["discrepancy_id"] == "DISC-002")
         self.assertIn("14.43", d2["mathematical_reconciliation"])
 
+    def test_kanakku_open_data_and_enrichment(self):
+        """Verify Kanakku open data packages, contractor liability, and geo-enrichment."""
+        liability_file = DATA_DIR / "contractor_liability.json"
+        packages_file = DATA_DIR / "kanakku_packages.json"
+        unified_file = DATA_DIR / "unified_project_explorer.json"
+
+        self.assertTrue(liability_file.exists(), "contractor_liability.json missing")
+        self.assertTrue(packages_file.exists(), "kanakku_packages.json missing")
+        self.assertTrue(unified_file.exists(), "unified_project_explorer.json missing")
+
+        with open(liability_file, "r", encoding="utf-8") as f:
+            liab = json.load(f)
+            self.assertGreaterEqual(liab["total_records"], 2400)
+            self.assertEqual(len(liab["records"]), liab["total_records"])
+
+        with open(packages_file, "r", encoding="utf-8") as f:
+            pkgs = json.load(f)
+            self.assertGreaterEqual(pkgs["total_records"], 3600)
+            self.assertEqual(len(pkgs["packages"]), pkgs["total_records"])
+            # Validate bounding box of first 50 geo-tagged packages within Kerala region (8-13 N, 74.5-77.5 E)
+            for p in pkgs["packages"][:50]:
+                self.assertGreaterEqual(p["lat"], 8.0)
+                self.assertLessEqual(p["lat"], 13.5)
+                self.assertGreaterEqual(p["lng"], 74.5)
+                self.assertLessEqual(p["lng"], 77.8)
+
+        with open(unified_file, "r", encoding="utf-8") as f:
+            unified = json.load(f)
+            enriched_count = unified["summary"].get("enriched_with_kanakku_count", 0)
+            self.assertGreaterEqual(enriched_count, 550, "Expected at least 550 geocoded project sanctions")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -13,12 +13,13 @@ python3 scripts/refresh_pipeline.py
 ```
 
 ### Execution Steps in Pipeline:
-1. **Source Integrity Check**: Validates SHA-256 checksums of archived source files in `data/raw/` against `data/manifest.json`.
+1. **Source Integrity Check**: Validates SHA-256 checksums of archived source files and directory datasets in `data/raw/` against `data/manifest.json`.
 2. **Financial Table Extraction**: Executes [`scripts/extract_committee_financial_tables.py`](../scripts/extract_committee_financial_tables.py) to generate [`data/processed/committee_financial_tables.json`](../data/processed/committee_financial_tables.json).
 3. **KIIFB Project Extraction**: Executes [`scripts/extract_kiifb_projects.py`](../scripts/extract_kiifb_projects.py) to parse 1,408 project records into [`data/processed/kiifb_projects.json`](../data/processed/kiifb_projects.json).
 4. **KITE Schools Extraction**: Executes [`scripts/extract_kite_schools.py`](../scripts/extract_kite_schools.py) to parse 969 school records into [`data/processed/kite_schools.json`](../data/processed/kite_schools.json).
-5. **Unified Dataset Build**: Executes [`scripts/build_unified_project_dataset.py`](../scripts/build_unified_project_dataset.py) to generate the unified 2,377-record dataset in [`data/processed/unified_project_explorer.json`](../data/processed/unified_project_explorer.json).
-6. **Integrity Test Suite**: Runs all 29 automated reconciliation tests (`python3 -m unittest discover tests`).
+5. **Unified Dataset Build**: Executes [`scripts/build_unified_project_dataset.py`](../scripts/build_unified_project_dataset.py) to generate the baseline unified 2,377-record dataset in [`data/processed/unified_project_explorer.json`](../data/processed/unified_project_explorer.json).
+6. **Open Data Enrichment & Geo-tagging**: Executes [`scripts/enrich_projects_with_kanakku.py`](../scripts/enrich_projects_with_kanakku.py) to join Kerala Kanakku open data (`projects.csv`, `funding.csv`, `liability.csv`), produce [`data/processed/contractor_liability.json`](../data/processed/contractor_liability.json) and [`data/processed/kanakku_packages.json`](../data/processed/kanakku_packages.json), and enrich project sanctions with GPS coordinates, constituencies, and defect liability flags.
+7. **Integrity Test Suite**: Runs all automated reconciliation and integrity tests (`python3 -m unittest discover tests`).
 
 ---
 
@@ -30,6 +31,7 @@ python3 scripts/refresh_pipeline.py
 | **`DS001-LOCAL`** | `data/KIIFB Findings Report.md` | Markdown (244.8 KB) | `e698d85847aa940cd7ae054ea4e47b0d555957707d23e7ee9eddf8e7ea57f7e5` |
 | **`DS010`** | `data/raw/kiifb/kiifb-prjStatus.html` | HTML (756.5 KB) | `c5ad164cce5da54b959acad9a7e6b5ee3eb085025aa72e831b64e1b5ab3e57a6` |
 | **`DS021`** | `data/raw/kite/kiifb-funded-schools-sametham.html` | HTML (767.0 KB) | `2841ee59a93c8cceaa0cbc89964166b5b6153a0a0b674869b88498f739f1fb37` |
+| **`DS030`** | `data/raw/kanakku/` (`projects.csv`, `funding.csv`, `liability.csv`) | CSV Suite (~3.4 MB) | Verified individually against `manifest.json` |
 
 ### Manual Checksum Verification Command
 

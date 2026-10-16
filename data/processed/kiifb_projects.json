@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-10-16T07:03:54.314991Z",
+  "generated_at": "2026-10-16T09:04:06.256947Z",
   "source": "DS010 (KIIFB Official Project Status Database)",
   "total_records": 1408,
   "projects": [
@@ -33,7 +33,7 @@
       "constituency": "Aruvikkara",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.5577,
+        "lat": 8.55766,
         "lng": 77.15613
       }
     },
@@ -66,8 +66,8 @@
       "constituency": "Ollur",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.4875,
-        "lng": 76.29361
+        "lat": 10.48856,
+        "lng": 76.28963
       }
     },
     {
@@ -215,9 +215,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Palakkad",
+      "constituency": "Mannarkkad, Nemmara, Palakkad, Thrithala",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 11.79984,
+        "lng": 76.07424
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0008",
@@ -244,12 +248,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Idukki",
-      "constituency": "Idukki",
+      "district": "Idukki, Kollam",
+      "constituency": "Idukki, Punalur",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.82,
-        "lng": 75.7555
+        "lat": 10.48185,
+        "lng": 76.60874
       }
     },
     {
@@ -281,8 +285,8 @@
       "constituency": "Thiruvananthapuram",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.71439,
-        "lng": 75.91322
+        "lat": 10.7387,
+        "lng": 76.4705
       }
     },
     {
@@ -426,12 +430,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thiruvananthapuram",
-      "constituency": "Parassala",
+      "district": "Kollam, Thiruvananthapuram",
+      "constituency": "Kundara, Parassala",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.38206,
-        "lng": 77.13506
+        "lat": 8.657,
+        "lng": 76.88962
       }
     },
     {
@@ -525,8 +529,8 @@
       "constituency": "Puthukkad",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.43222,
-        "lng": 76.26836
+        "lat": 10.43189,
+        "lng": 76.26815
       }
     },
     {
@@ -649,8 +653,8 @@
       "constituency": "Vaikom",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.75092,
-        "lng": 76.41238
+        "lat": 9.75072,
+        "lng": 76.41208
       }
     },
     {
@@ -740,12 +744,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kozhikode",
-      "constituency": "Koyilandy",
+      "district": "Kannur, Kasaragod, Kozhikode",
+      "constituency": "Kannur, Koyilandy, Trikaripur",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.44288,
-        "lng": 75.72359
+        "lat": 11.85377,
+        "lng": 75.4459
       }
     },
     {
@@ -894,7 +898,7 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kollam",
-      "constituency": "Kollam; Eravipuram",
+      "constituency": "Kollam, Kollam; Eravipuram",
       "open_flags": [],
       "coordinates": {
         "lat": 8.89781,
@@ -1166,8 +1170,8 @@
       "constituency": "Perambra",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.56335,
-        "lng": 75.74522
+        "lat": 11.56339,
+        "lng": 75.74555
       }
     },
     {
@@ -1195,12 +1199,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kottayam",
-      "constituency": "Ettumanoor; Kaduthuruthy",
+      "district": "Idukki, Kottayam, Thrissur",
+      "constituency": "Chalakudy, Ettumanoor; Kaduthuruthy, Idukki",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.67669,
-        "lng": 76.54409
+        "lat": 9.91155,
+        "lng": 76.66127
       }
     },
     {
@@ -1261,12 +1265,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kottayam",
-      "constituency": "Poonjar; Mavelikkara; Ranni; Kazhakoottam; Chalakudy; Chengannur",
+      "district": "Kottayam, Wayanad",
+      "constituency": "Kalpetta; Thavanur, Poonjar; Mavelikkara; Ranni; Kazhakoottam; Chalakudy; Chengannur",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.56845,
-        "lng": 76.87451
+        "lat": 10.09919,
+        "lng": 76.4706
       }
     },
     {
@@ -1323,12 +1327,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kottayam",
-      "constituency": "Poonjar; Mavelikkara; Ranni; Kazhakoottam; Chalakudy; Chengannur",
+      "district": "Kottayam, Wayanad",
+      "constituency": "Kalpetta; Thavanur, Poonjar; Mavelikkara; Ranni; Kazhakoottam; Chalakudy; Chengannur",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.56845,
-        "lng": 76.87451
+        "lat": 10.09919,
+        "lng": 76.4706
       }
     },
     {
@@ -1356,12 +1360,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thiruvananthapuram",
-      "constituency": "Nemom",
+      "district": "Ernakulam, Thiruvananthapuram",
+      "constituency": "Ernakulam, Nemom, Thiruvananthapuram",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.44214,
-        "lng": 76.96178
+        "lat": 8.54491,
+        "lng": 76.91609
       }
     },
     {
@@ -1451,8 +1455,8 @@
       "constituency": "Thalassery",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.80253,
-        "lng": 76.18086
+        "lat": 11.43823,
+        "lng": 75.71991
       }
     },
     {
@@ -1757,8 +1761,8 @@
       "constituency": "Chathannoor",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.86153,
-        "lng": 76.72072
+        "lat": 8.86108,
+        "lng": 76.68249
       }
     },
     {
@@ -1787,7 +1791,7 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Ernakulam",
-      "constituency": "Ernakulam",
+      "constituency": "Ernakulam, Thrikkakara, Thripunithura",
       "open_flags": [],
       "coordinates": {
         "lat": 9.94082,
@@ -1852,8 +1856,8 @@
       "constituency": "Chalakudy",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.34814,
-        "lng": 76.38823
+        "lat": 10.32127,
+        "lng": 76.43971
       }
     },
     {
@@ -1910,9 +1914,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Ernakulam, Idukki",
+      "constituency": "Piravom, Udumbanchola",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 9.92572,
+        "lng": 76.65556
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0063",
@@ -2033,11 +2041,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Palakkad",
-      "constituency": "Nemmara",
+      "constituency": "Nemmara, Nemmara; Alathur",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.59261,
-        "lng": 76.60113
+        "lat": 10.58174,
+        "lng": 76.58221
       }
     },
     {
@@ -2095,11 +2103,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kollam",
-      "constituency": "Chadayamangalam; Chathannoor",
+      "constituency": "Chadayamangalam; Chathannoor, Chathannoor",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.82797,
-        "lng": 76.74734
+        "lat": 8.84729,
+        "lng": 76.73225
       }
     },
     {
@@ -2219,11 +2227,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thrissur",
-      "constituency": "Chalakudy",
+      "constituency": "Chalakudy, Kaipamangalam, Kodungallur, Nattika",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.32172,
-        "lng": 76.31208
+        "lat": 10.33049,
+        "lng": 76.26315
       }
     },
     {
@@ -2281,11 +2289,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Idukki",
-      "constituency": "Peerumade",
+      "constituency": "Idukki, Peerumade",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.69022,
-        "lng": 77.04464
+        "lat": 9.69834,
+        "lng": 77.03879
       }
     },
     {
@@ -2437,9 +2445,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Pathanamthitta",
+      "constituency": "Ranni",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 9.32652,
+        "lng": 76.89215
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0080",
@@ -2468,7 +2480,11 @@
       "source_locator": "KIIFB prjStatus.jsp",
       "district": null,
       "constituency": null,
-      "open_flags": []
+      "open_flags": [],
+      "coordinates": {
+        "lat": 10.83553,
+        "lng": 76.41106
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0081",
@@ -2496,11 +2512,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thiruvananthapuram",
-      "constituency": "Chirayinkeezhu",
+      "constituency": "Chirayinkeezhu, Neyyattinkara",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.687,
-        "lng": 76.86578
+        "lat": 8.57039,
+        "lng": 76.94631
       }
     },
     {
@@ -2561,9 +2577,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Thrissur",
+      "constituency": "Puthukkad, Thrissur",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 10.52792,
+        "lng": 76.21878
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0084",
@@ -2716,7 +2736,11 @@
       "source_locator": "KIIFB prjStatus.jsp",
       "district": null,
       "constituency": null,
-      "open_flags": []
+      "open_flags": [],
+      "coordinates": {
+        "lat": 11.75082,
+        "lng": 75.48827
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0089",
@@ -2743,12 +2767,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Malappuram",
-      "constituency": "Kondotty",
+      "district": "Malappuram, Thiruvananthapuram",
+      "constituency": "Kazhakoottam, Kondotty, Thiruvananthapuram, Vamanapuram",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.14727,
-        "lng": 75.9611
+        "lat": 10.23563,
+        "lng": 76.31078
       }
     },
     {
@@ -2776,12 +2800,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thiruvananthapuram",
-      "constituency": "Parassala",
+      "district": "Alappuzha, Thiruvananthapuram",
+      "constituency": "Kuttanad, Parassala",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.47157,
-        "lng": 77.12831
+        "lat": 8.96986,
+        "lng": 76.76722
       }
     },
     {
@@ -2839,11 +2863,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thiruvananthapuram",
-      "constituency": "Chirayinkeezhu",
+      "constituency": "Chirayinkeezhu, Neyyattinkara",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.687,
-        "lng": 76.86578
+        "lat": 8.57039,
+        "lng": 76.94631
       }
     },
     {
@@ -2871,12 +2895,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kannur",
-      "constituency": "Dharmadam",
+      "district": "Kannur, Kozhikode, Wayanad",
+      "constituency": "Dharmadam, Dharmadam; Kannur, Mananthavady, Mattannur, Peravoor, Sulthanbathery, Thalassery, Vatakara",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.83292,
-        "lng": 75.486
+        "lat": 11.78975,
+        "lng": 75.69746
       }
     },
     {
@@ -2941,8 +2965,8 @@
       "constituency": "Kongad",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.9809,
-        "lng": 76.53893
+        "lat": 10.89078,
+        "lng": 76.57845
       }
     },
     {
@@ -2971,11 +2995,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kottayam",
-      "constituency": "Ettumanoor",
+      "constituency": "Ettumanoor, Kanjirappally",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.67307,
-        "lng": 76.54632
+        "lat": 9.64483,
+        "lng": 76.58443
       }
     },
     {
@@ -3004,11 +3028,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kannur",
-      "constituency": "Peravoor",
+      "constituency": "Mattannur, Mattannur; Peravoor, Peravoor",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.93,
-        "lng": 75.57645
+        "lat": 11.92885,
+        "lng": 75.57558
       }
     },
     {
@@ -3070,11 +3094,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thiruvananthapuram",
-      "constituency": "Chirayinkeezhu",
+      "constituency": "Chirayinkeezhu, Neyyattinkara",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.687,
-        "lng": 76.86578
+        "lat": 8.57039,
+        "lng": 76.94631
       }
     },
     {
@@ -3106,8 +3130,8 @@
       "constituency": "Koyilandy",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.44153,
-        "lng": 75.69422
+        "lat": 11.31339,
+        "lng": 75.82181
       }
     },
     {
@@ -3135,12 +3159,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Ernakulam",
-      "constituency": "Angamaly",
+      "district": "Ernakulam, Kannur",
+      "constituency": "Angamaly, Peravoor",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.19494,
-        "lng": 76.49433
+        "lat": 10.43228,
+        "lng": 76.36115
       }
     },
     {
@@ -3197,9 +3221,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Kottayam",
+      "constituency": "Ettumanoor, Kaduthuruthy, Kottayam, Poonjar",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 9.76799,
+        "lng": 76.48928
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0104",
@@ -3227,11 +3255,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Palakkad",
-      "constituency": "Chittur",
+      "constituency": "Chittur, Malampuzha; Chittur, Ottappalam",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.666,
-        "lng": 76.79483
+        "lat": 10.72315,
+        "lng": 76.66678
       }
     },
     {
@@ -3259,9 +3287,15 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Alappuzha",
+      "constituency": "Cherthala",
+      "open_flags": [
+        "overdue"
+      ],
+      "coordinates": {
+        "lat": 9.70154,
+        "lng": 76.28858
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0106",
@@ -3352,7 +3386,11 @@
       "source_locator": "KIIFB prjStatus.jsp",
       "district": null,
       "constituency": null,
-      "open_flags": []
+      "open_flags": [],
+      "coordinates": {
+        "lat": 10.95703,
+        "lng": 76.35556
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0109",
@@ -3383,8 +3421,8 @@
       "constituency": "Kottakkal",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.92607,
-        "lng": 76.09049
+        "lat": 10.91264,
+        "lng": 76.08429
       }
     },
     {
@@ -3413,11 +3451,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kollam",
-      "constituency": "Chadayamangalam",
+      "constituency": "Chadayamangalam, Eravipuram, Kottarakkara, Kottarakkara; Kundara, Kundara, Pathanapuram, Pathanapuram; Kundara, Punalur",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.9594,
-        "lng": 76.67828
+        "lat": 8.96757,
+        "lng": 76.70713
       }
     },
     {
@@ -3660,8 +3698,8 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kannur",
-      "constituency": "Kuthuparamba",
+      "district": "Ernakulam, Kannur",
+      "constituency": "Kalamassery, Kuthuparamba",
       "open_flags": [],
       "coordinates": {
         "lat": 11.75062,
@@ -3727,11 +3765,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Alappuzha",
-      "constituency": "Alappuzha",
+      "constituency": "Alappuzha, Haripad",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.54291,
-        "lng": 76.3076
+        "lat": 9.5494,
+        "lng": 76.30781
       }
     },
     {
@@ -3763,8 +3801,8 @@
       "constituency": "Manjeri",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.12064,
-        "lng": 76.14749
+        "lat": 11.12234,
+        "lng": 76.14498
       }
     },
     {
@@ -3792,12 +3830,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thiruvananthapuram",
-      "constituency": "Parassala",
+      "district": "Alappuzha, Thiruvananthapuram",
+      "constituency": "Kuttanad, Parassala",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.47157,
-        "lng": 77.12831
+        "lat": 8.96986,
+        "lng": 76.76722
       }
     },
     {
@@ -3825,8 +3863,8 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kozhikode",
-      "constituency": "Vatakara",
+      "district": "Kozhikode, Wayanad",
+      "constituency": "Kalpetta, Nadapuram, Perambra, Sulthanbathery, Vatakara",
       "open_flags": [],
       "coordinates": {
         "lat": 11.59699,
@@ -3891,8 +3929,8 @@
       "constituency": "Nattika",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.42298,
-        "lng": 76.10755
+        "lat": 10.41573,
+        "lng": 76.13748
       }
     },
     {
@@ -3954,11 +3992,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Alappuzha",
-      "constituency": "Alappuzha",
+      "constituency": "Alappuzha, Ambalappuzha",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.60156,
-        "lng": 76.31127
+        "lat": 9.55669,
+        "lng": 76.32583
       }
     },
     {
@@ -3986,9 +4024,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Malappuram",
+      "constituency": "Thavanur; Ponnani",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 10.76849,
+        "lng": 75.92615
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0129",
@@ -4045,11 +4087,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kannur",
-      "constituency": "Mattannur",
+      "constituency": "Mattannur, Peravoor",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.96425,
-        "lng": 75.65525
+        "lat": 11.94949,
+        "lng": 75.61317
       }
     },
     {
@@ -4106,12 +4148,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Malappuram",
-      "constituency": "Kondotty",
+      "district": "Malappuram, Thiruvananthapuram",
+      "constituency": "Kazhakoottam, Kondotty, Thiruvananthapuram, Vamanapuram",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.14727,
-        "lng": 75.9611
+        "lat": 10.23563,
+        "lng": 76.31078
       }
     },
     {
@@ -4172,9 +4214,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Kozhikode",
+      "constituency": "Balusseri, Koyilandy, Perambra",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 11.45282,
+        "lng": 75.71163
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0135",
@@ -4263,9 +4309,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Alappuzha",
+      "constituency": "Chengannur",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 9.30643,
+        "lng": 76.55486
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0138",
@@ -4292,9 +4342,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Kannur, Kasaragod",
+      "constituency": "Dharmadam, Kasaragod, Mattannur",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 11.97378,
+        "lng": 75.32529
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0139",
@@ -4321,12 +4375,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thiruvananthapuram",
-      "constituency": "Neyyattinkara",
+      "district": "Malappuram, Thiruvananthapuram",
+      "constituency": "Attingal, Neyyattinkara, Perinthalmanna",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.394,
-        "lng": 76.99947
+        "lat": 9.39716,
+        "lng": 76.70149
       }
     },
     {
@@ -4412,12 +4466,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kannur",
-      "constituency": "Dharmadam",
+      "district": "Kannur, Kozhikode, Wayanad",
+      "constituency": "Azhikode, Dharmadam, Kuthuparamba, Mananthavady, Peravoor, Thalassery, Vatakara, Vatakara; Kuttiady",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.7948,
-        "lng": 75.47739
+        "lat": 11.79606,
+        "lng": 75.59143
       }
     },
     {
@@ -4540,8 +4594,8 @@
       "constituency": "Dharmadam",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.80663,
-        "lng": 75.43463
+        "lat": 11.80015,
+        "lng": 75.43885
       }
     },
     {
@@ -4602,8 +4656,8 @@
       "constituency": "Ernad",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.21158,
-        "lng": 76.13543
+        "lat": 11.19819,
+        "lng": 76.12786
       }
     },
     {
@@ -4755,8 +4809,8 @@
       "constituency": "Dharmadam",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.80663,
-        "lng": 75.43463
+        "lat": 11.80015,
+        "lng": 75.43885
       }
     },
     {
@@ -4908,9 +4962,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Malappuram",
+      "constituency": "Tanur",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 10.96029,
+        "lng": 75.87504
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0159",
@@ -4966,12 +5024,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kollam",
-      "constituency": "Kollam",
+      "district": "Kasaragod, Kollam",
+      "constituency": "Kasaragod, Kollam, Kollam; Eravipuram, Kundara, Udma",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.95613,
-        "lng": 76.67023
+        "lat": 9.34417,
+        "lng": 76.47858
       }
     },
     {
@@ -4999,8 +5057,8 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kannur",
-      "constituency": "Kuthuparamba",
+      "district": "Ernakulam, Kannur",
+      "constituency": "Kalamassery, Kuthuparamba",
       "open_flags": [],
       "coordinates": {
         "lat": 11.75062,
@@ -5066,11 +5124,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Palakkad",
-      "constituency": "Shornur",
+      "constituency": "Chittur, Nemmara, Shornur",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.76847,
-        "lng": 76.27373
+        "lat": 10.75628,
+        "lng": 76.52963
       }
     },
     {
@@ -5099,11 +5157,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Palakkad",
-      "constituency": "Chittur",
+      "constituency": "Chittur, Malampuzha; Chittur, Ottappalam",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.666,
-        "lng": 76.79483
+        "lat": 10.72315,
+        "lng": 76.66678
       }
     },
     {
@@ -5132,7 +5190,7 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kollam",
-      "constituency": "Pathanapuram",
+      "constituency": "Kottarakkara, Pathanapuram",
       "open_flags": [],
       "coordinates": {
         "lat": 9.02971,
@@ -5261,12 +5319,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thiruvananthapuram",
-      "constituency": "Neyyattinkara",
+      "district": "Malappuram, Thiruvananthapuram",
+      "constituency": "Attingal, Neyyattinkara, Perinthalmanna",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.394,
-        "lng": 76.99947
+        "lat": 9.35704,
+        "lng": 76.7134
       }
     },
     {
@@ -5295,7 +5353,7 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Malappuram",
-      "constituency": "Thavanur; Ponnani",
+      "constituency": "Thavanur, Thavanur; Ponnani",
       "open_flags": [],
       "coordinates": {
         "lat": 10.76849,
@@ -5327,12 +5385,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Pathanamthitta",
-      "constituency": "Adoor",
+      "district": "Alappuzha, Pathanamthitta",
+      "constituency": "Adoor, Chengannur, Thiruvalla",
       "open_flags": [],
       "coordinates": {
         "lat": 9.33678,
-        "lng": 76.60684
+        "lng": 76.60682
       }
     },
     {
@@ -5432,8 +5490,8 @@
       "constituency": "Dharmadam",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.80663,
-        "lng": 75.43463
+        "lat": 11.80015,
+        "lng": 75.43885
       }
     },
     {
@@ -5519,12 +5577,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kollam",
-      "constituency": "Kollam",
+      "district": "Kasaragod, Kollam",
+      "constituency": "Kasaragod, Kollam, Kollam; Eravipuram, Kundara, Udma",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.95613,
-        "lng": 76.67023
+        "lat": 9.34417,
+        "lng": 76.47858
       }
     },
     {
@@ -5709,8 +5767,8 @@
       "constituency": "Ernakulam",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.97104,
-        "lng": 76.30642
+        "lat": 9.96303,
+        "lng": 76.31004
       }
     },
     {
@@ -5796,12 +5854,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thiruvananthapuram",
-      "constituency": "Nemom",
+      "district": "Ernakulam, Thiruvananthapuram",
+      "constituency": "Ernakulam, Nemom, Thiruvananthapuram",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.44214,
-        "lng": 76.96178
+        "lat": 8.54491,
+        "lng": 76.91609
       }
     },
     {
@@ -5891,8 +5949,8 @@
       "constituency": "Ernakulam",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.96783,
-        "lng": 76.30787
+        "lat": 9.96214,
+        "lng": 76.31045
       }
     },
     {
@@ -5920,8 +5978,8 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thiruvananthapuram",
-      "constituency": "Thiruvananthapuram",
+      "district": "Alappuzha, Thiruvananthapuram",
+      "constituency": "Alappuzha, Thiruvananthapuram",
       "open_flags": [],
       "coordinates": {
         "lat": 9.62346,
@@ -5953,12 +6011,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thiruvananthapuram",
-      "constituency": "Nemom",
+      "district": "Ernakulam, Thiruvananthapuram",
+      "constituency": "Ernakulam, Nemom, Thiruvananthapuram",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.44214,
-        "lng": 76.96178
+        "lat": 8.54491,
+        "lng": 76.91609
       }
     },
     {
@@ -6077,12 +6135,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kottayam",
-      "constituency": "Ettumanoor; Kovalam",
+      "district": "Kottayam, Thrissur",
+      "constituency": "Ettumanoor; Kovalam, Kunnamkulam",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.68911,
-        "lng": 76.5554
+        "lat": 10.16164,
+        "lng": 76.32091
       }
     },
     {
@@ -6139,9 +6197,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Ernakulam",
+      "constituency": "Kalamassery",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 10.0109,
+        "lng": 76.31607
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0198",
@@ -6404,12 +6466,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Alappuzha",
-      "constituency": "Aroor",
+      "district": "Alappuzha, Kollam",
+      "constituency": "Aroor, Kollam",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.76934,
-        "lng": 76.31775
+        "lat": 9.67147,
+        "lng": 76.34744
       }
     },
     {
@@ -6528,12 +6590,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Malappuram",
-      "constituency": "Ponnani",
+      "district": "Ernakulam, Malappuram",
+      "constituency": "Manjeri, Perumbavoor; Aluva; Thrikkakara; Kunnathunad; Kothamangalam; Devikulam, Ponnani",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.05108,
-        "lng": 76.07095
+        "lat": 10.6889,
+        "lng": 76.12946
       }
     },
     {
@@ -6623,8 +6685,8 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Alappuzha",
-      "constituency": "Mavelikkara",
+      "district": "Alappuzha, Pathanamthitta",
+      "constituency": "Aranmula, Mavelikkara",
       "open_flags": [],
       "coordinates": {
         "lat": 9.32728,
@@ -7317,11 +7379,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kottayam",
-      "constituency": "Kaduthuruthy; Ettumanoor",
+      "constituency": "Kaduthuruthy, Kaduthuruthy; Ettumanoor",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.63144,
-        "lng": 76.525
+        "lat": 9.68719,
+        "lng": 76.54073
       }
     },
     {
@@ -7350,11 +7412,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kottayam",
-      "constituency": "Kaduthuruthy; Ettumanoor",
+      "constituency": "Kaduthuruthy, Kaduthuruthy; Ettumanoor",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.63144,
-        "lng": 76.525
+        "lat": 9.68719,
+        "lng": 76.54073
       }
     },
     {
@@ -7415,8 +7477,8 @@
       "constituency": "Chavara",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.9577,
-        "lng": 76.53226
+        "lat": 8.95784,
+        "lng": 76.53231
       }
     },
     {
@@ -7502,12 +7564,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Malappuram",
-      "constituency": "Ponnani",
+      "district": "Ernakulam, Malappuram",
+      "constituency": "Manjeri, Perumbavoor; Aluva; Thrikkakara; Kunnathunad; Kothamangalam; Devikulam, Ponnani",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.05108,
-        "lng": 76.07095
+        "lat": 10.6889,
+        "lng": 76.12946
       }
     },
     {
@@ -7564,12 +7626,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thiruvananthapuram",
-      "constituency": "Nemom",
+      "district": "Ernakulam, Thiruvananthapuram",
+      "constituency": "Ernakulam, Nemom, Thiruvananthapuram",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.44214,
-        "lng": 76.96178
+        "lat": 8.54491,
+        "lng": 76.91609
       }
     },
     {
@@ -7656,7 +7718,7 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kozhikode",
-      "constituency": "Kunnamangalam; Aluva; Ernakulam; Kunnathunad",
+      "constituency": "Kunnamangalam; Aluva; Ernakulam, Kunnamangalam; Aluva; Ernakulam; Kunnathunad",
       "open_flags": [],
       "coordinates": {
         "lat": 11.30702,
@@ -7717,12 +7779,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Malappuram",
-      "constituency": "Ponnani",
+      "district": "Ernakulam, Malappuram",
+      "constituency": "Manjeri, Perumbavoor; Aluva; Thrikkakara; Kunnathunad; Kothamangalam; Devikulam, Ponnani",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.05108,
-        "lng": 76.07095
+        "lat": 10.6889,
+        "lng": 76.12946
       }
     },
     {
@@ -7809,11 +7871,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kasaragod",
-      "constituency": "Kanhangad",
+      "constituency": "Kanhangad, Kasaragod",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.363,
-        "lng": 75.291
+        "lat": 12.3631,
+        "lng": 75.29104
       }
     },
     {
@@ -8106,12 +8168,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Alappuzha",
-      "constituency": "Alappuzha",
+      "district": "Alappuzha, Malappuram",
+      "constituency": "Alappuzha, Ponnani",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.58102,
-        "lng": 76.32074
+        "lat": 9.85382,
+        "lng": 76.22588
       }
     },
     {
@@ -8321,9 +8383,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Ernakulam",
+      "constituency": "Kalamassery",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 10.0456,
+        "lng": 76.32884
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0270",
@@ -9421,9 +9487,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Pathanamthitta",
+      "constituency": "Adoor",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 9.13045,
+        "lng": 76.71909
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0306",
@@ -9450,12 +9520,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Pathanamthitta",
-      "constituency": "Adoor",
+      "district": "Pathanamthitta, Thiruvananthapuram",
+      "constituency": "Adoor, Thiruvalla, Vattiyoorkavu",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.13045,
-        "lng": 76.71909
+        "lat": 9.02265,
+        "lng": 76.79136
       }
     },
     {
@@ -9517,11 +9587,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Wayanad",
-      "constituency": "Mananthavady",
+      "constituency": "Kalpetta, Mananthavady, Sulthanbathery",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.8465,
-        "lng": 76.06222
+        "lat": 11.68418,
+        "lng": 76.16014
       }
     },
     {
@@ -9586,8 +9656,8 @@
       "constituency": "Nilambur",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.3314,
-        "lng": 76.31236
+        "lat": 11.3452,
+        "lng": 76.31187
       }
     },
     {
@@ -9615,12 +9685,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thiruvananthapuram",
-      "constituency": "Attingal",
+      "district": "Alappuzha, Kottayam, Thiruvananthapuram, Thrissur",
+      "constituency": "Attingal, Chirayinkeezhu, Kottayam, Kunnamkulam, Mavelikkara; Chengannur",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.66198,
-        "lng": 76.78665
+        "lat": 8.9809,
+        "lng": 76.67642
       }
     },
     {
@@ -9649,11 +9719,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kozhikode",
-      "constituency": "Thiruvambady",
+      "constituency": "Nadapuram, Thiruvambady, Vatakara",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.26688,
-        "lng": 75.98986
+        "lat": 11.55696,
+        "lng": 75.70172
       }
     },
     {
@@ -9681,9 +9751,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Kozhikode",
+      "constituency": "Kunnamangalam",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 11.29127,
+        "lng": 75.92864
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0314",
@@ -9711,11 +9785,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Alappuzha",
-      "constituency": "Alappuzha",
+      "constituency": "Alappuzha, Ambalappuzha",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.49255,
-        "lng": 76.31946
+        "lat": 9.49382,
+        "lng": 76.31892
       }
     },
     {
@@ -9805,12 +9879,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Ernakulam",
-      "constituency": "Kothamangalam",
+      "district": "Ernakulam, Idukki",
+      "constituency": "Kothamangalam, Udumbanchola",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.02798,
-        "lng": 76.65741
+        "lat": 9.99871,
+        "lng": 76.87677
       }
     },
     {
@@ -9838,12 +9912,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kollam",
-      "constituency": "Punalur",
+      "district": "Kannur, Kollam, Kozhikode",
+      "constituency": "Kozhikode North, Pathanapuram, Perambra, Punalur, Thalassery",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.01917,
-        "lng": 76.92472
+        "lat": 9.4649,
+        "lng": 76.70144
       }
     },
     {
@@ -9930,11 +10004,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kasaragod",
-      "constituency": "Kasaragod",
+      "constituency": "Kanhangad, Kasaragod, Udma",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.55547,
-        "lng": 74.96218
+        "lat": 12.46703,
+        "lng": 75.10279
       }
     },
     {
@@ -9996,11 +10070,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Alappuzha",
-      "constituency": "Ambalappuzha",
+      "constituency": "Alappuzha, Ambalappuzha, Aroor; Cherthala",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.58289,
-        "lng": 76.30736
+        "lat": 9.61664,
+        "lng": 76.3206
       }
     },
     {
@@ -10028,12 +10102,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kozhikode",
-      "constituency": "Kunnamangalam",
+      "district": "Kannur, Kozhikode",
+      "constituency": "Balusseri, Kunnamangalam, Thalassery, Vatakara; Nadapuram",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.29127,
-        "lng": 75.92864
+        "lat": 11.54542,
+        "lng": 75.7592
       }
     },
     {
@@ -10062,11 +10136,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thrissur",
-      "constituency": "Wadakkanchery",
+      "constituency": "Guruvayoor, Wadakkanchery",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.66231,
-        "lng": 76.24599
+        "lat": 10.62134,
+        "lng": 76.13237
       }
     },
     {
@@ -10127,12 +10201,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Ernakulam",
-      "constituency": "Kalamassery; Aluva",
+      "district": "Ernakulam, Kannur",
+      "constituency": "Aluva, Kalamassery, Kalamassery; Aluva, Kannur",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.05325,
-        "lng": 76.35497
+        "lat": 10.27918,
+        "lng": 76.23201
       }
     },
     {
@@ -10160,12 +10234,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kollam",
-      "constituency": "Chavara",
+      "district": "Kollam, Thiruvananthapuram",
+      "constituency": "Chavara, Kazhakoottam",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.99314,
-        "lng": 76.53347
+        "lat": 8.78212,
+        "lng": 76.71057
       }
     },
     {
@@ -10193,12 +10267,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thiruvananthapuram",
-      "constituency": "Kazhakoottam",
+      "district": "Kottayam, Thiruvananthapuram, Thrissur",
+      "constituency": "Ettumanoor, Kazhakoottam, Kottayam, Kottayam; Ettumanoor, Wadakkanchery",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.52383,
-        "lng": 76.92754
+        "lat": 9.01621,
+        "lng": 76.75244
       }
     },
     {
@@ -10227,11 +10301,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kozhikode",
-      "constituency": "Kozhikode South",
+      "constituency": "Kozhikode South, Kunnamangalam, Nadapuram",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.24574,
-        "lng": 75.78886
+        "lat": 11.35,
+        "lng": 75.80836
       }
     },
     {
@@ -10260,11 +10334,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Palakkad",
-      "constituency": "Kongad",
+      "constituency": "Kongad, Malampuzha, Nemmara, Thrithala",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.93325,
-        "lng": 76.49131
+        "lat": 10.82041,
+        "lng": 76.47717
       }
     },
     {
@@ -10321,12 +10395,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Alappuzha",
-      "constituency": "Kuttanad",
+      "district": "Alappuzha, Malappuram",
+      "constituency": "Alappuzha, Ambalappuzha, Kondotty, Kuttanad",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.15172,
-        "lng": 75.96273
+        "lat": 10.92025,
+        "lng": 76.01295
       }
     },
     {
@@ -10354,12 +10428,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kollam, Malappuram",
-      "constituency": "Karunagapally, Thavanur",
+      "district": "Kollam, Malappuram, Palakkad, Pathanamthitta",
+      "constituency": "Aranmula, Karunagapally, Kongad, Malappuram, Tanur, Thavanur",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.25436,
-        "lng": 76.18366
+        "lat": 10.54589,
+        "lng": 76.15639
       }
     },
     {
@@ -10512,11 +10586,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thiruvananthapuram",
-      "constituency": "Attingal",
+      "constituency": "Attingal, Neyyattinkara, Varkala",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.69705,
-        "lng": 76.81317
+        "lat": 8.60244,
+        "lng": 76.90025
       }
     },
     {
@@ -10544,12 +10618,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Malappuram",
-      "constituency": "Malappuram, Thavanur",
+      "district": "Kollam, Malappuram, Palakkad, Pathanamthitta",
+      "constituency": "Aranmula, Karunagapally, Kongad, Malappuram, Tanur, Thavanur",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.90934,
-        "lng": 76.01684
+        "lat": 10.67689,
+        "lng": 76.12303
       }
     },
     {
@@ -10577,9 +10651,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Kozhikode",
+      "constituency": "Kunnamangalam",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 11.29127,
+        "lng": 75.92864
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0342",
@@ -10610,8 +10688,8 @@
       "constituency": "Alappuzha",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.49492,
-        "lng": 76.32651
+        "lat": 9.49561,
+        "lng": 76.3257
       }
     },
     {
@@ -10639,12 +10717,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kozhikode",
-      "constituency": "Vatakara",
+      "district": "Kozhikode, Wayanad",
+      "constituency": "Mananthavady, Vatakara",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.64849,
-        "lng": 75.56961
+        "lat": 11.69184,
+        "lng": 75.71356
       }
     },
     {
@@ -10734,9 +10812,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Kozhikode",
+      "constituency": "Kunnamangalam",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 11.29127,
+        "lng": 75.92864
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0347",
@@ -10763,12 +10845,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Alappuzha",
-      "constituency": "Alappuzha",
+      "district": "Alappuzha, Thiruvananthapuram",
+      "constituency": "Alappuzha, Thiruvananthapuram",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.49486,
-        "lng": 76.34375
+        "lat": 9.25194,
+        "lng": 76.48286
       }
     },
     {
@@ -10800,8 +10882,8 @@
       "constituency": "Kazhakoottam",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.52347,
-        "lng": 76.92827
+        "lat": 8.52362,
+        "lng": 76.92837
       }
     },
     {
@@ -10833,8 +10915,8 @@
       "constituency": "Alappuzha",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.5869,
-        "lng": 76.32993
+        "lat": 9.5652,
+        "lng": 76.33421
       }
     },
     {
@@ -10862,12 +10944,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thiruvananthapuram",
-      "constituency": "Attingal",
+      "district": "Alappuzha, Kottayam, Thiruvananthapuram, Thrissur",
+      "constituency": "Attingal, Chirayinkeezhu, Kottayam, Kunnamkulam, Mavelikkara; Chengannur",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.66198,
-        "lng": 76.78665
+        "lat": 8.9809,
+        "lng": 76.67642
       }
     },
     {
@@ -10895,12 +10977,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Malappuram",
-      "constituency": "Thavanur",
+      "district": "Kollam, Malappuram, Palakkad, Pathanamthitta",
+      "constituency": "Aranmula, Karunagapally, Kongad, Malappuram, Tanur, Thavanur",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.82988,
-        "lng": 76.00295
+        "lat": 10.64894,
+        "lng": 76.12863
       }
     },
     {
@@ -10928,12 +11010,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kottayam",
-      "constituency": "Kottayam; Ettumanoor",
+      "district": "Idukki, Kottayam",
+      "constituency": "Idukki, Kottayam; Ettumanoor, Udumbanchola; Idukki",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.55629,
-        "lng": 76.51132
+        "lat": 9.69264,
+        "lng": 76.90808
       }
     },
     {
@@ -10961,12 +11043,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kollam",
-      "constituency": "Punalur",
+      "district": "Kannur, Kollam, Kozhikode",
+      "constituency": "Kozhikode North, Pathanapuram, Perambra, Punalur, Thalassery",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.01917,
-        "lng": 76.92472
+        "lat": 9.4649,
+        "lng": 76.70144
       }
     },
     {
@@ -10994,12 +11076,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kozhikode",
-      "constituency": "Vatakara; Nadapuram",
+      "district": "Kannur, Kasaragod, Kozhikode",
+      "constituency": "Payyannur, Udma, Vatakara; Nadapuram",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.6762,
-        "lng": 75.72223
+        "lat": 12.1857,
+        "lng": 75.29185
       }
     },
     {
@@ -11089,12 +11171,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thiruvananthapuram",
-      "constituency": "Kazhakoottam",
+      "district": "Kottayam, Thiruvananthapuram, Thrissur",
+      "constituency": "Ettumanoor, Kazhakoottam, Kottayam, Kottayam; Ettumanoor, Wadakkanchery",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.52383,
-        "lng": 76.92754
+        "lat": 9.01621,
+        "lng": 76.75244
       }
     },
     {
@@ -11123,11 +11205,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thiruvananthapuram",
-      "constituency": "Parassala",
+      "constituency": "Aruvikkara, Attingal, Chirayinkeezhu, Kattakkada, Parassala",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.5334,
-        "lng": 77.14437
+        "lat": 8.53166,
+        "lng": 77.11875
       }
     },
     {
@@ -11156,11 +11238,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kozhikode",
-      "constituency": "Koduvally",
+      "constituency": "Balusseri, Elathur, Koduvally, Kozhikode North, Kozhikode South; Kunnamangalam",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.35501,
-        "lng": 75.91265
+        "lat": 11.33816,
+        "lng": 75.8456
       }
     },
     {
@@ -11217,12 +11299,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thiruvananthapuram",
-      "constituency": "Kazhakoottam",
+      "district": "Kottayam, Thiruvananthapuram, Thrissur",
+      "constituency": "Ettumanoor, Kazhakoottam, Kottayam, Kottayam; Ettumanoor, Wadakkanchery",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.52383,
-        "lng": 76.92754
+        "lat": 9.01621,
+        "lng": 76.75244
       }
     },
     {
@@ -11313,11 +11395,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kozhikode",
-      "constituency": "Perambra",
+      "constituency": "Koyilandy, Perambra",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.57104,
-        "lng": 75.75485
+        "lat": 11.5317,
+        "lng": 75.71216
       }
     },
     {
@@ -11346,11 +11428,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Malappuram",
-      "constituency": "Kondotty",
+      "constituency": "Kondotty, Perinthalmanna",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.21096,
-        "lng": 76.00338
+        "lat": 11.08539,
+        "lng": 76.12254
       }
     },
     {
@@ -11436,12 +11518,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Malappuram, Palakkad",
-      "constituency": "Kongad, Thavanur",
+      "district": "Kollam, Malappuram, Palakkad, Pathanamthitta",
+      "constituency": "Aranmula, Karunagapally, Kongad, Malappuram, Tanur, Thavanur",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.80598,
-        "lng": 76.2392
+        "lat": 10.66558,
+        "lng": 76.17198
       }
     },
     {
@@ -11469,12 +11551,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kollam",
-      "constituency": "Punalur",
+      "district": "Kannur, Kollam, Kozhikode",
+      "constituency": "Kozhikode North, Pathanapuram, Perambra, Punalur, Thalassery",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.01917,
-        "lng": 76.92472
+        "lat": 9.4649,
+        "lng": 76.70144
       }
     },
     {
@@ -11503,11 +11585,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kannur",
-      "constituency": "Taliparamba",
+      "constituency": "Peravoor, Taliparamba",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.04941,
-        "lng": 75.36977
+        "lat": 11.99899,
+        "lng": 75.49122
       }
     },
     {
@@ -11791,12 +11873,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thrissur",
-      "constituency": "Chelakkara",
+      "district": "Palakkad, Thrissur, Wayanad",
+      "constituency": "Chelakkara, Mananthavady, Shornur",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.69694,
-        "lng": 76.32478
+        "lat": 11.07247,
+        "lng": 76.22111
       }
     },
     {
@@ -11824,12 +11906,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thiruvananthapuram",
-      "constituency": "Attingal",
+      "district": "Alappuzha, Kottayam, Thiruvananthapuram, Thrissur",
+      "constituency": "Attingal, Chirayinkeezhu, Kottayam, Kunnamkulam, Mavelikkara; Chengannur",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.66198,
-        "lng": 76.78665
+        "lat": 8.9809,
+        "lng": 76.67642
       }
     },
     {
@@ -11857,9 +11939,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Kozhikode",
+      "constituency": "Kunnamangalam",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 11.29127,
+        "lng": 75.92864
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0382",
@@ -11887,11 +11973,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Alappuzha",
-      "constituency": "Alappuzha",
+      "constituency": "Alappuzha, Ambalappuzha",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.4951,
-        "lng": 76.33712
+        "lat": 9.49536,
+        "lng": 76.32944
       }
     },
     {
@@ -12010,12 +12096,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Ernakulam",
-      "constituency": "Perumbavoor",
+      "district": "Ernakulam, Idukki",
+      "constituency": "Peerumade, Perumbavoor",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.14888,
-        "lng": 76.47709
+        "lat": 9.86648,
+        "lng": 76.79872
       }
     },
     {
@@ -12043,12 +12129,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kollam",
-      "constituency": "Punalur",
+      "district": "Kannur, Kollam, Kozhikode",
+      "constituency": "Kozhikode North, Pathanapuram, Perambra, Punalur, Thalassery",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.01917,
-        "lng": 76.92472
+        "lat": 9.4649,
+        "lng": 76.70144
       }
     },
     {
@@ -12080,8 +12166,8 @@
       "constituency": "Kazhakoottam",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.52347,
-        "lng": 76.92827
+        "lat": 8.52362,
+        "lng": 76.92837
       }
     },
     {
@@ -12295,12 +12381,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Palakkad",
-      "constituency": "Kongad",
+      "district": "Kollam, Kozhikode, Palakkad",
+      "constituency": "Kongad, Koyilandy; Kozhikode South, Punalur",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.79744,
-        "lng": 76.56344
+        "lat": 10.45442,
+        "lng": 76.55492
       }
     },
     {
@@ -12460,12 +12546,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kannur",
-      "constituency": "Mattannur",
+      "district": "Kannur, Kozhikode",
+      "constituency": "Mattannur, Thiruvambady",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.97367,
-        "lng": 75.53024
+        "lat": 11.79068,
+        "lng": 75.69265
       }
     },
     {
@@ -12493,12 +12579,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kottayam",
-      "constituency": "Ettumanoor; Kaduthuruthy",
+      "district": "Kottayam, Malappuram",
+      "constituency": "Ettumanoor; Kaduthuruthy, Kottayam, Vallikunnu",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.65798,
-        "lng": 76.53274
+        "lat": 10.14999,
+        "lng": 76.32024
       }
     },
     {
@@ -12560,11 +12646,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kollam",
-      "constituency": "Eravipuram",
+      "constituency": "Eravipuram, Kollam",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.8833,
-        "lng": 76.59905
+        "lat": 8.88334,
+        "lng": 76.5988
       }
     },
     {
@@ -12625,12 +12711,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kasaragod",
-      "constituency": "Trikaripur",
+      "district": "Kannur, Kasaragod, Palakkad, Thiruvananthapuram",
+      "constituency": "Palakkad, Thalassery, Trikaripur, Varkala",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.2572,
-        "lng": 75.14372
+        "lat": 11.15414,
+        "lng": 75.83494
       }
     },
     {
@@ -12922,12 +13008,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Malappuram",
-      "constituency": "Thavanur",
+      "district": "Malappuram, Palakkad",
+      "constituency": "Thavanur, Thrithala",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.78716,
-        "lng": 76.00329
+        "lat": 10.79706,
+        "lng": 76.08825
       }
     },
     {
@@ -13080,7 +13166,7 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kasaragod",
-      "constituency": "Trikaripur",
+      "constituency": "Kasaragod, Trikaripur",
       "open_flags": [],
       "coordinates": {
         "lat": 12.26358,
@@ -13175,11 +13261,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kannur",
-      "constituency": "Dharmadam",
+      "constituency": "Dharmadam, Kuthuparamba",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.79036,
-        "lng": 75.46718
+        "lat": 11.80054,
+        "lng": 75.49154
       }
     },
     {
@@ -13207,12 +13293,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kasaragod",
-      "constituency": "Kanhangad",
+      "district": "Kannur, Kasaragod",
+      "constituency": "Kanhangad, Kannur; Mananthavady, Payyannur",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.27297,
-        "lng": 75.16713
+        "lat": 12.0488,
+        "lng": 75.46211
       }
     },
     {
@@ -13274,7 +13360,7 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thrissur",
-      "constituency": "Ollur",
+      "constituency": "Ollur, Thrissur",
       "open_flags": [],
       "coordinates": {
         "lat": 10.51528,
@@ -13405,12 +13491,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Alappuzha",
-      "constituency": "Alappuzha",
+      "district": "Alappuzha, Malappuram",
+      "constituency": "Alappuzha, Ponnani",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.58102,
-        "lng": 76.32074
+        "lat": 9.85382,
+        "lng": 76.22588
       }
     },
     {
@@ -13500,12 +13586,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kannur",
-      "constituency": "Taliparamba",
+      "district": "Idukki, Kannur, Pathanamthitta",
+      "constituency": "Adoor, Aranmula, Devikulam, Ranni, Taliparamba",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.37785,
-        "lng": 76.78019
+        "lat": 9.41922,
+        "lng": 76.78598
       }
     },
     {
@@ -13533,12 +13619,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Alappuzha",
-      "constituency": "Cherthala",
+      "district": "Alappuzha, Kannur",
+      "constituency": "Cherthala, Peravoor, Thalassery",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.68192,
-        "lng": 76.3401
+        "lat": 10.55625,
+        "lng": 76.0433
       }
     },
     {
@@ -13595,12 +13681,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Alappuzha",
-      "constituency": "Aroor",
+      "district": "Alappuzha, Kollam",
+      "constituency": "Aroor, Kollam",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.76934,
-        "lng": 76.31775
+        "lat": 9.67147,
+        "lng": 76.34744
       }
     },
     {
@@ -13632,8 +13718,8 @@
       "constituency": "Mattannur",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.93078,
-        "lng": 75.57945
+        "lat": 11.93069,
+        "lng": 75.57951
       }
     },
     {
@@ -13661,12 +13747,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Alappuzha",
-      "constituency": "Chengannur",
+      "district": "Alappuzha, Pathanamthitta",
+      "constituency": "Chengannur, Thiruvalla",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.31553,
-        "lng": 76.61811
+        "lat": 9.33839,
+        "lng": 76.62313
       }
     },
     {
@@ -13785,12 +13871,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kasaragod",
-      "constituency": "Trikaripur",
+      "district": "Kannur, Kasaragod, Palakkad, Thiruvananthapuram",
+      "constituency": "Palakkad, Thalassery, Trikaripur, Varkala",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.2572,
-        "lng": 75.14372
+        "lat": 11.15414,
+        "lng": 75.83494
       }
     },
     {
@@ -13917,8 +14003,8 @@
       "constituency": "Chittur",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.69976,
-        "lng": 76.75329
+        "lat": 10.69966,
+        "lng": 76.75326
       }
     },
     {
@@ -14042,7 +14128,7 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Palakkad",
-      "constituency": "Alathur; Tarur",
+      "constituency": "Alathur, Alathur; Tarur",
       "open_flags": [],
       "coordinates": {
         "lat": 10.64696,
@@ -14074,12 +14160,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Alappuzha",
-      "constituency": "Cherthala",
+      "district": "Alappuzha, Kannur",
+      "constituency": "Cherthala, Peravoor, Thalassery",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.68192,
-        "lng": 76.3401
+        "lat": 10.55625,
+        "lng": 76.0433
       }
     },
     {
@@ -14169,8 +14255,8 @@
       "constituency": "Payyannur",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.11431,
-        "lng": 75.21085
+        "lat": 12.11433,
+        "lng": 75.21067
       }
     },
     {
@@ -14446,12 +14532,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kasaragod",
-      "constituency": "Trikaripur",
+      "district": "Kannur, Kasaragod, Palakkad, Thiruvananthapuram",
+      "constituency": "Palakkad, Thalassery, Trikaripur, Varkala",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.2572,
-        "lng": 75.14372
+        "lat": 11.15414,
+        "lng": 75.83494
       }
     },
     {
@@ -14479,12 +14565,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kannur",
-      "constituency": "Taliparamba",
+      "district": "Idukki, Kannur, Pathanamthitta",
+      "constituency": "Adoor, Aranmula, Devikulam, Ranni, Taliparamba",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.37785,
-        "lng": 76.78019
+        "lat": 9.41922,
+        "lng": 76.78598
       }
     },
     {
@@ -14512,12 +14598,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kannur",
-      "constituency": "Taliparamba",
+      "district": "Idukki, Kannur, Pathanamthitta",
+      "constituency": "Adoor, Aranmula, Devikulam, Ranni, Taliparamba",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.37785,
-        "lng": 76.78019
+        "lat": 9.41922,
+        "lng": 76.78598
       }
     },
     {
@@ -14545,12 +14631,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kannur",
-      "constituency": "Taliparamba",
+      "district": "Idukki, Kannur, Pathanamthitta",
+      "constituency": "Adoor, Aranmula, Devikulam, Ranni, Taliparamba",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.37785,
-        "lng": 76.78019
+        "lat": 9.41922,
+        "lng": 76.78598
       }
     },
     {
@@ -14611,12 +14697,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kannur",
-      "constituency": "Taliparamba",
+      "district": "Idukki, Kannur, Pathanamthitta",
+      "constituency": "Adoor, Aranmula, Devikulam, Ranni, Taliparamba",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.37785,
-        "lng": 76.78019
+        "lat": 9.41922,
+        "lng": 76.78598
       }
     },
     {
@@ -14644,12 +14730,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Alappuzha",
-      "constituency": "Kuttanad",
+      "district": "Alappuzha, Malappuram",
+      "constituency": "Alappuzha, Ambalappuzha, Kondotty, Kuttanad",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.15172,
-        "lng": 75.96273
+        "lat": 10.92025,
+        "lng": 76.01295
       }
     },
     {
@@ -14864,7 +14950,7 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Alappuzha",
-      "constituency": "Ambalappuzha; Alappuzha",
+      "constituency": "Alappuzha, Ambalappuzha, Ambalappuzha; Alappuzha",
       "open_flags": [],
       "coordinates": {
         "lat": 9.49071,
@@ -14929,12 +15015,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thiruvananthapuram",
-      "constituency": "Kazhakoottam",
+      "district": "Kottayam, Thiruvananthapuram, Thrissur",
+      "constituency": "Ettumanoor, Kazhakoottam, Kottayam, Kottayam; Ettumanoor, Wadakkanchery",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.52383,
-        "lng": 76.92754
+        "lat": 9.01621,
+        "lng": 76.75244
       }
     },
     {
@@ -14996,11 +15082,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thrissur",
-      "constituency": "Manalur",
+      "constituency": "Guruvayoor, Irinjalakuda, Kaipamangalam, Manalur, Nattika, Ollur, Puthukkad, Thrissur, Wadakkanchery",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.53891,
-        "lng": 76.09097
+        "lat": 10.43611,
+        "lng": 76.18925
       }
     },
     {
@@ -15028,12 +15114,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kozhikode",
-      "constituency": "Koduvally",
+      "district": "Kozhikode, Malappuram",
+      "constituency": "Elathur, Koduvally, Kunnamangalam, Tirur",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.42731,
-        "lng": 75.92784
+        "lat": 11.22612,
+        "lng": 75.90557
       }
     },
     {
@@ -15061,12 +15147,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Palakkad",
-      "constituency": "Thrithala",
+      "district": "Kannur, Kollam, Malappuram, Palakkad",
+      "constituency": "Chadayamangalam, Chavara, Chittur, Kottarakkara, Manjeri, Mankada, Peravoor, Thrithala, Tirurangadi",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.78793,
-        "lng": 76.05075
+        "lat": 10.03995,
+        "lng": 76.42661
       }
     },
     {
@@ -15095,11 +15181,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thiruvananthapuram",
-      "constituency": "Attingal",
+      "constituency": "Attingal, Kazhakoottam, Kovalam, Parassala, Vattiyoorkavu",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.7821,
-        "lng": 76.84431
+        "lat": 8.6375,
+        "lng": 76.91494
       }
     },
     {
@@ -15215,11 +15301,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Palakkad",
-      "constituency": "Alathur",
+      "constituency": "Alathur, Kongad, Malampuzha, Palakkad, Palakkad; Pattambi, Pattambi, Tarur",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.63177,
-        "lng": 76.60141
+        "lat": 10.73949,
+        "lng": 76.54376
       }
     },
     {
@@ -15247,12 +15333,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Palakkad",
-      "constituency": "Pattambi",
+      "district": "Kozhikode, Malappuram, Palakkad",
+      "constituency": "Beypore; Kozhikode South, Pattambi, Ponnani, Wandoor",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.79078,
-        "lng": 76.24591
+        "lat": 10.9777,
+        "lng": 76.06438
       }
     },
     {
@@ -15310,11 +15396,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Wayanad",
-      "constituency": "Sulthanbathery",
+      "constituency": "Kalpetta, Sulthanbathery",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.6957,
-        "lng": 76.20626
+        "lat": 11.63342,
+        "lng": 76.12905
       }
     },
     {
@@ -15430,11 +15516,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Palakkad",
-      "constituency": "Mannarkkad",
+      "constituency": "Kongad, Mannarkkad, Ottappalam",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.0987,
-        "lng": 76.64253
+        "lat": 10.88516,
+        "lng": 76.51002
       }
     },
     {
@@ -15492,11 +15578,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thiruvananthapuram",
-      "constituency": "Thiruvananthapuram",
+      "constituency": "Aruvikkara, Kovalam, Neyyattinkara, Parassala, Thiruvananthapuram",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.49286,
-        "lng": 76.95484
+        "lat": 8.48769,
+        "lng": 77.06495
       }
     },
     {
@@ -15554,11 +15640,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kollam",
-      "constituency": "Kottarakkara",
+      "constituency": "Chadayamangalam, Karunagapally, Kollam; Kunnathur, Kottarakkara",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.07904,
-        "lng": 76.75196
+        "lat": 8.97583,
+        "lng": 76.76321
       }
     },
     {
@@ -15587,11 +15673,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Palakkad",
-      "constituency": "Kongad",
+      "constituency": "Kongad, Mannarkkad, Nemmara; Alathur, Ottappalam, Palakkad, Thrithala",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.78086,
-        "lng": 76.47591
+        "lat": 10.79897,
+        "lng": 76.45092
       }
     },
     {
@@ -15648,12 +15734,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Palakkad",
-      "constituency": "Thrithala",
+      "district": "Kannur, Kollam, Malappuram, Palakkad",
+      "constituency": "Chadayamangalam, Chavara, Chittur, Kottarakkara, Manjeri, Mankada, Peravoor, Thrithala, Tirurangadi",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.78793,
-        "lng": 76.05075
+        "lat": 10.03995,
+        "lng": 76.42661
       }
     },
     {
@@ -15681,12 +15767,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Malappuram",
-      "constituency": "Vengara",
+      "district": "Alappuzha, Ernakulam, Kannur, Kasaragod, Malappuram",
+      "constituency": "Ambalappuzha, Haripad, Kalliasseri, Kothamangalam, Kuttanad, Udma, Vengara, Vypin",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.08639,
-        "lng": 75.96662
+        "lat": 10.47079,
+        "lng": 76.06779
       }
     },
     {
@@ -15715,11 +15801,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Malappuram",
-      "constituency": "Perinthalmanna",
+      "constituency": "Kondotty, Malappuram, Perinthalmanna, Tanur, Tirur, Tirurangadi",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.01251,
-        "lng": 76.30504
+        "lat": 11.01418,
+        "lng": 76.01747
       }
     },
     {
@@ -15748,11 +15834,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Pathanamthitta, Thiruvananthapuram",
-      "constituency": "Kattakkada, Ranni",
+      "constituency": "Attingal, Kattakkada, Konni, Kovalam, Nemom, Neyyattinkara, Parassala, Ranni, Thiruvalla, Thiruvananthapuram, Vamanapuram, Vattiyoorkavu",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.82302,
-        "lng": 76.97489
+        "lat": 8.73204,
+        "lng": 76.92057
       }
     },
     {
@@ -15781,11 +15867,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thiruvananthapuram",
-      "constituency": "Vamanapuram",
+      "constituency": "Aruvikkara, Kattakkada, Nemom, Nemom; Kattakkada, Neyyattinkara, Thiruvananthapuram; Aruvikkara, Vamanapuram",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.63387,
-        "lng": 77.00967
+        "lat": 8.58505,
+        "lng": 77.0233
       }
     },
     {
@@ -15813,12 +15899,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thrissur",
-      "constituency": "Ollur",
+      "district": "Kannur, Palakkad, Thrissur",
+      "constituency": "Alathur, Nemmara, Ollur, Taliparamba",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.4878,
-        "lng": 76.2394
+        "lat": 11.16148,
+        "lng": 76.04724
       }
     },
     {
@@ -15847,11 +15933,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Malappuram",
-      "constituency": "Perinthalmanna, Vallikunnu",
+      "constituency": "Ernad; Kondotty, Kondotty, Kottakkal, Malappuram, Manjeri, Mankada, Perinthalmanna, Ponnani; Malappuram, Tirur, Tirurangadi; Vengara, Vallikunnu, Wandoor",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.03568,
-        "lng": 76.09987
+        "lat": 11.05067,
+        "lng": 76.0505
       }
     },
     {
@@ -15909,11 +15995,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Malappuram",
-      "constituency": "Thavanur",
+      "constituency": "Ponnani, Tanur, Thavanur, Tirurangadi, Vengara",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.81724,
-        "lng": 75.92991
+        "lat": 10.92411,
+        "lng": 75.93547
       }
     },
     {
@@ -15941,12 +16027,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Alappuzha",
-      "constituency": "Ambalappuzha",
+      "district": "Alappuzha, Idukki, Kottayam",
+      "constituency": "Ambalappuzha, Cherthala, Udumbanchola, Vaikom",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.4537,
-        "lng": 76.34527
+        "lat": 9.66401,
+        "lng": 76.54588
       }
     },
     {
@@ -16033,11 +16119,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thiruvananthapuram",
-      "constituency": "Nedumangad",
+      "constituency": "Chirayinkeezhu, Nedumangad, Thiruvananthapuram, Varkala",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.62468,
-        "lng": 76.93274
+        "lat": 8.62993,
+        "lng": 76.88025
       }
     },
     {
@@ -16066,11 +16152,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Wayanad",
-      "constituency": "Sulthanbathery",
+      "constituency": "Mananthavady, Mananthavady; Kalpetta, Sulthanbathery",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.861,
-        "lng": 76.15048
+        "lat": 11.76793,
+        "lng": 76.05758
       }
     },
     {
@@ -16098,12 +16184,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Malappuram",
-      "constituency": "Thavanur",
+      "district": "Kollam, Malappuram, Palakkad, Pathanamthitta",
+      "constituency": "Aranmula, Karunagapally, Kongad, Malappuram, Tanur, Thavanur",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.82988,
-        "lng": 76.00295
+        "lat": 10.64894,
+        "lng": 76.12863
       }
     },
     {
@@ -16132,11 +16218,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kottayam",
-      "constituency": "Pala",
+      "constituency": "Pala, Poonjar, Vaikom",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.71415,
-        "lng": 76.68306
+        "lat": 9.65583,
+        "lng": 76.658
       }
     },
     {
@@ -16165,11 +16251,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kannur",
-      "constituency": "Taliparamba",
+      "constituency": "Irikkur, Payyannur, Taliparamba",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.04902,
-        "lng": 75.36967
+        "lat": 12.09052,
+        "lng": 75.346
       }
     },
     {
@@ -16227,11 +16313,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kozhikode",
-      "constituency": "Kunnamangalam",
+      "constituency": "Beypore, Kunnamangalam, Nadapuram, Thiruvambady",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.28806,
-        "lng": 75.879
+        "lat": 11.40756,
+        "lng": 75.84424
       }
     },
     {
@@ -16259,12 +16345,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thrissur",
-      "constituency": "Nattika",
+      "district": "Palakkad, Thrissur",
+      "constituency": "Chelakkara, Chittur, Kodungallur; Kaipamangalam, Nattika, Ollur, Pattambi",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.40917,
-        "lng": 76.09387
+        "lat": 10.5788,
+        "lng": 76.30374
       }
     },
     {
@@ -16293,11 +16379,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kannur",
-      "constituency": "Payyannur",
+      "constituency": "Irikkur, Payyannur, Thalassery",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.17868,
-        "lng": 75.24362
+        "lat": 12.09859,
+        "lng": 75.35823
       }
     },
     {
@@ -16355,11 +16441,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Pathanamthitta, Thiruvananthapuram",
-      "constituency": "Kattakkada, Ranni",
+      "constituency": "Attingal, Kattakkada, Konni, Kovalam, Nemom, Neyyattinkara, Parassala, Ranni, Thiruvalla, Thiruvananthapuram, Vamanapuram, Vattiyoorkavu",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.82302,
-        "lng": 76.97489
+        "lat": 8.73204,
+        "lng": 76.92057
       }
     },
     {
@@ -16391,8 +16477,8 @@
       "constituency": "Wandoor",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.1887,
-        "lng": 76.2622
+        "lat": 11.17526,
+        "lng": 76.26485
       }
     },
     {
@@ -16421,11 +16507,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Malappuram",
-      "constituency": "Ernad",
+      "constituency": "Ernad, Ernad; Kondotty, Malappuram, Manjeri, Nilambur, Tirurangadi, Vallikunnu",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.23656,
-        "lng": 76.05169
+        "lat": 11.19336,
+        "lng": 76.06332
       }
     },
     {
@@ -16453,12 +16539,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Malappuram",
-      "constituency": "Tirur",
+      "district": "Kannur, Kollam, Malappuram, Palakkad",
+      "constituency": "Mankada, Mannarkkad; Kongad, Pathanapuram; Peravoor, Peravoor, Tirur",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.9077,
-        "lng": 76.02448
+        "lat": 10.80105,
+        "lng": 76.23476
       }
     },
     {
@@ -16487,11 +16573,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kannur",
-      "constituency": "Peravoor",
+      "constituency": "Azhikode, Kannur; Taliparamba, Mattannur, Peravoor, Thalassery",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.93821,
-        "lng": 75.7223
+        "lat": 11.90022,
+        "lng": 75.52619
       }
     },
     {
@@ -16548,12 +16634,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Ernakulam",
-      "constituency": "Thripunithura; Thrikkakara",
+      "district": "Ernakulam, Thrissur",
+      "constituency": "Chalakudy, Kodungallur, Thripunithura; Thrikkakara, Thrissur",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.95262,
-        "lng": 76.34483
+        "lat": 10.25718,
+        "lng": 76.28669
       }
     },
     {
@@ -16582,11 +16668,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thrissur",
-      "constituency": "Chalakudy",
+      "constituency": "Chalakudy, Chalakudy; Puthukkad, Chelakkara, Irinjalakuda, Kodungallur, Kodungallur; Chalakudy, Kodungallur; Irinjalakuda, Kunnamkulam, Manalur, Wadakkanchery",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.33332,
-        "lng": 76.43048
+        "lat": 10.45586,
+        "lng": 76.2213
       }
     },
     {
@@ -16614,12 +16700,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thiruvananthapuram",
-      "constituency": "Aruvikkara",
+      "district": "Kottayam, Kozhikode, Thiruvananthapuram",
+      "constituency": "Aruvikkara, Ettumanoor, Vatakara",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.53166,
-        "lng": 77.08613
+        "lat": 9.90086,
+        "lng": 76.38829
       }
     },
     {
@@ -16648,11 +16734,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kozhikode",
-      "constituency": "Kozhikode South",
+      "constituency": "Balusseri, Kozhikode South, Thiruvambady",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.24524,
-        "lng": 75.78599
+        "lat": 11.3424,
+        "lng": 75.85299
       }
     },
     {
@@ -16710,11 +16796,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thiruvananthapuram",
-      "constituency": "Parassala",
+      "constituency": "Aruvikkara, Attingal, Chirayinkeezhu, Kattakkada, Parassala",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.5334,
-        "lng": 77.14437
+        "lat": 8.53166,
+        "lng": 77.11875
       }
     },
     {
@@ -16742,12 +16828,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kollam",
-      "constituency": "Kunnathur",
+      "district": "Ernakulam, Kollam, Kottayam",
+      "constituency": "Chavara; Eravipuram, Ettumanoor, Kollam, Kunnathunad, Kunnathur, Punalur",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.04254,
-        "lng": 76.58396
+        "lat": 9.25044,
+        "lng": 76.59771
       }
     },
     {
@@ -16775,12 +16861,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kottayam",
-      "constituency": "Kaduthuruthy",
+      "district": "Idukki, Kottayam, Palakkad, Thiruvananthapuram, Thrissur",
+      "constituency": "Chittur, Idukki, Idukki; Thodupuzha, Kaduthuruthy, Kanjirappally, Kazhakoottam; Chirayinkeezhu, Kottayam; Vaikom, Mannarkkad, Nattika, Nedumangad, Ollur, Peerumade, Thiruvananthapuram; Nedumangad, Thrissur, Vaikom",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.69964,
-        "lng": 76.54799
+        "lat": 9.77445,
+        "lng": 76.61213
       }
     },
     {
@@ -16838,11 +16924,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kannur",
-      "constituency": "Kalliasseri",
+      "constituency": "Kalliasseri, Kuthuparamba, Mattannur, Taliparamba",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.97428,
-        "lng": 75.28243
+        "lat": 11.95088,
+        "lng": 75.39512
       }
     },
     {
@@ -16900,11 +16986,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Malappuram",
-      "constituency": "Tirurangadi",
+      "constituency": "Ernad, Mankada, Tanur, Tirurangadi",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.01506,
-        "lng": 75.95379
+        "lat": 11.0664,
+        "lng": 76.06491
       }
     },
     {
@@ -16933,11 +17019,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thrissur",
-      "constituency": "Nattika",
+      "constituency": "Guruvayoor, Kaipamangalam, Kaipamangalam; Irinjalakuda, Manalur, Nattika, Ollur; Wadakkanchery, Puthukkad",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.40353,
-        "lng": 76.14062
+        "lat": 10.43929,
+        "lng": 76.13808
       }
     },
     {
@@ -16965,12 +17051,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kozhikode",
-      "constituency": "Beypore; Kozhikode South",
+      "district": "Kozhikode, Wayanad",
+      "constituency": "Beypore; Kozhikode South, Koduvally, Kuttiady; Nadapuram, Nadapuram, Sulthanbathery, Thiruvambady; Koduvally",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.17659,
-        "lng": 75.83248
+        "lat": 11.48907,
+        "lng": 75.87973
       }
     },
     {
@@ -17061,11 +17147,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Malappuram",
-      "constituency": "Perinthalmanna, Vallikunnu",
+      "constituency": "Ernad; Kondotty, Kondotty, Kottakkal, Malappuram, Manjeri, Mankada, Perinthalmanna, Ponnani; Malappuram, Tirur, Tirurangadi; Vengara, Vallikunnu, Wandoor",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.03568,
-        "lng": 76.09987
+        "lat": 11.05067,
+        "lng": 76.0505
       }
     },
     {
@@ -17093,12 +17179,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kollam",
-      "constituency": "Chavara",
+      "district": "Kollam, Thiruvananthapuram",
+      "constituency": "Chavara, Kazhakoottam",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.99314,
-        "lng": 76.53347
+        "lat": 8.78212,
+        "lng": 76.71057
       }
     },
     {
@@ -17155,12 +17241,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kozhikode",
-      "constituency": "Koduvally",
+      "district": "Kannur, Kasaragod, Kozhikode",
+      "constituency": "Dharmadam, Irikkur, Kanhangad, Koduvally",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.3688,
-        "lng": 75.86059
+        "lat": 11.98839,
+        "lng": 75.46691
       }
     },
     {
@@ -17188,12 +17274,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thrissur",
-      "constituency": "Puthukkad",
+      "district": "Thrissur, Wayanad",
+      "constituency": "Mananthavady, Nattika, Ollur, Puthukkad, Sulthanbathery",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.40144,
-        "lng": 76.34104
+        "lat": 11.10097,
+        "lng": 76.1558
       }
     },
     {
@@ -17222,11 +17308,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thiruvananthapuram",
-      "constituency": "Attingal",
+      "constituency": "Attingal, Thiruvananthapuram",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.69627,
-        "lng": 76.8199
+        "lat": 8.63139,
+        "lng": 76.86327
       }
     },
     {
@@ -17288,11 +17374,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kollam",
-      "constituency": "Chadayamangalam",
+      "constituency": "Chadayamangalam, Karunagapally, Kollam, Kollam; Chadayamangalam, Pathanapuram, Punalur",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.81547,
-        "lng": 76.96652
+        "lat": 8.94147,
+        "lng": 76.83174
       }
     },
     {
@@ -17321,11 +17407,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kasaragod",
-      "constituency": "Kanhangad; Udma",
+      "constituency": "Kanhangad; Udma, Kasaragod, Manjeshwar",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.3406,
-        "lng": 75.10974
+        "lat": 12.58217,
+        "lng": 75.00597
       }
     },
     {
@@ -17354,11 +17440,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kasaragod",
-      "constituency": "Trikaripur",
+      "constituency": "Kanhangad, Trikaripur",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.36977,
-        "lng": 75.24444
+        "lat": 12.32148,
+        "lng": 75.22134
       }
     },
     {
@@ -17416,11 +17502,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Alappuzha",
-      "constituency": "Ambalappuzha",
+      "constituency": "Alappuzha, Ambalappuzha, Aroor; Cherthala",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.58289,
-        "lng": 76.30736
+        "lat": 9.61664,
+        "lng": 76.3206
       }
     },
     {
@@ -17449,11 +17535,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Malappuram",
-      "constituency": "Ponnani",
+      "constituency": "Ponnani, Thavanur, Tirur, Tirur; Tanur",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.73156,
-        "lng": 76.05993
+        "lat": 10.83789,
+        "lng": 75.9612
       }
     },
     {
@@ -17481,12 +17567,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Idukki",
-      "constituency": "Peerumade",
+      "district": "Alappuzha, Idukki",
+      "constituency": "Alappuzha, Ambalappuzha, Kayamkulam, Mavelikkara, Peerumade, Udumbanchola",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.66674,
-        "lng": 77.16207
+        "lat": 9.55708,
+        "lng": 76.81079
       }
     },
     {
@@ -17601,12 +17687,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thiruvananthapuram",
-      "constituency": "Thiruvananthapuram",
+      "district": "Ernakulam, Kollam, Thiruvananthapuram",
+      "constituency": "Aluva, Ernakulam, Kollam, Thiruvananthapuram",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.5022,
-        "lng": 76.96241
+        "lat": 9.37284,
+        "lng": 76.55456
       }
     },
     {
@@ -17635,11 +17721,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kannur",
-      "constituency": "Azhikode",
+      "constituency": "Azhikode, Kannur, Kannur; Azhikode, Kuthuparamba, Thalassery",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.90747,
-        "lng": 75.32553
+        "lat": 11.86082,
+        "lng": 75.43179
       }
     },
     {
@@ -17667,12 +17753,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Pathanamthitta",
-      "constituency": "Adoor",
+      "district": "Kollam, Pathanamthitta",
+      "constituency": "Adoor, Chathannoor, Chavara, Eravipuram, Kollam, Konni, Kottarakkara, Kundara, Kunnathur",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.26917,
-        "lng": 76.78828
+        "lat": 9.02191,
+        "lng": 76.68608
       }
     },
     {
@@ -17700,12 +17786,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Malappuram",
-      "constituency": "Wandoor",
+      "district": "Kollam, Malappuram, Thiruvananthapuram",
+      "constituency": "Chadayamangalam, Kottakkal, Malappuram, Nedumangad, Punalur, Wandoor",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.22306,
-        "lng": 76.33389
+        "lat": 10.25815,
+        "lng": 76.47995
       }
     },
     {
@@ -17734,11 +17820,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Pathanamthitta",
-      "constituency": "Ranni",
+      "constituency": "Konni, Ranni, Thiruvalla",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.4226,
-        "lng": 76.86146
+        "lat": 9.33279,
+        "lng": 76.74959
       }
     },
     {
@@ -17766,8 +17852,8 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kollam",
-      "constituency": "Chathannoor",
+      "district": "Kollam, Wayanad",
+      "constituency": "Chathannoor, Kalpetta",
       "open_flags": [],
       "coordinates": {
         "lat": 8.79642,
@@ -17799,12 +17885,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kozhikode",
-      "constituency": "Nadapuram",
+      "district": "Kannur, Kasaragod, Kozhikode",
+      "constituency": "Irikkur, Kannur, Nadapuram, Payyannur, Thiruvambady, Udma",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.6906,
-        "lng": 75.80675
+        "lat": 11.94067,
+        "lng": 75.51475
       }
     },
     {
@@ -17833,11 +17919,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Palakkad",
-      "constituency": "Kongad",
+      "constituency": "Kongad, Malampuzha, Mannarkkad",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.85399,
-        "lng": 76.52362
+        "lat": 10.92804,
+        "lng": 76.59578
       }
     },
     {
@@ -17865,12 +17951,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kottayam",
-      "constituency": "Changanassery",
+      "district": "Ernakulam, Kottayam",
+      "constituency": "Aluva, Angamaly, Changanassery, Ernakulam, Ernakulam; Angamaly, Ettumanoor; Kaduthuruthy, Kanjirappally, Kunnathunad, Piravom, Poonjar, Thripunithura",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.50097,
-        "lng": 76.51296
+        "lat": 9.96418,
+        "lng": 76.4505
       }
     },
     {
@@ -17928,11 +18014,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Pathanamthitta",
-      "constituency": "Ranni",
+      "constituency": "Konni, Ranni, Thiruvalla",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.4226,
-        "lng": 76.86146
+        "lat": 9.33279,
+        "lng": 76.74959
       }
     },
     {
@@ -17961,11 +18047,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Malappuram",
-      "constituency": "Tirurangadi",
+      "constituency": "Ernad, Mankada, Tanur, Tirurangadi",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.01506,
-        "lng": 75.95379
+        "lat": 11.0664,
+        "lng": 76.06491
       }
     },
     {
@@ -17994,11 +18080,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kasaragod",
-      "constituency": "Manjeshwar",
+      "constituency": "Kasaragod, Manjeshwar, Udma",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.68657,
-        "lng": 74.98438
+        "lat": 12.59102,
+        "lng": 75.03385
       }
     },
     {
@@ -18056,11 +18142,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Alappuzha",
-      "constituency": "Cherthala",
+      "constituency": "Alappuzha; Chengannur, Alappuzha; Cherthala, Aroor, Cherthala, Haripad, Mavelikkara",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.71845,
-        "lng": 76.33729
+        "lat": 9.57501,
+        "lng": 76.43084
       }
     },
     {
@@ -18179,8 +18265,8 @@
       "constituency": "Udma",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.41193,
-        "lng": 75.02737
+        "lat": 12.44441,
+        "lng": 75.08092
       }
     },
     {
@@ -18209,11 +18295,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Alappuzha",
-      "constituency": "Cherthala; Alappuzha",
+      "constituency": "Cherthala; Alappuzha, Kayamkulam; Haripad, Mavelikkara; Kayamkulam",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.60834,
-        "lng": 76.32877
+        "lat": 9.31958,
+        "lng": 76.45161
       }
     },
     {
@@ -18241,12 +18327,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thrissur",
-      "constituency": "Guruvayoor",
+      "district": "Alappuzha, Ernakulam, Kollam, Thiruvananthapuram, Thrissur",
+      "constituency": "Aroor, Chathannoor, Guruvayoor, Kaipamangalam, Karunagapally, Kattakkada, Kodungallur, Kunnathunad, Kunnathur, Varkala",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.60605,
-        "lng": 76.01012
+        "lat": 9.52029,
+        "lng": 76.49544
       }
     },
     {
@@ -18304,11 +18390,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Malappuram",
-      "constituency": "Kottakkal",
+      "constituency": "Kondotty, Kottakkal, Mankada, Tanur, Vengara",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.87277,
-        "lng": 76.09984
+        "lat": 11.00595,
+        "lng": 76.00429
       }
     },
     {
@@ -18394,12 +18480,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kasaragod",
-      "constituency": "Kasaragod",
+      "district": "Kannur, Kasaragod, Kozhikode, Malappuram, Palakkad, Thiruvananthapuram",
+      "constituency": "Kalliasseri, Kasaragod, Malappuram, Mannarkkad, Nadapuram, Thiruvananthapuram, Udma",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.53772,
-        "lng": 75.14511
+        "lat": 11.43753,
+        "lng": 75.71989
       }
     },
     {
@@ -18428,11 +18514,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Palakkad",
-      "constituency": "Mannarkkad",
+      "constituency": "Kongad, Mannarkkad, Ottappalam",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.0987,
-        "lng": 76.64253
+        "lat": 10.88516,
+        "lng": 76.51002
       }
     },
     {
@@ -18490,11 +18576,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Palakkad",
-      "constituency": "Chittur",
+      "constituency": "Chittur, Mannarkkad, Ottappalam, Pattambi, Pattambi; Chittur, Pattambi; Thrithala, Shornur, Shornur; Pattambi, Tarur, Thrithala",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.70274,
-        "lng": 76.85246
+        "lat": 10.77855,
+        "lng": 76.46941
       }
     },
     {
@@ -18523,11 +18609,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kasaragod",
-      "constituency": "Kanhangad",
+      "constituency": "Kanhangad, Kanhangad; Udma, Trikaripur",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.46021,
-        "lng": 75.3466
+        "lat": 12.28223,
+        "lng": 75.16137
       }
     },
     {
@@ -18556,11 +18642,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kollam",
-      "constituency": "Chadayamangalam",
+      "constituency": "Chadayamangalam, Chathannoor, Eravipuram, Karunagapally, Kollam, Kottarakkara, Kunnathur, Punalur",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.82739,
-        "lng": 76.92927
+        "lat": 8.94489,
+        "lng": 76.71718
       }
     },
     {
@@ -18588,12 +18674,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kannur",
-      "constituency": "Azhikode",
+      "district": "Idukki, Kannur, Thrissur",
+      "constituency": "Azhikode, Chelakkara, Idukki; Udumbanchola, Thodupuzha",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.94394,
-        "lng": 75.34185
+        "lat": 10.60798,
+        "lng": 76.38943
       }
     },
     {
@@ -18622,11 +18708,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kannur",
-      "constituency": "Payyannur",
+      "constituency": "Azhikode, Kalliasseri, Kannur, Payyannur, Peravoor, Taliparamba",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.93926,
-        "lng": 75.40505
+        "lat": 11.93577,
+        "lng": 75.4147
       }
     },
     {
@@ -18713,11 +18799,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thiruvananthapuram",
-      "constituency": "Nedumangad",
+      "constituency": "Attingal, Nedumangad, Varkala",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.60603,
-        "lng": 76.91204
+        "lat": 8.71277,
+        "lng": 76.87114
       }
     },
     {
@@ -18746,11 +18832,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Malappuram",
-      "constituency": "Ponnani",
+      "constituency": "Manjeri, Manjeri; Malappuram, Nilambur, Perinthalmanna, Ponnani, Wandoor",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.70204,
-        "lng": 75.95887
+        "lat": 11.1454,
+        "lng": 76.19725
       }
     },
     {
@@ -18808,11 +18894,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kozhikode",
-      "constituency": "Kunnamangalam",
+      "constituency": "Beypore, Kozhikode South, Kunnamangalam, Kuttiady, Perambra; Beypore",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.29051,
-        "lng": 75.96186
+        "lat": 11.30495,
+        "lng": 75.84431
       }
     },
     {
@@ -18840,12 +18926,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Malappuram",
-      "constituency": "Mankada",
+      "district": "Kannur, Kozhikode, Malappuram",
+      "constituency": "Irikkur, Kozhikode North, Mankada, Mattannur, Payyannur, Ponnani, Tirur",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.96484,
-        "lng": 76.09403
+        "lat": 11.5491,
+        "lng": 75.6593
       }
     },
     {
@@ -18874,11 +18960,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thiruvananthapuram",
-      "constituency": "Nedumangad",
+      "constituency": "Aruvikkara, Nedumangad",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.58773,
-        "lng": 76.84706
+        "lat": 8.59649,
+        "lng": 76.97864
       }
     },
     {
@@ -18936,11 +19022,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Malappuram",
-      "constituency": "Perinthalmanna",
+      "constituency": "Perinthalmanna, Tanur, Tirur, Wandoor",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.97724,
-        "lng": 76.22751
+        "lat": 10.98287,
+        "lng": 76.16989
       }
     },
     {
@@ -19088,12 +19174,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kasaragod",
-      "constituency": "Udma",
+      "district": "Alappuzha, Kasaragod",
+      "constituency": "Ambalappuzha, Mavelikkara, Udma",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.44102,
-        "lng": 75.03116
+        "lat": 11.17937,
+        "lng": 75.63432
       }
     },
     {
@@ -19122,11 +19208,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thiruvananthapuram",
-      "constituency": "Thiruvananthapuram",
+      "constituency": "Kattakkada, Thiruvananthapuram",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.49347,
-        "lng": 76.95548
+        "lat": 8.49089,
+        "lng": 76.99743
       }
     },
     {
@@ -19155,11 +19241,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kasaragod",
-      "constituency": "Kasaragod",
+      "constituency": "Kanhangad, Kasaragod, Kasaragod; Udma",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.51347,
-        "lng": 74.9812
+        "lat": 12.46433,
+        "lng": 75.11731
       }
     },
     {
@@ -19188,11 +19274,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kozhikode",
-      "constituency": "Thiruvambady",
+      "constituency": "Balusseri, Thiruvambady, Vatakara",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.28812,
-        "lng": 75.98724
+        "lat": 11.45016,
+        "lng": 75.83046
       }
     },
     {
@@ -19221,11 +19307,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Malappuram",
-      "constituency": "Malappuram",
+      "constituency": "Ernad, Malappuram, Wandoor, Wandoor; Nilambur",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.12305,
-        "lng": 76.05617
+        "lat": 11.19796,
+        "lng": 76.18814
       }
     },
     {
@@ -19254,11 +19340,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Pathanamthitta",
-      "constituency": "Ranni",
+      "constituency": "Konni, Ranni, Thiruvalla",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.4226,
-        "lng": 76.86146
+        "lat": 9.33279,
+        "lng": 76.74959
       }
     },
     {
@@ -19286,12 +19372,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kozhikode",
-      "constituency": "Vatakara",
+      "district": "Kasaragod, Kozhikode, Malappuram, Palakkad",
+      "constituency": "Kasaragod, Kondotty, Kottakkal, Malappuram, Manjeri, Ottappalam, Pattambi, Shornur, Tirur, Trikaripur, Vatakara",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.66803,
-        "lng": 75.59346
+        "lat": 11.22748,
+        "lng": 75.9319
       }
     },
     {
@@ -19348,12 +19434,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Ernakulam",
-      "constituency": "Vypin",
+      "district": "Alappuzha, Ernakulam, Idukki, Kottayam",
+      "constituency": "Aluva, Chengannur, Cherthala, Devikulam, Ernakulam, Ettumanoor, Haripad, Kalamassery, Paravur, Perumbavoor, Vypin",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.12646,
-        "lng": 76.38931
+        "lat": 9.95708,
+        "lng": 76.45941
       }
     },
     {
@@ -19502,11 +19588,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Palakkad",
-      "constituency": "Thrithala",
+      "constituency": "Pattambi, Thrithala",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.81138,
-        "lng": 76.03922
+        "lat": 10.80809,
+        "lng": 76.1033
       }
     },
     {
@@ -19597,11 +19683,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Malappuram",
-      "constituency": "Kondotty",
+      "constituency": "Kondotty, Kottakkal; Vengara, Malappuram; Manjeri, Mankada, Tanur, Thavanur, Vengara, Wandoor",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.23076,
-        "lng": 75.98871
+        "lat": 11.10106,
+        "lng": 76.01695
       }
     },
     {
@@ -19629,12 +19715,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Palakkad",
-      "constituency": "Palakkad; Thrithala",
+      "district": "Alappuzha, Kollam, Malappuram, Palakkad, Pathanamthitta, Thiruvananthapuram",
+      "constituency": "Alappuzha, Alappuzha; Chathannoor, Aranmula, Kottarakkara, Nedumangad, Palakkad; Thrithala, Pathanapuram, Tanur",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.79573,
-        "lng": 76.07085
+        "lat": 9.44475,
+        "lng": 76.57112
       }
     },
     {
@@ -19692,11 +19778,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kannur",
-      "constituency": "Irikkur",
+      "constituency": "Irikkur, Kalliasseri, Mattannur, Payyannur, Taliparamba",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.22876,
-        "lng": 75.48332
+        "lat": 12.09895,
+        "lng": 75.44089
       }
     },
     {
@@ -19725,11 +19811,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Palakkad",
-      "constituency": "Tarur",
+      "constituency": "Alathur, Chittur, Nemmara, Palakkad, Tarur",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.75632,
-        "lng": 76.49808
+        "lat": 10.70511,
+        "lng": 76.5711
       }
     },
     {
@@ -19816,11 +19902,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kannur",
-      "constituency": "Thalassery",
+      "constituency": "Dharmadam, Kannur, Thalassery",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.76359,
-        "lng": 75.4819
+        "lat": 11.79451,
+        "lng": 75.63364
       }
     },
     {
@@ -19911,11 +19997,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kollam",
-      "constituency": "Kundara",
+      "constituency": "Karunagapally, Kundara",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.95475,
-        "lng": 76.66984
+        "lat": 9.01962,
+        "lng": 76.57559
       }
     },
     {
@@ -19972,12 +20058,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kollam",
-      "constituency": "Kottarakkara",
+      "district": "Alappuzha, Ernakulam, Kannur, Kollam, Thiruvananthapuram",
+      "constituency": "Chathannoor, Kalliasseri, Karunagapally, Kollam; Chavara, Kottarakkara, Kovalam, Kunnathur, Mavelikkara, Thiruvananthapuram, Thripunithura; Ernakulam",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.04093,
-        "lng": 76.7159
+        "lat": 9.2232,
+        "lng": 76.57788
       }
     },
     {
@@ -20006,11 +20092,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kasaragod",
-      "constituency": "Udma",
+      "constituency": "Manjeshwar; Udma; Trikaripur, Udma",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.38321,
-        "lng": 75.04808
+        "lat": 12.53143,
+        "lng": 74.97474
       }
     },
     {
@@ -20039,11 +20125,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kollam",
-      "constituency": "Kottarakkara",
+      "constituency": "Kottarakkara, Pathanapuram, Punalur",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.00442,
-        "lng": 76.77395
+        "lat": 9.01046,
+        "lng": 76.84651
       }
     },
     {
@@ -20159,11 +20245,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kannur",
-      "constituency": "Kalliasseri",
+      "constituency": "Azhikode, Kalliasseri, Kannur, Payyannur, Thalassery",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.03218,
-        "lng": 75.26378
+        "lat": 11.97034,
+        "lng": 75.34139
       }
     },
     {
@@ -20220,12 +20306,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kollam",
-      "constituency": "Chathannoor",
+      "district": "Ernakulam, Kollam, Pathanamthitta, Thiruvananthapuram",
+      "constituency": "Chathannoor, Chirayinkeezhu; Nemom, Ernakulam, Konni, Vamanapuram",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.86327,
-        "lng": 76.71469
+        "lat": 8.99546,
+        "lng": 76.72152
       }
     },
     {
@@ -20283,11 +20369,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kollam",
-      "constituency": "Kundara",
+      "constituency": "Chathannoor, Chathannoor; Eravipuram, Eravipuram, Kollam, Kollam; Eravipuram, Kundara",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.93957,
-        "lng": 76.6953
+        "lat": 8.8981,
+        "lng": 76.66665
       }
     },
     {
@@ -20373,12 +20459,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thiruvananthapuram",
-      "constituency": "Attingal",
+      "district": "Alappuzha, Thiruvananthapuram",
+      "constituency": "Alappuzha, Attingal",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.68926,
-        "lng": 76.77453
+        "lat": 9.28778,
+        "lng": 76.47927
       }
     },
     {
@@ -20406,12 +20492,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kasaragod",
-      "constituency": "Udma",
+      "district": "Ernakulam, Kasaragod",
+      "constituency": "Ernakulam, Kasaragod, Paravur, Trikaripur, Udma, Udma; Trikaripur",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.37312,
-        "lng": 75.05791
+        "lat": 12.13795,
+        "lng": 75.18046
       }
     },
     {
@@ -20439,12 +20525,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kollam",
-      "constituency": "Chathannoor",
+      "district": "Ernakulam, Kollam, Pathanamthitta, Thiruvananthapuram",
+      "constituency": "Chathannoor, Chirayinkeezhu; Nemom, Ernakulam, Konni, Vamanapuram",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.86327,
-        "lng": 76.71469
+        "lat": 8.99546,
+        "lng": 76.72152
       }
     },
     {
@@ -20530,12 +20616,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Malappuram",
-      "constituency": "Tanur, Thavanur",
+      "district": "Kollam, Malappuram, Palakkad, Pathanamthitta",
+      "constituency": "Aranmula, Karunagapally, Kongad, Malappuram, Tanur, Thavanur",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.87478,
-        "lng": 75.97353
+        "lat": 10.66998,
+        "lng": 76.11437
       }
     },
     {
@@ -20621,12 +20707,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kollam",
-      "constituency": "Kottarakkara",
+      "district": "Alappuzha, Ernakulam, Kannur, Kollam, Thiruvananthapuram",
+      "constituency": "Chathannoor, Kalliasseri, Karunagapally, Kollam; Chavara, Kottarakkara, Kovalam, Kunnathur, Mavelikkara, Thiruvananthapuram, Thripunithura; Ernakulam",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.04093,
-        "lng": 76.7159
+        "lat": 9.2232,
+        "lng": 76.57788
       }
     },
     {
@@ -20655,11 +20741,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thiruvananthapuram",
-      "constituency": "Parassala",
+      "constituency": "Attingal, Kattakkada, Neyyattinkara, Parassala, Varkala",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.42867,
-        "lng": 77.19543
+        "lat": 8.49979,
+        "lng": 77.07869
       }
     },
     {
@@ -20688,11 +20774,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Malappuram",
-      "constituency": "Thavanur",
+      "constituency": "Malappuram, Thavanur, Thavanur; Tirur, Tirurangadi",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.80445,
-        "lng": 75.9217
+        "lat": 10.85604,
+        "lng": 75.90707
       }
     },
     {
@@ -20750,11 +20836,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thiruvananthapuram",
-      "constituency": "Thiruvananthapuram",
+      "constituency": "Chirayinkeezhu, Thiruvananthapuram, Varkala",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.62259,
-        "lng": 76.79728
+        "lat": 8.6104,
+        "lng": 76.80899
       }
     },
     {
@@ -20845,11 +20931,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kollam",
-      "constituency": "Kollam",
+      "constituency": "Chathannoor, Eravipuram, Kollam, Kollam; Eravipuram",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.88486,
-        "lng": 76.57016
+        "lat": 8.87645,
+        "lng": 76.61059
       }
     },
     {
@@ -20878,11 +20964,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thrissur",
-      "constituency": "Guruvayoor",
+      "constituency": "Guruvayoor, Kaipamangalam, Kodungallur, Manalur",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.65775,
-        "lng": 76.65422
+        "lat": 10.53477,
+        "lng": 76.46587
       }
     },
     {
@@ -20911,11 +20997,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Alappuzha",
-      "constituency": "Haripad",
+      "constituency": "Alappuzha, Aroor, Haripad, Kuttanad, Kuttanad; Ambalappuzha, Kuttanad; Haripad",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.25997,
-        "lng": 76.4502
+        "lat": 9.36746,
+        "lng": 76.42512
       }
     },
     {
@@ -20973,11 +21059,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kozhikode",
-      "constituency": "Koyilandy",
+      "constituency": "Elathur, Elathur; Kozhikode South, Koyilandy, Kozhikode South",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.51277,
-        "lng": 75.61086
+        "lat": 11.43587,
+        "lng": 75.66914
       }
     },
     {
@@ -21034,12 +21120,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kannur",
-      "constituency": "Thalassery",
+      "district": "Kannur, Kasaragod, Thiruvananthapuram, Thrissur",
+      "constituency": "Chirayinkeezhu, Guruvayoor, Manjeshwar, Thalassery",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.72407,
-        "lng": 75.5126
+        "lat": 11.06141,
+        "lng": 75.74573
       }
     },
     {
@@ -21067,12 +21153,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thrissur",
-      "constituency": "Chalakudy",
+      "district": "Kollam, Thiruvananthapuram, Thrissur",
+      "constituency": "Attingal, Chadayamangalam, Chalakudy, Chathannoor, Kollam",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.30604,
-        "lng": 76.33958
+        "lat": 9.39824,
+        "lng": 76.60602
       }
     },
     {
@@ -21361,12 +21447,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kozhikode",
-      "constituency": "Beypore; Kozhikode South",
+      "district": "Kozhikode, Malappuram",
+      "constituency": "Beypore, Beypore; Kozhikode South, Ponnani, Tanur, Tirurangadi, Vallikunnu",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.18019,
-        "lng": 75.85367
+        "lat": 11.08042,
+        "lng": 75.99202
       }
     },
     {
@@ -21398,8 +21484,8 @@
       "constituency": "Eravipuram",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.86801,
-        "lng": 76.59998
+        "lat": 8.86044,
+        "lng": 76.60761
       }
     },
     {
@@ -21746,12 +21832,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Pathanamthitta",
-      "constituency": "Adoor",
+      "district": "Alappuzha, Pathanamthitta, Thiruvananthapuram, Thrissur",
+      "constituency": "Adoor, Aranmula, Cherthala, Chirayinkeezhu, Kunnamkulam, Varkala",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.15727,
-        "lng": 76.73289
+        "lat": 9.31217,
+        "lng": 76.61188
       }
     },
     {
@@ -21779,9 +21865,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Alappuzha, Ernakulam, Kannur, Kasaragod, Kollam, Kottayam, Kozhikode, Malappuram, Palakkad, Pathanamthitta, Thiruvananthapuram, Thrissur",
+      "constituency": "Adoor, Aluva, Aranmula, Beypore, Chadayamangalam, Chalakudy, Chathannoor, Chittur, Eravipuram, Ernakulam, Guruvayoor, Kaipamangalam, Kalliasseri, Kanhangad, Kanjirappally, Kannur, Karunagapally, Kayamkulam, Kollam, Kottarakkara, Kottayam, Koyilandy, Kozhikode North, Kunnamkulam, Kunnathur, Kuthuparamba, Manjeri, Mannarkkad, Muvattupuzha, Nadapuram, Nedumangad, Ottappalam, Pala, Paravur, Payyannur, Peravoor, Perinthalmanna, Piravom, Ranni, Tarur, Thiruvalla, Thiruvananthapuram, Thrissur, Trikaripur, Vengara, Wadakkanchery",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 10.184,
+        "lng": 76.30409
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0696",
@@ -21871,11 +21961,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thiruvananthapuram",
-      "constituency": "Vattiyoorkavu",
+      "constituency": "Attingal; Varkala, Kovalam, Vamanapuram, Varkala, Vattiyoorkavu",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.53013,
-        "lng": 76.98893
+        "lat": 8.63893,
+        "lng": 76.89148
       }
     },
     {
@@ -21963,7 +22053,11 @@
       "source_locator": "KIIFB prjStatus.jsp",
       "district": null,
       "constituency": null,
-      "open_flags": []
+      "open_flags": [],
+      "coordinates": {
+        "lat": 8.52323,
+        "lng": 76.94123
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0702",
@@ -21991,11 +22085,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kannur",
-      "constituency": "Kalliasseri",
+      "constituency": "Kalliasseri, Kuthuparamba, Mattannur, Taliparamba",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.97428,
-        "lng": 75.28243
+        "lat": 11.95088,
+        "lng": 75.39512
       }
     },
     {
@@ -22027,8 +22121,8 @@
       "constituency": "Nilambur",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.3314,
-        "lng": 76.31236
+        "lat": 11.3452,
+        "lng": 76.31187
       }
     },
     {
@@ -22242,8 +22336,8 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thiruvananthapuram",
-      "constituency": "Kazhakoottam",
+      "district": "Idukki, Thiruvananthapuram",
+      "constituency": "Idukki, Kazhakoottam",
       "open_flags": [],
       "coordinates": {
         "lat": 8.54592,
@@ -22275,12 +22369,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Palakkad",
-      "constituency": "Ottappalam",
+      "district": "Palakkad, Thrissur",
+      "constituency": "Ottappalam, Thrissur",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.90355,
-        "lng": 76.43474
+        "lat": 10.72905,
+        "lng": 76.3297
       }
     },
     {
@@ -22342,11 +22436,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thiruvananthapuram",
-      "constituency": "Kazhakoottam",
+      "constituency": "Attingal; Kazhakoottam, Kazhakoottam",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.61788,
-        "lng": 76.85508
+        "lat": 8.61777,
+        "lng": 76.85538
       }
     },
     {
@@ -22437,11 +22531,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kasaragod",
-      "constituency": "Trikaripur",
+      "constituency": "Kasaragod, Trikaripur",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.33101,
-        "lng": 75.30898
+        "lat": 12.4245,
+        "lng": 75.16031
       }
     },
     {
@@ -22593,12 +22687,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Alappuzha",
-      "constituency": "Cherthala",
+      "district": "Alappuzha, Kannur",
+      "constituency": "Cherthala, Peravoor, Thalassery",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.68192,
-        "lng": 76.3401
+        "lat": 10.55625,
+        "lng": 76.0433
       }
     },
     {
@@ -22693,11 +22787,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Malappuram",
-      "constituency": "Kondotty",
+      "constituency": "Kondotty, Manjeri",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.2472,
-        "lng": 75.95267
+        "lat": 11.18509,
+        "lng": 76.03741
       }
     },
     {
@@ -22820,8 +22914,8 @@
       "constituency": "Thiruvananthapuram",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.17963,
-        "lng": 75.85522
+        "lat": 10.61285,
+        "lng": 76.0887
       }
     },
     {
@@ -22850,11 +22944,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Pathanamthitta",
-      "constituency": "Ranni",
+      "constituency": "Adoor; Aranmula, Konni, Ranni",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.42024,
-        "lng": 76.70673
+        "lat": 9.29877,
+        "lng": 76.7616
       }
     },
     {
@@ -22883,11 +22977,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kozhikode",
-      "constituency": "Thiruvambady",
+      "constituency": "Nadapuram, Thiruvambady, Vatakara",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.26688,
-        "lng": 75.98986
+        "lat": 11.55696,
+        "lng": 75.70172
       }
     },
     {
@@ -22915,12 +23009,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Alappuzha",
-      "constituency": "Chengannur",
+      "district": "Alappuzha, Pathanamthitta",
+      "constituency": "Chengannur, Thiruvalla",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.31553,
-        "lng": 76.61811
+        "lat": 9.33786,
+        "lng": 76.62301
       }
     },
     {
@@ -22949,11 +23043,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kozhikode",
-      "constituency": "Kozhikode South",
+      "constituency": "Kozhikode South, Kunnamangalam, Nadapuram",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.24574,
-        "lng": 75.78886
+        "lat": 11.35,
+        "lng": 75.80836
       }
     },
     {
@@ -23077,11 +23171,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kannur",
-      "constituency": "Taliparamba",
+      "constituency": "Peravoor, Taliparamba",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.04941,
-        "lng": 75.36977
+        "lat": 11.99899,
+        "lng": 75.49122
       }
     },
     {
@@ -23143,11 +23237,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kasaragod",
-      "constituency": "Kasaragod",
+      "constituency": "Kanhangad, Kasaragod, Udma",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.55547,
-        "lng": 74.96218
+        "lat": 12.46703,
+        "lng": 75.10279
       }
     },
     {
@@ -23176,11 +23270,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Palakkad",
-      "constituency": "Kongad",
+      "constituency": "Kongad, Malampuzha, Nemmara, Thrithala",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.93325,
-        "lng": 76.49131
+        "lat": 10.82041,
+        "lng": 76.47717
       }
     },
     {
@@ -23208,12 +23302,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Ernakulam",
-      "constituency": "Kothamangalam",
+      "district": "Ernakulam, Idukki",
+      "constituency": "Kothamangalam, Udumbanchola",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.02798,
-        "lng": 76.65741
+        "lat": 9.99871,
+        "lng": 76.87677
       }
     },
     {
@@ -23304,11 +23398,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thiruvananthapuram",
-      "constituency": "Attingal",
+      "constituency": "Attingal, Neyyattinkara, Varkala",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.69705,
-        "lng": 76.81317
+        "lat": 8.60244,
+        "lng": 76.90025
       }
     },
     {
@@ -23456,12 +23550,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kollam",
-      "constituency": "Punalur",
+      "district": "Kannur, Kollam, Kozhikode",
+      "constituency": "Kozhikode North, Pathanapuram, Perambra, Punalur, Thalassery",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.01917,
-        "lng": 76.92472
+        "lat": 9.4649,
+        "lng": 76.70144
       }
     },
     {
@@ -23489,9 +23583,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Ernakulam, Kozhikode, Thiruvananthapuram",
+      "constituency": "Kochi, Kozhikode North, Vattiyoorkavu",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 8.5107,
+        "lng": 76.95937
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0750",
@@ -23518,9 +23616,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Kannur",
+      "constituency": "Kuthuparamba",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 11.83126,
+        "lng": 75.56604
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0751",
@@ -23762,12 +23864,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Ernakulam",
-      "constituency": "Kalamassery; Aluva",
+      "district": "Ernakulam, Kannur",
+      "constituency": "Aluva, Kalamassery, Kalamassery; Aluva, Kannur",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.05325,
-        "lng": 76.35497
+        "lat": 10.27918,
+        "lng": 76.23201
       }
     },
     {
@@ -23886,12 +23988,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kannur",
-      "constituency": "Payyannur; Kalliasseri",
+      "district": "Alappuzha, Ernakulam, Kannur, Kozhikode, Malappuram, Pathanamthitta, Thrissur",
+      "constituency": "Adoor, Balusseri, Chelakkara, Haripad, Kalliasseri, Kothamangalam, Nilambur, Payyannur; Kalliasseri, Wandoor",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.04017,
-        "lng": 75.29747
+        "lat": 10.79546,
+        "lng": 76.13355
       }
     },
     {
@@ -23981,8 +24083,8 @@
       "constituency": "Kuthuparamba, Ranni",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.6007,
-        "lng": 76.17228
+        "lat": 10.19051,
+        "lng": 76.37436
       }
     },
     {
@@ -24382,12 +24484,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kozhikode",
-      "constituency": "Vatakara",
+      "district": "Kozhikode, Malappuram",
+      "constituency": "Balusseri, Elathur, Koyilandy, Kozhikode South, Kunnamangalam, Kuttiady, Nadapuram, Perambra, Vallikunnu, Vatakara",
       "open_flags": [],
       "coordinates": {
-        "lat": 11.69789,
-        "lng": 75.54578
+        "lat": 11.50155,
+        "lng": 75.71156
       }
     },
     {
@@ -24415,9 +24517,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Ernakulam, Kozhikode, Thiruvananthapuram",
+      "constituency": "Kochi, Kozhikode North, Vattiyoorkavu",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 8.5107,
+        "lng": 76.95937
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0780",
@@ -24473,9 +24579,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Kannur",
+      "constituency": "Thalassery",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 11.75733,
+        "lng": 75.48011
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0782",
@@ -24966,7 +25076,7 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Malappuram",
-      "constituency": "Thavanur",
+      "constituency": "Ponnani, Thavanur",
       "open_flags": [],
       "coordinates": {
         "lat": 10.79333,
@@ -25091,9 +25201,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Ernakulam, Kozhikode, Thiruvananthapuram",
+      "constituency": "Kochi, Kozhikode North, Vattiyoorkavu",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 8.5107,
+        "lng": 76.95937
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0802",
@@ -25121,7 +25235,7 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kannur",
-      "constituency": "Taliparamba",
+      "constituency": "Payyannur, Peravoor, Taliparamba",
       "open_flags": [],
       "coordinates": {
         "lat": 12.21414,
@@ -25153,12 +25267,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Idukki",
-      "constituency": "Idukki",
+      "district": "Alappuzha, Ernakulam, Idukki, Kollam, Kottayam",
+      "constituency": "Alappuzha, Idukki, Kaduthuruthy, Kollam, Kothamangalam, Kottayam, Thodupuzha, Udumbanchola, Vypin",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.87852,
-        "lng": 77.05491
+        "lat": 9.78735,
+        "lng": 76.66
       }
     },
     {
@@ -25630,11 +25744,11 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thiruvananthapuram",
-      "constituency": "Thiruvananthapuram",
+      "constituency": "Attingal, Chirayinkeezhu; Attingal, Kattakkada; Attingal, Kattakkada; Thiruvananthapuram, Kovalam, Nedumangad, Nemom, Thiruvananthapuram, Varkala",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.48713,
-        "lng": 77.04035
+        "lat": 8.59763,
+        "lng": 76.89748
       }
     },
     {
@@ -25691,12 +25805,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kollam",
-      "constituency": "Pathanapuram",
+      "district": "Idukki, Kannur, Kollam, Thiruvananthapuram",
+      "constituency": "Azhikode, Idukki, Kazhakoottam, Kazhakoottam; Nedumangad, Pathanapuram",
       "open_flags": [],
       "coordinates": {
-        "lat": 8.9871,
-        "lng": 76.83573
+        "lat": 9.67163,
+        "lng": 76.53604
       }
     },
     {
@@ -25873,9 +25987,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Kollam",
+      "constituency": "Kottarakkara",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 9.00339,
+        "lng": 76.77357
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0828",
@@ -26287,8 +26405,8 @@
       "constituency": "Kanhangad",
       "open_flags": [],
       "coordinates": {
-        "lat": 12.33827,
-        "lng": 75.2277
+        "lat": 12.31933,
+        "lng": 75.22096
       }
     },
     {
@@ -26645,8 +26763,8 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kollam",
-      "constituency": "Chadayamangalam,Chathannoor",
+      "district": "Idukki, Kollam, Thiruvananthapuram",
+      "constituency": "Chadayamangalam,Chathannoor, Udumbanchola, Vamanapuram",
       "open_flags": [],
       "coordinates": {
         "lat": 8.59846,
@@ -26679,7 +26797,7 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Palakkad",
-      "constituency": "Malampuzha",
+      "constituency": "Malampuzha, Pattambi",
       "open_flags": [
         "overdue"
       ],
@@ -26775,8 +26893,8 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kollam",
-      "constituency": "Chadayamangalam,Chathannoor",
+      "district": "Idukki, Kollam, Thiruvananthapuram",
+      "constituency": "Chadayamangalam,Chathannoor, Udumbanchola, Vamanapuram",
       "open_flags": [],
       "coordinates": {
         "lat": 8.59846,
@@ -26895,8 +27013,8 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kollam",
-      "constituency": "Chadayamangalam,Chathannoor",
+      "district": "Idukki, Kollam, Thiruvananthapuram",
+      "constituency": "Chadayamangalam,Chathannoor, Udumbanchola, Vamanapuram",
       "open_flags": [],
       "coordinates": {
         "lat": 8.59846,
@@ -26928,9 +27046,15 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Kozhikode",
+      "constituency": "Kunnamangalam",
+      "open_flags": [
+        "overdue"
+      ],
+      "coordinates": {
+        "lat": 11.29207,
+        "lng": 75.96205
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0863",
@@ -27079,9 +27203,15 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Pathanamthitta",
+      "constituency": "Ranni",
+      "open_flags": [
+        "overdue"
+      ],
+      "coordinates": {
+        "lat": 9.44237,
+        "lng": 76.81399
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0868",
@@ -27350,9 +27480,15 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Kannur",
+      "constituency": "Dharmadam, Kuthuparamba; Nadapuram; Kuthuparamba,Nadapuram, Mattannur",
+      "open_flags": [
+        "overdue"
+      ],
+      "coordinates": {
+        "lat": 11.81486,
+        "lng": 75.46889
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0877",
@@ -27437,9 +27573,15 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Alappuzha, Pathanamthitta",
+      "constituency": "Alappuzha, Kuttanad, Thiruvalla",
+      "open_flags": [
+        "overdue"
+      ],
+      "coordinates": {
+        "lat": 9.39801,
+        "lng": 76.40862
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0880",
@@ -27495,8 +27637,8 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Palakkad",
-      "constituency": "Alathur",
+      "district": "Kottayam, Palakkad",
+      "constituency": "Alathur, Vaikom",
       "open_flags": [
         "overdue"
       ],
@@ -27559,9 +27701,15 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Alappuzha, Pathanamthitta",
+      "constituency": "Alappuzha, Kuttanad, Thiruvalla",
+      "open_flags": [
+        "overdue"
+      ],
+      "coordinates": {
+        "lat": 9.39801,
+        "lng": 76.40862
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0884",
@@ -27675,9 +27823,15 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Alappuzha, Pathanamthitta",
+      "constituency": "Alappuzha, Kuttanad, Thiruvalla",
+      "open_flags": [
+        "overdue"
+      ],
+      "coordinates": {
+        "lat": 9.39801,
+        "lng": 76.40862
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0888",
@@ -28087,9 +28241,15 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Alappuzha",
+      "constituency": "Alappuzha, Ambalappuzha",
+      "open_flags": [
+        "overdue"
+      ],
+      "coordinates": {
+        "lat": 9.50071,
+        "lng": 76.34447
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0902",
@@ -28406,8 +28566,8 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Alappuzha",
-      "constituency": "Aroor; Aroor,Cherthala",
+      "district": "Alappuzha, Ernakulam, Thiruvananthapuram",
+      "constituency": "Aroor; Aroor,Cherthala, Kochi, Neyyattinkara, Parassala",
       "open_flags": [],
       "coordinates": {
         "lat": 9.71134,
@@ -28565,8 +28725,8 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Alappuzha",
-      "constituency": "Aroor; Aroor,Cherthala",
+      "district": "Alappuzha, Ernakulam, Thiruvananthapuram",
+      "constituency": "Aroor; Aroor,Cherthala, Kochi, Neyyattinkara, Parassala",
       "open_flags": [],
       "coordinates": {
         "lat": 9.71134,
@@ -28598,9 +28758,15 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Alappuzha",
+      "constituency": "Alappuzha, Ambalappuzha",
+      "open_flags": [
+        "overdue"
+      ],
+      "coordinates": {
+        "lat": 9.50071,
+        "lng": 76.34447
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0919",
@@ -28627,8 +28793,8 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Palakkad",
-      "constituency": "Alathur",
+      "district": "Kottayam, Palakkad",
+      "constituency": "Alathur, Vaikom",
       "open_flags": [
         "overdue"
       ],
@@ -28691,9 +28857,15 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Alappuzha, Pathanamthitta",
+      "constituency": "Alappuzha, Kuttanad, Thiruvalla",
+      "open_flags": [
+        "overdue"
+      ],
+      "coordinates": {
+        "lat": 9.39801,
+        "lng": 76.40862
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0922",
@@ -28807,9 +28979,11 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kannur",
-      "constituency": "Mattannur",
-      "open_flags": [],
+      "district": "Kannur, Kottayam",
+      "constituency": "Mattannur, Vaikom",
+      "open_flags": [
+        "overdue"
+      ],
       "coordinates": {
         "lat": 11.92855,
         "lng": 75.51235
@@ -28869,12 +29043,14 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thrissur",
-      "constituency": "Kunnamkulam",
-      "open_flags": [],
+      "district": "Ernakulam, Kozhikode, Palakkad, Thrissur",
+      "constituency": "Kunnamkulam, Kuttiady, Muvattupuzha, Shornur; Ottappalam; Shornur,Ottappalam",
+      "open_flags": [
+        "overdue"
+      ],
       "coordinates": {
-        "lat": 10.66,
-        "lng": 76.11489
+        "lat": 10.67761,
+        "lng": 76.15224
       }
     },
     {
@@ -29225,9 +29401,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Thiruvananthapuram",
+      "constituency": "Parassala",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 8.41951,
+        "lng": 77.16041
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0940",
@@ -29313,8 +29493,10 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thrissur",
-      "constituency": "Wadakkanchery; Ollur; Thrissur",
-      "open_flags": [],
+      "constituency": "Ollur, Wadakkanchery; Ollur; Thrissur",
+      "open_flags": [
+        "overdue"
+      ],
       "coordinates": {
         "lat": 10.57538,
         "lng": 76.2592
@@ -29403,9 +29585,15 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Ernakulam, Thrissur",
+      "constituency": "Kothamangalam, Kunnathunad, Ollur",
+      "open_flags": [
+        "overdue"
+      ],
+      "coordinates": {
+        "lat": 10.5107,
+        "lng": 76.25994
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0946",
@@ -29877,10 +30065,12 @@
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Pathanamthitta",
       "constituency": "Konni",
-      "open_flags": [],
+      "open_flags": [
+        "overdue"
+      ],
       "coordinates": {
-        "lat": 9.14717,
-        "lng": 76.97043
+        "lat": 9.27024,
+        "lng": 76.96468
       }
     },
     {
@@ -30053,9 +30243,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Kozhikode",
+      "constituency": "Kunnamangalam; Koduvally",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 11.33089,
+        "lng": 75.91711
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0968",
@@ -30430,8 +30624,8 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thiruvananthapuram",
-      "constituency": "Parassala",
+      "district": "Kozhikode, Thiruvananthapuram",
+      "constituency": "Kozhikode South, Parassala",
       "open_flags": [
         "overdue"
       ],
@@ -30620,8 +30814,8 @@
       "constituency": "Shornur; Ottappalam; Shornur,Ottappalam",
       "open_flags": [],
       "coordinates": {
-        "lat": 10.89967,
-        "lng": 76.40189
+        "lat": 10.91903,
+        "lng": 76.36598
       }
     },
     {
@@ -30736,9 +30930,15 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Pathanamthitta",
+      "constituency": "Adoor",
+      "open_flags": [
+        "overdue"
+      ],
+      "coordinates": {
+        "lat": 9.16477,
+        "lng": 76.69112
+      }
     },
     {
       "project_id": "KIIFB-PRJ-0991",
@@ -31172,7 +31372,7 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kannur",
-      "constituency": "Kuthuparamba",
+      "constituency": "Kuthuparamba, Payyannur,Kalliasseri, Payyannur; Kalliasseri",
       "open_flags": [
         "overdue"
       ],
@@ -31645,9 +31845,11 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kozhikode",
-      "constituency": "Thiruvambady",
-      "open_flags": [],
+      "district": "Idukki, Kozhikode",
+      "constituency": "Devikulam, Idukki, Thiruvambady, Udumbanchola",
+      "open_flags": [
+        "overdue"
+      ],
       "coordinates": {
         "lat": 11.41011,
         "lng": 76.04381
@@ -31678,9 +31880,11 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Palakkad",
-      "constituency": "Alathur",
-      "open_flags": [],
+      "district": "Kasaragod, Palakkad",
+      "constituency": "Alathur, Kanhangad",
+      "open_flags": [
+        "overdue"
+      ],
       "coordinates": {
         "lat": 12.33436,
         "lng": 75.21862
@@ -31744,8 +31948,8 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kannur",
-      "constituency": "Kalliasseri; Taliparamba; Kalliasseri,Taliparamba",
+      "district": "Kannur, Kozhikode",
+      "constituency": "Kalliasseri; Taliparamba; Kalliasseri,Taliparamba, Kozhikode North",
       "open_flags": [
         "overdue"
       ],
@@ -31866,8 +32070,8 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thiruvananthapuram",
-      "constituency": "Aruvikkara",
+      "district": "Ernakulam, Thiruvananthapuram",
+      "constituency": "Aruvikkara, Muvattupuzha",
       "open_flags": [
         "overdue"
       ],
@@ -31903,10 +32107,12 @@
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Kottayam",
       "constituency": "Kanjirappally",
-      "open_flags": [],
+      "open_flags": [
+        "overdue"
+      ],
       "coordinates": {
         "lat": 9.5207,
-        "lng": 76.69613
+        "lng": 76.69615
       }
     },
     {
@@ -32311,9 +32517,15 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Malappuram, Thiruvananthapuram, Thrissur",
+      "constituency": "Chalakudy, Kattakkada, Wandoor",
+      "open_flags": [
+        "overdue"
+      ],
+      "coordinates": {
+        "lat": 9.9475,
+        "lng": 76.51492
+      }
     },
     {
       "project_id": "KIIFB-PRJ-1044",
@@ -32340,8 +32552,8 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kannur",
-      "constituency": "Kalliasseri; Taliparamba; Kalliasseri,Taliparamba",
+      "district": "Kannur, Kozhikode",
+      "constituency": "Kalliasseri; Taliparamba; Kalliasseri,Taliparamba, Kozhikode North",
       "open_flags": [
         "overdue"
       ],
@@ -32405,8 +32617,10 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thiruvananthapuram",
-      "constituency": "Varkala; Varkala,Chirayinkeezhu",
-      "open_flags": [],
+      "constituency": "Parassala, Varkala; Varkala,Chirayinkeezhu",
+      "open_flags": [
+        "overdue"
+      ],
       "coordinates": {
         "lat": 8.38708,
         "lng": 77.14469
@@ -32582,9 +32796,15 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Kollam",
+      "constituency": "Karunagapally",
+      "open_flags": [
+        "overdue"
+      ],
+      "coordinates": {
+        "lat": 9.13773,
+        "lng": 76.51546
+      }
     },
     {
       "project_id": "KIIFB-PRJ-1053",
@@ -32669,9 +32889,15 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Malappuram, Thiruvananthapuram, Thrissur",
+      "constituency": "Chalakudy, Kattakkada, Wandoor",
+      "open_flags": [
+        "overdue"
+      ],
+      "coordinates": {
+        "lat": 9.9475,
+        "lng": 76.51492
+      }
     },
     {
       "project_id": "KIIFB-PRJ-1056",
@@ -33463,8 +33689,10 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Malappuram",
-      "constituency": "Nilambur,Wandoor",
-      "open_flags": [],
+      "constituency": "Nilambur, Nilambur,Wandoor",
+      "open_flags": [
+        "overdue"
+      ],
       "coordinates": {
         "lat": 11.1281,
         "lng": 76.34108
@@ -33528,9 +33756,15 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Ernakulam, Thrissur",
+      "constituency": "Kothamangalam, Kunnathunad, Ollur",
+      "open_flags": [
+        "overdue"
+      ],
+      "coordinates": {
+        "lat": 10.5107,
+        "lng": 76.25994
+      }
     },
     {
       "project_id": "KIIFB-PRJ-1085",
@@ -33702,9 +33936,11 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kannur",
-      "constituency": "Mattannur",
-      "open_flags": [],
+      "district": "Kannur, Kottayam",
+      "constituency": "Mattannur, Vaikom",
+      "open_flags": [
+        "overdue"
+      ],
       "coordinates": {
         "lat": 11.92855,
         "lng": 75.51235
@@ -33735,9 +33971,15 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Malappuram, Thiruvananthapuram, Thrissur",
+      "constituency": "Chalakudy, Kattakkada, Wandoor",
+      "open_flags": [
+        "overdue"
+      ],
+      "coordinates": {
+        "lat": 9.9475,
+        "lng": 76.51492
+      }
     },
     {
       "project_id": "KIIFB-PRJ-1092",
@@ -33938,8 +34180,8 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thiruvananthapuram",
-      "constituency": "Aruvikkara; Parassala",
+      "district": "Palakkad, Thiruvananthapuram",
+      "constituency": "Aruvikkara; Parassala, Mannarkkad",
       "open_flags": [
         "overdue"
       ],
@@ -34089,8 +34331,8 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thiruvananthapuram",
-      "constituency": "Aruvikkara; Parassala",
+      "district": "Palakkad, Thiruvananthapuram",
+      "constituency": "Aruvikkara; Parassala, Mannarkkad",
       "open_flags": [
         "overdue"
       ],
@@ -34360,12 +34602,12 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Ernakulam",
-      "constituency": "Piravom",
+      "district": "Ernakulam, Kasaragod, Palakkad",
+      "constituency": "Palakkad, Piravom, Udma",
       "open_flags": [],
       "coordinates": {
-        "lat": 9.87648,
-        "lng": 76.48749
+        "lat": 10.53471,
+        "lng": 76.12927
       }
     },
     {
@@ -34596,9 +34838,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Kollam",
+      "constituency": "Kundara",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 8.98673,
+        "lng": 76.67807
+      }
     },
     {
       "project_id": "KIIFB-PRJ-1121",
@@ -34654,9 +34900,15 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Ernakulam, Thrissur",
+      "constituency": "Kothamangalam, Kunnathunad, Ollur",
+      "open_flags": [
+        "overdue"
+      ],
+      "coordinates": {
+        "lat": 10.5107,
+        "lng": 76.25994
+      }
     },
     {
       "project_id": "KIIFB-PRJ-1123",
@@ -34978,8 +35230,10 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thiruvananthapuram",
-      "constituency": "Varkala; Varkala,Chirayinkeezhu",
-      "open_flags": [],
+      "constituency": "Parassala, Varkala; Varkala,Chirayinkeezhu",
+      "open_flags": [
+        "overdue"
+      ],
       "coordinates": {
         "lat": 8.38708,
         "lng": 77.14469
@@ -35039,8 +35293,8 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kollam",
-      "constituency": "Pathanapuram",
+      "district": "Kasaragod, Kollam",
+      "constituency": "Kasaragod, Pathanapuram",
       "open_flags": [],
       "coordinates": {
         "lat": 12.50934,
@@ -35163,9 +35417,11 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Malappuram",
-      "constituency": "Ernad",
-      "open_flags": [],
+      "district": "Malappuram, Thiruvananthapuram",
+      "constituency": "Ernad, Kazhakoottam",
+      "open_flags": [
+        "overdue"
+      ],
       "coordinates": {
         "lat": 8.50365,
         "lng": 76.91848
@@ -35283,8 +35539,8 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Pathanamthitta",
-      "constituency": "Ranni",
+      "district": "Pathanamthitta, Thiruvananthapuram",
+      "constituency": "Ranni, Vamanapuram",
       "open_flags": [
         "overdue"
       ],
@@ -35672,7 +35928,9 @@
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thrissur",
       "constituency": "Chalakudy",
-      "open_flags": [],
+      "open_flags": [
+        "overdue"
+      ],
       "coordinates": {
         "lat": 10.34871,
         "lng": 76.43315
@@ -35703,9 +35961,11 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Malappuram",
-      "constituency": "Ernad",
-      "open_flags": [],
+      "district": "Malappuram, Thiruvananthapuram",
+      "constituency": "Ernad, Kazhakoottam",
+      "open_flags": [
+        "overdue"
+      ],
       "coordinates": {
         "lat": 8.50365,
         "lng": 76.91848
@@ -36322,8 +36582,8 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Kollam",
-      "constituency": "Pathanapuram",
+      "district": "Kasaragod, Kollam",
+      "constituency": "Kasaragod, Pathanapuram",
       "open_flags": [],
       "coordinates": {
         "lat": 12.50934,
@@ -36355,9 +36615,11 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Pathanamthitta",
-      "constituency": "Konni",
-      "open_flags": [],
+      "district": "Kozhikode, Pathanamthitta, Thrissur",
+      "constituency": "Kaipamangalam, Konni, Kozhikode South, Nadapuram",
+      "open_flags": [
+        "overdue"
+      ],
       "coordinates": {
         "lat": 9.18368,
         "lng": 76.77303
@@ -36388,8 +36650,8 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Pathanamthitta",
-      "constituency": "Ranni",
+      "district": "Pathanamthitta, Thiruvananthapuram",
+      "constituency": "Ranni, Vamanapuram",
       "open_flags": [
         "overdue"
       ],
@@ -36424,11 +36686,13 @@
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
       "district": "Thiruvananthapuram",
-      "constituency": "Aruvikkara; Kattakkada",
-      "open_flags": [],
+      "constituency": "Aruvikkara; Kattakkada, Nedumangad",
+      "open_flags": [
+        "overdue"
+      ],
       "coordinates": {
-        "lat": 8.62072,
-        "lng": 76.98497
+        "lat": 8.61603,
+        "lng": 76.96621
       }
     },
     {
@@ -36605,9 +36869,11 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Palakkad",
-      "constituency": "Alathur",
-      "open_flags": [],
+      "district": "Kasaragod, Palakkad",
+      "constituency": "Alathur, Kanhangad",
+      "open_flags": [
+        "overdue"
+      ],
       "coordinates": {
         "lat": 12.33436,
         "lng": 75.21862
@@ -36841,12 +37107,14 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thrissur",
-      "constituency": "Kunnamkulam",
-      "open_flags": [],
+      "district": "Ernakulam, Kozhikode, Palakkad, Thrissur",
+      "constituency": "Kunnamkulam, Kuttiady, Muvattupuzha, Shornur; Ottappalam; Shornur,Ottappalam",
+      "open_flags": [
+        "overdue"
+      ],
       "coordinates": {
-        "lat": 10.66,
-        "lng": 76.11489
+        "lat": 10.67761,
+        "lng": 76.15224
       }
     },
     {
@@ -38875,9 +39143,15 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Kozhikode",
+      "constituency": "Kuttiady",
+      "open_flags": [
+        "overdue"
+      ],
+      "coordinates": {
+        "lat": 10.66,
+        "lng": 76.11489
+      }
     },
     {
       "project_id": "KIIFB-PRJ-1266",
@@ -40006,9 +40280,11 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Pathanamthitta",
-      "constituency": "Konni",
-      "open_flags": [],
+      "district": "Kozhikode, Pathanamthitta, Thrissur",
+      "constituency": "Kaipamangalam, Konni, Kozhikode South, Nadapuram",
+      "open_flags": [
+        "overdue"
+      ],
       "coordinates": {
         "lat": 9.18368,
         "lng": 76.77303
@@ -41112,8 +41388,8 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Malappuram",
-      "constituency": "Tanur",
+      "district": "Kannur, Kasaragod, Kozhikode, Malappuram",
+      "constituency": "Koyilandy, Payyannur, Tanur, Trikaripur",
       "open_flags": [],
       "coordinates": {
         "lat": 11.01449,
@@ -41725,9 +42001,11 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Pathanamthitta",
-      "constituency": "Konni",
-      "open_flags": [],
+      "district": "Kozhikode, Pathanamthitta, Thrissur",
+      "constituency": "Kaipamangalam, Konni, Kozhikode South, Nadapuram",
+      "open_flags": [
+        "overdue"
+      ],
       "coordinates": {
         "lat": 9.18368,
         "lng": 76.77303
@@ -41787,12 +42065,14 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": "Thrissur",
-      "constituency": "Kunnamkulam",
-      "open_flags": [],
+      "district": "Ernakulam, Kozhikode, Palakkad, Thrissur",
+      "constituency": "Kunnamkulam, Kuttiady, Muvattupuzha, Shornur; Ottappalam; Shornur,Ottappalam",
+      "open_flags": [
+        "overdue"
+      ],
       "coordinates": {
-        "lat": 10.66,
-        "lng": 76.11489
+        "lat": 10.67761,
+        "lng": 76.15224
       }
     },
     {
@@ -42725,9 +43005,13 @@
       },
       "source_id": "DS010",
       "source_locator": "KIIFB prjStatus.jsp",
-      "district": null,
-      "constituency": null,
-      "open_flags": []
+      "district": "Malappuram",
+      "constituency": "Ponnani; Malappuram",
+      "open_flags": [],
+      "coordinates": {
+        "lat": 10.7791,
+        "lng": 75.93126
+      }
     },
     {
       "project_id": "KIIFB-PRJ-1398",

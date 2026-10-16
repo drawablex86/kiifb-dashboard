@@ -97,26 +97,36 @@ def run_enrichment():
     print(f"Saved {len(geo_packages)} geo-tagged packages to {output_kanakku_packages_json}")
 
     # Index funding rows to connect project title to packages
+    # A single map_group can link to multiple packages under the same sub_project_code
+    pkgs_by_code = {}
+    for p in kanakku_packages:
+        c = p.get('code')
+        if c:
+            pkgs_by_code.setdefault(c, []).append(p)
+        sp = p.get('sub_project_code')
+        if sp:
+            pkgs_by_code.setdefault(sp, []).append(p)
+
     proj_to_geo = {}
     for row in kanakku_funding:
         pname = norm(row.get('project'))
         mg = row.get('map_group')
-        if pname and mg and mg in pkg_by_code:
-            pkg = pkg_by_code[mg]
-            dist = pkg.get('district')
-            const = pkg.get('constituencies')
-            lat = pkg.get('latitude')
-            lng = pkg.get('longitude')
-            flags = [f.strip() for f in pkg.get('open_flags', '').split(';') if f.strip()]
-            
-            if dist:
+        if pname and mg and mg in pkgs_by_code:
+            for pkg in pkgs_by_code[mg]:
+                dist = pkg.get('district')
+                const = pkg.get('constituencies')
+                lat = pkg.get('latitude')
+                lng = pkg.get('longitude')
+                flags = [f.strip() for f in pkg.get('open_flags', '').split(';') if f.strip()]
+
                 proj_to_geo.setdefault(pname, {
                     "districts": set(),
                     "constituencies": set(),
                     "flags": set(),
                     "coords": []
                 })
-                proj_to_geo[pname]["districts"].add(dist)
+                if dist:
+                    proj_to_geo[pname]["districts"].add(dist)
                 if const:
                     proj_to_geo[pname]["constituencies"].add(const)
                 if flags:
@@ -128,21 +138,74 @@ def run_enrichment():
     for pkg in kanakku_packages:
         tname = norm(pkg.get('title'))
         dist = pkg.get('district')
-        if tname and dist:
+        lat = pkg.get('latitude')
+        lng = pkg.get('longitude')
+        if tname and (dist or (lat and lng)):
             proj_to_geo.setdefault(tname, {
                 "districts": set(),
                 "constituencies": set(),
                 "flags": set(),
                 "coords": []
             })
-            proj_to_geo[tname]["districts"].add(dist)
+            if dist:
+                proj_to_geo[tname]["districts"].add(dist)
             if pkg.get('constituencies'):
                 proj_to_geo[tname]["constituencies"].add(pkg.get('constituencies'))
             flags = [f.strip() for f in pkg.get('open_flags', '').split(';') if f.strip()]
             if flags:
                 proj_to_geo[tname]["flags"].update(flags)
-            if pkg.get('latitude') and pkg.get('longitude'):
-                proj_to_geo[tname]["coords"].append((float(pkg['latitude']), float(pkg['longitude'])))
+            if lat and lng:
+                proj_to_geo[tname]["coords"].append((float(lat), float(lng)))
+
+    # High-precision fuzzy fallback matching for projects without coordinates
+    def clean_tokens(text):
+        if not text:
+            return set()
+        t = str(text).lower()
+        t = re.sub(r'\bgovt\b', 'government', t)
+        t = re.sub(r'\bhss\b', 'higher secondary school', t)
+        t = re.sub(r'\bhs\b', 'high school', t)
+        t = re.sub(r'\biti\b', 'industrial training institute', t)
+        t = re.sub(r'\bphc\b', 'primary health centre', t)
+        t = re.sub(r'\bchc\b', 'community health centre', t)
+        t = re.sub(r'\b(construction|setting|upgradation|improvement|improvements|providing|procurement|establishment|renovation|rehabilitation|development|strengthening|modernization|supply|installation|mitigating|handling|of|to|in|at|and|for|the|phase|stage|under|via)\b', ' ', t)
+        return set(re.findall(r'[a-z0-9]{3,}', t))
+
+    geo_packages_with_coords = [p for p in kanakku_packages if p.get('latitude') and p.get('longitude')]
+    pkg_tokens_map = {}
+    for p in geo_packages_with_coords:
+        toks = clean_tokens(p.get('title'))
+        if len(toks) >= 2:
+            pkg_tokens_map[p['code']] = (p, toks)
+
+    def get_geo_info_for_name(raw_name):
+        pname = norm(raw_name)
+        if pname in proj_to_geo and (proj_to_geo[pname]["districts"] or proj_to_geo[pname]["coords"]):
+            return proj_to_geo[pname]
+
+        # Fuzzy fallback against packages
+        toks = clean_tokens(raw_name)
+        if len(toks) >= 2:
+            best_j = 0
+            best_pkg = None
+            for code, (pkg, p_toks) in pkg_tokens_map.items():
+                j = len(toks & p_toks) / len(toks | p_toks)
+                if j > best_j:
+                    best_j = j
+                    best_pkg = pkg
+            if best_j >= 0.70 and best_pkg:
+                dist = best_pkg.get("district")
+                const = best_pkg.get("constituencies")
+                lat = best_pkg.get("latitude")
+                lng = best_pkg.get("longitude")
+                flags = [f.strip() for f in best_pkg.get("open_flags", "").split(";") if f.strip()]
+                return {
+                    "districts": {dist} if dist else set(),
+                    "constituencies": {const} if const else set(),
+                    "flags": set(flags),
+                    "coords": [(float(lat), float(lng))] if (lat and lng) else []
+                }
+        return None
 
     # Enrich kiifb_projects.json
     print("Enriching kiifb_projects.json...")
@@ -151,11 +214,10 @@ def run_enrichment():
 
     enriched_count = 0
     for p in kiifb_data.get('projects', []):
-        pname = norm(p.get('project_name'))
-        if pname in proj_to_geo:
-            info = proj_to_geo[pname]
-            p["district"] = ", ".join(sorted(info["districts"]))
-            p["constituency"] = ", ".join(sorted(info["constituencies"]))
+        info = get_geo_info_for_name(p.get('project_name'))
+        if info and (info["districts"] or info["coords"]):
+            p["district"] = ", ".join(sorted(info["districts"])) if info["districts"] else None
+            p["constituency"] = ", ".join(sorted(info["constituencies"])) if info["constituencies"] else None
             p["open_flags"] = sorted(list(info["flags"]))
             if info["coords"]:
                 avg_lat = sum(c[0] for c in info["coords"]) / len(info["coords"])
@@ -179,11 +241,10 @@ def run_enrichment():
     u_enriched = 0
     for r in unified_data.get('records', []):
         if r.get('entity_type') == 'project_sanction':
-            pname = norm(r.get('name'))
-            if pname in proj_to_geo:
-                info = proj_to_geo[pname]
-                r["district"] = ", ".join(sorted(info["districts"]))
-                r["constituency"] = ", ".join(sorted(info["constituencies"]))
+            info = get_geo_info_for_name(r.get('name'))
+            if info and (info["districts"] or info["coords"]):
+                r["district"] = ", ".join(sorted(info["districts"])) if info["districts"] else None
+                r["constituency"] = ", ".join(sorted(info["constituencies"])) if info["constituencies"] else None
                 r["open_flags"] = sorted(list(info["flags"]))
                 if info["coords"]:
                     avg_lat = sum(c[0] for c in info["coords"]) / len(info["coords"])

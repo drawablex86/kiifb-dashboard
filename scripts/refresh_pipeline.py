@@ -37,15 +37,30 @@ def verify_raw_sources():
             continue
         p = PROJECT_ROOT / rel_path
         if not p.exists():
-            print(f"    [WARN] File not found: {rel_path}")
-            continue
-        actual_hash = compute_sha256(p)
-        expected_hash = src.get("sha256")
-        if actual_hash == expected_hash:
-            print(f"    [OK] {src['source_id']}: {p.name} ({actual_hash[:12]}...)")
-        else:
-            print(f"    [FAIL] Hash mismatch for {src['source_id']}: expected {expected_hash[:12]}, got {actual_hash[:12]}")
+            print(f"    [FAIL] Source path does not exist: {rel_path}")
             return False
+
+        if p.is_dir() and "files" in src:
+            for subfile in src["files"]:
+                sub_p = p / subfile["name"]
+                if not sub_p.exists():
+                    print(f"    [FAIL] Missing raw file in directory {rel_path}: {subfile['name']}")
+                    return False
+                actual_hash = compute_sha256(sub_p)
+                expected_hash = subfile.get("sha256")
+                if actual_hash == expected_hash:
+                    print(f"    [OK] {src['source_id']}: {subfile['name']} ({actual_hash[:12]}...)")
+                else:
+                    print(f"    [FAIL] Hash mismatch for {src['source_id']} file {subfile['name']}: expected {expected_hash[:12]}, got {actual_hash[:12]}")
+                    return False
+        else:
+            actual_hash = compute_sha256(p)
+            expected_hash = src.get("sha256")
+            if actual_hash == expected_hash:
+                print(f"    [OK] {src['source_id']}: {p.name} ({actual_hash[:12]}...)")
+            else:
+                print(f"    [FAIL] Hash mismatch for {src['source_id']}: expected {expected_hash[:12]}, got {actual_hash[:12]}")
+                return False
 
     print("--> Step 2: Verifying Checksums of Institutional & Federal Scrutiny Datasets...")
     for ds in manifest.get("institutional_and_federal_datasets", []):
@@ -54,8 +69,8 @@ def verify_raw_sources():
             continue
         p = PROJECT_ROOT / rel_path
         if not p.exists():
-            print(f"    [WARN] File not found: {rel_path}")
-            continue
+            print(f"    [FAIL] Dataset file does not exist: {rel_path}")
+            return False
         actual_hash = compute_sha256(p)
         expected_hash = ds.get("sha256")
         if actual_hash == expected_hash:
@@ -91,6 +106,7 @@ def main():
         "extract_kiifb_projects.py",
         "extract_kite_schools.py",
         "build_unified_project_dataset.py",
+        "enrich_projects_with_kanakku.py",
     ]
 
     for step in steps:
