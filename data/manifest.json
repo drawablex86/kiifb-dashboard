@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "last_updated": "2026-10-16T10:40:00Z",
+  "description": "Cryptographic and provenance inventory of research datasets and sources for KIIFB Dashboard",
+  "sources": [
+    {
+      "source_id": "DS001-LOCAL",
+      "title": "Report of the Committee on A Comprehensive Review of Kerala Infrastructure Investment Fund Board (Markdown Extract)",
+      "publisher": "Committee for Restructuring of KIIFB / Government of Keralam",
+      "author": "Sudha Pillai (Chairperson), Shyam Srinivasan, H. Shubhalakshmi Narayanan, Nilesh Vikamsey, Tarun Bajaj",
+      "publication_date": "2026-10",
+      "reporting_period": "Up to June 30, 2026",
+      "retrieved_at": "2026-10-16T10:08:45Z",
+      "local_path": "data/KIIFB Findings Report.md",
+      "sha256": "e698d85847aa940cd7ae054ea4e47b0d555957707d23e7ee9eddf8e7ea57f7e5",
+      "file_size_bytes": 244860,
+      "format": "text/markdown",
+      "source_type": "official_committee_report_transcript",
+      "licence_or_terms": "Public Official Document (Kerala Legislative Assembly)",
+      "notes": "Pre-existing 2,400-line markdown transcription of full report including transmittal letter, foreword, chapters I-VI, and Tables 3.1 to 4.4."
+    }
+  ]
+}
