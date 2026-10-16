@@ -142,10 +142,12 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 - Notes: 8 automated unit tests pass in 0.001s. All reconciliations verified.
 
 ### T032 — Build debt and land-liability views
-- Status: backlog
+- Status: done
 - Dependencies: T030, T031
-- Outputs: financial charts, land-acquisition table, assumption panels.
-- Acceptance: future commitments are not mislabelled as outstanding debt; overlap and scope are documented.
+- Outputs: interactive financial liabilities view at `src/routes/financials/+page.svelte`, navigation tab enabled in `+layout.svelte`, and server loader at `src/routes/financials/+page.server.ts`.
+- Acceptance: debt structure (banks, institutions, bonds), land acquisition pool, 16-year amortisation schedule to 2041-42, and budget transfers are presented with tabular Indian currency notation (`₹ Crore`); future commitments are not conflated with current debt; passes `npm run check` and `npm run build` with zero errors.
+- Completed: 2026-10-16
+- Notes: Built tabbed financial baseline view covering Tables 3.1, 3.2, 3.3, 3.4, 3.5, 3.7, 3.11, 4.5, and 6.1/6.2/6.3. Zero build warnings.
 
 ## Milestone 4 — Outcomes and geography
 

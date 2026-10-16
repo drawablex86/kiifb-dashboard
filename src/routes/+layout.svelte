@@ -29,9 +29,9 @@
 					Project Explorer
 				</a>
 				<span class="text-slate-300">|</span>
-				<span class="px-2 py-1 text-slate-400 cursor-not-allowed" title="Coming in Milestone 3">
-					Financials (M3)
-				</span>
+				<a href="/financials" class="px-3 py-1.5 rounded text-slate-700 hover:text-slate-900 hover:bg-slate-100 transition">
+					Financial Liabilities
+				</a>
 			</nav>
 		</div>
 	</header>
