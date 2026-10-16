@@ -221,12 +221,12 @@ For every baseline, preserve the original reporting date and source definition. 
 
 ## 6. Project and evidence data model
 
-All entities, relationships, field definitions, and storage evolution strategies are authoritatively defined in [`architecture.md`](file:///Users/rahulrajeev/Downloads/kiifb-dashboard/architecture.md#6-core-entities-and-relationships). The agent must adhere strictly to the entity models specified therein.
+All entities, relationships, field definitions, and storage evolution strategies are authoritatively defined in [`architecture.md`](architecture.md#6-core-entities-and-relationships). The agent must adhere strictly to the entity models specified therein.
 
 ## 7. Technical direction & design truths
 
-- **System Architecture & Stack**: Frontend, backend, database, and pipeline components are authoritatively defined in [`architecture.md`](file:///Users/rahulrajeev/Downloads/kiifb-dashboard/architecture.md#4-proposed-technology-choices).
-- **Visual Standards & UI Truths**: The design system, badge colors, evidence semantics, and Indian financial notation standards (`₹ Crore` / `₹ Lakh`, tabular numerals) are authoritatively defined in [`design-system.md`](file:///Users/rahulrajeev/Downloads/kiifb-dashboard/design-system.md).
+- **System Architecture & Stack**: Frontend, backend, database, and pipeline components are authoritatively defined in [`architecture.md`](architecture.md#4-proposed-technology-choices).
+- **Visual Standards & UI Truths**: The design system, badge colors, evidence semantics, and Indian financial notation standards (`₹ Crore` / `₹ Lakh`, tabular numerals) are authoritatively defined in [`design-system.md`](design-system.md).
 - **Infrastructure Discipline**: Do not introduce Redis, background queues, complex container orchestration, or separate microservices unless documented requirements in an Architecture Decision Record (ADR) justify it.
 
 ## 8. Security, privacy, and reproducibility
@@ -256,7 +256,7 @@ Maintain these files across their distinct spheres of responsibility:
 
 ## 10. Actionable task board
 
-The project task board, dependencies, acceptance criteria, and execution statuses are authoritatively maintained in [`TASKS.md`](file:///Users/rahulrajeev/Downloads/kiifb-dashboard/TASKS.md). The agent must never maintain a separate or conflicting task list here.
+The project task board, dependencies, acceptance criteria, and execution statuses are authoritatively maintained in [`TASKS.md`](TASKS.md). The agent must never maintain a separate or conflicting task list here.
 
 ## 11. Definition of done for every task
 

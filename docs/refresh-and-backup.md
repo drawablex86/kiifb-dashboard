@@ -14,10 +14,10 @@ python3 scripts/refresh_pipeline.py
 
 ### Execution Steps in Pipeline:
 1. **Source Integrity Check**: Validates SHA-256 checksums of archived source files in `data/raw/` against `data/manifest.json`.
-2. **Financial Table Extraction**: Executes [`scripts/extract_committee_financial_tables.py`](file:///Users/rahulrajeev/Downloads/kiifb-dashboard/scripts/extract_committee_financial_tables.py) to generate [`data/processed/committee_financial_tables.json`](file:///Users/rahulrajeev/Downloads/kiifb-dashboard/data/processed/committee_financial_tables.json).
-3. **KIIFB Project Extraction**: Executes [`scripts/extract_kiifb_projects.py`](file:///Users/rahulrajeev/Downloads/kiifb-dashboard/scripts/extract_kiifb_projects.py) to parse 1,408 project records into [`data/processed/kiifb_projects.json`](file:///Users/rahulrajeev/Downloads/kiifb-dashboard/data/processed/kiifb_projects.json).
-4. **KITE Schools Extraction**: Executes [`scripts/extract_kite_schools.py`](file:///Users/rahulrajeev/Downloads/kiifb-dashboard/scripts/extract_kite_schools.py) to parse 969 school records into [`data/processed/kite_schools.json`](file:///Users/rahulrajeev/Downloads/kiifb-dashboard/data/processed/kite_schools.json).
-5. **Unified Dataset Build**: Executes [`scripts/build_unified_project_dataset.py`](file:///Users/rahulrajeev/Downloads/kiifb-dashboard/scripts/build_unified_project_dataset.py) to generate the unified 2,377-record dataset in [`data/processed/unified_project_explorer.json`](file:///Users/rahulrajeev/Downloads/kiifb-dashboard/data/processed/unified_project_explorer.json).
+2. **Financial Table Extraction**: Executes [`scripts/extract_committee_financial_tables.py`](../scripts/extract_committee_financial_tables.py) to generate [`data/processed/committee_financial_tables.json`](../data/processed/committee_financial_tables.json).
+3. **KIIFB Project Extraction**: Executes [`scripts/extract_kiifb_projects.py`](../scripts/extract_kiifb_projects.py) to parse 1,408 project records into [`data/processed/kiifb_projects.json`](../data/processed/kiifb_projects.json).
+4. **KITE Schools Extraction**: Executes [`scripts/extract_kite_schools.py`](../scripts/extract_kite_schools.py) to parse 969 school records into [`data/processed/kite_schools.json`](../data/processed/kite_schools.json).
+5. **Unified Dataset Build**: Executes [`scripts/build_unified_project_dataset.py`](../scripts/build_unified_project_dataset.py) to generate the unified 2,377-record dataset in [`data/processed/unified_project_explorer.json`](../data/processed/unified_project_explorer.json).
 6. **Integrity Test Suite**: Runs all 29 automated reconciliation tests (`python3 -m unittest discover tests`).
 
 ---

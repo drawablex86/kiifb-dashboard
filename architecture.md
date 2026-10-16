@@ -251,7 +251,7 @@ Store missing data, conflicts, duplicates, suspicious unit mismatches, stale sna
 
 ## 7. Evidence labels and status normalisation
 
-Allowed evidence labels and their visual representations are authoritatively specified in [`design-system.md`](file:///Users/rahulrajeev/Downloads/kiifb-dashboard/design-system.md#22-semantic--evidence-status-badges):
+Allowed evidence labels and their visual representations are authoritatively specified in [`design-system.md`](design-system.md#22-semantic--evidence-status-badges):
 - `committee_finding`
 - `official_record`
 - `verified_outcome`
@@ -261,7 +261,7 @@ Allowed evidence labels and their visual representations are authoritatively spe
 - `data_gap`
 - `unverified_claim`
 
-Normalised project lifecycle statuses and visual badges are defined in [`design-system.md`](file:///Users/rahulrajeev/Downloads/kiifb-dashboard/design-system.md#23-project-lifecycle-status-badges):
+Normalised project lifecycle statuses and visual badges are defined in [`design-system.md`](design-system.md#23-project-lifecycle-status-badges):
 - `approved`
 - `tendered`
 - `in_progress`

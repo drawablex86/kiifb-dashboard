@@ -88,8 +88,8 @@ Every calculation, dataset transformation, and UI component in this repository i
 
 ```bash
 # 1. Clone the repository and install dependencies
-git clone https://github.com/your-username/kiifb-dashboard.git
-cd kiifb-dashboard
+git clone https://github.com/drawablex86/kiffb-dasboard.git
+cd kiffb-dasboard
 npm install
 
 # 2. Run the full automated verification test suite (29 tests)
@@ -125,14 +125,14 @@ All raw files are preserved in `data/raw/` with verifiable cryptographic hashes 
 
 ## 6. Project Documentation Sitemap
 
-- [`TASKS.md`](file:///Users/rahulrajeev/Downloads/kiifb-dashboard/TASKS.md) — Comprehensive task tracking board across all milestones (M0 through M6).
-- [`agent.md`](file:///Users/rahulrajeev/Downloads/kiifb-dashboard/agent.md) — Operating rules, evidence standards, and civic truth constraints.
-- [`architecture.md`](file:///Users/rahulrajeev/Downloads/kiifb-dashboard/architecture.md) — Data model, counting units hierarchy, and technical architecture.
-- [`datasources.md`](file:///Users/rahulrajeev/Downloads/kiifb-dashboard/datasources.md) — Source registry, acquisition instructions, and metadata schema.
-- [`design-system.md`](file:///Users/rahulrajeev/Downloads/kiifb-dashboard/design-system.md) — UI design tokens, typography, Indian financial notation, and accessibility rules.
-- [`docs/matching-rules.md`](file:///Users/rahulrajeev/Downloads/kiifb-dashboard/docs/matching-rules.md) — Matching rules between umbrella sanctions and institutional schools.
-- [`docs/test-and-review-report.md`](file:///Users/rahulrajeev/Downloads/kiifb-dashboard/docs/test-and-review-report.md) — Full test execution, accessibility review, and bundle audit.
-- [`docs/refresh-and-backup.md`](file:///Users/rahulrajeev/Downloads/kiifb-dashboard/docs/refresh-and-backup.md) — Repeatable pipeline commands and backup/restore steps.
+- [`TASKS.md`](TASKS.md) — Comprehensive task tracking board across all milestones (M0 through M6).
+- [`agent.md`](agent.md) — Operating rules, evidence standards, and civic truth constraints.
+- [`architecture.md`](architecture.md) — Data model, counting units hierarchy, and technical architecture.
+- [`datasources.md`](datasources.md) — Source registry, acquisition instructions, and metadata schema.
+- [`design-system.md`](design-system.md) — UI design tokens, typography, Indian financial notation, and accessibility rules.
+- [`docs/matching-rules.md`](docs/matching-rules.md) — Matching rules between umbrella sanctions and institutional schools.
+- [`docs/test-and-review-report.md`](docs/test-and-review-report.md) — Full test execution, accessibility review, and bundle audit.
+- [`docs/refresh-and-backup.md`](docs/refresh-and-backup.md) — Repeatable pipeline commands and backup/restore steps.
 
 ---
 
