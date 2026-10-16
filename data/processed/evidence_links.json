@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "generated_at": "2026-10-16T10:44:10Z",
+  "description": "Corroborating, contextualizing, and qualifying evidence records linked to the five headline committee assertions",
+  "evidence_links": [
+    {
+      "link_id": "EV-001-A",
+      "assertion_id": "AST-001",
+      "relationship": "qualifies",
+      "source_id": "DS002",
+      "source_title": "Supreme Court of India — State of Kerala v. Union of India (Original Suit No. 1 of 2024)",
+      "source_locator": "Interim Order dated 1 April 2024, paras 15-28",
+      "publisher": "Supreme Court of India",
+      "reporting_period": "2024-04",
+      "evidence_label": "official_record",
+      "summary_finding": "The Supreme Court noted that whether borrowings made by State-owned SPVs/statutory corporations (like KIIFB) can be treated as direct borrowings of the State under Article 293(3) of the Constitution raises substantial questions of constitutional interpretation. The Court referred the core constitutional questions regarding Article 293 to a larger 5-judge Constitution Bench while declining interim mandatory relief on borrowing caps.",
+      "caveat_notes": "The Ministry of Finance's deduction of ₹25,932.55 crore is an executive guideline (dated 31 March 2022) whose constitutional validity remains sub judice before the Supreme Court."
+    },
+    {
+      "link_id": "EV-001-B",
+      "assertion_id": "AST-001",
+      "relationship": "contextualises",
+      "source_id": "DS040",
+      "source_title": "Kerala Infrastructure Investment Fund Act, 1999 (as amended in 2016)",
+      "source_locator": "Sections 7, 8 and 9",
+      "publisher": "Government of Kerala Law Department",
+      "reporting_period": "Statutory enactment 2016",
+      "evidence_label": "official_record",
+      "summary_finding": "Section 7 of the KIIF Act statutorily assigned 50% of Motor Vehicles Tax (increasing to 100% over 5 years) and a ₹1/litre petroleum cess directly to the Fund. The Act intended this dedicated statutory revenue stream to act as the primary security and debt-servicing mechanism for KIIFB bonds and loans.",
+      "caveat_notes": "The central dispute turns on whether an assigned tax stream by statutory earmarking renders the debt an Article 293(3) State borrowing."
+    },
+    {
+      "link_id": "EV-002-A",
+      "assertion_id": "AST-002",
+      "relationship": "supports",
+      "source_id": "DS042",
+      "source_title": "Report of the Comptroller and Auditor General of India on State Finances for 2024-25",
+      "source_locator": "Chapter II & III, Table on Off-Budget Borrowings",
+      "publisher": "Comptroller and Auditor General of India (CAG)",
+      "reporting_period": "FY 2021-22 to FY 2024-25",
+      "evidence_label": "official_record",
+      "summary_finding": "CAG audits corroborate that ₹11,869.28 crore was transferred from the State budget to KIIFB between 2021-22 and 2024-25, while total debt service by KIIFB over the same period stood at ₹11,944.18 crore. The CAG classified these borrowings as off-budget liabilities serviced from State revenue.",
+      "caveat_notes": "KIIFB maintains that transfers under Section 7 are statutory assignments of earmarked cess and taxes, not discretionary budgetary grants."
+    },
+    {
+      "link_id": "EV-003-A",
+      "assertion_id": "AST-003",
+      "relationship": "contextualises",
+      "source_id": "DS012",
+      "source_title": "KIIFB Audited Annual Accounts and Disclosures (2023-24)",
+      "source_locator": "Financial Statements & Borrowing Profile Note",
+      "publisher": "Kerala Infrastructure Investment Fund Board",
+      "reporting_period": "2023-24",
+      "evidence_label": "official_record",
+      "summary_finding": "KIIFB's bond issuances and bank credit facilities were rated by domestic rating agencies (CRISIL, Brickwork, Infomerics) based on the structural escrow and State Government guarantee. Corporate/SPV debt issuances in India inherently carry a credit spread of 80-150 bps over sovereign State Development Loans (SDLs) due to liquidity, tax treatment, and regulatory capital risk-weight differences for commercial banks.",
+      "caveat_notes": "The borrowing premium reflected market yield spreads for standalone statutory board bonds compared to sovereign-backed SDLs."
+    },
+    {
+      "link_id": "EV-004-A",
+      "assertion_id": "AST-004",
+      "relationship": "qualifies",
+      "source_id": "DS010",
+      "source_title": "KIIFB Project Appraisal and Sanction Register",
+      "source_locator": "Appendix: Revenue-Generating Projects Registry (as on Sept 15, 2026)",
+      "publisher": "KIIFB",
+      "reporting_period": "2026-09",
+      "evidence_label": "official_record",
+      "summary_finding": "Out of 44 projects approved as revenue-generating (e.g. TransGrid 2.0, Technocity, Petrochemical Park, Industrial Water Supply), several are industrial estates, power transmission grids, or tech parks with multi-year construction periods. For example, KSEB TransGrid 2.0 returns are phased through tariff recovery approved by the regulatory commission over an asset lifetime of 25-35 years.",
+      "caveat_notes": "Evaluating long-term infrastructure assets within the first few years of commissioning may prematurely treat ramp-up periods as permanent repayment failures."
+    },
+    {
+      "link_id": "EV-005-A",
+      "assertion_id": "AST-005",
+      "relationship": "qualifies",
+      "source_id": "DS020",
+      "source_title": "KITE Infrastructure Delivery Report (Public Education Rejuvenation Mission)",
+      "source_locator": "Official KITE Infrastructure Dashboard, August 2026",
+      "publisher": "Kerala Infrastructure and Technology for Education (KITE)",
+      "reporting_period": "Up to August 2026",
+      "evidence_label": "verified_outcome",
+      "summary_finding": "Official KITE records establish that 242 KIIFB-funded public school and college infrastructure projects were physically completed, formally inaugurated, and handed over to school authorities by August 2026. This comprises 139 Centres of Excellence (₹5 Cr scheme), 93 Betterment of Infrastructure Facilities (₹3 Cr scheme), and 10 Government Arts & Science Colleges.",
+      "caveat_notes": "These educational assets produce substantial public social value, educational access, and student retention, which the committee's financial review noted as an expenditure commitment but did not audit as delivered public capital."
+    }
+  ]
+}

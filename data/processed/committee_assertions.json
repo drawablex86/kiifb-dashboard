@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "generated_at": "2026-10-16T10:42:30Z",
+  "source_document": {
+    "source_id": "DS001-LOCAL",
+    "title": "Report of the Committee on A Comprehensive Review of Kerala Infrastructure Investment Fund Board",
+    "date": "2026-10",
+    "chairperson": "Sudha Pillai"
+  },
+  "assertions": [
+    {
+      "assertion_id": "AST-001",
+      "headline": "KIIFB Borrowing Space Deduction of ₹25,932.55 Crore",
+      "claim_type": "fiscal_liability",
+      "evidence_label": "committee_finding",
+      "report_locator": {
+        "chapter": "III",
+        "section": "3.17 & Table 3.11",
+        "pages": [31, 32, 89],
+        "table": "Table 3.11"
+      },
+      "reporting_period": "2022-23 to 2026-27 (cumulative)",
+      "cited_values": {
+        "total_amount_crore": 25932.55,
+        "currency": "INR",
+        "breakdown": [
+          {"year": "2022-23", "amount_crore": 1940.70},
+          {"year": "2023-24", "amount_crore": 5835.16},
+          {"year": "2024-25", "amount_crore": 2911.05},
+          {"year": "2025-26", "amount_crore": 7155.72},
+          {"year": "2026-27", "amount_crore": 8089.92}
+        ]
+      },
+      "report_claim": "Under the Ministry of Finance / Net Borrowing Ceiling guidelines of 31 March 2022, borrowings serviced by State budget assignment of taxes/cess are treated as State borrowings under Article 293(3). A total of ₹25,932.55 crore has been deducted from Kerala's open borrowing space, extinguishing KIIFB's original rationale of raising capital without consuming State borrowing limits.",
+      "caveats": "Table 3.11 data was furnished by the Department of Finance, Government of Kerala. The legal interpretation of Article 293(3) and the Union's authority to deduct off-budget SPV borrowings is subject to pending constitutional litigation before the Supreme Court of India in State of Kerala v. Union of India.",
+      "status": "verified_against_report_table"
+    },
+    {
+      "assertion_id": "AST-002",
+      "headline": "State Budget Transfers Met 99.4% of KIIFB Debt Servicing",
+      "claim_type": "debt_servicing_transfer",
+      "evidence_label": "committee_finding",
+      "report_locator": {
+        "chapter": "III",
+        "section": "3.4 & Table 3.2",
+        "pages": [16, 17],
+        "table": "Table 3.2"
+      },
+      "reporting_period": "2021-22 to 2024-25",
+      "cited_values": {
+        "total_transfers_from_gok_crore": 11869.28,
+        "total_debt_service_crore": 11944.18,
+        "principal_repaid_crore": 6486.85,
+        "interest_paid_crore": 5457.33,
+        "servicing_ratio_percentage": 99.4,
+        "currency": "INR"
+      },
+      "report_claim": "Over the four-year period (2021-22 to 2024-25), the Government of Kerala transferred ₹11,869.28 crore to KIIFB while KIIFB's debt service was ₹11,944.18 crore. State transfers met 99.4% of total debt service, meaning virtually the entire flow of State tax revenue (MVT and petroleum cess) into KIIFB was consumed by debt servicing rather than directly funding fresh infrastructure.",
+      "caveats": "Cited from the CAG Report on State Finances for 2024-25. Note to Table 3.2 mentions GoK transfers include ₹84.01 crore from KINFRA to KIIFB. KIIFB argues this funding structure was the statutory design under Section 7 of the KIIF Act (assigned motor vehicles tax and fuel cess).",
+      "status": "verified_against_report_table"
+    },
+    {
+      "assertion_id": "AST-003",
+      "headline": "Avoidable Premium of ~₹910 Crore Over State Borrowing Rates",
+      "claim_type": "cost_of_borrowing",
+      "evidence_label": "committee_finding",
+      "report_locator": {
+        "chapter": "III & VI",
+        "section": "3.18, Table 3.12, Chapter VI para 10",
+        "pages": [32, 89, 90],
+        "table": "Table 3.12"
+      },
+      "reporting_period": "2021-22 to 2024-25",
+      "cited_values": {
+        "estimated_premium_crore": 910.0,
+        "spread_bps_range": "85 to 179 bps",
+        "indicative_annual_premium_crore": "₹270 Cr to ₹570 Cr (on ₹31,681.15 Cr balance)",
+        "masala_bond_excess_crore": 181.73,
+        "domestic_bond_issuance_costs_crore": 161.73,
+        "currency": "INR"
+      },
+      "report_claim": "KIIFB's borrowing cost consistently exceeded Kerala State's open market borrowing rates by 85 to 179 basis points since 2018-19, resulting in an estimated ₹910 crore in excess borrowing costs between 2021-22 and 2024-25, alongside ₹181.73 crore excess cost on Masala Bonds and ₹161.73 crore in non-interest issuance costs.",
+      "caveats": "Calculation represents committee analytical inference based on spread between KIIFB weighted average borrowing rates and State OMB rates applied to yearly balances. It does not measure whether the State could have directly raised the same quantum of market borrowing within statutory ceilings without KIIFB prior to the 2022 NBC guidelines.",
+      "status": "verified_against_report_table"
+    },
+    {
+      "assertion_id": "AST-004",
+      "headline": "Only 3 of 44 Revenue-Generating Projects Repaid From Project Revenue",
+      "claim_type": "project_revenue_repayment",
+      "evidence_label": "committee_finding",
+      "report_locator": {
+        "chapter": "IV",
+        "section": "4.2.2 & Appendix",
+        "pages": [63, 64],
+        "table": "Section 4.2.2"
+      },
+      "reporting_period": "As on September 15, 2026",
+      "cited_values": {
+        "total_revenue_projects_sanctioned": 44,
+        "total_sanctioned_amount_crore": 22701.44,
+        "total_disbursed_amount_crore": 8881.80,
+        "total_repayments_received_crore": 4198.32,
+        "projects_with_project_revenue_repayments": 3,
+        "verified_project_revenue_repayment_crore": 3351.90,
+        "currency": "INR"
+      },
+      "report_claim": "Out of 44 projects sanctioned as revenue-generating (approved outlay of ₹22,701.44 Cr), only 6 made any repayment, and upon detailed scrutiny only 3 projects (Transgrid 2.0, First Building at Technocity, and Petrochemical Park Kochi) made repayments from actual project-generated revenue totaling ₹3,351.90 crore. The other repayments were funded via government transfers to SPVs.",
+      "caveats": "Long-gestation infrastructure projects often have moratoria or staggered ramp-up periods before generating commercial revenue. TransGrid 2.0 is serviced through transmission tariffs approved by the KSERC.",
+      "status": "verified_against_report_table"
+    },
+    {
+      "assertion_id": "AST-005",
+      "headline": "Portfolio Delivery Gap & Omission of Measurable Social Outcomes",
+      "claim_type": "delivery_and_outcome_evaluation",
+      "evidence_label": "committee_finding",
+      "report_locator": {
+        "chapter": "IV & VI",
+        "section": "4.2, Table 4.1, Chapter VI paras 11-12",
+        "pages": [55, 56, 90, 91],
+        "table": "Table 4.1 & Table 6.2"
+      },
+      "reporting_period": "As on June 30, 2026",
+      "cited_values": {
+        "total_approved_crore": 100341.0,
+        "total_released_crore": 42327.0,
+        "release_percentage": 42.18,
+        "infrastructure_approved_crore": 77151.0,
+        "infrastructure_released_crore": 30924.0,
+        "infrastructure_release_pct": 40.08,
+        "land_pool_approved_crore": 23190.0,
+        "land_pool_released_crore": 11403.0,
+        "unpaid_land_balance_crore": 11787.37,
+        "further_completion_funding_needed_crore": 22883.0,
+        "currency": "INR"
+      },
+      "report_claim": "KIIFB's portfolio shows a significant delivery gap: of ₹100,341 crore approved across 1,240 projects, only ₹42,327 crore (42.2%) has been released as of 30 June 2026. Furthermore, an estimated ₹22,883 crore is needed just to complete ongoing/tendered priority works, alongside an unpaid land acquisition balance of ₹11,787.37 crore. Crucially, while the committee audited financial and contractual progress, public value returns (such as school infrastructure handovers by KITE or hospital utilization) were not systematically audited or integrated into the committee's fiscal conclusions.",
+      "caveats": "Financial releases lag behind project commitments in rolling infrastructure funds due to milestone-based contractor billing. Non-monetary public benefits (e.g. 242 KITE school projects handed over) represent real public assets whose value is not captured in cash-flow amortisation models.",
+      "status": "verified_against_report_table"
+    }
+  ]
+}

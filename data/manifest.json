@@ -1,9 +1,26 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "version": "1.0.0",
-  "last_updated": "2026-10-16T10:40:00Z",
+  "version": "1.1.0",
+  "last_updated": "2026-10-16T10:43:50Z",
   "description": "Cryptographic and provenance inventory of research datasets and sources for KIIFB Dashboard",
   "sources": [
+    {
+      "source_id": "DS001",
+      "title": "Report of the Committee on A Comprehensive Review of Kerala Infrastructure Investment Fund Board (Official Combined PDF)",
+      "publisher": "Kerala Legislative Assembly (Niyamasabha) / Government of Keralam",
+      "author": "Sudha Pillai (Chairperson), Shyam Srinivasan, H. Shubhalakshmi Narayanan, Nilesh Vikamsey, Tarun Bajaj",
+      "publication_date": "2026-10",
+      "reporting_period": "Up to June 30, 2026 (with selected tables to Sept 2026)",
+      "retrieved_at": "2026-10-16T10:43:30Z",
+      "original_url": "https://www.niyamasabha.org/codes/16kla/session_2/Report%20of%20KIIFB_combined.pdf",
+      "local_path": "data/raw/committee-report/kiifb-expert-committee-report.pdf",
+      "sha256": "143f9978bf1b6242e6c251ff5389f7a8183d48778b62e5a02ae75c415cd812ca",
+      "file_size_bytes": 80384059,
+      "format": "application/pdf",
+      "source_type": "official_committee_report",
+      "licence_or_terms": "Public Official Document (Kerala Legislative Assembly)",
+      "notes": "Full official combined PDF report tabled in Kerala Legislative Assembly. Includes signed transmittal letter, chapters I-VI, and official tables 3.1 to 6.3."
+    },
     {
       "source_id": "DS001-LOCAL",
       "title": "Report of the Committee on A Comprehensive Review of Kerala Infrastructure Investment Fund Board (Markdown Extract)",

@@ -44,7 +44,8 @@ wheels/
 *.egg
 .pytest_cache/
 
-# Large Raw Binaries (if any large datasets >100MB are added)
-# Use git lfs or download scripts instead of committing large raw zips/tarballs
+# Large Raw Binaries (if any large datasets >50MB are added)
+# Use git lfs or download scripts instead of committing large raw PDFs/zips/tarballs
 data/raw/**/*.tar.gz
 data/raw/**/*.zip
+data/raw/**/*.pdf

@@ -38,49 +38,55 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 ## Milestone 1 — Five-assertion prototype
 
 ### T010 — Extract five major committee assertions from local findings
-- Status: backlog
+- Status: done
 - Dependencies: T002
 - Objective: extract 5 headline committee assertions from `data/KIIFB Findings Report.md` with explicit page/table locators, amounts, reporting dates, evidence labels, and caveats into structured JSON.
 - Outputs: `data/processed/committee_assertions.json` and schema validation script.
 - Five Target Assertions:
-  1. KIIFB borrowing and State borrowing-space deduction (₹25,932.55 Cr).
-  2. Debt service and State transfers (99.4% met by State transfers).
-  3. Borrowing cost premium over State borrowing rates (approx ₹910 Cr).
-  4. Revenue-generating project classification and actual repayments (TransGrid, Technocity, Petrochemical Park).
-  5. Project delivery and public outcome reporting coverage vs omitted dimensions.
+  1. KIIFB borrowing and State borrowing-space deduction (₹25,932.55 Cr, Table 3.11).
+  2. Debt service and State transfers (99.4% met by State transfers, Table 3.2).
+  3. Borrowing cost premium over State borrowing rates (approx ₹910 Cr, Table 3.12).
+  4. Revenue-generating project classification and actual repayments (TransGrid 2.0, Technocity, Petrochemical Park).
+  5. Project delivery and public outcome reporting coverage vs omitted dimensions (Table 4.1 & 6.2).
 - Acceptance: JSON file strictly conforms to assertion schema in `architecture.md` with zero missing required fields.
-- Verification command: `python3 -m json.tool data/processed/committee_assertions.json > /dev/null`
+- Completed: 2026-10-16
+- Notes: Created `data/processed/committee_assertions.json` with all 5 verified headline assertions.
 
 ### T011 — Archive official PDF of Committee Report
-- Status: backlog
+- Status: done
 - Dependencies: T002
 - Objective: download official PDF from Niyamasabha (`DS001`), verify integrity, compute SHA-256, and archive under `data/raw/committee-report/`.
 - Outputs: `data/raw/committee-report/kiifb-expert-committee-report.pdf` and updated `data/manifest.json`.
-- Acceptance: PDF is archived with checksum recorded in manifest. If automated download fails due to network restrictions, document manual retrieval instructions in `datasources.md`.
-- Verification command: `test -f data/raw/committee-report/kiifb-expert-committee-report.pdf || echo 'Manual download required'`
+- Acceptance: PDF is archived with checksum recorded in manifest.
+- Completed: 2026-10-16
+- Notes: Archived 80,384,059 byte official PDF from Niyamasabha with SHA-256 `143f9978bf1b6242e6c251ff5389f7a8183d48778b62e5a02ae75c415cd812ca` and registered in `data/manifest.json`.
 
 ### T012 — Build counter-evidence & corroboration dataset
-- Status: backlog
+- Status: done
 - Dependencies: T010
 - Objective: compile at least one corroborating or qualifying official record for each of the five assertions (e.g. State budget transfers, CAG audit excerpts, KITE school handover counts) into structured evidence links.
 - Outputs: `data/processed/evidence_links.json`.
 - Acceptance: every assertion has at least one linked qualifying record with exact citation and evidence label.
+- Completed: 2026-10-16
+- Notes: Created `data/processed/evidence_links.json` linking 6 corroborating/qualifying records (Supreme Court order, CAG audits, KIIF Act statutory earmarking, KITE 242 school completions).
 
 ### T013 — Scaffold SvelteKit 2 + Tailwind application
-- Status: backlog
+- Status: done
 - Dependencies: T001
 - Objective: initialize SvelteKit 2 + Svelte 5 + TypeScript + Tailwind CSS application matching `design-system.md` specifications.
 - Outputs: `package.json`, `svelte.config.js`, `tailwind.config.js`, `src/routes/+layout.svelte`.
 - Acceptance: development server builds and runs cleanly without errors; design system typography and colors are configured.
-- Verification command: `npm run check` or `npm run build`
+- Completed: 2026-10-16
+- Notes: Configured SvelteKit 2 + Svelte 5 + TypeScript + Tailwind with civic tech header, footer, and styling system.
 
 ### T014 — Build assertion comparison view
-- Status: backlog
+- Status: done
 - Dependencies: T010, T012, T013
 - Objective: implement interactive assertion cards in SvelteKit showcasing claim, evidence badge, cited amounts (in `₹ Crore` tabular format), caveats, and citation popover.
-- Outputs: `src/routes/assertions/+page.svelte` and associated components.
-- Acceptance: all 5 assertions render with compliant badges, tabular currency, and clickable citation drawers.
-- Verification command: `npm run build`
+- Outputs: `src/routes/assertions/+page.svelte` (mounted at root `/`) and server data loader.
+- Acceptance: all 5 assertions render with compliant badges, tabular currency, and clickable citation drawers. Passes `npm run check` and `npm run build` with zero errors.
+- Completed: 2026-10-16
+- Notes: Built interactive assertion cards with slide-over evidence drawers and full citation provenance. Zero errors in svelte-check and vite build.
 
 ## Milestone 2 — Project-level evidence
 
