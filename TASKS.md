@@ -152,10 +152,11 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 ## Milestone 4 — Outcomes and geography
 
 ### T040 — Implement public-value dimensions
-- Status: backlog
+- Status: done
 - Dependencies: T023
-- Outputs: separate financial, economic, social and distributional evidence fields.
-- Acceptance: missing metrics display as unknown, not zero.
+- Outputs: separate financial, economic, social and distributional evidence fields (`data/processed/public_value_and_geography.json`).
+- Acceptance: missing metrics display as unknown/data_gap, not zero. Verified by `tests/test_public_value_reconciliation.py`.
+- Evidence: Defined 5 distinct dimensions: financial return (only 3 of 44 revenue projects repaid ₹3,351.90 Cr; 99.4% budget funded), economic return (unmodelled, marked data_gap), social return (242 schools, 118 health projects), distributional return (top 3 districts get 41.6% outlay, Kannur gets 74.7% land pool, SC/ST gets 0.18%), and financing suitability (commercial market borrowings used for social assets). Tested via unit tests.
 
 ### T041 — Add evidence completeness view
 - Status: backlog

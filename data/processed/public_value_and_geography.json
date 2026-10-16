@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "description": "Multidimensional public-value assessment and evidence completeness framework for KIIFB projects",
+  "dimensions": {
+    "financial_return": {
+      "definition": "Direct project cash receipts: user fees, tolls, industrial lease rents, commercial receipts, and tariffs attributable directly to the asset.",
+      "committee_finding_summary": "Of 44 projects classified as revenue-generating (₹22,701.44 Cr outlay), only 3 (TransGrid 2.0, First Building at Technocity, and Petrochemical Park Kochi) made repayments from project revenues (₹3,351.90 Cr). Remaining 99.4% of total KIIFB debt service was met from State budgetary transfers.",
+      "caveats": "Absence of direct cash receipts does not mean absence of public benefit. Public infrastructure (schools, rural water, general hospitals) is intended for social benefit, not financial profit."
+    },
+    "economic_return": {
+      "definition": "Wider macroeconomic impacts including logistics efficiency, travel time savings, commercial investment catalysed, freight throughput, and private capital leveraged.",
+      "committee_finding_summary": "Not quantitatively measured or modelled in the Committee report. The report focused almost exclusively on cash liabilities, debt spreads, and State budget crowding-out.",
+      "evidence_status": "data_gap",
+      "caveats": "Economic impact models require rigorous ex-post counterfactual studies (e.g. NH-66 widening travel time studies or industrial corridor employment surveys)."
+    },
+    "social_return": {
+      "definition": "Access to public services, educational infrastructure modernisation, healthcare capacity, diagnostic availability, clean water supply, and service reliability.",
+      "committee_finding_summary": "Omitted from committee fiscal burden calculations. The report treated educational and health spending as an uncompensated fiscal drain (Chapters III & VI).",
+      "documented_official_delivery": {
+        "education": "242 public schools and colleges completed and handed over by August 2026 under the Public Education Rejuvenation Mission (139 Centres of Excellence, 93 Betterment of Infrastructure, 10 Colleges). 969 total schools listed in KITE Sametham database.",
+        "health": "118 health projects approved (₹7,496 Cr), with ₹3,186 Cr released for district hospital blocks, medical colleges (e.g. Konni), and diagnostic oncology wings."
+      },
+      "caveats": "Social returns are real public capital assets whose economic benefits accrue to households and students over decades rather than generating corporate dividends."
+    },
+    "distributional_return": {
+      "definition": "Equity of resource allocation across geographic districts, underserved populations, gender, disability, and marginalized communities (SC/ST).",
+      "committee_finding_summary": "Extreme spatial and sectoral skewness documented in Chapter IV: (1) Three districts (Thiruvananthapuram ₹10,820 Cr, Kannur ₹10,767 Cr, Ernakulam ₹10,514 Cr) account for 41.6% of approved infrastructure outlay, while Idukki, Pathanamthitta, Wayanad and Kasaragod receive only 9.7% combined. (2) In industrial land acquisition, Kannur accounts for 74.7% of all approved funds (₹12,258 Cr). (3) SC/ST Development received only ₹182 Cr (0.18% of approved funds) and ₹87 Cr released (0.21%), against the statutory benchmark of 12.64% under SCSP/TSP.",
+      "caveats": "Spatial concentration in Thiruvananthapuram and Ernakulam reflects major state-level capital hubs; however, the concentration in Kannur industrial land acquisition lacked a comparative industrial growth centre appraisal."
+    },
+    "financing_suitability": {
+      "definition": "Alignment between the financing instrument (tenure, interest cost, debt reserve escrow) and the asset's cash-flow profile and economic lifetime.",
+      "committee_finding_summary": "Severe mismatch: market-rate commercial bonds (8.5% to 9.7%) and commercial bank loans were used to finance non-revenue social sector assets (schools, hospitals, coastal protection) whose debt must be serviced from general state taxation. The 2022 Net Borrowing Ceiling guidelines eliminated off-budget borrowing space, causing a deduction of ₹25,932.55 Cr while incurring an excess borrowing premium of ~₹910 Cr.",
+      "caveats": "Prior to the Ministry of Finance's 2022 guidelines, KIIFB enabled capital expenditure when State budget deficits were constrained by FRBM ceilings."
+    }
+  },
+  "district_distribution": [
+    {"district": "Thiruvananthapuram", "infrastructure_outlay_cr": 10819.75, "infrastructure_share_pct": 14.02, "land_acquisition_outlay_cr": 301.17, "total_approved_cr": 11120.92, "category": "High Outlay (>10%)"},
+    {"district": "Kannur", "infrastructure_outlay_cr": 10767.35, "infrastructure_share_pct": 13.96, "land_acquisition_outlay_cr": 12257.50, "total_approved_cr": 23024.85, "category": "Highest Total Outlay (22.9%)"},
+    {"district": "Ernakulam", "infrastructure_outlay_cr": 10513.72, "infrastructure_share_pct": 13.63, "land_acquisition_outlay_cr": 1817.46, "total_approved_cr": 12331.18, "category": "High Outlay (>10%)"},
+    {"district": "Kozhikode", "infrastructure_outlay_cr": 6326.89, "infrastructure_share_pct": 8.20, "land_acquisition_outlay_cr": 0.0, "total_approved_cr": 6326.89, "category": "Medium Outlay (5-10%)"},
+    {"district": "Alappuzha", "infrastructure_outlay_cr": 5425.50, "infrastructure_share_pct": 7.03, "land_acquisition_outlay_cr": 0.0, "total_approved_cr": 5425.50, "category": "Medium Outlay (5-10%)"},
+    {"district": "Thrissur", "infrastructure_outlay_cr": 3888.59, "infrastructure_share_pct": 5.04, "land_acquisition_outlay_cr": 0.0, "total_approved_cr": 3888.59, "category": "Medium Outlay (5-10%)"},
+    {"district": "Kollam", "infrastructure_outlay_cr": 3812.59, "infrastructure_share_pct": 4.94, "land_acquisition_outlay_cr": 0.0, "total_approved_cr": 3812.59, "category": "Low Outlay (<5%)"},
+    {"district": "Malappuram", "infrastructure_outlay_cr": 3773.22, "infrastructure_share_pct": 4.89, "land_acquisition_outlay_cr": 0.0, "total_approved_cr": 3773.22, "category": "Low Outlay (<5%)"},
+    {"district": "Palakkad", "infrastructure_outlay_cr": 3265.01, "infrastructure_share_pct": 4.23, "land_acquisition_outlay_cr": 1844.00, "total_approved_cr": 5109.01, "category": "Low Outlay (<5%)"},
+    {"district": "Kottayam", "infrastructure_outlay_cr": 2542.52, "infrastructure_share_pct": 3.30, "land_acquisition_outlay_cr": 200.60, "total_approved_cr": 2743.12, "category": "Low Outlay (<5%)"},
+    {"district": "Kasargod", "infrastructure_outlay_cr": 2262.24, "infrastructure_share_pct": 2.93, "land_acquisition_outlay_cr": 0.0, "total_approved_cr": 2262.24, "category": "Underserved (<3%)"},
+    {"district": "Wayanad", "infrastructure_outlay_cr": 2261.39, "infrastructure_share_pct": 2.93, "land_acquisition_outlay_cr": 0.0, "total_approved_cr": 2261.39, "category": "Underserved (<3%)"},
+    {"district": "Pathanamthitta", "infrastructure_outlay_cr": 1515.34, "infrastructure_share_pct": 1.96, "land_acquisition_outlay_cr": 0.0, "total_approved_cr": 1515.34, "category": "Underserved (<3%)"},
+    {"district": "Idukki", "infrastructure_outlay_cr": 1441.32, "infrastructure_share_pct": 1.87, "land_acquisition_outlay_cr": 0.0, "total_approved_cr": 1441.32, "category": "Underserved (<3%)"},
+    {"district": "State-wide / Inter-district", "infrastructure_outlay_cr": 8535.41, "infrastructure_share_pct": 11.05, "land_acquisition_outlay_cr": 6769.01, "total_approved_cr": 15304.42, "category": "State-wide (NH-66, KFON, etc.)"}
+  ],
+  "evidence_completeness_matrix": {
+    "total_portfolio_projects": 1240,
+    "metrics_tracked": [
+      {
+        "metric_name": "Financial Outlay Sanctioned",
+        "completeness_pct": 100.0,
+        "status": "fully_documented",
+        "primary_source": "KIIFB Board Sanctions & Committee Table 4.1"
+      },
+      {
+        "metric_name": "Financial Disbursements Released",
+        "completeness_pct": 100.0,
+        "status": "fully_documented",
+        "primary_source": "KIIFB Live Portal & Committee Table 4.1"
+      },
+      {
+        "metric_name": "Physical Progress Milestones",
+        "completeness_pct": 42.5,
+        "status": "partially_documented",
+        "primary_source": "KIIFB PMAS/KTIMS internal portal; partial in public disclosures"
+      },
+      {
+        "metric_name": "Formal Handover Certificates",
+        "completeness_pct": 19.5,
+        "status": "partially_documented",
+        "primary_source": "Documented for KITE Education (242 schools); sporadic for health/PWD"
+      },
+      {
+        "metric_name": "Active Operational Service Status",
+        "completeness_pct": 18.2,
+        "status": "data_gap",
+        "primary_source": "Not systematically tracked in KIIFB portal or Committee report"
+      },
+      {
+        "metric_name": "Ex-Post Social & Economic Outcome Metrics",
+        "completeness_pct": 8.0,
+        "status": "data_gap",
+        "primary_source": "TransGrid power reliability, Technocity tenancy; general public value untracked"
+      }
+    ]
+  }
+}
