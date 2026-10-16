@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "description": "Register of constitutional, statutory, and regulatory issues regarding KIIFB resource mobilisation, distinguishing advisory opinions from binding judicial findings.",
+  "issues": [
+    {
+      "issue_id": "LEG-001",
+      "title": "Article 293(3) and Off-Budget Borrowing Space Deductions",
+      "provisions": ["Constitution of India, Article 293(1)", "Constitution of India, Article 293(3)"],
+      "statutory_subject": "State borrowing powers, security of the Consolidated Fund, and Central Government consent for public loans",
+      "committee_interpretation": "KIIFB's market borrowings are serviced almost entirely from statutory transfers from the State budget rather than internal project cash receipts (99.4% debt service ratio). The Committee concurs with the CAG that such borrowing constitutes off-budget borrowing that bypasses the limits of Article 293.",
+      "executive_action": "Government of India (Ministry of Finance) issued guidelines in March 2022 stating that borrowings by State SPVs serviced from the State budget will be counted towards the State's Net Borrowing Ceiling (NBC), resulting in deductions totaling ₹25,932.55 Crore between 2022-23 and 2026-27 (Table 3.11).",
+      "cag_audit_view": "Comptroller & Auditor General of India, State Finances Audit Report for year ended 31 March 2019 (pages 41-42), observed that KIIFB borrowing bypassed Article 293 limits.",
+      "judicial_proceedings": {
+        "forum": "Supreme Court of India",
+        "case_citation": "State of Kerala v. Union of India, Original Suit No. 1 of 2024 (under Article 131)",
+        "binding_status": "Referred to 5-Judge Constitution Bench; Sub Judice",
+        "adjudication_summary": "On 1 April 2024, a two-judge bench of the Supreme Court referred the core constitutional questions regarding the scope of Article 293 and whether the Centre can regulate off-budget borrowings of State statutory entities to a 5-judge Constitution Bench. While declining interim mandatory injunction for immediate borrowing space, the Court expressly confirmed that the underlying constitutional question is undecided and sub judice.",
+        "committee_vs_court_distinction": "The Expert Committee's finding that KIIFB's borrowing violates Article 293 is an advisory administrative opinion. The binding legal definition of whether Article 293 applies to statutory SPVs awaits the final ruling of the Supreme Court Constitution Bench."
+      }
+    },
+    {
+      "issue_id": "LEG-002",
+      "title": "Article 266 & Escrowing State Tax Revenues Outside Consolidated Fund",
+      "provisions": ["Constitution of India, Article 266(1)", "Constitution of India, Article 266(3)", "Articles 202-204", "G.O.(P) No. 158/2018/Fin dated 05.10.2018"],
+      "statutory_subject": "Consolidated Fund of the State, legislative appropriation, and escrowing tax/cess revenues into commercial bank accounts",
+      "committee_interpretation": "G.O.(P) No. 158/2018/Fin prescribes that Motor Vehicles Tax and petroleum cess share be credited directly by commercial collecting banks into KIIFB's escrow account without first crediting the Consolidated Fund of the State. The Committee observed this raises serious constitutional questions under Articles 266, 202, and 204.",
+      "executive_action": "Executive Government Order issued by Finance Department in October 2018 establishing automated daily/monthly escrow split.",
+      "cag_audit_view": "Highlighted that diverting statutory revenues outside the legislative appropriation process compromises assembly oversight.",
+      "judicial_proceedings": {
+        "forum": "Not Adjudicated by Courts",
+        "case_citation": "N/A",
+        "binding_status": "Non-Adjudicated; Committee explicitly abstained from final ruling",
+        "adjudication_summary": "The Committee explicitly wrote in Chapter III (para 3.14): 'The matter has not been adjudicated... The Committee therefore does not return a final finding on constitutionality.'",
+        "committee_vs_court_distinction": "No court has struck down Section 7 of the KIIFB Act or the escrow executive order. The Committee identified the practice as a constitutional concern and recommended the Government cancel the order once it takes over KIIFB's debt."
+      }
+    },
+    {
+      "issue_id": "LEG-003",
+      "title": "Masala Bonds, Entry 37 of Union List (List I) & ECB Framework",
+      "provisions": ["Seventh Schedule, List I, Entry 37 (Foreign Loans)", "Foreign Exchange Management Act (FEMA), 1999", "RBI External Commercial Borrowing (ECB) Master Directions"],
+      "statutory_subject": "Legislative competence over foreign borrowing vs statutory corporation issuance of offshore rupee-denominated bonds",
+      "committee_interpretation": "Entry 37 of List I places 'foreign loans' exclusively within Union legislative competence. Raising funds through London Stock Exchange-listed Masala bonds at 9.723% incurred excess interest costs and raised questions regarding List I competence.",
+      "executive_action": "Reserve Bank of India (RBI) granted regulatory approval / Loan Registration Number (LRN) for ₹2,672.80 Crore Masala bond issuance under the ECB policy framework.",
+      "cag_audit_view": "CAG reported in 2019 that offshore bond issuance by a state body lacked constitutional competence under List I Entry 37.",
+      "judicial_proceedings": {
+        "forum": "High Court of Kerala",
+        "case_citation": "Dr. T.M. Thomas Isaac v. Directorate of Enforcement & KIIFB v. Directorate of Enforcement, WP(C) No. 27076/2022 & WP(C) No. 34390/2022",
+        "binding_status": "Interim orders granted restraining coercive action; bond principal fully redeemed on 27 March 2024",
+        "adjudication_summary": "The High Court of Kerala granted interim relief restraining coercive steps by the ED, observing that the issuance was executed with prior approval from the Reserve Bank of India. On 27 March 2024, KIIFB fully redeemed the entire ₹2,672.80 Crore Masala bond liability upon 5-year maturity.",
+        "committee_vs_court_distinction": "The Committee stated: 'The Committee does not consider it necessary or appropriate to return a final finding on the constitutional question. It is a question of some difficulty, it has not been adjudicated, and the circumstances that gave rise to it no longer subsist: since the bonds were fully redeemed on 27 March 2024, no liability under them remains outstanding.' The Committee expressly left the legal question open."
+      }
+    },
+    {
+      "issue_id": "LEG-004",
+      "title": "Prior Sanction of Government under Section 8 of KIIFB Act",
+      "provisions": ["KIIFB Act, 1999 (as amended 2016), Section 8", "Kerala Rules of Business, Rule 10"],
+      "statutory_subject": "Requirement for prior Government sanction for borrowings and internal delegation within KIIFB Board",
+      "committee_interpretation": "Section 8 requires prior sanction of the Government for borrowings. The Committee found that formal government sanctions issued from the Finance Department were lacking for multiple borrowing tranches, with sanctions being approved internally by the KIIFB Board or Executive Committee. Because the Chief Minister and Finance Minister chair KIIFB, internal approval was treated as government sanction, which the Committee found departed from the formal scheme of the Rules of Business.",
+      "executive_action": "KIIFB Board resolutions and Executive Committee approvals were treated internally as satisfying the Section 8 sanction requirement.",
+      "cag_audit_view": "Noted absence of formal Government Orders (G.O.s) from Administrative Secretariat for individual loan tranches.",
+      "judicial_proceedings": {
+        "forum": "Administrative Audit / Intra-Governmental",
+        "case_citation": "N/A",
+        "binding_status": "Internal governance criticism; not judicially adjudicated",
+        "adjudication_summary": "The issue involves internal compliance with the Kerala Rules of Business and statutory interpretation of Section 8. It has not been the subject of any court writ or judgment.",
+        "committee_vs_court_distinction": "The Committee recommends amending the Act to repeal Section 8 and omit borrowing powers, rather than asserting that past borrowings are void."
+      }
+    },
+    {
+      "issue_id": "LEG-005",
+      "title": "Special Component Plan / Tribal Sub Plan (SCSP/TSP) Statutory Allocations",
+      "provisions": ["Kerala State SCSP/TSP Legislation & Planning Board Guidelines"],
+      "statutory_subject": "Equitable capital allocation to Scheduled Castes and Scheduled Tribes populations",
+      "committee_interpretation": "SC/ST Development received only ₹182 Crore (0.24% of approved infrastructure outlay) and ₹87 Crore released (0.28%). This is an extreme departure from the statutory benchmark of 12.64% mandated under SCSP/TSP guidelines.",
+      "executive_action": "KIIFB project sanctions were approved on departmental demand rather than pre-allocated statutory population quotas.",
+      "cag_audit_view": "Noted skewness in departmental allocations across social sectors.",
+      "judicial_proceedings": {
+        "forum": "Policy / Legislative Oversight",
+        "case_citation": "N/A",
+        "binding_status": "Statutory policy disparity documented by Committee",
+        "adjudication_summary": "Demonstrates severe equity shortfall in KIIFB's infrastructure pipeline. No formal judicial challenge pending, but constitutes a major documented equity violation.",
+        "committee_vs_court_distinction": "Highlights policy gap between statutory state planning benchmarks and actual KIIFB project sanctions."
+      }
+    }
+  ]
+}

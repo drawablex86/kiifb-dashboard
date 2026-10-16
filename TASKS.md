@@ -175,10 +175,11 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 ## Milestone 5 — Legal and governance
 
 ### T050 — Build legal issue register
-- Status: backlog
+- Status: done
 - Dependencies: T011
-- Outputs: issue records for Articles 266/293, relevant KIIFB Act sections, Masala bond questions and court proceedings.
+- Outputs: issue records for Articles 266/293, relevant KIIFB Act sections, Masala bond questions and court proceedings (`data/processed/legal_issues_register.json`).
 - Acceptance: committee interpretation is separated from binding court findings.
+- Evidence: Built legal issues register covering Articles 266/293, KIIFB Act Section 8, Masala bonds/Entry 37, and SCSP/TSP statutory allocations. Explicitly distinguished Committee/CAG advisory opinions from pending/binding judicial proceedings (Supreme Court Original Suit No. 1 of 2024 referred to Constitution Bench; High Court of Kerala interim orders). Verified via unit tests (`tests/test_legal_and_governance.py`).
 
 ### T051 — Build recommendation tracker
 - Status: backlog
