@@ -4,6 +4,8 @@
 	// Search & Filter State
 	let searchQuery = $state('');
 	let selectedSector = $state('ALL');
+	let selectedDistrict = $state('ALL');
+	let selectedFlag = $state('ALL');
 	let selectedStatus = $state('ALL');
 	let selectedEntityType = $state('ALL');
 	let currentPage = $state(1);
@@ -12,8 +14,20 @@
 	// Modal / Inspection Drawer state
 	let activeRecord = $state<any>(null);
 
-	// Collect unique sectors and statuses
+	// Collect unique sectors, districts, statuses
 	let sectors = $derived(['ALL', ...Array.from(new Set(data.records.map((r: any) => r.sector))).sort()]);
+	let districts = $derived([
+		'ALL',
+		...Array.from(
+			new Set(
+				data.records
+					.map((r: any) => r.district)
+					.filter((d: any) => d)
+					.flatMap((d: string) => d.split(',').map((s) => s.trim()))
+			)
+		).sort()
+	]);
+	let flags = $derived(['ALL', 'FLAGGED', 'overdue', 'payment_vs_progress', 'cost_escalation', 'stale', 'above_approved']);
 	let statuses = $derived(['ALL', ...Array.from(new Set(data.records.map((r: any) => r.status.normalised_status))).sort()]);
 	let entityTypes = $derived(['ALL', 'project_sanction', 'educational_institution']);
 
@@ -25,13 +39,22 @@
 				(r.spv && r.spv.toLowerCase().includes(searchQuery.toLowerCase())) ||
 				(r.department && r.department.toLowerCase().includes(searchQuery.toLowerCase())) ||
 				(r.district && r.district.toLowerCase().includes(searchQuery.toLowerCase())) ||
+				(r.constituency && r.constituency.toLowerCase().includes(searchQuery.toLowerCase())) ||
 				(r.school_code && r.school_code.includes(searchQuery));
 
 			const matchesSector = selectedSector === 'ALL' || r.sector === selectedSector;
+			const matchesDistrict = selectedDistrict === 'ALL' || (r.district && r.district.includes(selectedDistrict));
 			const matchesStatus = selectedStatus === 'ALL' || r.status.normalised_status === selectedStatus;
 			const matchesEntity = selectedEntityType === 'ALL' || r.entity_type === selectedEntityType;
+			
+			let matchesFlag = true;
+			if (selectedFlag === 'FLAGGED') {
+				matchesFlag = r.open_flags && r.open_flags.length > 0;
+			} else if (selectedFlag !== 'ALL') {
+				matchesFlag = r.open_flags && r.open_flags.includes(selectedFlag);
+			}
 
-			return matchesSearch && matchesSector && matchesStatus && matchesEntity;
+			return matchesSearch && matchesSector && matchesDistrict && matchesStatus && matchesEntity && matchesFlag;
 		})
 	);
 
@@ -118,17 +141,43 @@
 
 	<!-- Filter Controls -->
 	<div class="bg-white rounded-lg border border-slate-200 p-4 shadow-sm space-y-3">
-		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-			<div>
+		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-3">
+			<div class="lg:col-span-2">
 				<label for="search" class="block text-2xs font-semibold uppercase text-slate-500 mb-1">Search Keyword / ID</label>
 				<input 
 					id="search"
 					type="text" 
 					bind:value={searchQuery}
 					oninput={() => currentPage = 1}
-					placeholder="Search project, school, SPV..." 
+					placeholder="Search project, school, constituency, SPV..." 
 					class="w-full text-xs px-3 py-2 border border-slate-300 rounded focus:ring-1 focus:ring-slate-900 focus:outline-none"
 				/>
+			</div>
+			<div>
+				<label for="district" class="block text-2xs font-semibold uppercase text-slate-500 mb-1">District (Enriched)</label>
+				<select 
+					id="district"
+					bind:value={selectedDistrict}
+					onchange={() => currentPage = 1}
+					class="w-full text-xs px-3 py-2 border border-slate-300 rounded focus:ring-1 focus:ring-slate-900 focus:outline-none bg-white"
+				>
+					{#each districts as dist}
+						<option value={dist}>{dist}</option>
+					{/each}
+				</select>
+			</div>
+			<div>
+				<label for="flag" class="block text-2xs font-semibold uppercase text-slate-500 mb-1">Rule Flags (Kanakku)</label>
+				<select 
+					id="flag"
+					bind:value={selectedFlag}
+					onchange={() => currentPage = 1}
+					class="w-full text-xs px-3 py-2 border border-slate-300 rounded focus:ring-1 focus:ring-slate-900 focus:outline-none bg-white font-medium text-slate-800"
+				>
+					{#each flags as flg}
+						<option value={flg}>{flg === 'ALL' ? 'ALL PROJECTS' : flg === 'FLAGGED' ? '🚩 ANY OPEN FLAG' : flg}</option>
+					{/each}
+				</select>
 			</div>
 			<div>
 				<label for="sector" class="block text-2xs font-semibold uppercase text-slate-500 mb-1">Sector</label>
@@ -156,29 +205,22 @@
 					{/each}
 				</select>
 			</div>
-			<div>
-				<label for="entity" class="block text-2xs font-semibold uppercase text-slate-500 mb-1">Counting Unit / Entity Type</label>
-				<select 
-					id="entity"
-					bind:value={selectedEntityType}
-					onchange={() => currentPage = 1}
-					class="w-full text-xs px-3 py-2 border border-slate-300 rounded focus:ring-1 focus:ring-slate-900 focus:outline-none bg-white"
-				>
-					{#each entityTypes as et}
-						<option value={et}>{et === 'ALL' ? 'ALL UNITS' : et}</option>
-					{/each}
-				</select>
-			</div>
 		</div>
 
-		<div class="flex items-center justify-between text-xs text-slate-500 pt-2 border-t border-slate-100">
-			<span>Showing {filteredRecords.length.toLocaleString('en-IN')} matching records</span>
-			{#if searchQuery || selectedSector !== 'ALL' || selectedStatus !== 'ALL' || selectedEntityType !== 'ALL'}
+		<div class="flex flex-col sm:flex-row sm:items-center justify-between text-xs text-slate-500 pt-2 border-t border-slate-100 gap-2">
+			<div class="flex items-center gap-2">
+				<span>Showing <strong>{filteredRecords.length.toLocaleString('en-IN')}</strong> matching records</span>
+				<span class="text-slate-300">|</span>
+				<span class="inline-flex items-center gap-1 text-2xs px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-200">
+					<span>✨ Enriched with Kerala Kanakku (DS030)</span>
+				</span>
+			</div>
+			{#if searchQuery || selectedSector !== 'ALL' || selectedDistrict !== 'ALL' || selectedFlag !== 'ALL' || selectedStatus !== 'ALL' || selectedEntityType !== 'ALL'}
 				<button 
-					onclick={() => { searchQuery = ''; selectedSector = 'ALL'; selectedStatus = 'ALL'; selectedEntityType = 'ALL'; currentPage = 1; }}
-					class="text-blue-600 hover:underline cursor-pointer"
+					onclick={() => { searchQuery = ''; selectedSector = 'ALL'; selectedDistrict = 'ALL'; selectedFlag = 'ALL'; selectedStatus = 'ALL'; selectedEntityType = 'ALL'; currentPage = 1; }}
+					class="text-blue-600 hover:underline cursor-pointer font-medium"
 				>
-					Reset filters
+					Reset all filters
 				</button>
 			{/if}
 		</div>
@@ -222,8 +264,17 @@
 											{rec.district || ''}{rec.constituency ? ` (${rec.constituency})` : ''}
 										</div>
 									{/if}
+									{#if rec.open_flags && rec.open_flags.length > 0}
+										<div class="flex flex-wrap gap-1 mt-1">
+											{#each rec.open_flags as flg}
+												<span class="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-3xs font-bold uppercase bg-amber-100 text-amber-900 border border-amber-300">
+													<span>🚩 {flg.replace('_', ' ')}</span>
+												</span>
+											{/each}
+										</div>
+									{/if}
 									{#if rec.school_code}
-										<div class="text-2xs font-mono text-emerald-700">
+										<div class="text-2xs font-mono text-emerald-700 mt-0.5">
 											School Code: {rec.school_code}
 										</div>
 									{/if}

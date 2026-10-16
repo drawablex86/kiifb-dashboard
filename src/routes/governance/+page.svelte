@@ -2,12 +2,32 @@
 	let { data } = $props();
 
 	// Tab state
-	let activeTab = $state<'recommendations' | 'legal_register' | 'methodology'>('recommendations');
+	let activeTab = $state<'recommendations' | 'legal_register' | 'liability' | 'methodology'>('recommendations');
 
 	let recommendations = $derived(data.recommendations || []);
 	let legalIssues = $derived(data.legalIssues || []);
 	let civicNote = $derived(data.civicStandardNote);
 	let methodology = $derived(data.methodology || { sources: [], counting_units: [], discrepancies: [], limitations: [] });
+	let contractorLiability = $derived(data.contractorLiability?.records || []);
+
+	// Liability filter
+	let liabilitySearch = $state('');
+	let selectedLiabilityDistrict = $state('ALL');
+	let liabilityDistricts = $derived([
+		'ALL',
+		...Array.from(new Set(contractorLiability.map((l: any) => l.district).filter(Boolean))).sort()
+	]);
+	let filteredLiability = $derived(
+		contractorLiability.filter((l: any) => {
+			const matchesSearch =
+				liabilitySearch === '' ||
+				l.work.toLowerCase().includes(liabilitySearch.toLowerCase()) ||
+				l.contractor.toLowerCase().includes(liabilitySearch.toLowerCase()) ||
+				l.division.toLowerCase().includes(liabilitySearch.toLowerCase());
+			const matchesDist = selectedLiabilityDistrict === 'ALL' || l.district === selectedLiabilityDistrict;
+			return matchesSearch && matchesDist;
+		})
+	);
 
 	// Status badge helper
 	function getStatusBadge(status: string) {
@@ -92,6 +112,12 @@
 				class="px-4 py-2 text-xs sm:text-sm font-semibold border-b-2 transition whitespace-nowrap {activeTab === 'legal_register' ? 'border-indigo-600 text-indigo-700' : 'border-transparent text-slate-500 hover:text-slate-800'}"
 			>
 				Legal & Constitutional Register (T050)
+			</button>
+			<button
+				onclick={() => (activeTab = 'liability')}
+				class="px-4 py-2 text-xs sm:text-sm font-semibold border-b-2 transition whitespace-nowrap {activeTab === 'liability' ? 'border-indigo-600 text-indigo-700' : 'border-transparent text-slate-500 hover:text-slate-800'}"
+			>
+				Contractor Defect Liability (DS030)
 			</button>
 			<button
 				onclick={() => (activeTab = 'methodology')}
@@ -249,7 +275,122 @@
 			</div>
 		</div>
 
-	<!-- TAB 3: METHODOLOGY & DISCREPANCIES (T052) -->
+	<!-- TAB 3: CONTRACTOR DEFECT LIABILITY (DS030 via Kerala Kanakku) -->
+	{:else if activeTab === 'liability'}
+		<div class="space-y-6">
+			<!-- Banner -->
+			<div class="bg-white rounded-lg border border-slate-200 p-6 shadow-sm">
+				<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+					<div>
+						<div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200 mb-2">
+							<span>Source: Kerala Kanakku (DS030)</span>
+							<span>•</span>
+							<span>Kerala PWD Defect Liability Period Register</span>
+						</div>
+						<h3 class="text-xl font-bold tracking-tight text-slate-900">
+							Contractor Defect Liability Period (DLP) Register
+						</h3>
+						<p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl">
+							For finished public works, contractors are legally required to repair any defects at their own cost during the guarantee period. Tracked directly from PWD office records and compiled by Kerala Kanakku under CC BY 4.0.
+						</p>
+					</div>
+					<div class="flex gap-3 text-left">
+						<div class="bg-slate-50 border border-slate-200/80 rounded p-3 min-w-[120px]">
+							<div class="text-2xs text-slate-500 uppercase font-semibold">Active Works</div>
+							<div class="text-lg font-bold text-slate-900 tabular-nums">{contractorLiability.length.toLocaleString('en-IN')}</div>
+							<div class="text-3xs text-slate-400">Under Liability</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Filters -->
+			<div class="bg-white rounded-lg border border-slate-200 p-4 shadow-sm flex flex-col sm:flex-row gap-3">
+				<div class="flex-1">
+					<label for="lsearch" class="block text-2xs font-semibold uppercase text-slate-500 mb-1">Search Work, Contractor, Division</label>
+					<input 
+						id="lsearch"
+						type="text"
+						bind:value={liabilitySearch}
+						placeholder="Search road, bridge, contractor name..."
+						class="w-full text-xs px-3 py-2 border border-slate-300 rounded focus:ring-1 focus:ring-slate-900 focus:outline-none"
+					/>
+				</div>
+				<div class="sm:w-64">
+					<label for="ldist" class="block text-2xs font-semibold uppercase text-slate-500 mb-1">Office District</label>
+					<select 
+						id="ldist"
+						bind:value={selectedLiabilityDistrict}
+						class="w-full text-xs px-3 py-2 border border-slate-300 rounded focus:ring-1 focus:ring-slate-900 focus:outline-none bg-white"
+					>
+						{#each liabilityDistricts as dist}
+							<option value={dist}>{dist}</option>
+						{/each}
+					</select>
+				</div>
+			</div>
+
+			<!-- Liability Table -->
+			<div class="bg-white rounded-lg border border-slate-200 overflow-hidden shadow-sm">
+				<div class="overflow-x-auto">
+					<table class="w-full text-left text-xs text-slate-700">
+						<thead class="bg-slate-50 border-b border-slate-200 text-slate-500 font-semibold uppercase text-2xs tracking-wider">
+							<tr>
+								<th class="px-4 py-3">Work Name & Division</th>
+								<th class="px-4 py-3">Contractor</th>
+								<th class="px-4 py-3">Office District</th>
+								<th class="px-4 py-3 text-right">Agreed Outlay</th>
+								<th class="px-4 py-3 text-center">Liability Period</th>
+							</tr>
+						</thead>
+						<tbody class="divide-y divide-slate-100">
+							{#if filteredLiability.length === 0}
+								<tr>
+									<td colspan="5" class="text-center py-8 text-slate-400">No matching liability records found.</td>
+								</tr>
+							{:else}
+								{#each filteredLiability.slice(0, 50) as item}
+									<tr class="hover:bg-slate-50/80 transition">
+										<td class="px-4 py-3 max-w-md">
+											<div class="font-semibold text-slate-900 leading-snug">{item.work}</div>
+											<div class="text-2xs text-slate-500 mt-0.5">
+												{item.wing} · {item.division}{item.subdivision ? ` · ${item.subdivision}` : ''}
+											</div>
+										</td>
+										<td class="px-4 py-3 font-medium text-slate-800 max-w-xs truncate">
+											{item.contractor}
+										</td>
+										<td class="px-4 py-3">
+											<span class="inline-block px-2 py-0.5 rounded text-2xs font-medium bg-slate-100 text-slate-800 border border-slate-200">
+												{item.district}
+											</span>
+										</td>
+										<td class="px-4 py-3 text-right font-mono tabular-nums">
+											{#if item.agreed_amount_inr > 0}
+												₹{(item.agreed_amount_inr / 10000000).toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} Cr
+											{:else}
+												—
+											{/if}
+										</td>
+										<td class="px-4 py-3 text-center font-mono text-2xs">
+											<div class="text-slate-900 font-semibold">{item.liability_ends}</div>
+											<div class="text-3xs text-slate-400">Starts: {item.liability_starts}</div>
+										</td>
+									</tr>
+								{/each}
+							{/if}
+						</tbody>
+					</table>
+				</div>
+				{#if filteredLiability.length > 50}
+					<div class="bg-slate-50 px-4 py-3 border-t border-slate-200 text-2xs text-slate-500 text-center font-medium">
+						Showing first 50 of {filteredLiability.length.toLocaleString('en-IN')} matching liability works. Filter by district or search to narrow down.
+					</div>
+				{/if}
+			</div>
+		</div>
+
+	<!-- TAB 4: METHODOLOGY & DISCREPANCIES (T052) -->
 	{:else if activeTab === 'methodology'}
 		<div class="space-y-6">
 			<!-- Provenance & Sources Table -->

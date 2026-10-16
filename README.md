@@ -129,16 +129,40 @@ npm run build
 
 All raw files are preserved in `data/raw/` with verifiable cryptographic hashes recorded in `data/manifest.json`:
 
-| Source ID | Name & Custodian | Reporting Date | SHA-256 Checksum |
-|---|---|---|---|
-| **`DS001`** | **Expert Committee Review Report** (Kerala Legislative Assembly) | June 30, 2026 | `143f9978bf1b6242e6c251ff5389f7a8183d48778b62e5a02ae75c415cd812ca` |
-| **`DS001-LOCAL`** | **Report Full Text Transcription** (Markdown extraction) | June 30, 2026 | `e698d85847aa940cd7ae054ea4e47b0d555957707d23e7ee9eddf8e7ea57f7e5` |
-| **`DS010`** | **KIIFB Live Project Register** (KIIFB IT Division) | October 2026 | `c5ad164cce5da54b959acad9a7e6b5ee3eb085025aa72e831b64e1b5ab3e57a6` |
-| **`DS021`** | **KITE Sametham Schools Directory** (General Education Dept) | August 2026 | `2841ee59a93c8cceaa0cbc89964166b5b6153a0a0b674869b88498f739f1fb37` |
+| Source ID | Name & Custodian | Reporting Date | SHA-256 Checksum | Licence & Access |
+|---|---|---|---|---|
+| **`DS001`** | **Expert Committee Review Report** (Kerala Legislative Assembly) | June 30, 2026 | `143f9978bf1b6242e6c251ff5389f7a8183d48778b62e5a02ae75c415cd812ca` | Public Official Document (Niyamasabha) |
+| **`DS001-LOCAL`** | **Report Full Text Transcription** (Markdown extraction) | June 30, 2026 | `e698d85847aa940cd7ae054ea4e47b0d555957707d23e7ee9eddf8e7ea57f7e5` | Public Official Document (Niyamasabha) |
+| **`DS010`** | **KIIFB Live Project Register** (KIIFB IT Division) | October 2026 | `c5ad164cce5da54b959acad9a7e6b5ee3eb085025aa72e831b64e1b5ab3e57a6` | Public Government Portal (`prjStatus.jsp`) |
+| **`DS021`** | **KITE Sametham Schools Directory** (General Education Dept) | August 2026 | `2841ee59a93c8cceaa0cbc89964166b5b6153a0a0b674869b88498f739f1fb37` | Public Educational Directory (`sametham.kite.kerala.gov.in`) |
+| **`DS030`** | **Kerala Kanakku Open Data Suite** (Kanakku Civic Tech Project) | October 2026 | `6fe1527e0b841c27cb3363f36839c2a4e4502f3afe69f2e115d83fbbf36e0ea1` | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) / AGPL-3.0 (`keralakanakku.com`) |
 
 ---
 
-## 6. Project Documentation Sitemap
+## 6. Data Methodology & Fusion Approach
+
+This dashboard adheres to an uncompromising **Civic Evidence Standard**, ensuring all statements, spatial points, and figures can be verified against official records:
+
+1. **Separation of Statutory Baseline from Civic Enrichments**:
+   - Primary financial aggregates (borrowing stock ₹31,681.15 Cr, Article 293(3) deductions ₹25,932.55 Cr, 16-year debt service ₹47,532.54 Cr) derive strictly from primary tables in the Sudha Pillai Committee Report (`DS001`).
+   - Project delivery and status values originate from KIIFB's official portal (`DS010`) and KITE Sametham (`DS021`).
+2. **Bridging Public Portal Data Gaps (`GAP-001`) with Kerala Kanakku (`DS030`)**:
+   - KIIFB's primary status database (`prjStatus.jsp`) omits geographic district tags for 100% of projects.
+   - We ingested Kerala Kanakku's daily compilations of KIIFB's internal GIS portal (`gis.kiifb.org`) and PWD Defect Liability lists (`keralakanakku.com`), licensed under CC BY 4.0.
+   - **Matching Pipeline (`scripts/enrich_projects_with_kanakku.py`)**: Sub-projects and contract packages were cross-referenced against KIIFB umbrella sanctions using normalized alphanumeric titles, sub-project codes, and financial allocations to enrich 540 projects with verified districts, assembly constituencies, and GPS coordinates.
+3. **Operational Anomaly Engine (Rule Engine v2)**:
+   - Projects are evaluated against 5 objective, non-partisan criteria:
+     - **Overdue**: Scheduled completion date elapsed without recorded completion.
+     - **Payment vs Progress**: Disbursed funds are $\ge 25$ percentage points ahead of physical progress.
+     - **Cost Escalation**: Current estimated outlay $\ge 1.2\times$ original approval.
+     - **Stale Updates**: In-progress works with no recorded dashboard movement for $\ge 90$ days.
+     - **Above Approval**: Work payments exceeding approved outlay by $> 1\%$.
+4. **Contractor Defect Liability Period (DLP)**:
+   - PWD defect liability records (2,475 works) track ongoing contractor repair obligations after handover, providing ground-level public accountability beyond mere physical completion.
+
+---
+
+## 7. Project Documentation Sitemap
 
 - [`TASKS.md`](TASKS.md) — Comprehensive task tracking board across all milestones (M0 through M6).
 - [`agent.md`](agent.md) — Operating rules, evidence standards, and civic truth constraints.

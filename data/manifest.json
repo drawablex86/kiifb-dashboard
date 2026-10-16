@@ -55,7 +55,7 @@
     },
     {
       "source_id": "DS021",
-      "title": "KITE Sametham — KIIFB Funded Schools Directory",
+      "title": "KITE Sametham \u2014 KIIFB Funded Schools Directory",
       "publisher": "Kerala Infrastructure and Technology for Education (KITE) / General Education Department",
       "publication_date": "2026-10",
       "reporting_period": "Live as of October 2026",
@@ -68,6 +68,38 @@
       "source_type": "official_education_directory",
       "licence_or_terms": "Official Public Portal (Government of Kerala)",
       "notes": "Authentic directory of 969 KIIFB-funded public schools across all 14 districts, with official school codes (HS/HSE/VHSE), school names, and assembly constituency mappings."
+    },
+    {
+      "source_id": "DS030",
+      "title": "Kerala Kanakku Open Data Suite (GIS Project Packages, Funding Join, & PWD Liability)",
+      "publisher": "Kerala Kanakku (Kanakku Civic Tech Project)",
+      "author": "Independent Civic Tech Contributors",
+      "publication_date": "2026-10",
+      "reporting_period": "Daily sync up to October 16, 2026",
+      "retrieved_at": "2026-10-16T08:30:45Z",
+      "original_url": "https://keralakanakku.com/en/data",
+      "local_path": "data/raw/kanakku/",
+      "files": [
+        {
+          "name": "projects.csv",
+          "sha256": "6fe1527e0b841c27cb3363f36839c2a4e4502f3afe69f2e115d83fbbf36e0ea1",
+          "records": 3622
+        },
+        {
+          "name": "funding.csv",
+          "sha256": "605a04ebd132312792b42c2a2334f3455d16b57a1e9543d2788b273008d2854c",
+          "records": 4546
+        },
+        {
+          "name": "liability.csv",
+          "sha256": "b49ac70958e332c43a10fdfb141a04c0b8652590771bc45186f7e876131021dc",
+          "records": 2475
+        }
+      ],
+      "source_type": "civic_open_data_api",
+      "licence_or_terms": "Creative Commons Attribution 4.0 International (CC BY 4.0) / Code: AGPL-3.0",
+      "notes": "Open data extract joining KIIFB GIS portal (gis.kiifb.org), KIIFB prjStatus.jsp, and Kerala PWD Defect Liability Period register. Provides GPS coordinates, assembly constituencies, and 5 automated rule-based flags.",
+      "sha256": "6fe1527e0b841c27cb3363f36839c2a4e4502f3afe69f2e115d83fbbf36e0ea1"
     }
   ],
   "institutional_and_federal_datasets": [
@@ -93,7 +125,7 @@
       "local_path": "data/processed/opposing_pillars_and_federalism.json",
       "sha256": "732b154ef30d46b3dfcf857c4fb12893f58ac6566c60daacfad33d7aae897c01",
       "file_size_bytes": 13499,
-      "description": "Comparative matrix contrasting Fiscal Orthodoxy vs Keynesian Developmentalism, Article 293(3) ₹25,932.55 Cr deduction breakdown, Union off-budget double standards, and Supreme Court Constitution Bench lawsuit."
+      "description": "Comparative matrix contrasting Fiscal Orthodoxy vs Keynesian Developmentalism, Article 293(3) \u20b925,932.55 Cr deduction breakdown, Union off-budget double standards, and Supreme Court Constitution Bench lawsuit."
     }
   ]
 }

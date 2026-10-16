@@ -15,8 +15,19 @@
 	let selectedDistrict = $state<string>('Kannur');
 	let districtSort = $state<'outlay_desc' | 'outlay_asc' | 'alpha' | 'share_desc'>('outlay_desc');
 	let selectedDenominator = $state<'infra' | 'land' | 'total'>('infra');
+	let mapMode = $state<'choropleth' | 'dots'>('choropleth');
 	let deptSearch = $state('');
 	let deptSort = $state<'approved_desc' | 'released_desc' | 'absorption_desc' | 'projects_desc'>('approved_desc');
+
+	// Projected coordinates for dots (Kerala bounds approx lat 8.28 to 12.8, lng 74.85 to 77.4)
+	function projectGps(lat: number, lng: number) {
+		const minLat = 8.28, maxLat = 12.85;
+		const minLng = 74.85, maxLng = 77.45;
+		// Map SVG dimensions: 280 x 540
+		const x = 30 + ((lng - minLng) / (maxLng - minLng)) * 210;
+		const y = 30 + ((maxLat - lat) / (maxLat - minLat)) * 470;
+		return { x: Math.max(10, Math.min(270, x)), y: Math.max(15, Math.min(525, y)) };
+	}
 
 	let sortedDistricts = $derived.by(() => {
 		const list = [...districts];
@@ -219,13 +230,30 @@
 					<div>
 						<div class="flex items-center justify-between mb-2">
 							<h3 class="text-sm font-bold text-slate-900">Kerala Spatial Distribution Map</h3>
-							<span class="text-3xs text-slate-400 font-mono">Click district to inspect</span>
+							<div class="inline-flex rounded-md shadow-sm border border-slate-300 p-0.5 bg-slate-100 text-3xs font-semibold">
+								<button 
+									onclick={() => mapMode = 'choropleth'}
+									class="px-2 py-0.5 rounded transition {mapMode === 'choropleth' ? 'bg-white text-slate-900 shadow-xs' : 'text-slate-600 hover:text-slate-900'}"
+								>
+									Districts
+								</button>
+								<button 
+									onclick={() => mapMode = 'dots'}
+									class="px-2 py-0.5 rounded transition {mapMode === 'dots' ? 'bg-white text-slate-900 shadow-xs' : 'text-slate-600 hover:text-slate-900'}"
+								>
+									GPS Dots (DS030)
+								</button>
+							</div>
 						</div>
 						<p class="text-xs text-slate-500 mb-4">
-							Geographic layout of all 14 districts positioned from North to South, color-coded by share of infrastructure outlay.
+							{#if mapMode === 'choropleth'}
+								Geographic layout of all 14 districts positioned from North to South, color-coded by share of infrastructure outlay.
+							{:else}
+								Pinpointing 3,600+ KIIFB contract packages from Kerala Kanakku (DS030) across exact GPS coordinates.
+							{/if}
 						</p>
 
-						<!-- SVG Schematic District Map -->
+						<!-- SVG Schematic District Map / Dot Density -->
 						<div class="relative bg-slate-50 border border-slate-200/80 rounded-lg p-3 flex justify-center">
 							<svg viewBox="0 0 280 540" class="w-full max-w-[270px] h-auto drop-shadow-sm select-none">
 								<!-- Subtle Background coastline guideline -->
@@ -263,9 +291,10 @@
 											rx="5"
 											ry="5"
 											fill={distData ? getDistrictFillColor(distData, isSelected) : '#94a3b8'}
+											opacity={mapMode === 'dots' ? '0.25' : '1.0'}
 											stroke={isSelected ? '#0f172a' : '#ffffff'}
 											stroke-width={isSelected ? '2.5' : '1.5'}
-											class="transition-colors"
+											class="transition-all"
 										/>
 										<!-- District Label text -->
 										<text
@@ -274,13 +303,29 @@
 											text-anchor="middle"
 											font-size="9"
 											font-weight={isSelected ? 'bold' : '600'}
-											fill="#ffffff"
+											fill={mapMode === 'dots' ? '#475569' : '#ffffff'}
 											pointer-events="none"
 										>
 											{node.name}
 										</text>
 									</g>
 								{/each}
+
+								<!-- Optional Overlay: GPS Dots from Kanakku -->
+								{#if mapMode === 'dots' && data.kanakkuPackages}
+									{#each data.kanakkuPackages.slice(0, 800) as pkg}
+										{@const pt = projectGps(pkg.lat, pkg.lng)}
+										<circle
+											cx={pt.x}
+											cy={pt.y}
+											r={pkg.open_flags && pkg.open_flags.length > 0 ? 2.5 : 1.5}
+											fill={pkg.open_flags && pkg.open_flags.length > 0 ? '#ef4444' : '#059669'}
+											opacity="0.75"
+										>
+											<title>{pkg.title} ({pkg.district}) - {pkg.status}</title>
+										</circle>
+									{/each}
+								{/if}
 							</svg>
 						</div>
 
