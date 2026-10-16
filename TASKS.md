@@ -212,10 +212,11 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 - Evidence: Built automated master refresh script `scripts/refresh_pipeline.py` which verifies SHA-256 hashes of primary sources, re-runs financial table extraction, project register parsing, school directory processing, and unified dataset compilation, and executes all 29 tests. Documented backup/restore steps in `docs/refresh-and-backup.md`.
 
 ### T062 — Prepare release
-- Status: backlog
+- Status: done
 - Dependencies: T060, T061
-- Outputs: source-linked methodology and deployment instructions.
+- Outputs: source-linked methodology, release documentation, authoritative project overview (`README.md`, `docs/test-and-review-report.md`, `docs/refresh-and-backup.md`).
 - Acceptance: claims are traceable and limitations are visible.
+- Evidence: Fully overhauled `README.md` with complete audited figures, dashboard module guide, quickstart commands, reproducible test scripts, and data manifest links. All claims are traceable to official tables, and data limitations/discrepancies are prominently documented. Milestone 6 complete.
 
 ## Task completion rule
 
