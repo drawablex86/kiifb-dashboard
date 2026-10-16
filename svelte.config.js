@@ -6,8 +6,11 @@ const config = {
 	preprocess: vitePreprocess(),
 	kit: {
 		adapter: adapter({
-			runtime: 'nodejs20.x'
-		})
+			runtime: 'nodejs22.x'
+		}),
+		prerender: {
+			handleHttpError: 'warn'
+		}
 	}
 };
 
