@@ -166,10 +166,11 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 - Evidence: Built Evidence Completeness Ladder tracking all 6 portfolio levels (100% financial vs 8% ex-post outcomes) and itemized Data Gap Register documenting geographic omissions (1,408 projects with district null in KIIFB portal), missing ex-post cost-benefit models, missing handover tracking (80.5%), and unprovided vintage aging. Verified by `tests/test_public_value_reconciliation.py`.
 
 ### T042 — Add district/sector visualisations
-- Status: backlog
+- Status: done
 - Dependencies: T020, T040
-- Outputs: map and comparative charts.
+- Outputs: map and comparative charts (`src/routes/outcomes/+page.svelte`, `data/processed/public_value_and_geography.json`).
 - Acceptance: geographic denominators, map data provenance and reporting dates are explicit.
+- Evidence: Built interactive Kerala 14-district SVG spatial map, district comparative proportional bar visualizer (identifying Top 3 districts concentration at 41.6% and Kannur industrial LA pool at 74.7%), and Table 4.4 departmental distribution table (26 departments, PWD 52.6% vs SC/ST 0.24%). All denominators, sources (Committee Chapter IV, Tables 4.1-4.5), and reporting dates (June 30, 2026) are explicitly stated. Verified via unit tests (`test_public_value_reconciliation.py`), `npm run check`, and `npm run build`.
 
 ## Milestone 5 — Legal and governance
 
