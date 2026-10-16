@@ -88,8 +88,8 @@ Every calculation, dataset transformation, and UI component in this repository i
 
 ```bash
 # 1. Clone the repository and install dependencies
-git clone https://github.com/drawablex86/kiffb-dasboard.git
-cd kiffb-dasboard
+git clone https://github.com/drawablex86/kiifb-dashboard.git
+cd kiifb-dashboard
 npm install
 
 # 2. Run the full automated verification test suite (29 tests)

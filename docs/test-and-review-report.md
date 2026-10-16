@@ -55,7 +55,7 @@ Ran 29 tests in 0.003s — OK
    > kiifb-dashboard@0.0.1 check
    > svelte-kit sync && svelte-check --tsconfig ./tsconfig.json
 
-   Loading svelte-check in workspace: kiffb-dasboard
+   Loading svelte-check in workspace: kiifb-dashboard
    Getting Svelte diagnostics...
    svelte-check found 0 errors and 0 warnings
    ```
