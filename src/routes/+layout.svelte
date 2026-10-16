@@ -20,25 +20,33 @@
 					</p>
 				</div>
 			</div>
-			<nav class="flex items-center space-x-1 sm:space-x-3 text-xs sm:text-sm font-medium">
-				<a href="/" class="px-3 py-1.5 rounded text-slate-700 hover:text-slate-900 hover:bg-slate-100 transition">
+			<nav class="flex flex-wrap items-center gap-1 sm:gap-1.5 text-xs sm:text-sm font-medium">
+				<a href="/" class="px-2.5 py-1.5 rounded text-slate-700 hover:text-slate-900 hover:bg-slate-100 transition">
 					Assertions
 				</a>
 				<span class="text-slate-300">|</span>
-				<a href="/projects" class="px-3 py-1.5 rounded text-slate-700 hover:text-slate-900 hover:bg-slate-100 transition">
+				<a href="/projects" class="px-2.5 py-1.5 rounded text-slate-700 hover:text-slate-900 hover:bg-slate-100 transition">
 					Project Explorer
 				</a>
 				<span class="text-slate-300">|</span>
-				<a href="/financials" class="px-3 py-1.5 rounded text-slate-700 hover:text-slate-900 hover:bg-slate-100 transition">
-					Financial Liabilities
+				<a href="/financials" class="px-2.5 py-1.5 rounded text-slate-700 hover:text-slate-900 hover:bg-slate-100 transition">
+					Financials
 				</a>
 				<span class="text-slate-300">|</span>
-				<a href="/outcomes" class="px-3 py-1.5 rounded text-slate-700 hover:text-slate-900 hover:bg-slate-100 transition">
-					Public Value & Geography
+				<a href="/outcomes" class="px-2.5 py-1.5 rounded text-slate-700 hover:text-slate-900 hover:bg-slate-100 transition">
+					Outcomes & Map
 				</a>
 				<span class="text-slate-300">|</span>
-				<a href="/governance" class="px-3 py-1.5 rounded text-slate-700 hover:text-slate-900 hover:bg-slate-100 transition">
-					Governance & Legal
+				<a href="/governance" class="px-2.5 py-1.5 rounded text-slate-700 hover:text-slate-900 hover:bg-slate-100 transition">
+					Governance
+				</a>
+				<span class="text-slate-300">|</span>
+				<a href="/committee" class="px-2.5 py-1.5 rounded text-rose-700 hover:text-rose-900 hover:bg-rose-50 transition font-semibold">
+					Committee Scrutiny
+				</a>
+				<span class="text-slate-300">|</span>
+				<a href="/genesis" class="px-2.5 py-1.5 rounded text-blue-700 hover:text-blue-900 hover:bg-blue-50 transition font-semibold">
+					KIIFB Genesis
 				</a>
 			</nav>
 		</div>

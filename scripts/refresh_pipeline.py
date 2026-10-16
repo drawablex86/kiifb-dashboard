@@ -46,6 +46,23 @@ def verify_raw_sources():
         else:
             print(f"    [FAIL] Hash mismatch for {src['source_id']}: expected {expected_hash[:12]}, got {actual_hash[:12]}")
             return False
+
+    print("--> Step 2: Verifying Checksums of Institutional & Federal Scrutiny Datasets...")
+    for ds in manifest.get("institutional_and_federal_datasets", []):
+        rel_path = ds.get("local_path")
+        if not rel_path:
+            continue
+        p = PROJECT_ROOT / rel_path
+        if not p.exists():
+            print(f"    [WARN] File not found: {rel_path}")
+            continue
+        actual_hash = compute_sha256(p)
+        expected_hash = ds.get("sha256")
+        if actual_hash == expected_hash:
+            print(f"    [OK] {ds['dataset_id']}: {p.name} ({actual_hash[:12]}...)")
+        else:
+            print(f"    [FAIL] Hash mismatch for {ds['dataset_id']}: expected {expected_hash[:12]}, got {actual_hash[:12]}")
+            return False
     return True
 
 

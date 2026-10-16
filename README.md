@@ -6,7 +6,7 @@ An open-source, reproducible civic tech platform providing source-linked analysi
 
 ## 1. Project Overview
 
-The **Kerala Infrastructure Investment Fund Board (KIIFB)** was reconstituted in 2016 as a corporate statutory financing vehicle to mobilise extra-budgetary resources for public infrastructure. In October 2026, an Expert Review Committee chaired by Dr. K.M. Abraham submitted a comprehensive review of KIIFB's functioning, raising critical questions regarding debt sustainability, off-budget borrowing space deductions under Article 293, and spatial fund distribution.
+The **Kerala Infrastructure Investment Fund Board (KIIFB)** was reconstituted in 2016 as a corporate statutory financing vehicle to mobilise extra-budgetary resources for public infrastructure. In October 2026, an Expert Review Committee chaired by **Sudha Pillai** (with KIIFB headed by CEO Dr. K.M. Abraham) submitted a comprehensive review of KIIFB's functioning, raising critical questions regarding debt sustainability, off-budget borrowing space deductions under Article 293, and spatial fund distribution.
 
 This dashboard provides citizens, journalists, legislators, and researchers with:
 - **Strict Evidence Provenance**: Every assertion and financial figure is traced directly to primary page numbers, table rows, and official gazetted records.
@@ -14,6 +14,7 @@ This dashboard provides citizens, journalists, legislators, and researchers with
 - **Audited Financial Baseline**: Reconciles the ₹31,681.15 Cr outstanding debt stock, ₹25,932.55 Cr Article 293(3) borrowing deductions, and ₹47,532.54 Cr 16-year debt service schedule.
 - **2,377-Record Project Explorer**: Merges 1,408 KIIFB project sanctions with 969 KITE Sametham public school institutions, tracking physical progress and documenting data gaps.
 - **Separation of Powers**: Strictly separates administrative advisory opinions from pending and binding court rulings (such as the Supreme Court of India's Constitution Bench on Article 293).
+- **Institutional Dialectic & Federal Context**: Juxtaposes the Review Committee's fiscal conservatism against KIIFB's Keynesian public capital model, grounded within the Union Government's fiscal squeeze on Kerala.
 
 ---
 
@@ -24,7 +25,7 @@ This dashboard provides citizens, journalists, legislators, and researchers with
 | **Total Approved Capital** | **₹100,341.00 Cr** | Committee Table 4.1 (As on June 30, 2026) | 1,233 infrastructure projects (₹77,151 Cr) + 7 land acquisition projects (₹23,190 Cr). |
 | **Total Cumulative Released** | **₹42,327.00 Cr** | Committee Table 4.1 (As on June 30, 2026) | 42.2% overall portfolio absorption (₹30,924 Cr infra + ₹11,403 Cr land pool). |
 | **Outstanding Borrowing Stock** | **₹31,681.15 Cr** | Committee Table 3.3 (As on June 30, 2026) | Sanctioned: ₹48,559.69 Cr; Availed: ₹42,193.45 Cr; Repaid: ₹10,512.30 Cr. |
-| **Commercial Bank Loans** | **₹6,083.22 Cr** | Committee Table 3.4 (As on June 30, 2026) | 10 banks; sum of rows = ₹6,083.21 Cr (+0.01 Cr Federal Bank rounding documented). |
+| **Commercial Bank Loans** | **₹6,083.22 Cr** | Committee Table 3.4 (As on June 30, 2026) | 10 banks; sum of rows = ₹6,083.21 Cr (+0.01 Cr rounding documented). |
 | **Financial Institutions Debt** | **₹15,380.55 Cr** | Committee Table 3.5 (As on June 30, 2026) | 6 institutions (NABARD, KFW, SBI Cap, HUDCO, NIIF, PFC). |
 | **Listed Domestic Bonds** | **₹8,649.97 Cr** | Committee Table 3.7 (As on June 30, 2026) | 8 BSE-listed series (including ₹1,499.70 Cr Green Bonds). |
 | **Borrowing Space Deducted** | **₹25,932.55 Cr** | Committee Table 3.11 (2022-23 to 2026-27) | GoI Ministry of Finance deductions under Article 293(3) guidelines. |
@@ -40,7 +41,7 @@ This dashboard provides citizens, journalists, legislators, and researchers with
 
 ## 3. Dashboard Navigation & Architecture
 
-The dashboard is built with **SvelteKit 2**, **Svelte 5 Runes**, and **Tailwind CSS**, organised into five core interactive views:
+The dashboard is built with **SvelteKit 2**, **Svelte 5 Runes**, and **Tailwind CSS**, organised into seven core interactive views:
 
 ```
 src/routes/
@@ -48,7 +49,9 @@ src/routes/
 ├── projects/+page.svelte     # 2. Unified Project Explorer (2,377 Records)
 ├── financials/+page.svelte   # 3. Financial Liabilities & Amortisation Model
 ├── outcomes/+page.svelte     # 4. Public Value, Evidence Ladder & Kerala SVG Map
-└── governance/+page.svelte   # 5. Legal Register, Recommendations & Methodology
+├── governance/+page.svelte   # 5. Legal Register, Recommendations & Methodology
+├── committee/+page.svelte    # 6. Committee Scrutiny: Legality, Lapses & Member Records
+└── genesis/+page.svelte       # 7. KIIFB Genesis: Theoretical Premise & Key People
 ```
 
 ### 1. Headline Assertions & Citation Drawer (`/`)
@@ -77,6 +80,18 @@ src/routes/
 - **Judicial Separation**: Documents *State of Kerala v. Union of India* (Original Suit No. 1 of 2024 pending before a 5-judge Constitution Bench) and full redemption of Masala bonds on 27 March 2024.
 - **Recommendation Tracker (`REC-001` to `REC-008`)**: Tracks all 8 restructuring recommendations; none are falsely represented as implemented without gazetted evidence.
 - **Discrepancy Log & Reproducibility**: Documents `DISC-001` to `DISC-006` and command-line reproduction instructions.
+
+### 6. Committee Scrutiny & Origins (`/committee`)
+- **Legality & Jurisdictional Standing**: Evaluates G.O.(P) No.80/2026/FIN as an executive advisory order lacking statutory inquiry powers under the *Commissions of Inquiry Act, 1952*, highlighting the paradox of an administrative panel evaluating a statutory enactment.
+- **Four Critical Procedural Lapses**: Documents pre-determined Terms of Reference (ToR 1 & 2 judging 2016 Act against 2014 SBI Caps merchant bank memo), sub judice intrusion into Supreme Court proceedings, conflict appointments, and assembly tabling bypass.
+- **Member Dossiers & Conflicts of Interest**: Full profiles of Sudha Pillai, Tarun Bajaj (former Union Revenue/DEA Secretary who oversaw central borrowing deductions), Shyam Srinivasan (former Federal Bank CEO, which held 5.61% equity in KIIFB affiliate KIFML), Nilesh Vikamsey (corporate CA orthodoxy), and advisory mentor K.M. Chandrasekhar.
+- **Opposing Pillars Matrix & Federal Squeeze**: Side-by-side confrontation contrasting Fiscal Orthodoxy against Keynesian Developmentalism, paired with the Union's ₹25,932.55 Cr Article 293(3) deduction and off-budget double standards (NHAI/FCI).
+
+### 7. KIIFB Genesis & Theoretical Premise (`/genesis`)
+- **Statutory Evolution (1999–2016)**: Tracks the 3-phase journey from Act 4 of 2000 to the 2014 Chandrasekhar/SBI Caps proposal to the 2016 Act 8 restructuring.
+- **Key Architects & Fiduciary Shield**: Detailed profiles of Dr. T.M. Thomas Isaac, Dr. K.M. Abraham, Pinarayi Vijayan, and the statutory Fund Trustee and Advisory Commission (FTAC) chaired by former CAG Vinod Rai with former RBI Deputy Governor Usha Thorat.
+- **Keynesian Economic Rationale**: Breaks down the "Kerala Model" infrastructure paradox, the committed expenditure fiscal trap (70–80% locked in salaries/pensions), the high capital multiplier ($k > 1.5 - 2.0$), and the ERR vs FIRR paradigm for non-commercial social goods (schools and hospitals).
+- **Section 7 Revenue Hypothecation**: Explains the ring-fenced escrowing of Motor Vehicles Tax (MVT, ₹19,404 Cr) and petroleum cess (₹5,038 Cr) as credit enhancement for market borrowing.
 
 ---
 

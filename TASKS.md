@@ -218,6 +218,48 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 - Acceptance: claims are traceable and limitations are visible.
 - Evidence: Fully overhauled `README.md` with complete audited figures, dashboard module guide, quickstart commands, reproducible test scripts, and data manifest links. All claims are traceable to official tables, and data limitations/discrepancies are prominently documented. Milestone 6 complete.
 
+## Milestone 7 — Institutional Dialectic, Scrutiny & Federal Context
+
+### T070 — Author structured datasets for Committee scrutiny, KIIFB genesis & federalism
+- Status: done
+- Dependencies: T050, T011
+- Outputs: `data/processed/committee_scrutiny.json`, `data/processed/kiifb_genesis.json`, and `data/processed/opposing_pillars_and_federalism.json`.
+- Acceptance: G.O.(P) No.80/2026/FIN legality, procedural lapses (ToR bias, sub judice overreach, appointment conflicts, assembly bypass), full member dossiers (Sudha Pillai, Tarun Bajaj, Shyam Srinivasan, Nilesh Vikamsey, H. Shubhalakshmi Narayanan), KIIFB statutory evolution (Act 4 of 2000 to Act 8 of 2016), key people (Isaac, Abraham, Vijayan, Vinod Rai FTAC), Keynesian theoretical premise, and the 7-dimension opposing pillars matrix are fully documented with strict provenance. Registered in `data/manifest.json`.
+- Completed: 2026-10-16
+- Notes: Created 3 comprehensive datasets with cryptographic hashes registered in manifest.
+
+### T071 — Build automated test suite for institutional and federal scrutiny
+- Status: done
+- Dependencies: T070
+- Outputs: `tests/test_committee_and_genesis.py` (12 new automated unit tests, 41 tests total).
+- Acceptance: Verifies executive advisory status of committee, all 4 procedural lapses, member dossiers, specific conflicts (Tarun Bajaj MoF Article 293 deduction; Shyam Srinivasan Federal Bank 5.61% KIFML equity holding in Table 5.6), KIIFB 3-phase statutory evolution, key architects, FTAC trustees, 7-dimension opposing pillars matrix, Article 293(3) ₹25,932.55 Cr deduction sum, Union off-budget double standards (NHAI ₹3.4 lakh Cr, FCI ₹3.8 lakh Cr), and Supreme Court Constitution Bench referral details.
+- Completed: 2026-10-16
+- Notes: 41 tests pass cleanly in 0.005s.
+
+### T072 — Build Committee Scrutiny & Origins interactive view (`/committee`)
+- Status: done
+- Dependencies: T070, T071, T013
+- Outputs: `src/routes/committee/+page.svelte` and server data loader `src/routes/committee/+page.server.ts`.
+- Acceptance: Features 5 interactive tabs (Constitution & Legality, Procedural Lapses, Member Dossiers & Conflicts, Report Origins & Timing, Opposing Pillars & Federal Squeeze), prominent cross-link to `/genesis`, and responsive design. Passes `npm run check` and `npm run build` with zero errors.
+- Completed: 2026-10-16
+- Notes: Implemented interactive Svelte 5 component with conflict badges, procedural lapse cards, and federalism matrix.
+
+### T073 — Build KIIFB Genesis & Theoretical Premise interactive view (`/genesis`)
+- Status: done
+- Dependencies: T070, T071, T013
+- Outputs: `src/routes/genesis/+page.svelte` and server data loader `src/routes/genesis/+page.server.ts`.
+- Acceptance: Features 5 interactive tabs (Statutory Evolution 1999–2016, Key People & FTAC, Theoretical Premise & Multiplier, Revenue Hypothecation Section 7, Opposing Pillars & Federal Squeeze), prominent cross-link to `/committee`, and responsive design. Passes `npm run check` and `npm run build` with zero errors.
+- Completed: 2026-10-16
+- Notes: Implemented interactive Svelte 5 component with timeline cards, leadership profiles, Keynesian capital principles, and Section 7 transfer breakdown.
+
+### T074 — Integrate navigation, master refresh pipeline and documentation
+- Status: done
+- Dependencies: T072, T073
+- Outputs: Updated `src/routes/+layout.svelte`, `scripts/refresh_pipeline.py`, `data/manifest.json`, `TASKS.md`, and `README.md`.
+- Acceptance: Header navigation includes `/committee` and `/genesis` links; master refresh pipeline validates all raw and institutional datasets and passes all 41 unit tests; production build succeeds.
+- Completed: 2026-10-16
+- Notes: Master pipeline and production build verified cleanly with zero errors.
+
 ## Task completion rule
 
 A task is `done` only when acceptance criteria are met, relevant tests have run, sources and metadata are recorded, documentation is updated, and remaining gaps are captured in follow-up tasks.
