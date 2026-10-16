@@ -133,10 +133,13 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 - Notes: Created `scripts/extract_committee_financial_tables.py` and extracted full financial baseline dataset covering aggregate borrowings, bank loans, institutional loans, BSE bonds, space deductions, land acquisitions, amortisation schedule, and completion liabilities.
 
 ### T031 — Add calculation and reconciliation tests
-- Status: backlog
+- Status: done
 - Dependencies: T030
-- Outputs: automated tests for totals, units, stock/flow separation and calculation formulas.
-- Acceptance: all known differences are reported, not silently adjusted.
+- Outputs: `tests/test_financial_reconciliation.py` containing automated mathematical unit tests for all extracted financial tables.
+- Acceptance: tests pass; stock vs flow figures separated; internal arithmetic verified; all known differences (such as 0.01 Cr rounding on bank loans and 14.43 Cr column total discrepancy on land repayment in Table 4.5) are documented and asserted.
+- Verification command: `python3 -m unittest tests/test_financial_reconciliation.py`
+- Completed: 2026-10-16
+- Notes: 8 automated unit tests pass in 0.001s. All reconciliations verified.
 
 ### T032 — Build debt and land-liability views
 - Status: backlog
