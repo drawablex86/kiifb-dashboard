@@ -205,10 +205,11 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 - Evidence: Built end-to-end integration test suite. All 29 unit tests pass in 0.003s across 4 test modules. Svelte-check reports 0 errors and 0 warnings. Accessibility review verifies WCAG 2.1 AA keyboard and ARIA compliance on interactive maps and tables. Documented in `docs/test-and-review-report.md`.
 
 ### T061 — Document refresh and backup
-- Status: backlog
+- Status: done
 - Dependencies: T020, T030
-- Outputs: repeatable refresh commands and backup/restore instructions.
+- Outputs: repeatable refresh commands and backup/restore instructions (`scripts/refresh_pipeline.py`, `docs/refresh-and-backup.md`).
 - Acceptance: another contributor can reproduce data processing from archived sources.
+- Evidence: Built automated master refresh script `scripts/refresh_pipeline.py` which verifies SHA-256 hashes of primary sources, re-runs financial table extraction, project register parsing, school directory processing, and unified dataset compilation, and executes all 29 tests. Documented backup/restore steps in `docs/refresh-and-backup.md`.
 
 ### T062 — Prepare release
 - Status: backlog
