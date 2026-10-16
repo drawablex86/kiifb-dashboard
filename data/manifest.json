@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "version": "1.1.0",
-  "last_updated": "2026-10-16T10:43:50Z",
+  "version": "1.2.0",
+  "last_updated": "2026-10-16T11:26:30Z",
   "description": "Cryptographic and provenance inventory of research datasets and sources for KIIFB Dashboard",
   "sources": [
     {
@@ -36,6 +36,38 @@
       "source_type": "official_committee_report_transcript",
       "licence_or_terms": "Public Official Document (Kerala Legislative Assembly)",
       "notes": "Pre-existing 2,400-line markdown transcription of full report including transmittal letter, foreword, chapters I-VI, and Tables 3.1 to 4.4."
+    },
+    {
+      "source_id": "DS010",
+      "title": "KIIFB Official Project Status Database (Live Register)",
+      "publisher": "Kerala Infrastructure Investment Fund Board (KIIFB)",
+      "publication_date": "2026-10",
+      "reporting_period": "Live as of October 2026",
+      "retrieved_at": "2026-10-16T11:25:42Z",
+      "original_url": "https://www.kiifb.org/prjStatus.jsp",
+      "local_path": "data/raw/kiifb/kiifb-prjStatus.html",
+      "sha256": "c5ad164cce5da54b959acad9a7e6b5ee3eb085025aa72e831b64e1b5ab3e57a6",
+      "file_size_bytes": 756551,
+      "format": "text/html",
+      "source_type": "official_web_portal",
+      "licence_or_terms": "Official Public Portal (Government of Kerala)",
+      "notes": "Live interactive project status database containing 1,408 project rows across 35 government departments, including approved amount, payment released, SPV, and official status."
+    },
+    {
+      "source_id": "DS021",
+      "title": "KITE Sametham — KIIFB Funded Schools Directory",
+      "publisher": "Kerala Infrastructure and Technology for Education (KITE) / General Education Department",
+      "publication_date": "2026-10",
+      "reporting_period": "Live as of October 2026",
+      "retrieved_at": "2026-10-16T11:24:12Z",
+      "original_url": "https://sametham.kite.kerala.gov.in/KIIFBFundedSchools/spv",
+      "local_path": "data/raw/kite/kiifb-funded-schools-sametham.html",
+      "sha256": "2841ee59a93c8cceaa0cbc89964166b5b6153a0a0b674869b88498f739f1fb37",
+      "file_size_bytes": 767017,
+      "format": "text/html",
+      "source_type": "official_education_directory",
+      "licence_or_terms": "Official Public Portal (Government of Kerala)",
+      "notes": "Authentic directory of 969 KIIFB-funded public schools across all 14 districts, with official school codes (HS/HSE/VHSE), school names, and assembly constituency mappings."
     }
   ]
 }

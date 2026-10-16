@@ -91,28 +91,36 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 ## Milestone 2 — Project-level evidence
 
 ### T020 — Acquire KIIFB project records
-- Status: backlog
+- Status: done
 - Dependencies: T001
-- Outputs: archived source and processed project register, or documented alternative if no bulk download exists.
+- Outputs: archived source `data/raw/kiifb/kiifb-prjStatus.html` and processed project register `data/processed/kiifb_projects.json` (1,408 project rows).
 - Acceptance: source labels, reporting date, identifiers and status values preserved.
+- Completed: 2026-10-16
+- Notes: Downloaded live official KIIFB database (`DS010`), computed SHA-256 (`c5ad164c...`), registered in manifest, and extracted 1,408 projects across 35 departments.
 
 ### T021 — Acquire KITE education records
-- Status: backlog
+- Status: done
 - Dependencies: T001
-- Outputs: archived KITE records and processed institution/project list.
+- Outputs: archived KITE records `data/raw/kite/kiifb-funded-schools-sametham.html` and processed institution list `data/processed/kite_schools.json` (969 school institutions).
 - Acceptance: scheme/project/institution/building counting units are documented.
+- Completed: 2026-10-16
+- Notes: Acquired official KITE Sametham portal (`DS021`), computed SHA-256 (`2841ee59...`), registered in manifest, and extracted 969 school campuses with codes and constituencies.
 
-### T022 — Design project matching rules
-- Status: backlog
+### T022 — Design project matching rules & disambiguation
+- Status: done
 - Dependencies: T020, T021
-- Outputs: documented match rules and ambiguous-match report.
-- Acceptance: no silent fuzzy-match merges; uncertain matches remain unresolved.
+- Outputs: documented match rules in `docs/matching-rules.md` and discrepancy audit log (`DISC-001` to `DISC-003`).
+- Acceptance: no silent fuzzy-match merges; counting unit hierarchy (Schemes vs Institutions vs Buildings) strictly enforced; uncertain matches remain unresolved.
+- Completed: 2026-10-16
+- Notes: Documented multi-tier matching rules, counting unit disambiguation, and discrepancy log in `docs/matching-rules.md`.
 
 ### T023 — Build project explorer
-- Status: backlog
+- Status: done
 - Dependencies: T020, T021, T022, T013
-- Outputs: searchable project page, filters, status and source detail.
-- Acceptance: approval is not mislabelled as completion; every status is dated and sourced.
+- Outputs: searchable project explorer at `src/routes/projects/+page.svelte`, unified dataset `data/processed/unified_project_explorer.json` (2,377 records), sector/status filters, pagination, and inspection drawer.
+- Acceptance: approval is not mislabelled as completion; every status is dated and sourced; passes `npm run check` and `npm run build` with zero errors.
+- Completed: 2026-10-16
+- Notes: Implemented interactive Project Explorer in Svelte 5 with responsive filters, tabular Indian currency notation, and inspection modals. Zero warnings or errors.
 
 ## Milestone 3 — Financial model
 
