@@ -36,6 +36,10 @@
 				<a href="/outcomes" class="px-3 py-1.5 rounded text-slate-700 hover:text-slate-900 hover:bg-slate-100 transition">
 					Public Value & Geography
 				</a>
+				<span class="text-slate-300">|</span>
+				<a href="/governance" class="px-3 py-1.5 rounded text-slate-700 hover:text-slate-900 hover:bg-slate-100 transition">
+					Governance & Legal
+				</a>
 			</nav>
 		</div>
 	</header>

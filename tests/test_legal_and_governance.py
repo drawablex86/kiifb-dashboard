@@ -20,6 +20,9 @@ class TestLegalAndGovernance(unittest.TestCase):
         legal_path = DATA_DIR / "legal_issues_register.json"
         with open(legal_path, "r", encoding="utf-8") as f:
             cls.legal_data = json.load(f)
+        recs_path = DATA_DIR / "committee_recommendations.json"
+        with open(recs_path, "r", encoding="utf-8") as f:
+            cls.recs_data = json.load(f)
 
     def test_legal_issues_present(self):
         """T050: Verify legal issues exist with required fields."""
@@ -55,6 +58,24 @@ class TestLegalAndGovernance(unittest.TestCase):
         jp = masala_issue["judicial_proceedings"]
         self.assertEqual(jp["forum"], "High Court of Kerala")
         self.assertIn("27 March 2024", jp["binding_status"])
+
+    def test_recommendations_count_and_fields(self):
+        """T051: Verify all 8 recommendations are tracked with required fields."""
+        recs = self.recs_data.get("recommendations", [])
+        self.assertEqual(len(recs), 8)
+        rec_ids = [r["rec_id"] for r in recs]
+        for i in range(1, 9):
+            self.assertIn(f"REC-00{i}", rec_ids)
+
+    def test_recommendations_not_falsely_implemented(self):
+        """T051: Acceptance - recommendations are not represented as implemented without evidence."""
+        recs = self.recs_data.get("recommendations", [])
+        for rec in recs:
+            # None should be marked as "implemented" or "completed" without evidence
+            self.assertNotEqual(rec["implementation_status"], "implemented")
+            self.assertNotEqual(rec["implementation_status"], "completed")
+            self.assertTrue(len(rec["required_instrument"]) > 10)
+            self.assertTrue(len(rec["official_evidence"]) > 15)
 
 
 if __name__ == "__main__":

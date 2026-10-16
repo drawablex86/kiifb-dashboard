@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "description": "Tracker of the 8 restructuring recommendations of the 2026 Expert Committee, mapped to required legal instruments, official implementation status, and documented evidence.",
+  "civic_standard_note": "CRITICAL CIVIC TRUTH: Advisory committee recommendations have no self-executing legal effect. They do not alter statutory mandates or budgetary obligations until formally enacted by the Kerala Legislative Assembly or notified by the Government of Kerala through gazetted Executive Orders.",
+  "recommendations": [
+    {
+      "rec_id": "REC-001",
+      "number": 1,
+      "title": "Comprehensive 10-Year Performance Audit by CAG",
+      "summary": "Request CAG of India / AG Keralam to conduct a Performance Audit of KIIFB under Section 14(1) of CAG's DPC Act 1971 for 2016-17 to 2025-26.",
+      "report_reference": "Chapter VI, Part III, Recommendation 1 (p. 95)",
+      "target_entity": "Comptroller & Auditor General of India / Accountant General (Audit) Keralam",
+      "required_instrument": "Official State Government requisition under Section 14(1) of CAG (DPC) Act, 1971",
+      "implementation_status": "advisory_pending_action",
+      "status_label": "Advisory / Pending Action",
+      "official_evidence": "No gazetted order or official requisition from the Government of Kerala to the CAG requesting a 10-year Section 14(1) performance audit has been published as of October 2026.",
+      "impact_if_implemented": "Would subject all KIIFB transactions, procurement processes, SPV tenders, and borrowing covenants from 2016 to 2026 to full legislative audit scrutiny before the Public Accounts Committee (PAC)."
+    },
+    {
+      "rec_id": "REC-002",
+      "number": 2,
+      "title": "Legislative Prohibition on Further Market Borrowing",
+      "summary": "Prohibit KIIFB from raising funds through market borrowing; omit Sections 8, 9 and related borrowing provisions of the KIIFB (Amendment) Act 2016.",
+      "report_reference": "Chapter VI, Part III, Recommendation 2 (p. 95)",
+      "target_entity": "Kerala Legislative Assembly / Finance Department / Law Department",
+      "required_instrument": "KIIFB (Amendment) Bill passed by Legislative Assembly and assented to by the Governor",
+      "implementation_status": "advisory_pending_action",
+      "status_label": "Advisory / Pending Action",
+      "official_evidence": "No amendment bill has been introduced in the Kerala Legislative Assembly to omit Sections 8 and 9. KIIFB remains a statutory body with legal borrowing powers under the 1999/2016 Act.",
+      "impact_if_implemented": "Permanently terminates KIIFB's role as an off-budget borrowing vehicle, shifting all future capital infrastructure financing back to the State Consolidated Fund."
+    },
+    {
+      "rec_id": "REC-003",
+      "number": 3,
+      "title": "Budgetary Provision for Discharging Scheduled Debt",
+      "summary": "Government to make direct provision in the Annual Budget for meeting repayment obligations of KIIFB bonds, debentures, and bank loans (Table 6.1, ₹47,532.54 Cr to 2041-42).",
+      "report_reference": "Chapter VI, Part III, Recommendation 3 (p. 95)",
+      "target_entity": "Department of Finance / Kerala Legislative Assembly",
+      "required_instrument": "Annual Appropriation Act / Budgetary Demand for Grants",
+      "implementation_status": "partially_budgeted",
+      "status_label": "Partially Budgeted via Section 7",
+      "official_evidence": "Statutory transfers of Motor Vehicles Tax and petroleum cess continue under Section 7 (₹3,887 Cr in 2024-25), which partially meet servicing obligations. However, formal direct assumption of all commercial loans into the State Budget as direct public debt has not been enacted.",
+      "impact_if_implemented": "Transparently integrates KIIFB's ₹31,681.15 Cr outstanding debt into the State's formal debt service budget, removing ambiguity over servicing capacity."
+    },
+    {
+      "rec_id": "REC-004",
+      "number": 4,
+      "title": "Completion of Existing Infrastructure Projects via Line Departments",
+      "summary": "Transfer existing prioritized infrastructure projects to line departments (PWD, Water, Health) with ₹22,883 Cr provided as capital expenditure in the Annual Budget over 5 years (2026-27 to 2030-31, Table 6.3).",
+      "report_reference": "Chapter VI, Part III, Recommendation 4 (p. 95)",
+      "target_entity": "Line Departments (PWD, Water Resources, Health, General Education) & Finance Department",
+      "required_instrument": "Departmental Capital Outlay allocations in Demands for Grants & Revised Administrative Sanctions",
+      "implementation_status": "advisory_pending_action",
+      "status_label": "Advisory / Pending Action",
+      "official_evidence": "The 5-year ₹22,883 Cr transition plan remains an advisory proposal in the Committee report. Line departments have not issued revised administrative sanctions taking over project financing directly.",
+      "impact_if_implemented": "Guarantees funding to complete 1,233 sanctioned infrastructure works while ending KIIFB's execution intermediary role."
+    },
+    {
+      "rec_id": "REC-005",
+      "number": 5,
+      "title": "Debt Restructuring & High-Cost Debt Refinancing",
+      "summary": "Replace or swap existing high-cost commercial borrowings (bonds and bank loans at 8.5% to 9.7%) with lower-cost State liabilities to reduce annual interest carrying cost.",
+      "report_reference": "Chapter VI, Part III, Recommendation 5 (p. 95)",
+      "target_entity": "Department of Finance / KIIFB Asset-Liability Management Committee",
+      "required_instrument": "Refinancing agreements with banks, bond tender offers, or State government loan substitution",
+      "implementation_status": "advisory_pending_action",
+      "status_label": "Advisory / Pending Action",
+      "official_evidence": "Masala bonds were redeemed upon 5-year maturity on 27 March 2024. However, domestic bank loans (₹6,083 Cr) and institutional borrowings (₹15,381 Cr) remain at their original contracted coupons without official refinancing swap announcements.",
+      "impact_if_implemented": "Could reduce annual interest outflow (projected at ₹15,675.34 Cr to 2041-42 in Table 6.1) if lower coupon sovereign debt instruments are substituted."
+    },
+    {
+      "rec_id": "REC-006",
+      "number": 6,
+      "title": "Cancellation of Revenue Escrow Order G.O.(P) No. 158/2018/Fin",
+      "summary": "Cancel G.O.(P) No. 158/2018/Fin providing for direct escrowing of Motor Vehicles Tax and petroleum cess into KIIFB bank account once the State takes over debt obligations.",
+      "report_reference": "Chapter VI, Part III, Recommendation 6 (p. 95)",
+      "target_entity": "Department of Finance (Government of Kerala)",
+      "required_instrument": "Executive Government Order issued by Governor of Kerala cancelling G.O.(P) No. 158/2018/Fin",
+      "implementation_status": "advisory_pending_action",
+      "status_label": "Advisory / Pending Action",
+      "official_evidence": "G.O.(P) No. 158/2018/Fin remains active. Commercial banks continue automated revenue diversion directly to KIIFB's designated escrow accounts outside the Consolidated Fund.",
+      "impact_if_implemented": "Restores all tax and cess revenues to the Consolidated Fund of the State, re-establishing comprehensive legislative appropriation control under Articles 266 and 202."
+    },
+    {
+      "rec_id": "REC-007",
+      "number": 7,
+      "title": "Staff Rationalisation & Reallocation",
+      "summary": "Reallocate appraisal/ESG staff to State Planning Board for 15th Five-Year Plan; absorb Finance wing into Finance Department; repatriate deputation staff; omit Section 10 CEO appointment powers.",
+      "report_reference": "Chapter VI, Part III, Recommendation 7 (p. 95)",
+      "target_entity": "General Administration Department / State Planning Board / KIIFB Management",
+      "required_instrument": "Executive Government Orders on redeployment; Legislative omission of Section 10",
+      "implementation_status": "advisory_pending_action",
+      "status_label": "Advisory / Pending Action",
+      "official_evidence": "KIIFB's technical appraisal, inspection, and administrative divisions remain fully operational under KIIFB CEO leadership. Section 10 remains unamended.",
+      "impact_if_implemented": "Dismantles KIIFB's parallel technical bureaucracy and integrates technical capabilities into established state planning apparatus."
+    },
+    {
+      "rec_id": "REC-008",
+      "number": 8,
+      "title": "Relocation of Subsidiaries (KIIFCON and KIFML)",
+      "summary": "Bring consulting subsidiary KIIFCON under the State Planning Board; transfer KIIFB's equity shareholding in KIFML to KSIDC.",
+      "report_reference": "Chapter VI, Part III, Recommendation 8 (p. 96)",
+      "target_entity": "Kerala State Planning Board / KSIDC / Industries Department",
+      "required_instrument": "Cabinet decision, share purchase/transfer agreements, Board resolutions, and ROC filings",
+      "implementation_status": "advisory_pending_action",
+      "status_label": "Advisory / Pending Action",
+      "official_evidence": "KIIFCON remains an active wholly-owned subsidiary of KIIFB; KIFML remains an associated fund management company. No share transfer has been registered with the Ministry of Corporate Affairs (MCA).",
+      "impact_if_implemented": "Separates consulting and private fund management activities from KIIFB's residual debt-servicing structure."
+    }
+  ]
+}

@@ -182,10 +182,11 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 - Evidence: Built legal issues register covering Articles 266/293, KIIFB Act Section 8, Masala bonds/Entry 37, and SCSP/TSP statutory allocations. Explicitly distinguished Committee/CAG advisory opinions from pending/binding judicial proceedings (Supreme Court Original Suit No. 1 of 2024 referred to Constitution Bench; High Court of Kerala interim orders). Verified via unit tests (`tests/test_legal_and_governance.py`).
 
 ### T051 — Build recommendation tracker
-- Status: backlog
+- Status: done
 - Dependencies: T011
-- Outputs: committee recommendation status table linked to official actions.
+- Outputs: committee recommendation status table linked to official actions (`data/processed/committee_recommendations.json`, `src/routes/governance/+page.svelte`).
 - Acceptance: report recommendations are not represented as implemented without evidence.
+- Evidence: Tracked all 8 restructuring recommendations (`REC-001` through `REC-008`) from Chapter VI. Each mapped to target authority, required legal instrument (Legislative Assembly Amendment, Executive GO, CAG Requisition), and official action status (0 of 8 fully implemented; 1 partially budgeted). Acceptance criterion satisfied and verified via unit tests (`test_legal_and_governance.py`) and UI.
 
 ### T052 — Build methodology and data-quality pages
 - Status: backlog
