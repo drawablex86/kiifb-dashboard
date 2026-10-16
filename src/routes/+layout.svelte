@@ -32,6 +32,10 @@
 				<a href="/financials" class="px-3 py-1.5 rounded text-slate-700 hover:text-slate-900 hover:bg-slate-100 transition">
 					Financial Liabilities
 				</a>
+				<span class="text-slate-300">|</span>
+				<a href="/outcomes" class="px-3 py-1.5 rounded text-slate-700 hover:text-slate-900 hover:bg-slate-100 transition">
+					Public Value & Geography
+				</a>
 			</nav>
 		</div>
 	</header>

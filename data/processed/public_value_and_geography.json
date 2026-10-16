@@ -5,7 +5,7 @@
   "dimensions": {
     "financial_return": {
       "definition": "Direct project cash receipts: user fees, tolls, industrial lease rents, commercial receipts, and tariffs attributable directly to the asset.",
-      "committee_finding_summary": "Of 44 projects classified as revenue-generating (₹22,701.44 Cr outlay), only 3 (TransGrid 2.0, First Building at Technocity, and Petrochemical Park Kochi) made repayments from project revenues (₹3,351.90 Cr). Remaining 99.4% of total KIIFB debt service was met from State budgetary transfers.",
+      "committee_finding_summary": "Of 44 projects classified as revenue-generating (\u20b922,701.44 Cr outlay), only 3 (TransGrid 2.0, First Building at Technocity, and Petrochemical Park Kochi) made repayments from project revenues (\u20b93,351.90 Cr). Remaining 99.4% of total KIIFB debt service was met from State budgetary transfers.",
       "caveats": "Absence of direct cash receipts does not mean absence of public benefit. Public infrastructure (schools, rural water, general hospitals) is intended for social benefit, not financial profit."
     },
     "economic_return": {
@@ -19,37 +19,142 @@
       "committee_finding_summary": "Omitted from committee fiscal burden calculations. The report treated educational and health spending as an uncompensated fiscal drain (Chapters III & VI).",
       "documented_official_delivery": {
         "education": "242 public schools and colleges completed and handed over by August 2026 under the Public Education Rejuvenation Mission (139 Centres of Excellence, 93 Betterment of Infrastructure, 10 Colleges). 969 total schools listed in KITE Sametham database.",
-        "health": "118 health projects approved (₹7,496 Cr), with ₹3,186 Cr released for district hospital blocks, medical colleges (e.g. Konni), and diagnostic oncology wings."
+        "health": "118 health projects approved (\u20b97,496 Cr), with \u20b93,186 Cr released for district hospital blocks, medical colleges (e.g. Konni), and diagnostic oncology wings."
       },
       "caveats": "Social returns are real public capital assets whose economic benefits accrue to households and students over decades rather than generating corporate dividends."
     },
     "distributional_return": {
       "definition": "Equity of resource allocation across geographic districts, underserved populations, gender, disability, and marginalized communities (SC/ST).",
-      "committee_finding_summary": "Extreme spatial and sectoral skewness documented in Chapter IV: (1) Three districts (Thiruvananthapuram ₹10,820 Cr, Kannur ₹10,767 Cr, Ernakulam ₹10,514 Cr) account for 41.6% of approved infrastructure outlay, while Idukki, Pathanamthitta, Wayanad and Kasaragod receive only 9.7% combined. (2) In industrial land acquisition, Kannur accounts for 74.7% of all approved funds (₹12,258 Cr). (3) SC/ST Development received only ₹182 Cr (0.18% of approved funds) and ₹87 Cr released (0.21%), against the statutory benchmark of 12.64% under SCSP/TSP.",
+      "committee_finding_summary": "Extreme spatial and sectoral skewness documented in Chapter IV: (1) Three districts (Thiruvananthapuram \u20b910,820 Cr, Kannur \u20b910,767 Cr, Ernakulam \u20b910,514 Cr) account for 41.6% of approved infrastructure outlay, while Idukki, Pathanamthitta, Wayanad and Kasaragod receive only 9.7% combined. (2) In industrial land acquisition, Kannur accounts for 74.7% of all approved funds (\u20b912,258 Cr). (3) SC/ST Development received only \u20b9182 Cr (0.18% of approved funds) and \u20b987 Cr released (0.21%), against the statutory benchmark of 12.64% under SCSP/TSP.",
       "caveats": "Spatial concentration in Thiruvananthapuram and Ernakulam reflects major state-level capital hubs; however, the concentration in Kannur industrial land acquisition lacked a comparative industrial growth centre appraisal."
     },
     "financing_suitability": {
       "definition": "Alignment between the financing instrument (tenure, interest cost, debt reserve escrow) and the asset's cash-flow profile and economic lifetime.",
-      "committee_finding_summary": "Severe mismatch: market-rate commercial bonds (8.5% to 9.7%) and commercial bank loans were used to finance non-revenue social sector assets (schools, hospitals, coastal protection) whose debt must be serviced from general state taxation. The 2022 Net Borrowing Ceiling guidelines eliminated off-budget borrowing space, causing a deduction of ₹25,932.55 Cr while incurring an excess borrowing premium of ~₹910 Cr.",
+      "committee_finding_summary": "Severe mismatch: market-rate commercial bonds (8.5% to 9.7%) and commercial bank loans were used to finance non-revenue social sector assets (schools, hospitals, coastal protection) whose debt must be serviced from general state taxation. The 2022 Net Borrowing Ceiling guidelines eliminated off-budget borrowing space, causing a deduction of \u20b925,932.55 Cr while incurring an excess borrowing premium of ~\u20b9910 Cr.",
       "caveats": "Prior to the Ministry of Finance's 2022 guidelines, KIIFB enabled capital expenditure when State budget deficits were constrained by FRBM ceilings."
     }
   },
   "district_distribution": [
-    {"district": "Thiruvananthapuram", "infrastructure_outlay_cr": 10819.75, "infrastructure_share_pct": 14.02, "land_acquisition_outlay_cr": 301.17, "total_approved_cr": 11120.92, "category": "High Outlay (>10%)"},
-    {"district": "Kannur", "infrastructure_outlay_cr": 10767.35, "infrastructure_share_pct": 13.96, "land_acquisition_outlay_cr": 12257.50, "total_approved_cr": 23024.85, "category": "Highest Total Outlay (22.9%)"},
-    {"district": "Ernakulam", "infrastructure_outlay_cr": 10513.72, "infrastructure_share_pct": 13.63, "land_acquisition_outlay_cr": 1817.46, "total_approved_cr": 12331.18, "category": "High Outlay (>10%)"},
-    {"district": "Kozhikode", "infrastructure_outlay_cr": 6326.89, "infrastructure_share_pct": 8.20, "land_acquisition_outlay_cr": 0.0, "total_approved_cr": 6326.89, "category": "Medium Outlay (5-10%)"},
-    {"district": "Alappuzha", "infrastructure_outlay_cr": 5425.50, "infrastructure_share_pct": 7.03, "land_acquisition_outlay_cr": 0.0, "total_approved_cr": 5425.50, "category": "Medium Outlay (5-10%)"},
-    {"district": "Thrissur", "infrastructure_outlay_cr": 3888.59, "infrastructure_share_pct": 5.04, "land_acquisition_outlay_cr": 0.0, "total_approved_cr": 3888.59, "category": "Medium Outlay (5-10%)"},
-    {"district": "Kollam", "infrastructure_outlay_cr": 3812.59, "infrastructure_share_pct": 4.94, "land_acquisition_outlay_cr": 0.0, "total_approved_cr": 3812.59, "category": "Low Outlay (<5%)"},
-    {"district": "Malappuram", "infrastructure_outlay_cr": 3773.22, "infrastructure_share_pct": 4.89, "land_acquisition_outlay_cr": 0.0, "total_approved_cr": 3773.22, "category": "Low Outlay (<5%)"},
-    {"district": "Palakkad", "infrastructure_outlay_cr": 3265.01, "infrastructure_share_pct": 4.23, "land_acquisition_outlay_cr": 1844.00, "total_approved_cr": 5109.01, "category": "Low Outlay (<5%)"},
-    {"district": "Kottayam", "infrastructure_outlay_cr": 2542.52, "infrastructure_share_pct": 3.30, "land_acquisition_outlay_cr": 200.60, "total_approved_cr": 2743.12, "category": "Low Outlay (<5%)"},
-    {"district": "Kasargod", "infrastructure_outlay_cr": 2262.24, "infrastructure_share_pct": 2.93, "land_acquisition_outlay_cr": 0.0, "total_approved_cr": 2262.24, "category": "Underserved (<3%)"},
-    {"district": "Wayanad", "infrastructure_outlay_cr": 2261.39, "infrastructure_share_pct": 2.93, "land_acquisition_outlay_cr": 0.0, "total_approved_cr": 2261.39, "category": "Underserved (<3%)"},
-    {"district": "Pathanamthitta", "infrastructure_outlay_cr": 1515.34, "infrastructure_share_pct": 1.96, "land_acquisition_outlay_cr": 0.0, "total_approved_cr": 1515.34, "category": "Underserved (<3%)"},
-    {"district": "Idukki", "infrastructure_outlay_cr": 1441.32, "infrastructure_share_pct": 1.87, "land_acquisition_outlay_cr": 0.0, "total_approved_cr": 1441.32, "category": "Underserved (<3%)"},
-    {"district": "State-wide / Inter-district", "infrastructure_outlay_cr": 8535.41, "infrastructure_share_pct": 11.05, "land_acquisition_outlay_cr": 6769.01, "total_approved_cr": 15304.42, "category": "State-wide (NH-66, KFON, etc.)"}
+    {
+      "district": "Thiruvananthapuram",
+      "infrastructure_outlay_cr": 10819.75,
+      "infrastructure_share_pct": 14.02,
+      "land_acquisition_outlay_cr": 301.17,
+      "total_approved_cr": 11120.92,
+      "category": "High Outlay (>10%)"
+    },
+    {
+      "district": "Kannur",
+      "infrastructure_outlay_cr": 10767.35,
+      "infrastructure_share_pct": 13.96,
+      "land_acquisition_outlay_cr": 12257.5,
+      "total_approved_cr": 23024.85,
+      "category": "Highest Total Outlay (22.9%)"
+    },
+    {
+      "district": "Ernakulam",
+      "infrastructure_outlay_cr": 10513.72,
+      "infrastructure_share_pct": 13.63,
+      "land_acquisition_outlay_cr": 1817.46,
+      "total_approved_cr": 12331.18,
+      "category": "High Outlay (>10%)"
+    },
+    {
+      "district": "Kozhikode",
+      "infrastructure_outlay_cr": 6326.89,
+      "infrastructure_share_pct": 8.2,
+      "land_acquisition_outlay_cr": 0.0,
+      "total_approved_cr": 6326.89,
+      "category": "Medium Outlay (5-10%)"
+    },
+    {
+      "district": "Alappuzha",
+      "infrastructure_outlay_cr": 5425.5,
+      "infrastructure_share_pct": 7.03,
+      "land_acquisition_outlay_cr": 0.0,
+      "total_approved_cr": 5425.5,
+      "category": "Medium Outlay (5-10%)"
+    },
+    {
+      "district": "Thrissur",
+      "infrastructure_outlay_cr": 3888.59,
+      "infrastructure_share_pct": 5.04,
+      "land_acquisition_outlay_cr": 0.0,
+      "total_approved_cr": 3888.59,
+      "category": "Medium Outlay (5-10%)"
+    },
+    {
+      "district": "Kollam",
+      "infrastructure_outlay_cr": 3812.59,
+      "infrastructure_share_pct": 4.94,
+      "land_acquisition_outlay_cr": 0.0,
+      "total_approved_cr": 3812.59,
+      "category": "Low Outlay (<5%)"
+    },
+    {
+      "district": "Malappuram",
+      "infrastructure_outlay_cr": 3773.22,
+      "infrastructure_share_pct": 4.89,
+      "land_acquisition_outlay_cr": 0.0,
+      "total_approved_cr": 3773.22,
+      "category": "Low Outlay (<5%)"
+    },
+    {
+      "district": "Palakkad",
+      "infrastructure_outlay_cr": 3265.01,
+      "infrastructure_share_pct": 4.23,
+      "land_acquisition_outlay_cr": 1844.0,
+      "total_approved_cr": 5109.01,
+      "category": "Low Outlay (<5%)"
+    },
+    {
+      "district": "Kottayam",
+      "infrastructure_outlay_cr": 2542.52,
+      "infrastructure_share_pct": 3.3,
+      "land_acquisition_outlay_cr": 200.6,
+      "total_approved_cr": 2743.12,
+      "category": "Low Outlay (<5%)"
+    },
+    {
+      "district": "Kasargod",
+      "infrastructure_outlay_cr": 2262.24,
+      "infrastructure_share_pct": 2.93,
+      "land_acquisition_outlay_cr": 0.0,
+      "total_approved_cr": 2262.24,
+      "category": "Underserved (<3%)"
+    },
+    {
+      "district": "Wayanad",
+      "infrastructure_outlay_cr": 2261.39,
+      "infrastructure_share_pct": 2.93,
+      "land_acquisition_outlay_cr": 0.0,
+      "total_approved_cr": 2261.39,
+      "category": "Underserved (<3%)"
+    },
+    {
+      "district": "Pathanamthitta",
+      "infrastructure_outlay_cr": 1515.34,
+      "infrastructure_share_pct": 1.96,
+      "land_acquisition_outlay_cr": 0.0,
+      "total_approved_cr": 1515.34,
+      "category": "Underserved (<3%)"
+    },
+    {
+      "district": "Idukki",
+      "infrastructure_outlay_cr": 1441.32,
+      "infrastructure_share_pct": 1.87,
+      "land_acquisition_outlay_cr": 0.0,
+      "total_approved_cr": 1441.32,
+      "category": "Underserved (<3%)"
+    },
+    {
+      "district": "State-wide / Inter-district",
+      "infrastructure_outlay_cr": 8535.41,
+      "infrastructure_share_pct": 11.05,
+      "land_acquisition_outlay_cr": 6769.01,
+      "total_approved_cr": 15304.42,
+      "category": "State-wide (NH-66, KFON, etc.)"
+    }
   ],
   "evidence_completeness_matrix": {
     "total_portfolio_projects": 1240,
@@ -91,5 +196,275 @@
         "primary_source": "TransGrid power reliability, Technocity tenancy; general public value untracked"
       }
     ]
-  }
+  },
+  "department_distribution": [
+    {
+      "department": "Public Works (PWD)",
+      "projects_count": 535,
+      "approved_cr": 40577.0,
+      "approved_share_pct": 52.59,
+      "released_cr": 14990.0,
+      "released_share_pct": 48.47,
+      "absorption_rate_pct": 36.94
+    },
+    {
+      "department": "Water Resources",
+      "projects_count": 107,
+      "approved_cr": 7658.0,
+      "approved_share_pct": 9.93,
+      "released_cr": 3865.0,
+      "released_share_pct": 12.5,
+      "absorption_rate_pct": 50.47
+    },
+    {
+      "department": "Health & Family Welfare",
+      "projects_count": 118,
+      "approved_cr": 7496.0,
+      "approved_share_pct": 9.72,
+      "released_cr": 3186.0,
+      "released_share_pct": 10.3,
+      "absorption_rate_pct": 42.5
+    },
+    {
+      "department": "Coastal Shipping & Inland Navigation",
+      "projects_count": 19,
+      "approved_cr": 3488.0,
+      "approved_share_pct": 4.52,
+      "released_cr": 269.0,
+      "released_share_pct": 0.87,
+      "absorption_rate_pct": 7.71
+    },
+    {
+      "department": "General Education",
+      "projects_count": 158,
+      "approved_cr": 3223.0,
+      "approved_share_pct": 4.18,
+      "released_cr": 2374.0,
+      "released_share_pct": 7.68,
+      "absorption_rate_pct": 73.66
+    },
+    {
+      "department": "Power",
+      "projects_count": 18,
+      "approved_cr": 2916.0,
+      "approved_share_pct": 3.78,
+      "released_cr": 1917.0,
+      "released_share_pct": 6.2,
+      "absorption_rate_pct": 65.74
+    },
+    {
+      "department": "Information Technology",
+      "projects_count": 7,
+      "approved_cr": 2536.0,
+      "approved_share_pct": 3.29,
+      "released_cr": 913.0,
+      "released_share_pct": 2.95,
+      "absorption_rate_pct": 36.0
+    },
+    {
+      "department": "Higher Education",
+      "projects_count": 70,
+      "approved_cr": 2351.0,
+      "approved_share_pct": 3.05,
+      "released_cr": 895.0,
+      "released_share_pct": 2.89,
+      "absorption_rate_pct": 38.07
+    },
+    {
+      "department": "Sports & Youth Affairs",
+      "projects_count": 42,
+      "approved_cr": 988.0,
+      "approved_share_pct": 1.28,
+      "released_cr": 412.0,
+      "released_share_pct": 1.33,
+      "absorption_rate_pct": 41.7
+    },
+    {
+      "department": "Local Self Government",
+      "projects_count": 30,
+      "approved_cr": 849.0,
+      "approved_share_pct": 1.1,
+      "released_cr": 237.0,
+      "released_share_pct": 0.77,
+      "absorption_rate_pct": 27.92
+    },
+    {
+      "department": "Fisheries & Ports",
+      "projects_count": 27,
+      "approved_cr": 653.0,
+      "approved_share_pct": 0.85,
+      "released_cr": 363.0,
+      "released_share_pct": 1.17,
+      "absorption_rate_pct": 55.59
+    },
+    {
+      "department": "Tourism",
+      "projects_count": 14,
+      "approved_cr": 652.0,
+      "approved_share_pct": 0.85,
+      "released_cr": 149.0,
+      "released_share_pct": 0.48,
+      "absorption_rate_pct": 22.85
+    },
+    {
+      "department": "Forest & Wildlife",
+      "projects_count": 13,
+      "approved_cr": 637.0,
+      "approved_share_pct": 0.83,
+      "released_cr": 436.0,
+      "released_share_pct": 1.41,
+      "absorption_rate_pct": 68.45
+    },
+    {
+      "department": "Transport",
+      "projects_count": 3,
+      "approved_cr": 607.0,
+      "approved_share_pct": 0.79,
+      "released_cr": 55.0,
+      "released_share_pct": 0.18,
+      "absorption_rate_pct": 9.06
+    },
+    {
+      "department": "Culture",
+      "projects_count": 17,
+      "approved_cr": 502.0,
+      "approved_share_pct": 0.65,
+      "released_cr": 222.0,
+      "released_share_pct": 0.72,
+      "absorption_rate_pct": 44.22
+    },
+    {
+      "department": "Planning & Economic Affairs",
+      "projects_count": 6,
+      "approved_cr": 353.0,
+      "approved_share_pct": 0.46,
+      "released_cr": 41.0,
+      "released_share_pct": 0.13,
+      "absorption_rate_pct": 11.61
+    },
+    {
+      "department": "Science & Technology",
+      "projects_count": 5,
+      "approved_cr": 319.0,
+      "approved_share_pct": 0.41,
+      "released_cr": 11.0,
+      "released_share_pct": 0.04,
+      "absorption_rate_pct": 3.45
+    },
+    {
+      "department": "Home",
+      "projects_count": 6,
+      "approved_cr": 234.0,
+      "approved_share_pct": 0.3,
+      "released_cr": 46.0,
+      "released_share_pct": 0.15,
+      "absorption_rate_pct": 19.66
+    },
+    {
+      "department": "Industries (Regular)",
+      "projects_count": 2,
+      "approved_cr": 208.0,
+      "approved_share_pct": 0.27,
+      "released_cr": 10.0,
+      "released_share_pct": 0.03,
+      "absorption_rate_pct": 4.81
+    },
+    {
+      "department": "Ayush",
+      "projects_count": 3,
+      "approved_cr": 206.0,
+      "approved_share_pct": 0.27,
+      "released_cr": 179.0,
+      "released_share_pct": 0.58,
+      "absorption_rate_pct": 86.89
+    },
+    {
+      "department": "SC/ST Development",
+      "projects_count": 10,
+      "approved_cr": 182.0,
+      "approved_share_pct": 0.24,
+      "released_cr": 87.0,
+      "released_share_pct": 0.28,
+      "absorption_rate_pct": 47.8
+    },
+    {
+      "department": "Devaswom",
+      "projects_count": 2,
+      "approved_cr": 139.0,
+      "approved_share_pct": 0.18,
+      "released_cr": 94.0,
+      "released_share_pct": 0.3,
+      "absorption_rate_pct": 67.63
+    },
+    {
+      "department": "Revenue",
+      "projects_count": 5,
+      "approved_cr": 105.0,
+      "approved_share_pct": 0.14,
+      "released_cr": 26.0,
+      "released_share_pct": 0.08,
+      "absorption_rate_pct": 24.76
+    },
+    {
+      "department": "Labour & Skills",
+      "projects_count": 5,
+      "approved_cr": 94.0,
+      "approved_share_pct": 0.12,
+      "released_cr": 73.0,
+      "released_share_pct": 0.24,
+      "absorption_rate_pct": 77.66
+    },
+    {
+      "department": "Registration",
+      "projects_count": 6,
+      "approved_cr": 90.0,
+      "approved_share_pct": 0.12,
+      "released_cr": 61.0,
+      "released_share_pct": 0.2,
+      "absorption_rate_pct": 67.78
+    },
+    {
+      "department": "Other Departments (5 depts)",
+      "projects_count": 5,
+      "approved_cr": 88.0,
+      "approved_share_pct": 0.11,
+      "released_cr": 13.0,
+      "released_share_pct": 0.04,
+      "absorption_rate_pct": 14.77
+    }
+  ],
+  "portfolio_data_gaps": [
+    {
+      "gap_id": "GAP-001",
+      "dimension": "Geographic Tagging in Public Portal",
+      "affected_records": "1,408 out of 1,408 KIIFB projects (100% of KIIFB prjStatus.jsp)",
+      "severity": "high",
+      "description": "KIIFB's official live project status register omits district attributes for all 1,408 project sanctions. Geographic breakdown is only discoverable from Committee Table 4.2 aggregate disclosures or school-level KITE directories.",
+      "remedy": "Cross-referenced with KITE Sametham (969 geo-tagged schools) and Committee Report Chapter IV district tables."
+    },
+    {
+      "gap_id": "GAP-002",
+      "dimension": "Ex-Post Economic & Societal Cost-Benefit Studies",
+      "affected_records": "All 1,240 portfolio projects",
+      "severity": "critical",
+      "description": "Neither KIIFB nor the Committee report commissioned systematic ex-post cost-benefit or macroeconomic rate-of-return analyses. The report evaluated fiscal drain without quantifying productivity gains or time savings.",
+      "remedy": "Explicitly flagged as unmodelled data_gap in dashboard; no arbitrary single composite score synthesized."
+    },
+    {
+      "gap_id": "GAP-003",
+      "dimension": "Asset Handover and Commissioning Certificates",
+      "affected_records": "Approximately 998 of 1,240 infrastructure projects (~80.5%)",
+      "severity": "high",
+      "description": "While 242 education institutions have documented handover events under Sametham, operational handover protocols for PWD roads, bridges, and hospital equipment lack centralized public tracking.",
+      "remedy": "Segregated status tracking into: Sanctioned -> Disbursed -> Milestone Progress -> Handed Over -> Operational."
+    },
+    {
+      "gap_id": "GAP-004",
+      "dimension": "Vintage & Year-Wise Sanction Aging",
+      "affected_records": "All 1,233 infrastructure projects",
+      "severity": "medium",
+      "description": "The Committee noted (Para 4.2) that KIIFB did not furnish a year-wise vintage breakdown of sanctions, making it impossible to separate normal multi-year project gestation from chronic delays.",
+      "remedy": "Documented in methodology caveats and discrepancy log."
+    }
+  ]
 }

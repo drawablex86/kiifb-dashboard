@@ -83,6 +83,22 @@ class TestPublicValueReconciliation(unittest.TestCase):
         self.assertIn("Active Operational Service Status", metric_names)
         self.assertIn("Ex-Post Social & Economic Outcome Metrics", metric_names)
 
+    def test_departmental_distribution(self):
+        """T042: Verify departmental distribution totals match Table 4.4."""
+        depts = self.data.get("department_distribution", [])
+        self.assertGreater(len(depts), 20)
+        pwd = next(d for d in depts if "Public Works" in d["department"])
+        self.assertAlmostEqual(pwd["approved_share_pct"], 52.59, delta=0.1)
+        self.assertEqual(pwd["projects_count"], 535)
+
+    def test_portfolio_data_gaps(self):
+        """T041: Verify portfolio data gaps are explicitly itemized."""
+        gaps = self.data.get("portfolio_data_gaps", [])
+        self.assertGreaterEqual(len(gaps), 4)
+        gap_ids = [g["gap_id"] for g in gaps]
+        self.assertIn("GAP-001", gap_ids)
+        self.assertIn("GAP-002", gap_ids)
+
 
 if __name__ == "__main__":
     unittest.main()

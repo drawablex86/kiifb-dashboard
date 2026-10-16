@@ -159,10 +159,11 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 - Evidence: Defined 5 distinct dimensions: financial return (only 3 of 44 revenue projects repaid ₹3,351.90 Cr; 99.4% budget funded), economic return (unmodelled, marked data_gap), social return (242 schools, 118 health projects), distributional return (top 3 districts get 41.6% outlay, Kannur gets 74.7% land pool, SC/ST gets 0.18%), and financing suitability (commercial market borrowings used for social assets). Tested via unit tests.
 
 ### T041 — Add evidence completeness view
-- Status: backlog
+- Status: done
 - Dependencies: T023, T040
-- Outputs: indicators for missing completion, handover, operation, usage, cost and outcome data.
-- Acceptance: evidence gaps are measurable and clearly defined.
+- Outputs: indicators for missing completion, handover, operation, usage, cost and outcome data. Itemized data gap register (`GAP-001` to `GAP-004`) and 6-tier completeness ladder (`data/processed/public_value_and_geography.json`, `src/routes/outcomes/+page.svelte`).
+- Acceptance: evidence gaps are measurable and clearly defined. Missing metrics display as data_gap/unknown, not zero. Verified in unit tests and UI.
+- Evidence: Built Evidence Completeness Ladder tracking all 6 portfolio levels (100% financial vs 8% ex-post outcomes) and itemized Data Gap Register documenting geographic omissions (1,408 projects with district null in KIIFB portal), missing ex-post cost-benefit models, missing handover tracking (80.5%), and unprovided vintage aging. Verified by `tests/test_public_value_reconciliation.py`.
 
 ### T042 — Add district/sector visualisations
 - Status: backlog
