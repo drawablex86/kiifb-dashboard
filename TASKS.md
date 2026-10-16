@@ -125,10 +125,12 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 ## Milestone 3 — Financial model
 
 ### T030 — Extract committee financial tables
-- Status: backlog
+- Status: done
 - Dependencies: T011
-- Outputs: versioned tables with source locators and units.
-- Acceptance: core figures verified or marked provisional.
+- Outputs: `data/processed/committee_financial_tables.json` containing 10 core verified tables (Tables 3.1, 3.2, 3.3, 3.4, 3.5, 3.7, 3.11, 4.5, 6.1, 6.2/6.3) with chapter/page locators and source definitions.
+- Acceptance: core figures verified against cited report tables; currency units explicitly maintained as INR ₹ Crore.
+- Completed: 2026-10-16
+- Notes: Created `scripts/extract_committee_financial_tables.py` and extracted full financial baseline dataset covering aggregate borrowings, bank loans, institutional loans, BSE bonds, space deductions, land acquisitions, amortisation schedule, and completion liabilities.
 
 ### T031 — Add calculation and reconciliation tests
 - Status: backlog
