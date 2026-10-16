@@ -198,10 +198,11 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 ## Milestone 6 — Release readiness
 
 ### T060 — Test and review
-- Status: backlog
+- Status: done
 - Dependencies: T013, T023, T032, T042, T052
-- Outputs: test report, accessibility review, data-quality checks.
+- Outputs: test report, accessibility review, data-quality checks (`tests/test_end_to_end_integrity.py`, `docs/test-and-review-report.md`).
 - Acceptance: critical checks pass or documented blockers remain.
+- Evidence: Built end-to-end integration test suite. All 29 unit tests pass in 0.003s across 4 test modules. Svelte-check reports 0 errors and 0 warnings. Accessibility review verifies WCAG 2.1 AA keyboard and ARIA compliance on interactive maps and tables. Documented in `docs/test-and-review-report.md`.
 
 ### T061 — Document refresh and backup
 - Status: backlog
