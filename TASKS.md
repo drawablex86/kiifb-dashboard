@@ -18,20 +18,22 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
   - Added `design-system.md` to establish visual standards, palette, and Indian financial notation rules (`₹ Crore`, `₹ Lakh`, tabular numerals).
 
 ### T002 — Bootstrap research data layout & manifest
-- Status: ready
+- Status: done
 - Dependencies: T001
 - Objective: create directory layout for raw, processed, and derived research assets, set up `data/README.md`, and register existing local assets in `data/manifest.json`.
 - Outputs: directories `data/raw/`, `data/processed/`, `data/derived/`, `data/README.md`, and `data/manifest.json`.
 - Acceptance: data layout is created; `data/KIIFB Findings Report.md` is registered in `data/manifest.json` with SHA-256 checksum and metadata.
-- Verification command: `python3 -c "import json; manifest = json.load(open('data/manifest.json')); print('Manifest entries:', len(manifest['sources']))"`
+- Completed: 2026-10-16
+- Notes: directories created, `data/README.md` authored, `data/manifest.json` initialized with `DS001-LOCAL` checksum and metadata.
 
 ### T003 — Initialize Git version control
-- Status: backlog
+- Status: done
 - Dependencies: T002
 - Objective: initialize Git repository, configure `.gitignore` (ignoring `.DS_Store`, `node_modules`, large binaries), and create initial baseline commit.
 - Outputs: `.git/` repository and `.gitignore`.
 - Acceptance: repository is cleanly initialized with an initial commit preserving all baseline files.
-- Verification command: `git status`
+- Completed: 2026-10-16
+- Notes: Git initialized, `.gitignore` created, root commit `2511c0d` created with all baseline documentation and assets. Clean working tree verified.
 
 ## Milestone 1 — Five-assertion prototype
 
