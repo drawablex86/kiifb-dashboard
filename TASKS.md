@@ -260,6 +260,128 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 - Completed: 2026-10-16
 - Notes: Master pipeline and production build verified cleanly with zero errors.
 
+## Milestone 8 — Living data collection, snapshot history & coverage
+
+> **Parallel execution note (2026-10-20):** Milestone 8 (T080–T084) is executed on one agent while Milestone 9 tasks **T090–T093** (map, Sankey, scatter, trajectory overlay) run **in parallel on a second agent**.
+> To avoid merge conflicts, Milestone 8 commits are restricted to: `scripts/`, `tests/`, `data/`, `docs/`, `datasources.md`, `TASKS.md`, `README.md`.
+> Milestone 8 must **not** touch `src/`, `package.json`, `package-lock.json`, `tailwind.config.js`, `svelte.config.js`, `vite.config.ts`, or `postcss.config.js` — those belong to the Milestone 9 agent.
+> Commit early and often, in small task-scoped commits (one commit per task or subtask), and rebase/pull before pushing.
+> Decision for T090 map rendering (hosted tiles accepted, offline reproducibility waived for that feature) is recorded and approved in `docs/decisions/ADR-001-maplibre-hosted-tiles.md`.
+
+### T080 — Build live fetchers with versioned raw snapshots
+- Status: open
+- Dependencies: M7 complete
+- Objective: create Python fetchers for the KIIFB project-status portal (`DS010`), KITE Sametham schools directory (`DS021`), and the Kerala Kanakku open-data suite (`DS030` — projects.csv, funding.csv, and liability.csv, the latter covering the PWD Defect Liability register) that retrieve live data on demand, write each crawl to a dated immutable archive (`data/raw/<source-dir>/<YYYY-MM-DD>/`) without overwriting prior crawls or the pinned baseline files, and record retrieval metadata (timestamp, URL, SHA-256, file size, HTTP status) in `data/manifest.json`.
+- Outputs: `scripts/fetch_common.py` (shared archive, checksum, manifest and unchanged-detection helpers), `scripts/fetch_kiifb_portal.py`, `scripts/fetch_kite_sametham.py`, `scripts/fetch_kanakku.py`, updated `data/manifest.json`, updated `datasources.md`.
+- Acceptance: fetchers respect source terms, robots rules and polite rate limits; unchanged content is detected via checksum comparison and skipped (no duplicate archives); every crawl is immutably archived and hash-registered without conflicting with the existing pinned `sources[].sha256` verification; a failed download is recorded with a safe manual retrieval path (per `datasources.md` §2) and never leaves the tree in a partially-overwritten state; `--dry-run` mode available for offline testing.
+- Verification command: `python3 -m unittest tests/test_fetchers.py`
+
+### T081 — Integrate fetch mode into master refresh pipeline
+- Status: open
+- Dependencies: T080
+- Objective: add a `--fetch` flag to `scripts/refresh_pipeline.py` so the pipeline can run in fetch mode (fetch → verify → extract → diff → test) while keeping the current offline reproducibility mode as the default; extractors must auto-discover and read the newest archived crawl per source, falling back to the pinned legacy paths when no newer crawl exists.
+- Outputs: updated `scripts/refresh_pipeline.py`; extractor path-discovery updates in `scripts/extract_kiifb_projects.py` and `scripts/extract_kite_schools.py`; updated `docs/refresh-and-backup.md`.
+- Acceptance: offline mode (no flag) reproduces identical processed output from the pinned archived sources as today, and all 41 tests pass unchanged; fetch mode completes end-to-end; both modes pass the full unittest suite; `docs/refresh-and-backup.md` documents both modes and their guarantees.
+
+### T082 — Snapshot archive & diff engine
+- Status: open
+- Dependencies: T081
+- Objective: after each successful refresh, write the processed datasets to an immutable dated archive (`data/snapshots/<YYYY-MM>/`) and generate a machine-readable change log (`data/processed/change_log.json`) reporting new/removed/renamed records, normalised status migrations with before/after source status text, financial deltas (newly released ₹, revised outlays), new/resolved anomaly flags, and district/coordinate coverage percentages.
+- Outputs: `data/snapshots/`, `scripts/diff_snapshots.py`, `data/processed/change_log.json`, `tests/test_diff_engine.py`.
+- Acceptance: diff output is deterministic for identical inputs (re-running yields byte-identical change log); every delta is computed only between records matched by stable `project_id`/`record_id` under documented rules in `docs/matching-rules.md`; first run against the existing October 2026 data baseline produces a valid empty-delta change log; tests verify synthetic migration scenarios (add, remove, rename, status migration, new flag, financial delta, coverage change).
+
+### T083 — Expand Kanakku matching coverage for districts & coordinates
+- Status: open
+- Dependencies: T082
+- Objective: improve `scripts/enrich_projects_with_kanakku.py` to increase matching coverage against the 3,622 Kanakku packages (540 matched today), adding a documented multi-tier fallback (normalised alphanumeric title → work/sub-project code → constituency→district reverse lookup) and updating `docs/matching-rules.md` with the new tiers and confidence semantics.
+- Outputs: updated `scripts/enrich_projects_with_kanakku.py`, updated `data/processed/kiifb_projects.json` and `unified_project_explorer.json`, updated `docs/matching-rules.md`, `tests/test_matching_coverage.py`.
+- Acceptance: district coverage of the 1,408-record KIIFB register rises from 42% toward the 70% target; every newly matched record records which rule matched and why; zero silent fuzzy merges — every match tier below tier 1 requires an auditable confidence value and is recorded in a match log; existing verified matches are unchanged (stability asserted by test); unresolved matches remain explicitly flagged.
+- Notes: no LLM-assisted matching without a documented confidence rule and a human-auditable match log committed to the repository.
+
+### T084 — Broaden source registry (annual reports, budget line items, bonds/RTI)
+- Status: open
+- Dependencies: T080
+- Objective: register and acquire follow-on financial sources — KIIFB annual reports (CAG-audited, `DS012`), state budget KIIFB line items (`DS032`), Masala bond filings/RTI disclosures, and Niyamasabha assembly questions — each with manifest checksum, rights notes, and a `datasources.md` entry.
+- Outputs: new archived sources under `data/raw/`, updated `data/manifest.json`, updated `datasources.md`.
+- Acceptance: each source is assigned a `DS###` id with documented licence terms; no source is ingested without recorded access terms; all financial aggregates remain traceable to their original locator; existing processed datasets are not silently re-baselined to the new sources (noted in `datasources.md` discrepancy register if figures differ).
+
+## Milestone 9 — Deployment, funds & trend visualisation
+
+> **Parallel execution note (2026-10-20):** T090–T093 are being executed **in parallel by a second agent**. That agent may freely edit `src/`, `package.json`, and config files; it should **not** touch `scripts/`, `data/raw/`, `data/manifest.json`, or `datasources.md` while T080–T084 run concurrently. Both agents coordinate through `TASKS.md` status lines and small per-task commits.
+
+### T090 — Real geographic Kerala map (MapLibre GL)
+- Status: open
+- Dependencies: M7 complete (no snapshot dependency)
+- Objective: replace the schematic dot map on `/outcomes` with a MapLibre GL choropleth of Kerala's 14 districts by approved outlay plus a dot layer for the 591 geo-tagged projects, click-through linked to the project explorer, and a non-tile SVG fallback (current schematic) rendered when tiles are unavailable.
+- Outputs: new chart/map package in `src/lib/components/`, MapLibre GL JS devDependency, updated `src/routes/outcomes/+page.svelte`.
+- Acceptance: keyboard navigable and screen-reader labelled per `design-system.md`; district data provenance cites Committee Table 4.2; fallback loads with zero network dependencies; passes `npm run check` and `npm run build` with zero errors.
+- Notes: architecture doc names MapLibre GL as the default map choice; rendering decision approved by Rahul in `docs/decisions/ADR-001-maplibre-hosted-tiles.md` — hosted tiles accepted, offline reproducibility waived for the map feature specifically.
+
+### T091 — Deployment Sankey flow (Approved → Released → Contracted → Complete → Handed over)
+- Status: open
+- Dependencies: T090 (shared chart components)
+- Objective: build a Sankey visual of portfolio deployment flow by project stage, sliceable by sector or district, using Kanakku's 20 lifecycle-stage field rather than the collapsed 4-status normalisation.
+- Outputs: `src/lib/components/SankeyFlow.svelte` (hand-built SVG layout or ECharts dependency per ADR), embedded on `/projects` and `/financials`.
+- Acceptance: every flow stage is labelled with count and ₹ value in Indian crore notation; stage mapping rules documented; runs from current `unified_project_explorer.json` with no schema change; accessible labels provided for non-visual contexts.
+
+### T092 — Funds-vs-progress scatter with anomaly overlay
+- Status: open
+- Dependencies: T091 (chart components)
+- Objective: build a scatter plot per project (x = % released, y = physical progress %) with a shaded divergence zone (≥25 percentage points), cost-escalation and overdue markers, and a click-through citation drawer per point.
+- Outputs: `src/lib/components/FundsProgressScatter.svelte`, embedded on `/projects`.
+- Acceptance: visual encodes the documented Rule Engine v2 criteria (payment-vs-progress, cost escalation, overdue); projects without progress data are excluded with an explicit count shown (not plotted at zero); respects tabular India ₹ rendering in tooltips.
+
+### T093 — Completion trajectory overlay on the Amortisation Model (`/financials`)
+- Status: open
+- Dependencies: T092 (chart components)
+- Objective: overlay actual cumulative released funds on the existing Table 6.1 debt-service schedule and Table 6.3 completion-need timeline within `/financials`, showing release pace vs future fiscal need in a single comparable timeline.
+- Outputs: updated `src/routes/financials/+page.svelte`.
+- Acceptance: stock vs flow distinction preserved per `architecture.md` §8; overlay data strictly sourced and dated; no conflation of future commitments with outstanding debt.
+
+### T094 — Time series view `/trends`
+- Status: open
+- Dependencies: T082
+- Objective: build a new `/trends` route rendering cumulative released funds over months, normalised status-migration waterfall, anomaly-flag trend, top-3-district concentration over time, and per-district release curves, driven entirely from `data/processed/change_log.json` plus archived snapshots.
+- Outputs: `src/routes/trends/+page.svelte`, `src/routes/trends/+page.server.ts`, navigation entry in `+layout.svelte`.
+- Acceptance: every series lists its as-of dates; timeline granularity matches available snapshots (documented on-page); coverage limitations from GAP-001 disclosed; passes `npm run check` and `npm run build` with zero errors.
+
+### T095 — Data freshness surfacing (as-of badges)
+- Status: open
+- Dependencies: T081
+- Objective: stamp every route with a persistent "Data as of <date> • archived / live-verified" badge derived from `data/manifest.json` retrieval records so every view discloses the age of its evidence.
+- Outputs: `src/lib/components/FreshnessBadge.svelte`, layout integration on all routes.
+- Acceptance: badge reflects actual manifest dates, not hardcoded values; visible without scroll on mobile; consistent with the evidence-labelling system in `design-system.md`.
+
+## Milestone 10 — Progress, delivery analytics & distribution
+
+### T100 — Per-project milestone timeline cards
+- Status: open
+- Dependencies: T083 (extended matching), T090 (drawer components)
+- Objective: within the project explorer inspection drawer, render a collapsible milestone ladder per record (Sanction → Tender → Contract → Milestones → Handover → DLP) using the Kanakku lifecycle-status fields with per-milestone source and locator.
+- Outputs: `src/lib/components/ProjectTimeline.svelte`, updated `src/routes/projects/+page.svelte`.
+- Acceptance: each milestone displays `source_id`, `source_locator` and dated as-of info; unknown/unrecorded milestones are shown as explicit gaps (not invented); passes `npm run check`.
+
+### T101 — Portfolio drill-down funnel
+- Status: open
+- Dependencies: T100 (shared drawer)
+- Objective: drill down Portfolio → Sector → District → Project with summary tiles at each level (count, approved ₹, released ₹, % physically complete), filterable with URL-shared state.
+- Outputs: updated `src/routes/projects/+page.svelte` or new `src/routes/portfolio/+page.svelte`.
+- Acceptance: counts and sums reconcile with `unified_project_explorer.json` totals (asserted in a new unit test); approved is not conflated with completion; URL state is shareable and restores exactly.
+
+### T102 — Delay & anomaly register (dedicated route or register view)
+- Status: open
+- Dependencies: T082, T092
+- Objective: build a single filterable register of all open anomaly flags (overdue, payment-vs-progress, cost escalation, stale updates, above-approval) with flag trend history from `change_log.json`, resolved/active status, and per-flag provenance.
+- Outputs: new `src/routes/flags/+page.svelte` (or register on `/projects`), navigation entry.
+- Acceptance: each flag shows the objective criterion that triggered it; resolved flags retain their history (never deleted); the union of register totals reconciles with per-flag counts in the processed dataset.
+
+### T103 — Exports, API endpoints & district fact sheets
+- Status: open
+- Dependencies: T101
+- Objective: add CSV/JSON download from the project explorer, SvelteKit server endpoints (`/api/v1/projects.json`, `/api/v1/change-log.json`) exposing only processed public data, shareable URL filter state, and print-ready district fact sheets on `/outcomes`.
+- Outputs: `src/routes/api/v1/` server routes, updated explorer tools, `docs/test-and-review-report.md` updated with API test results.
+- Acceptance: endpoints expose no unprocessed/private data and document licence inheritance (CC BY 4.0 for Kanakku derivatives); downloads preserve `source_id`/`source_locator` columns; fact sheets are print-CSS friendly and cite provenance per figure.
+
 ## Task completion rule
 
 A task is `done` only when acceptance criteria are met, relevant tests have run, sources and metadata are recorded, documentation is updated, and remaining gaps are captured in follow-up tasks.
