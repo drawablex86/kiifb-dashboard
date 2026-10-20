@@ -1,8 +1,10 @@
 <script lang="ts">
+	import SankeyFlow from '$lib/components/SankeyFlow.svelte';
+
 	let { data } = $props();
 
 	// Active tab inside Financials view
-	let activeTab = $state<'debt_profile' | 'land_pool' | 'amortisation' | 'transfers'>('debt_profile');
+	let activeTab = $state<'debt_profile' | 'land_pool' | 'amortisation' | 'transfers' | 'deployment_flow'>('debt_profile');
 
 	// Tables shorthand
 	let t3 = $derived(data.tables.table_3_3_aggregate_borrowing);
@@ -90,6 +92,12 @@
 			class="px-4 py-2.5 border-b-2 font-semibold transition cursor-pointer {activeTab === 'transfers' ? 'border-slate-900 text-slate-900' : 'border-transparent text-slate-500 hover:text-slate-800'}"
 		>
 			State Budget Transfers (99.4% Ratio)
+		</button>
+		<button 
+			onclick={() => activeTab = 'deployment_flow'} 
+			class="px-4 py-2.5 border-b-2 font-semibold transition cursor-pointer {activeTab === 'deployment_flow' ? 'border-slate-900 text-slate-900' : 'border-transparent text-slate-500 hover:text-slate-800'}"
+		>
+			Deployment Flow (Sankey)
 		</button>
 	</div>
 
@@ -422,6 +430,19 @@
 						</tbody>
 					</table>
 				</div>
+			</div>
+		</div>
+	{/if}
+
+	<!-- Tab 5: Deployment Flow (Sankey) -->
+	{#if activeTab === 'deployment_flow'}
+		<div class="space-y-6">
+			<div class="bg-white rounded-lg border border-slate-200 p-6 shadow-sm">
+				<h2 class="text-lg font-bold text-slate-900 mb-2">Portfolio Deployment Flow (Sankey)</h2>
+				<p class="text-xs text-slate-500 mb-4">
+					Flow of approved capital through Kanakku lifecycle stages. Data from DS010/DS030 enriched project records.
+				</p>
+				<SankeyFlow records={data.records} />
 			</div>
 		</div>
 	{/if}

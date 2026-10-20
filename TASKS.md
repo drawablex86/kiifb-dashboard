@@ -310,7 +310,7 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 > **Parallel execution note (2026-10-20):** T090–T093 are being executed **in parallel by a second agent**. That agent may freely edit `src/`, `package.json`, and config files; it should **not** touch `scripts/`, `data/raw/`, `data/manifest.json`, or `datasources.md` while T080–T084 run concurrently. Both agents coordinate through `TASKS.md` status lines and small per-task commits.
 
 ### T090 — Real geographic Kerala map (MapLibre GL)
-- Status: in_progress
+- Status: done
 - Dependencies: M7 complete (no snapshot dependency)
 - Objective: replace the schematic dot map on `/outcomes` with a MapLibre GL choropleth of Kerala's 14 districts by approved outlay plus a dot layer for the 591 geo-tagged projects, click-through linked to the project explorer, and a non-tile SVG fallback (current schematic) rendered when tiles are unavailable.
 - Outputs: new chart/map package in `src/lib/components/`, MapLibre GL JS devDependency, updated `src/routes/outcomes/+page.svelte`.

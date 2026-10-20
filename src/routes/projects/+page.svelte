@@ -1,5 +1,10 @@
 <script lang="ts">
+	import SankeyFlow from '$lib/components/SankeyFlow.svelte';
+
 	let { data } = $props();
+
+	// Sankey view state
+	let showSankey = $state(false);
 
 	// Search & Filter State
 	let searchQuery = $state('');
@@ -224,6 +229,25 @@
 				</button>
 			{/if}
 		</div>
+	</div>
+
+	<!-- Sankey Flow View Toggle -->
+	<div class="bg-white rounded-lg border border-slate-200 p-4 shadow-sm">
+		<div class="flex items-center justify-between">
+			<div>
+				<h3 class="text-sm font-bold text-slate-900">Portfolio Deployment Flow (Sankey)</h3>
+				<p class="text-2xs text-slate-500">Visualize capital flow through Kanakku lifecycle stages</p>
+			</div>
+			<button
+				onclick={() => showSankey = !showSankey}
+				class="px-3 py-1.5 text-xs font-medium rounded border transition {showSankey ? 'bg-slate-900 text-white border-slate-900' : 'bg-white text-slate-700 border-slate-300 hover:bg-slate-50'}"
+			>
+				{showSankey ? 'Hide Sankey' : 'Show Sankey'}
+			</button>
+		</div>
+		{#if showSankey}
+			<SankeyFlow records={data.records} />
+		{/if}
 	</div>
 
 	<!-- Project Explorer Table -->
