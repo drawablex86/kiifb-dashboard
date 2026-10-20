@@ -310,7 +310,7 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 > **Parallel execution note (2026-10-20):** T090–T093 are being executed **in parallel by a second agent**. That agent may freely edit `src/`, `package.json`, and config files; it should **not** touch `scripts/`, `data/raw/`, `data/manifest.json`, or `datasources.md` while T080–T084 run concurrently. Both agents coordinate through `TASKS.md` status lines and small per-task commits.
 
 ### T090 — Real geographic Kerala map (MapLibre GL)
-- Status: open
+- Status: in_progress
 - Dependencies: M7 complete (no snapshot dependency)
 - Objective: replace the schematic dot map on `/outcomes` with a MapLibre GL choropleth of Kerala's 14 districts by approved outlay plus a dot layer for the 591 geo-tagged projects, click-through linked to the project explorer, and a non-tile SVG fallback (current schematic) rendered when tiles are unavailable.
 - Outputs: new chart/map package in `src/lib/components/`, MapLibre GL JS devDependency, updated `src/routes/outcomes/+page.svelte`.
@@ -318,21 +318,21 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 - Notes: architecture doc names MapLibre GL as the default map choice; rendering decision approved by Rahul in `docs/decisions/ADR-001-maplibre-hosted-tiles.md` — hosted tiles accepted, offline reproducibility waived for the map feature specifically.
 
 ### T091 — Deployment Sankey flow (Approved → Released → Contracted → Complete → Handed over)
-- Status: open
+- Status: in_progress
 - Dependencies: T090 (shared chart components)
 - Objective: build a Sankey visual of portfolio deployment flow by project stage, sliceable by sector or district, using Kanakku's 20 lifecycle-stage field rather than the collapsed 4-status normalisation.
 - Outputs: `src/lib/components/SankeyFlow.svelte` (hand-built SVG layout or ECharts dependency per ADR), embedded on `/projects` and `/financials`.
 - Acceptance: every flow stage is labelled with count and ₹ value in Indian crore notation; stage mapping rules documented; runs from current `unified_project_explorer.json` with no schema change; accessible labels provided for non-visual contexts.
 
 ### T092 — Funds-vs-progress scatter with anomaly overlay
-- Status: open
+- Status: in_progress
 - Dependencies: T091 (chart components)
 - Objective: build a scatter plot per project (x = % released, y = physical progress %) with a shaded divergence zone (≥25 percentage points), cost-escalation and overdue markers, and a click-through citation drawer per point.
 - Outputs: `src/lib/components/FundsProgressScatter.svelte`, embedded on `/projects`.
 - Acceptance: visual encodes the documented Rule Engine v2 criteria (payment-vs-progress, cost escalation, overdue); projects without progress data are excluded with an explicit count shown (not plotted at zero); respects tabular India ₹ rendering in tooltips.
 
 ### T093 — Completion trajectory overlay on the Amortisation Model (`/financials`)
-- Status: open
+- Status: in_progress
 - Dependencies: T092 (chart components)
 - Objective: overlay actual cumulative released funds on the existing Table 6.1 debt-service schedule and Table 6.3 completion-need timeline within `/financials`, showing release pace vs future fiscal need in a single comparable timeline.
 - Outputs: updated `src/routes/financials/+page.svelte`.
