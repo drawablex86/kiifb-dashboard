@@ -1,5 +1,6 @@
 <script lang="ts">
 	import SankeyFlow from '$lib/components/SankeyFlow.svelte';
+	import CompletionTrajectoryOverlay from '$lib/components/CompletionTrajectoryOverlay.svelte';
 
 	let { data } = $props();
 
@@ -15,6 +16,7 @@
 	let t45 = $derived(data.tables.table_4_5_land_acquisition);
 	let t61 = $derived(data.tables.table_6_1_debt_servicing_schedule);
 	let t_req = $derived(data.tables.table_6_2_and_3_completion_requirements);
+	let t63 = $derived(t_req);
 	let t31 = $derived(data.tables.table_3_1_transfers);
 	let t32 = $derived(data.tables.table_3_2_servicing_ratio);
 
@@ -347,6 +349,10 @@
 					</table>
 				</div>
 			</div>
+
+			<!-- Completion Trajectory Overlay (T093) -->
+			<CompletionTrajectoryOverlay {t31} {t61} {t63} />
+
 		</div>
 	{/if}
 

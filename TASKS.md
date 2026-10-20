@@ -325,7 +325,7 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 - Acceptance: every flow stage is labelled with count and ₹ value in Indian crore notation; stage mapping rules documented; runs from current `unified_project_explorer.json` with no schema change; accessible labels provided for non-visual contexts.
 
 ### T092 — Funds-vs-progress scatter with anomaly overlay
-- Status: in_progress
+- Status: done
 - Dependencies: T091 (chart components)
 - Objective: build a scatter plot per project (x = % released, y = physical progress %) with a shaded divergence zone (≥25 percentage points), cost-escalation and overdue markers, and a click-through citation drawer per point.
 - Outputs: `src/lib/components/FundsProgressScatter.svelte`, embedded on `/projects`.
