@@ -318,7 +318,7 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 - Notes: architecture doc names MapLibre GL as the default map choice; rendering decision approved by Rahul in `docs/decisions/ADR-001-maplibre-hosted-tiles.md` — hosted tiles accepted, offline reproducibility waived for the map feature specifically.
 
 ### T091 — Deployment Sankey flow (Approved → Released → Contracted → Complete → Handed over)
-- Status: in_progress
+- Status: done
 - Dependencies: T090 (shared chart components)
 - Objective: build a Sankey visual of portfolio deployment flow by project stage, sliceable by sector or district, using Kanakku's 20 lifecycle-stage field rather than the collapsed 4-status normalisation.
 - Outputs: `src/lib/components/SankeyFlow.svelte` (hand-built SVG layout or ECharts dependency per ADR), embedded on `/projects` and `/financials`.

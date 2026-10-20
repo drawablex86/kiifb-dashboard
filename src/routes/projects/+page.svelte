@@ -1,10 +1,12 @@
 <script lang="ts">
 	import SankeyFlow from '$lib/components/SankeyFlow.svelte';
+	import FundsProgressScatter from '$lib/components/FundsProgressScatter.svelte';
 
 	let { data } = $props();
 
-	// Sankey view state
+	// Sankey/Scatter view state
 	let showSankey = $state(false);
+	let showScatter = $state(false);
 
 	// Search & Filter State
 	let searchQuery = $state('');
@@ -247,6 +249,25 @@
 		</div>
 		{#if showSankey}
 			<SankeyFlow records={data.records} />
+		{/if}
+	</div>
+
+	<!-- Funds vs Progress Scatter (T092) -->
+	<div class="bg-white rounded-lg border border-slate-200 p-4 shadow-sm">
+		<div class="flex items-center justify-between">
+			<div>
+				<h3 class="text-sm font-bold text-slate-900">Funds Released vs Physical Progress Scatter</h3>
+				<p class="text-2xs text-slate-500">Scatter of % released vs % progress with divergence zone and anomaly markers</p>
+			</div>
+			<button
+				onclick={() => showScatter = !showScatter}
+				class="px-3 py-1.5 text-xs font-medium rounded border transition {showScatter ? 'bg-slate-900 text-white border-slate-900' : 'bg-white text-slate-700 border-slate-300 hover:bg-slate-50'}"
+			>
+				{showScatter ? 'Hide Scatter' : 'Show Scatter'}
+			</button>
+		</div>
+		{#if showScatter}
+			<FundsProgressScatter records={data.records} />
 		{/if}
 	</div>
 
