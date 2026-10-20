@@ -1,4 +1,6 @@
 <script lang="ts">
+	import KeralaGeographyMap from '$lib/components/KeralaGeographyMap.svelte';
+
 	let { data } = $props();
 
 	// Tabs for navigation
@@ -11,23 +13,20 @@
 	let districts = $derived(data.publicValue.district_distribution || []);
 	let departments = $derived(data.publicValue.department_distribution || []);
 
-	// State for Geography & Sectoral tab (T042)
+	// State for Geography & Sectoral tab (T042) - now shared with KeralaGeographyMap
 	let selectedDistrict = $state<string>('Kannur');
 	let districtSort = $state<'outlay_desc' | 'outlay_asc' | 'alpha' | 'share_desc'>('outlay_desc');
 	let selectedDenominator = $state<'infra' | 'land' | 'total'>('infra');
-	let mapMode = $state<'choropleth' | 'dots'>('choropleth');
+	let mapMode = $state<'districts' | 'dots' | 'both'>('districts');
 	let deptSearch = $state('');
 	let deptSort = $state<'approved_desc' | 'released_desc' | 'absorption_desc' | 'projects_desc'>('approved_desc');
 
-	// Projected coordinates for dots (Kerala bounds approx lat 8.28 to 12.8, lng 74.85 to 77.4)
-	function projectGps(lat: number, lng: number) {
-		const minLat = 8.28, maxLat = 12.85;
-		const minLng = 74.85, maxLng = 77.45;
-		// Map SVG dimensions: 280 x 540
-		const x = 30 + ((lng - minLng) / (maxLng - minLng)) * 210;
-		const y = 30 + ((maxLat - lat) / (maxLat - minLat)) * 470;
-		return { x: Math.max(10, Math.min(270, x)), y: Math.max(15, Math.min(525, y)) };
-	}
+	// Geotagged records for the map dot layer (from DS030 enriched data)
+	let geotaggedRecords = $derived.by(() => {
+		return (data.kanakkuPackages || []).filter((p: any) =>
+			p.lat && p.lng && Number.isFinite(p.lat) && Number.isFinite(p.lng)
+		);
+	});
 
 	let sortedDistricts = $derived.by(() => {
 		const list = [...districts];
@@ -94,7 +93,7 @@
 		}
 	}
 
-	// Color coding for map and district bars
+	// Color coding for district bars (used in the comparison section)
 	function getDistrictFillColor(dist: any, isSelected: boolean): string {
 		if (isSelected) return '#059669'; // Emerald-600 highlight
 		if (dist.infrastructure_share_pct >= 10.0) return '#065f46'; // Emerald-800
@@ -102,24 +101,6 @@
 		if (dist.infrastructure_share_pct >= 3.0) return '#64748b'; // Slate-500
 		return '#f59e0b'; // Amber-500 (Underserved)
 	}
-
-	// Geographic layout coordinates for Kerala district map (North to South)
-	const districtMapNodes = [
-		{ name: 'Kasargod', x: 42, y: 35, width: 72, height: 26, isDistrict: true },
-		{ name: 'Kannur', x: 58, y: 72, width: 78, height: 30, isDistrict: true },
-		{ name: 'Wayanad', x: 145, y: 88, width: 74, height: 26, isDistrict: true },
-		{ name: 'Kozhikode', x: 68, y: 115, width: 80, height: 28, isDistrict: true },
-		{ name: 'Malappuram', x: 80, y: 155, width: 88, height: 30, isDistrict: true },
-		{ name: 'Palakkad', x: 150, y: 190, width: 82, height: 32, isDistrict: true },
-		{ name: 'Thrissur', x: 95, y: 228, width: 78, height: 30, isDistrict: true },
-		{ name: 'Ernakulam', x: 108, y: 270, width: 84, height: 32, isDistrict: true },
-		{ name: 'Idukki', x: 175, y: 298, width: 74, height: 34, isDistrict: true },
-		{ name: 'Kottayam', x: 115, y: 338, width: 76, height: 28, isDistrict: true },
-		{ name: 'Alappuzha', x: 65, y: 365, width: 74, height: 26, isDistrict: true },
-		{ name: 'Pathanamthitta', x: 135, y: 388, width: 92, height: 28, isDistrict: true },
-		{ name: 'Kollam', x: 105, y: 430, width: 76, height: 28, isDistrict: true },
-		{ name: 'Thiruvananthapuram', x: 122, y: 475, width: 110, height: 32, isDistrict: true }
-	];
 </script>
 
 <svelte:head>
@@ -232,8 +213,8 @@
 							<h3 class="text-sm font-bold text-slate-900">Kerala Spatial Distribution Map</h3>
 							<div class="inline-flex rounded-md shadow-sm border border-slate-300 p-0.5 bg-slate-100 text-3xs font-semibold">
 								<button 
-									onclick={() => mapMode = 'choropleth'}
-									class="px-2 py-0.5 rounded transition {mapMode === 'choropleth' ? 'bg-white text-slate-900 shadow-xs' : 'text-slate-600 hover:text-slate-900'}"
+									onclick={() => mapMode = 'districts'}
+									class="px-2 py-0.5 rounded transition {mapMode === 'districts' ? 'bg-white text-slate-900 shadow-xs' : 'text-slate-600 hover:text-slate-900'}"
 								>
 									Districts
 								</button>
@@ -246,115 +227,27 @@
 							</div>
 						</div>
 						<p class="text-xs text-slate-500 mb-4">
-							{#if mapMode === 'choropleth'}
+							{#if mapMode === 'districts'}
 								Geographic layout of all 14 districts positioned from North to South, color-coded by share of infrastructure outlay.
 							{:else}
 								Pinpointing 3,600+ KIIFB contract packages from Kerala Kanakku (DS030) across exact GPS coordinates.
 							{/if}
 						</p>
 
-						<!-- SVG Schematic District Map / Dot Density -->
-						<div class="relative bg-slate-50 border border-slate-200/80 rounded-lg p-3 flex justify-center">
-							<svg viewBox="0 0 280 540" class="w-full max-w-[270px] h-auto drop-shadow-sm select-none">
-								<!-- Subtle Background coastline guideline -->
-								<path
-									d="M 50,30 Q 30,120 60,200 T 90,320 T 60,400 T 130,510"
-									fill="none"
-									stroke="#cbd5e1"
-									stroke-width="1.5"
-									stroke-dasharray="3,3"
-								/>
+						<!-- Kerala Geography Map (T090) — MapLibre GL choropleth + dot layer with schematic fallback -->
+						<KeralaGeographyMap
+							{districts}
+							geotagged={geotaggedRecords}
+							bind:selected={selectedDistrict}
+							bind:mode={mapMode}
+						/>
 
-								<!-- District Interactive Rects / Buttons -->
-								{#each districtMapNodes as node}
-									{@const distData = districts.find((d: any) => d.district === node.name)}
-									{@const isSelected = selectedDistrict === node.name}
-									<g
-										role="button"
-										tabindex="0"
-										aria-label="Select district {node.name}"
-										class="cursor-pointer transition-transform duration-150 hover:scale-[1.03] focus:outline-none focus:ring-1 focus:ring-emerald-500"
-										onclick={() => (selectedDistrict = node.name)}
-										onkeydown={(e) => {
-											if (e.key === 'Enter' || e.key === ' ') {
-												e.preventDefault();
-												selectedDistrict = node.name;
-											}
-										}}
-									>
-										<!-- Outer box -->
-										<rect
-											x={node.x}
-											y={node.y}
-											width={node.width}
-											height={node.height}
-											rx="5"
-											ry="5"
-											fill={distData ? getDistrictFillColor(distData, isSelected) : '#94a3b8'}
-											opacity={mapMode === 'dots' ? '0.25' : '1.0'}
-											stroke={isSelected ? '#0f172a' : '#ffffff'}
-											stroke-width={isSelected ? '2.5' : '1.5'}
-											class="transition-all"
-										/>
-										<!-- District Label text -->
-										<text
-											x={node.x + node.width / 2}
-											y={node.y + node.height / 2 + 3.5}
-											text-anchor="middle"
-											font-size="9"
-											font-weight={isSelected ? 'bold' : '600'}
-											fill={mapMode === 'dots' ? '#475569' : '#ffffff'}
-											pointer-events="none"
-										>
-											{node.name}
-										</text>
-									</g>
-								{/each}
-
-								<!-- Optional Overlay: GPS Dots from Kanakku -->
-								{#if mapMode === 'dots' && data.kanakkuPackages}
-									{#each data.kanakkuPackages.slice(0, 800) as pkg}
-										{@const pt = projectGps(pkg.lat, pkg.lng)}
-										<circle
-											cx={pt.x}
-											cy={pt.y}
-											r={pkg.open_flags && pkg.open_flags.length > 0 ? 2.5 : 1.5}
-											fill={pkg.open_flags && pkg.open_flags.length > 0 ? '#ef4444' : '#059669'}
-											opacity="0.75"
-										>
-											<title>{pkg.title} ({pkg.district}) - {pkg.status}</title>
-										</circle>
-									{/each}
-								{/if}
-							</svg>
-						</div>
-
-						<!-- Map Legend -->
-						<div class="mt-3 grid grid-cols-2 gap-1.5 text-3xs text-slate-600 bg-slate-50 p-2.5 rounded border border-slate-200">
-							<div class="flex items-center gap-1.5">
-								<span class="w-3 h-3 rounded bg-[#065f46]"></span>
-								<span>High Outlay (&gt;10%)</span>
-							</div>
-							<div class="flex items-center gap-1.5">
-								<span class="w-3 h-3 rounded bg-[#0284c7]"></span>
-								<span>Medium Outlay (5-10%)</span>
-							</div>
-							<div class="flex items-center gap-1.5">
-								<span class="w-3 h-3 rounded bg-[#64748b]"></span>
-								<span>Low Outlay (&lt;5%)</span>
-							</div>
-							<div class="flex items-center gap-1.5">
-								<span class="w-3 h-3 rounded bg-[#f59e0b]"></span>
-								<span>Underserved (&lt;3%)</span>
-							</div>
-						</div>
 					</div>
 
 					<div class="mt-3 text-3xs text-slate-400 font-mono">
 						* Map data provenance: Committee Report Table 4.2 (June 30, 2026).
 					</div>
 				</div>
-
 				<!-- Active District Details & Comparative Bar Visualizer -->
 				<div class="lg:col-span-7 space-y-4">
 					<!-- Active District Selected Card -->
