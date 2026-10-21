@@ -8,17 +8,32 @@ import json
 import csv
 import re
 import os
+import argparse
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import fetch_common as fc  # T081: input resolution (cli > env > newest crawl > pinned)
 
 def norm(text):
     if not text:
         return ""
     return re.sub(r'[^a-z0-9]', '', str(text).lower())
 
-def run_enrichment():
+def run_enrichment(proj_path=None, funding_path=None, liability_path=None):
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    kanakku_proj_file = os.path.join(base_dir, 'data/raw/kanakku/projects.csv')
-    kanakku_funding_file = os.path.join(base_dir, 'data/raw/kanakku/funding.csv')
-    kanakku_liability_file = os.path.join(base_dir, 'data/raw/kanakku/liability.csv')
+    resolved, origin = fc.resolve_input(
+        proj_path, "KANAKKU_PROJECTS_CSV", "kanakku", "",
+        "projects.csv", "data/raw/kanakku/projects.csv")
+    kanakku_proj_file = str(resolved)
+    print(f"[input] DS030 (projects.csv) -> {kanakku_proj_file} ({origin})")
+    resolved, _origin = fc.resolve_input(
+        funding_path, "KANAKKU_FUNDING_CSV", "kanakku", "",
+        "funding.csv", "data/raw/kanakku/funding.csv")
+    kanakku_funding_file = str(resolved)
+    resolved, _origin = fc.resolve_input(
+        liability_path, "KANAKKU_LIABILITY_CSV", "kanakku", "",
+        "liability.csv", "data/raw/kanakku/liability.csv")
+    kanakku_liability_file = str(resolved)
 
     kiifb_proj_file = os.path.join(base_dir, 'data/processed/kiifb_projects.json')
     unified_proj_file = os.path.join(base_dir, 'data/processed/unified_project_explorer.json')
@@ -267,4 +282,13 @@ def run_enrichment():
     print(f"Enriched {u_enriched} project sanction records in unified_project_explorer.json")
 
 if __name__ == '__main__':
-    run_enrichment()
+    ap = argparse.ArgumentParser(
+        description="Enrich projects with Kanakku DS030 data (CC BY 4.0).")
+    ap.add_argument('--proj', default=None,
+                    help='projects.csv snapshot path (default: newest live-crawl, else pinned)')
+    ap.add_argument('--funding', default=None,
+                    help='funding.csv snapshot path (same default rule)')
+    ap.add_argument('--liability', default=None,
+                    help='liability.csv snapshot path (same default rule)')
+    args = ap.parse_args()
+    run_enrichment(args.proj, args.funding, args.liability)

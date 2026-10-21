@@ -21,6 +21,36 @@ python3 scripts/refresh_pipeline.py
 6. **Open Data Enrichment & Geo-tagging**: Executes [`scripts/enrich_projects_with_kanakku.py`](../scripts/enrich_projects_with_kanakku.py) to join Kerala Kanakku open data (`projects.csv`, `funding.csv`, `liability.csv`), produce [`data/processed/contractor_liability.json`](../data/processed/contractor_liability.json) and [`data/processed/kanakku_packages.json`](../data/processed/kanakku_packages.json), and enrich project sanctions with GPS coordinates, constituencies, and defect liability flags.
 7. **Integrity Test Suite**: Runs all automated reconciliation and integrity tests (`python3 -m unittest discover tests`).
 
+### Two Refresh Modes (T081)
+
+```bash
+# OFFLINE mode (default) — full byte-reproducibility
+# Extracts EVERY input from the checksum-verified pinned baselines exactly as
+# at publication time. No network. Output depends only on the pinned sources.
+python3 scripts/refresh_pipeline.py
+```
+
+```bash
+# FETCH mode — living data
+# 1. Runs the T080 live fetchers (DS010, DS021, DS030) politely: robots checked,
+#    unchanged content skipped, immutable dated snapshots under
+#    data/raw/<source>/<YYYY-MM-DD>/, crawl metadata appended to
+#    data/manifest.json -> live_crawls (failures recorded with a manual
+#    retrieval path and never leave partial snapshots).
+# 2. Extracts from the NEWEST archived crawl per source, falling back to the
+#    pinned baseline when a source has never been crawled.
+# 3. Runs the same test suite.
+python3 scripts/refresh_pipeline.py --fetch
+python3 scripts/refresh_pipeline.py --fetch --sources kiifb,kanakku   # subset
+```
+
+Guarantees and boundary conditions:
+- **Offline mode is the reproducibility contract.** Processed output is a deterministic function of the pinned baselines; anyone can rebuild the published datasets byte-for-byte (modulo the `generated_at` timestamps).
+- **Fetch mode is the current-truth contract.** Its processed output reflects the latest crawls and may legitimately differ from the pinned baseline (e.g. the 2026-10-20 DS010 crawl differs while DS021 is identical).
+- Failed fetchers never block the pipeline: the affected extractor falls back to the newest existing snapshot or the pinned baseline, and the failure is recorded in `data/manifest.json → live_crawls` with a safe manual retrieval path (place files manually in the dated directory; manual downloads take precedence via `--input`/env-var extractor overrides, e.g. `KIIFB_PROJECTS_HTML`, `KITE_SAMETHAM_HTML`, `KANAKKU_PROJECTS_CSV`).
+- Which content produced a processed file is visible in the extractor log lines `[input] DSxxx -> <path> (origin)`.
+- Snapshot lifecycle: every fetch-mode extraction is intended to be followed by a snapshot + diff pass (T082) which archives processed datasets under `data/snapshots/<YYYY-MM>/` and emits `data/processed/change_log.json`.
+
 ---
 
 ## 2. Primary Source Manifest & File Paths

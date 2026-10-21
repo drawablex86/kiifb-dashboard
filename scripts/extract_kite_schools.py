@@ -1,14 +1,25 @@
 import re
 import json
+import argparse
+import sys
 from datetime import datetime, timezone
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent))
+import fetch_common as fc  # T081: input resolution (cli > env > newest crawl > pinned)
 
 def clean_text(html_text):
     text = re.sub(r'<[^>]+>', '', html_text)
     text = text.replace('&nbsp;', ' ').replace('&#39;', "'").replace('&amp;', '&')
     return re.sub(r'\s+', ' ', text).strip()
 
-def parse_kite_schools():
-    with open('data/raw/kite/kiifb-funded-schools-sametham.html', encoding='utf-8', errors='ignore') as f:
+def parse_kite_schools(input_path: str | None = None):
+    resolved, origin = fc.resolve_input(
+        input_path, "KITE_SAMETHAM_HTML", "kite", "kiifb-funded-schools",
+        "kiifb-funded-schools-sametham.html",
+        "data/raw/kite/kiifb-funded-schools-sametham.html")
+    print(f"[input] DS021 -> {resolved} ({origin})")
+    with open(resolved, encoding='utf-8', errors='ignore') as f:
         html = f.read()
 
     tbody_match = re.search(r'<tbody[^>]*>(.*?)</tbody>', html, re.DOTALL)
@@ -82,4 +93,9 @@ def parse_kite_schools():
     print(f"Generated data/processed/kite_schools.json with {len(schools)} school institutions.")
 
 if __name__ == '__main__':
-    parse_kite_schools()
+    ap = argparse.ArgumentParser(description="Extract DS021 KITE Sametham schools directory.")
+    ap.add_argument('--input', default=None,
+                    help='path to a kiifb-funded-schools-sametham.html crawl snapshot '
+                         '(default: newest live-crawl snapshot, else pinned baseline)')
+    args = ap.parse_args()
+    parse_kite_schools(args.input)

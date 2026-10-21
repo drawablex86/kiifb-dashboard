@@ -89,6 +89,46 @@ def archive_dir(group: str, dataset: str, date_iso: str) -> Path:
     return archive_root(group, dataset) / date_iso
 
 
+def newest_snapshot(group: str, dataset: str, arcname: str) -> Path | None:
+    """Newest dated archive file for a source, or None when never crawled.
+
+    Directories are compared lexicographically by name; ISO date names sort
+    naturally and a same-day re-crawl suffix ('_r2', '_r3', ...) sorts after
+    its base directory, so plain max() gives the newest crawl.
+    """
+    root = archive_root(group, dataset)
+    if not root.is_dir():
+        return None
+    candidates = sorted(
+        (d for d in root.iterdir() if d.is_dir() and (d / arcname).is_file()),
+        key=lambda d: d.name,
+    )
+    return candidates[-1] / arcname if candidates else None
+
+
+def resolve_input(
+    explicit: str | None,
+    env_var: str,
+    group: str,
+    dataset: str,
+    arcname: str,
+    pinned: str,
+) -> tuple[Path, str]:
+    """Extractor input precedence (T081): CLI arg > env var > newest dated
+    live-crawl snapshot > pinned baseline path (offline reproducibility).
+
+    Returns (absolute_path, origin_label)."""
+    if explicit:
+        return Path(explicit).resolve(), "cli argument"
+    env_val = os.environ.get(env_var)
+    if env_val:
+        return Path(env_val).resolve(), f"env {env_var}"
+    newest = newest_snapshot(group, dataset, arcname)
+    if newest:
+        return newest, f"newest live-crawl snapshot ({newest.parent.name})"
+    return (PROJECT_ROOT / pinned).resolve(), "pinned baseline"
+
+
 def resolve_unique_dir(base_dir: Path) -> Path:
     """Return an immutable dated archive dir under base_dir.
 

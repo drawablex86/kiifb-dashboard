@@ -1,7 +1,13 @@
 import re
 import json
 import hashlib
+import argparse
+import sys
 from datetime import datetime
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent))
+import fetch_common as fc  # T081: input resolution (cli > env > newest crawl > pinned)
 
 def clean_text(html_text):
     text = re.sub(r'<[^>]+>', '', html_text)
@@ -30,8 +36,12 @@ def normalize_status(source_status, approved_inr, released_inr):
     else:
         return "approved", "Default approval baseline."
 
-def parse_kiifb_portal():
-    with open('data/raw/kiifb/kiifb-prjStatus.html', encoding='utf-8', errors='ignore') as f:
+def parse_kiifb_portal(input_path: str | None = None):
+    resolved, origin = fc.resolve_input(
+        input_path, "KIIFB_PROJECTS_HTML", "kiifb", "project-status",
+        "kiifb-prjStatus.html", "data/raw/kiifb/kiifb-prjStatus.html")
+    print(f"[input] DS010 -> {resolved} ({origin})")
+    with open(resolved, encoding='utf-8', errors='ignore') as f:
         html = f.read()
 
     table_match = re.search(r'<table id=\"tblProjects\"[^>]*>(.*?)</table>', html, re.DOTALL)
@@ -135,4 +145,9 @@ def parse_kiifb_portal():
     print(f"Generated data/processed/kiifb_projects.json with {len(projects)} records.")
 
 if __name__ == '__main__':
-    parse_kiifb_portal()
+    ap = argparse.ArgumentParser(description="Extract DS010 KIIFB project register.")
+    ap.add_argument('--input', default=None,
+                    help='path to a kiifb-prjStatus.html crawl snapshot '
+                         '(default: newest live-crawl snapshot, else pinned baseline)')
+    args = ap.parse_args()
+    parse_kiifb_portal(args.input)
