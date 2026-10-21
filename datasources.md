@@ -93,7 +93,9 @@ Respect website terms, robots rules, rate limits, access controls, and applicabl
 - Purpose: Project names, implementing agencies/SPVs, approval amounts, releases, and published project statuses.
 - Download strategy: Inspect page structure and linked resources. Prefer downloadable files or documented endpoints if available. If scraping is necessary, follow site terms and rate limits; retain the source page and extraction timestamp.
 - Download target: `data/raw/kiifb/project-status/<retrieval-date>/`
+- Automated crawl: `python3 scripts/fetch_kiifb_portal.py` (**T080**). Archives a dated immutable snapshot to `data/raw/kiifb/project-status/<YYYY-MM-DD>/kiifb-prjStatus.html`, records SHA-256 and HTTP metadata under `data/manifest.json → live_crawls`, and skips archiving when content is unchanged from the previous crawl. The pinned baseline above is never overwritten.
 - Caveat: A status such as “Project Approved” is not evidence of tender, construction, completion, handover, or operation. Preserve the original status label.
+- **Live-crawl status (2026-10-20):** crawl succeeded; returned content differs from the 2026-10-16 pinned baseline (same byte size, different SHA-256 — portal has updated since). Snapshot at `data/raw/kiifb/project-status/2026-10-20/`.
 - Initial priority: Critical.
 
 ### DS011 — KIIFB integrated GIS dashboard
@@ -143,7 +145,9 @@ Respect website terms, robots rules, rate limits, access controls, and applicabl
 - Purpose: School-level matching, school identifiers, location, scheme and project status where available.
 - Download strategy: Inspect page and any downloadable records. Respect site restrictions; avoid collecting student-level personal data.
 - Download target: `data/raw/kite/kiifb-funded-schools/<retrieval-date>/`
+- Automated crawl: `python3 scripts/fetch_kite_sametham.py` (**T080**). Archives a dated immutable snapshot to `data/raw/kite/kiifb-funded-schools/<YYYY-MM-DD>/kiifb-funded-schools-sametham.html`, records SHA-256 and HTTP metadata under `data/manifest.json → live_crawls`, and skips archiving when content is unchanged from the previous crawl. The pinned baseline above is never overwritten.
 - Caveat: School directory data may not provide actual expenditure, handover date, or current utilisation.
+- **Live-crawl status (2026-10-20):** crawl succeeded; returned content is byte-identical to the 2026-10-16 pinned baseline (SHA-256 `2841ee59...`).
 - Initial priority: Critical.
 
 ### DS022 — KIIDC KIIFB projects
@@ -170,13 +174,14 @@ Respect website terms, robots rules, rate limits, access controls, and applicabl
 
 ## 6. State Planning Board and public statistics
 
-### DS030 — Kerala State Planning Board Economic Review 2025, Volume I
+### DS034 — Kerala State Planning Board Economic Review 2025, Volume I
 
 - URL: https://spb.kerala.gov.in/sites/default/files/2026-01/ER%202025%20Volume1%20Eng%20final.pdf
 - Type: Official PDF.
 - Purpose: Statewide sectoral context, infrastructure expenditure, roads, transport, education, health and economic indicators.
 - Download target: `data/raw/state-planning-board/economic-review/2025/`
 - Caveat: Budgetary and sectoral categories may not map one-to-one to KIIFB project records.
+- Note: **Renumbered from `DS030` to `DS034` on 2026-10-20** — `DS030` belongs to the acquired Kerala Kanakku Open Data Suite below (registered in `data/manifest.json`, referenced by all processed datasets). This entry has never been downloaded/acquired, so the renumbering touches this registry only.
 
 ### DS031 — Kerala Development Report 2026
 
@@ -200,6 +205,21 @@ Respect website terms, robots rules, rate limits, access controls, and applicabl
 - Purpose: Roads, coastal infrastructure, education, healthcare, industrial development, water and other sector outputs.
 - Acquisition: Find the exact publication, table, page and reporting period. Archive the report and record definitions.
 - Caveat: Sector totals can overlap with KIIFB project totals; do not add them without a documented reconciliation.
+
+### DS030 — Kerala Kanakku Open Data Suite (civic open data; acquired)
+
+- URL: https://keralakanakku.com/en/data (data page; CSV endpoints discovered at `https://keralakanakku.com/api/v1/projects.csv`, `.../funding.csv`, `.../liability.csv`)
+- Publisher/host: Kerala Kanakku (Kanakku Civic Tech Project), independent civic tech project.
+- Type: CSV open-data extracts; joins KIIFB's internal GIS portal (`gis.kiifb.org`), KIIFB `prjStatus.jsp`, and the Kerala PWD Defect Liability Period register.
+- Purpose: Verified districts, assembly constituencies, GPS coordinates for KIIFB sub-projects/contract packages (bridging `GAP-001`), funding joins, and PWD contractor liability (2,475 works).
+- Licence: Creative Commons Attribution 4.0 International (CC BY 4.0); code AGPL-3.0. Derivatives must carry attribution.
+- Pinned baselines (2026-10-16): `data/raw/kanakku/projects.csv`, `data/raw/kanakku/funding.csv`, `data/raw/kanakku/liability.csv` (checksums in `data/manifest.json`).
+- Automated crawl: `python3 scripts/fetch_kanakku.py` (**T080**). Discovers the three CSV endpoints from the public data page, then archives a complete dated snapshot to `data/raw/kanakku/<YYYY-MM-DD>/`, recording SHA-256 and HTTP metadata under `data/manifest.json → live_crawls`. Skips archiving when content is unchanged from the previous crawl. If discovery ever breaks, pass explicit endpoints: `--urls <projects.csv>,<funding.csv>,<liability.csv>`.
+- Caveat: Coordinates and constituencies are Kanakku's daily compilation of KIIFB's internal GIS portal, not a KIIFB-published register field (GAP-001 context). Land-acquisition scope derives from the same pool (industrial land skew, 74.7% Kannur).
+- **Live-crawl status (2026-10-20):** crawl succeeded. `projects.csv` and `liability.csv` are byte-identical to the pinned baseline; `funding.csv` differs (new SHA-256 `7acbab95...`, same 4,546 rows) — an in-place value update since 2026-10-16.
+- Initial priority: High.
+
+> **Manifest `live_crawls` section (added in T080):** every automated crawl appends an immutable record — `{source_id, retrieved_at, url, arc_dir, files: [{name, sha256, url, http_status, unchanged?, file_size_bytes?}], status: success | unchanged | failure | dry-run, note}` — to `data/manifest.json`, leaving the pinned `sources[]` entries untouched so baseline checksum verification keeps working unchanged.
 
 ## 7. Legal and audit sources
 

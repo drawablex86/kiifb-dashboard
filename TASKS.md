@@ -269,12 +269,14 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 > Decision for T090 map rendering (hosted tiles accepted, offline reproducibility waived for that feature) is recorded and approved in `docs/decisions/ADR-001-maplibre-hosted-tiles.md`.
 
 ### T080 — Build live fetchers with versioned raw snapshots
-- Status: open
+- Status: done
 - Dependencies: M7 complete
 - Objective: create Python fetchers for the KIIFB project-status portal (`DS010`), KITE Sametham schools directory (`DS021`), and the Kerala Kanakku open-data suite (`DS030` — projects.csv, funding.csv, and liability.csv, the latter covering the PWD Defect Liability register) that retrieve live data on demand, write each crawl to a dated immutable archive (`data/raw/<source-dir>/<YYYY-MM-DD>/`) without overwriting prior crawls or the pinned baseline files, and record retrieval metadata (timestamp, URL, SHA-256, file size, HTTP status) in `data/manifest.json`.
 - Outputs: `scripts/fetch_common.py` (shared archive, checksum, manifest and unchanged-detection helpers), `scripts/fetch_kiifb_portal.py`, `scripts/fetch_kite_sametham.py`, `scripts/fetch_kanakku.py`, updated `data/manifest.json`, updated `datasources.md`.
 - Acceptance: fetchers respect source terms, robots rules and polite rate limits; unchanged content is detected via checksum comparison and skipped (no duplicate archives); every crawl is immutably archived and hash-registered without conflicting with the existing pinned `sources[].sha256` verification; a failed download is recorded with a safe manual retrieval path (per `datasources.md` §2) and never leaves the tree in a partially-overwritten state; `--dry-run` mode available for offline testing.
 - Verification command: `python3 -m unittest tests/test_fetchers.py`
+- Completed: 2026-10-21
+- Notes: 15 new offline tests in `tests/test_fetchers.py` (57 total, all pass; offline pipeline re-run verified pinned baselines untouched). Live crawls executed politely on 2026-10-20 with robots checks: `DS010` — content CHANGED vs 2026-10-16 baseline (same 756,551 bytes, new SHA-256; snapshot at `data/raw/kiifb/project-status/2026-10-20/`); `DS021` — byte-identical to baseline (archived dated snapshot); `DS030` — projects/liability identical, `funding.csv` changed (same 4,546 rows, new SHA-256) with archive at `data/raw/kanakku/2026-10-20/`. Registry inconsistency fixed: the unacquired State Planning Board Economic Review entry in `datasources.md` renumbered `DS030`→`DS034`; Kanakku now has a proper `DS030` registry entry matching the manifest. Kanakku CSV endpoints verified as `https://keralakanakku.com/api/v1/{projects,funding,liability}.csv` (auto-discovered from the data page). Remaining gap: none blocking; robots disallow path is guarded and documented.
 
 ### T081 — Integrate fetch mode into master refresh pipeline
 - Status: open
