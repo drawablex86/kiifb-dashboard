@@ -4,7 +4,7 @@
 	let { data } = $props();
 
 	// Tabs for navigation
-	let activeTab = $state<'completeness' | 'dimensions' | 'geography'>('geography');
+	let activeTab = $state<'completeness' | 'dimensions' | 'geography' | 'factsheets'>('geography');
 
 	// Shorthand derived state
 	let dimensions = $derived(data.publicValue.dimensions);
@@ -101,7 +101,44 @@
 		if (dist.infrastructure_share_pct >= 3.0) return '#64748b'; // Slate-500
 		return '#f59e0b'; // Amber-500 (Underserved)
 	}
+
+	// T103 (Milestone 10): print-ready district fact sheets
+	let activeFactSheetDistrict = $state<string>('Kannur');
+	let showAllFactSheets = $state(false);
+
+	const factSheetDistricts = $derived(districts);
+
+	let activeFactSheet = $derived(
+		factSheetDistricts.find((d: any) => d.district === activeFactSheetDistrict) || factSheetDistricts[0]
+	);
+
+	function printFactSheets() {
+		print();
+	}
 </script>
+
+<style>
+	@media print {
+		:global(header),
+		:global(footer),
+		:global(nav) {
+			display: none !important;
+		}
+		:global(body) {
+			background: #fff !important;
+		}
+		.fact-sheet {
+			break-inside: avoid;
+			page-break-inside: avoid;
+			border: 1px solid #cbd5e1 !important;
+			box-shadow: none !important;
+		}
+		:global(main) {
+			max-width: none !important;
+			padding: 0 !important;
+		}
+	}
+</style>
 
 <svelte:head>
 	<title>Public Value, Geography & Evidence Completeness — KIIFB Accountability Dashboard</title>
@@ -164,6 +201,12 @@
 				class="px-4 py-2 text-xs sm:text-sm font-semibold border-b-2 transition whitespace-nowrap {activeTab === 'dimensions' ? 'border-emerald-600 text-emerald-700' : 'border-transparent text-slate-500 hover:text-slate-800'}"
 			>
 				5-Dimensional Public Value (T040)
+			</button>
+			<button
+				onclick={() => (activeTab = 'factsheets')}
+				class="px-4 py-2 text-xs sm:text-sm font-semibold border-b-2 transition whitespace-nowrap {activeTab === 'factsheets' ? 'border-emerald-600 text-emerald-700' : 'border-transparent text-slate-500 hover:text-slate-800'}"
+			>
+				District Fact Sheets (T103)
 			</button>
 		</div>
 	</div>
@@ -681,4 +724,100 @@
 			</div>
 		</div>
 	{/if}
+
+<!-- TAB 4: DISTRICT FACT SHEETS (T103) -->
+{#if activeTab === 'factsheets'}
+	<div class="space-y-6">
+		<!-- Controls (hidden in print) -->
+		<div class="no-print bg-white rounded-lg border border-slate-200 p-4 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+			<div class="flex items-center gap-2 flex-wrap">
+				<button
+					onclick={() => (showAllFactSheets = false)}
+					class="px-3 py-1.5 text-xs font-medium rounded border transition {showAllFactSheets ? 'bg-white text-slate-700 border-slate-300 hover:bg-slate-50' : 'bg-slate-900 text-white border-slate-900'}"
+				>
+					Single district
+				</button>
+				<button
+					onclick={() => (showAllFactSheets = true)}
+					class="px-3 py-1.5 text-xs font-medium rounded border transition {showAllFactSheets ? 'bg-slate-900 text-white border-slate-900' : 'bg-white text-slate-700 border-slate-300 hover:bg-slate-50'}"
+				>
+					All 15 districts
+				</button>
+				{#if !showAllFactSheets}
+					<select
+						bind:value={activeFactSheetDistrict}
+						class="text-xs px-2 py-1.5 border border-slate-300 rounded bg-white"
+						aria-label="Select district fact sheet"
+					>
+						{#each factSheetDistricts as d (d.district)}
+							<option value={d.district}>{d.district}</option>
+						{/each}
+					</select>
+				{/if}
+			</div>
+			<button
+				onclick={printFactSheets}
+				class="px-3 py-1.5 text-xs font-medium rounded bg-emerald-600 text-white hover:bg-emerald-700 transition"
+			>
+				🖨 Print fact sheets
+			</button>
+		</div>
+
+		{#each (showAllFactSheets ? factSheetDistricts : [activeFactSheet]) as district (district.district)}
+			<article class="fact-sheet bg-white rounded-lg border border-slate-300 p-6 shadow-sm max-w-3xl">
+				<header class="border-b-2 border-slate-900 pb-2 mb-3">
+					<div class="no-print text-3xs font-mono text-slate-400 uppercase tracking-widest">
+						Official District Fact Sheet · print-ready (T103)
+					</div>
+					<h3 class="text-xl font-bold text-slate-900">{district.district} — KIIFB Evidence Fact Sheet</h3>
+					<p class="text-2xs text-slate-500 font-semibold uppercase">{district.category}</p>
+				</header>
+
+				<dl class="grid grid-cols-2 gap-2 text-xs mb-4">
+					<div class="border border-slate-200 rounded p-2.5">
+						<dt class="text-3xs uppercase font-semibold text-slate-500">Total approved capital</dt>
+						<dd class="text-base font-bold text-slate-900 tabular-nums">{formatCrore(district.total_approved_cr)}</dd>
+						<dd class="text-3xs text-slate-400 font-mono">Source: DS001 Committee Report Ch-IV Table 4.2 (as on June 30, 2026)</dd>
+					</div>
+					<div class="border border-slate-200 rounded p-2.5">
+						<dt class="text-3xs uppercase font-semibold text-slate-500">Infrastructure outlay</dt>
+						<dd class="text-base font-bold text-slate-900 tabular-nums">{formatCrore(district.infrastructure_outlay_cr)}</dd>
+						<dd class="text-3xs text-slate-400 font-mono">{district.infrastructure_share_pct.toFixed(2)}% of ₹77,150.87 Cr state pool — DS001 Table 4.2 / Table 4.5</dd>
+					</div>
+					<div class="border border-slate-200 rounded p-2.5">
+						<dt class="text-3xs uppercase font-semibold text-slate-500">Land acquisition pool</dt>
+						<dd class="text-base font-bold text-slate-900 tabular-nums">{formatCrore(district.land_acquisition_outlay_cr)}</dd>
+						<dd class="text-3xs text-slate-400 font-mono">{district.land_acquisition_outlay_cr > 0 ? 'DS001 Tables 4.3 (KINFRA / KSIDC projects)' : 'No land-acquisition allocation disclosed'}</dd>
+					</div>
+					<div class="border border-slate-200 rounded p-2.5">
+						<dt class="text-3xs uppercase font-semibold text-slate-500">Documented delivery disclosures</dt>
+						<dd class="text-base font-bold text-slate-900 tabular-nums">DS010 / DS021 / DS030</dd>
+						<dd class="text-3xs text-slate-400 font-mono">KIIFB portal · KITE Sametham · Kerala Kanakku (CC BY 4.0)</dd>
+					</div>
+				</dl>
+
+				{#if district.district === 'Kannur'}
+					<div class="text-2xs text-slate-700 bg-amber-50 p-2.5 rounded border border-amber-200 mb-3 print:mb-3">
+						<strong>Audit observation:</strong> 74.65% of the state's industrial land acquisition (₹12,257.50 Cr) is concentrated in Kannur with no comparative economic appraisal on record (DS001 Chapter IV, Table 4.3).
+					</div>
+				{:else if ['Idukki', 'Pathanamthitta', 'Wayanad', 'Kasargod'].includes(district.district)}
+					<div class="text-2xs text-slate-700 bg-amber-50 p-2.5 rounded border border-amber-200 mb-3 print:mb-3">
+						<strong>Equity note:</strong> Bottom-4 district: below 3% share of infrastructure outlay (DS001 Table 4.2).
+					</div>
+				{:else if district.district === 'Thiruvananthapuram'}
+					<div class="text-2xs text-slate-700 bg-blue-50 p-2.5 rounded border border-blue-200 mb-3 print:mb-3">
+						<strong>Capital city note:</strong> Highest single-district infrastructure outlay ₹10,819.75 Cr = 14.02% share (DS001 Table 4.2).
+					</div>
+				{/if}
+
+				<footer class="pt-2 text-2xs text-slate-500 leading-relaxed">
+					<strong class="text-slate-700">Provenance standard:</strong> every figure above is cited to its official table or processed dataset row.
+					Physical-milestone and benefit outcome figures for this district remain a disclosed data gap (GAP-001 / GAP-003) and are printed as gaps, not estimates.
+					Generated from <code class="font-mono">data/processed/public_value_and_geography.json</code> · dashboard baseline Oct 2026.
+					Reuse: Kanakku-derived content inherits CC BY 4.0 with attribution of <code class="font-mono">source_id</code>/<code class="font-mono">source_locator</code>.
+				</footer>
+			</article>
+		{/each}
+	</div>
+{/if}
 </div>

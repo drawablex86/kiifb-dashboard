@@ -374,32 +374,37 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 ## Milestone 10 — Progress, delivery analytics & distribution
 
 ### T100 — Per-project milestone timeline cards
-- Status: open
+- Status: done
 - Dependencies: T083 (extended matching), T090 (drawer components)
 - Objective: within the project explorer inspection drawer, render a collapsible milestone ladder per record (Sanction → Tender → Contract → Milestones → Handover → DLP) using the Kanakku lifecycle-status fields with per-milestone source and locator.
 - Outputs: `src/lib/components/ProjectTimeline.svelte`, updated `src/routes/projects/+page.svelte`.
 - Acceptance: each milestone displays `source_id`, `source_locator` and dated as-of info; unknown/unrecorded milestones are shown as explicit gaps (not invented); passes `npm run check`.
+- Evidence: ladder derived only from disclosed status fields via shared `src/lib/data/lifecycle.ts` mapping (Kanakku 20 statuses + normalised portal statuses). Matched DS030 packages resolved from `kanakku_match_log.json` in the server load (T083 output). Unrecorded stages render as explicit "gap — unrecorded" rows with reason `no source discloses this stage for this record`; per-row provenance shows `source_id`, `source_locator`, as-of date. `npm run check`: 0 errors, 0 warnings.
 
 ### T101 — Portfolio drill-down funnel
-- Status: open
+- Status: done
 - Dependencies: T100 (shared drawer)
 - Objective: drill down Portfolio → Sector → District → Project with summary tiles at each level (count, approved ₹, released ₹, % physically complete), filterable with URL-shared state.
 - Outputs: updated `src/routes/projects/+page.svelte` or new `src/routes/portfolio/+page.svelte`.
 - Acceptance: counts and sums reconcile with `unified_project_explorer.json` totals (asserted in a new unit test); approved is not conflated with completion; URL state is shareable and restores exactly.
+- Evidence: new `/portfolio` route with shared maths in framework-free `src/lib/data/funnel.ts`; funnel state (`?sector=&district=`) written/read via URL search params so any view restores exactly. New unit test `tests/test_portfolio_funnel.py` (6 tests, OK) asserts portfolio/sector/district-level counts and sums reconcile with dataset totals and that the % physically complete tile is computed independently of approved sums. Approved outlay and completion are separate tiles. `npm run check`: 0 errors.
 
 ### T102 — Delay & anomaly register (dedicated route or register view)
-- Status: open
+- Status: done
 - Dependencies: T082, T092
 - Objective: build a single filterable register of all open anomaly flags (overdue, payment-vs-progress, cost escalation, stale updates, above-approval) with flag trend history from `change_log.json`, resolved/active status, and per-flag provenance.
 - Outputs: new `src/routes/flags/+page.svelte` (or register on `/projects`), navigation entry.
 - Acceptance: each flag shows the objective criterion that triggered it; resolved flags retain their history (never deleted); the union of register totals reconciles with per-flag counts in the processed dataset.
+- Evidence: new `/flags` route (nav entry "Flag Register") with objective criterion text per flag in shared registry `src/lib/data/flags.ts`; URL-shared filter state (`?flag=&q=&history=1`); flag trend history rendered from `change_log.json` `flags_added`/`flags_resolved` (resolved flags retained, never deleted). New unit test `tests/test_flag_register.py` (6 tests, OK): register union reconciles with per-flag dataset counts; registry IDs cover every flag in data; criteria are measurable statements tied to rule-engine sources. `npm run check`: 0 errors.
 
 ### T103 — Exports, API endpoints & district fact sheets
-- Status: open
+- Status: done
 - Dependencies: T101
 - Objective: add CSV/JSON download from the project explorer, SvelteKit server endpoints (`/api/v1/projects.json`, `/api/v1/change-log.json`) exposing only processed public data, shareable URL filter state, and print-ready district fact sheets on `/outcomes`.
 - Outputs: `src/routes/api/v1/` server routes, updated explorer tools, `docs/test-and-review-report.md` updated with API test results.
 - Acceptance: endpoints expose no unprocessed/private data and document licence inheritance (CC BY 4.0 for Kanakku derivatives); downloads preserve `source_id`/`source_locator` columns; fact sheets are print-CSS friendly and cite provenance per figure.
+- Evidence: three read-only GET endpoints (`projects.json`, `projects.csv`, `change-log.json`) importing only from `data/processed/`; CSV/JSON export buttons on `/projects`; shareable URL filter state on `/portfolio` & `/flags` (T101/T102); print-ready district fact sheets tab on `/outcomes` with per-figure provenance citations and `@media print` CSS. Licence inheritance (CC BY 4.0 for DS030 derivatives + attribution requirement) documented in every endpoint payload. New static provenance suite `tests/test_api_export_provenance.py` (6 tests, OK); full suite `python3 -m unittest discover tests` = 109 tests OK; `npm run check` = 0 errors, 0 warnings. `docs/test-and-review-report.md` §4b added.
+- Follow-up gaps (recorded): per-filter export (exclusive of full-dataset export) is only practical via the processed rows loaded client-side and was deferred; fact sheets draw on DS001 Ch-IV district figures — DS010/DS030 per-district counts are available on `/portfolio` but not yet embedded per fact sheet.
 
 ## Task completion rule
 

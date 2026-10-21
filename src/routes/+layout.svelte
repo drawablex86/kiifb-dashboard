@@ -37,6 +37,14 @@
 					Project Explorer
 				</a>
 				<span class="text-slate-300">|</span>
+				<a href="/portfolio" class="px-2.5 py-1.5 rounded text-violet-700 hover:text-violet-900 hover:bg-violet-50 transition font-semibold">
+					Portfolio Funnel
+				</a>
+				<span class="text-slate-300">|</span>
+				<a href="/flags" class="px-2.5 py-1.5 rounded text-amber-700 hover:text-amber-900 hover:bg-amber-50 transition font-semibold">
+					Flag Register
+				</a>
+				<span class="text-slate-300">|</span>
 				<a href="/financials" class="px-2.5 py-1.5 rounded text-slate-700 hover:text-slate-900 hover:bg-slate-100 transition">
 					Financials
 				</a>

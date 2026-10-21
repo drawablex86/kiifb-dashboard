@@ -1,5 +1,6 @@
 <script lang="ts">
 	import SankeyFlow from '$lib/components/SankeyFlow.svelte';
+	import ProjectTimeline from '$lib/components/ProjectTimeline.svelte';
 	import FundsProgressScatter from '$lib/components/FundsProgressScatter.svelte';
 
 	let { data } = $props();
@@ -20,6 +21,10 @@
 
 	// Modal / Inspection Drawer state
 	let activeRecord = $state<any>(null);
+	// T100: matched Kanakku packages for the record under inspection
+	let activeKanakkuPackages = $derived(
+		activeRecord ? (data.matchesByRecord?.[activeRecord.record_id] ?? []) : []
+	);
 
 	// Collect unique sectors, districts, statuses
 	let sectors = $derived(['ALL', ...Array.from(new Set(data.records.map((r: any) => r.sector))).sort()]);
@@ -222,14 +227,33 @@
 					<span>✨ Enriched with Kerala Kanakku (DS030)</span>
 				</span>
 			</div>
-			{#if searchQuery || selectedSector !== 'ALL' || selectedDistrict !== 'ALL' || selectedFlag !== 'ALL' || selectedStatus !== 'ALL' || selectedEntityType !== 'ALL'}
-				<button 
-					onclick={() => { searchQuery = ''; selectedSector = 'ALL'; selectedDistrict = 'ALL'; selectedFlag = 'ALL'; selectedStatus = 'ALL'; selectedEntityType = 'ALL'; currentPage = 1; }}
-					class="text-blue-600 hover:underline cursor-pointer font-medium"
-				>
-					Reset all filters
-				</button>
-			{/if}
+			<div class="flex items-center gap-3 flex-wrap">
+				<!-- T103: processed-data exports (URL-shared filters apply to /portfolio & /flags, not to these full-dataset files) -->
+				<span class="text-2xs uppercase font-semibold text-slate-500">Export:</span>
+				<a
+					href="/api/v1/projects.csv"
+					download
+					class="inline-flex items-center gap-1 text-2xs px-2 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-300 hover:bg-slate-200 transition font-medium"
+				>⬇ CSV</a>
+				<a
+					href="/api/v1/projects.json"
+					download
+					class="inline-flex items-center gap-1 text-2xs px-2 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-300 hover:bg-slate-200 transition font-medium"
+				>⬇ JSON</a>
+				<a
+					href="/api/v1/change-log.json"
+					download
+					class="inline-flex items-center gap-1 text-2xs px-2 py-0.5 rounded bg-amber-50 text-amber-800 border border-amber-200 hover:bg-amber-100 transition font-medium"
+				>⬇ Change log</a>
+				{#if searchQuery || selectedSector !== 'ALL' || selectedDistrict !== 'ALL' || selectedFlag !== 'ALL' || selectedStatus !== 'ALL' || selectedEntityType !== 'ALL'}
+					<button
+						onclick={() => { searchQuery = ''; selectedSector = 'ALL'; selectedDistrict = 'ALL'; selectedFlag = 'ALL'; selectedStatus = 'ALL'; selectedEntityType = 'ALL'; currentPage = 1; }}
+						class="text-blue-600 hover:underline cursor-pointer font-medium"
+					>
+						Reset all filters
+					</button>
+				{/if}
+			</div>
 		</div>
 	</div>
 
@@ -444,7 +468,10 @@
 					</div>
 				</div>
 
-				<!-- Normalised Status Explanation -->
+				<!-- Delivery Milestone Ladder (T100) -->
+			<ProjectTimeline record={activeRecord} kanakkuPackages={activeKanakkuPackages} />
+
+			<!-- Normalised Status Explanation -->
 				<div>
 					<h4 class="text-2xs font-bold uppercase text-slate-500 mb-1">Status Disambiguation</h4>
 					<div class="bg-slate-50 p-3 rounded border border-slate-200/80 text-xs space-y-1">

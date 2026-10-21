@@ -68,6 +68,44 @@ Ran 29 tests in 0.003s — OK
 
 ---
 
+## 4b. Milestone 10 — API & Export Test Results (T103)
+
+**Date**: 2026-10-21 • **Test framework**: Python `unittest` (static provenance suite) + `svelte-check`
+
+### New endpoints (`/api/v1/`)
+
+| Endpoint | Content | Licence terms served |
+|---|---|---|
+| `/api/v1/projects.json` | Processed `unified_project_explorer.json` (summary + records) verbatim | CC BY 4.0 for Kanakku/DS030 derivatives; DS010/DS021 per their disclosed terms; reuse must preserve `source_id`/`source_locator` |
+| `/api/v1/projects.csv` | CSV export — every row carries `source_id` & `source_locator`; `X-Data-Licence` response header | CC BY 4.0 (DS030 inheritance) |
+| `/api/v1/change-log.json` | Processed T082 change log (flag add/resolve history retained, never deleted) | Processed public data; provenance-preservation requirement |
+
+All three endpoints are read-only (`GET` only) and import exclusively from `data/processed/` — no raw or unprocessed data is served.
+
+### Static provenance test results (`tests/test_api_export_provenance.py`)
+
+```text
+Ran 6 tests in ~0.02s — OK
+```
+
+| Test | Verified |
+|---|---|
+| `test_01_all_endpoints_exist_and_are_read_only` | GET-only `RequestHandler`s exist for all three endpoints |
+| `test_02_endpoints_import_only_processed_datasets` | no `/data/raw` imports; only processed public JSON |
+| `test_03_csv_preserves_provenance_columns` | CSV header carries `source_id`, `source_locator` |
+| `test_04_json_endpoints_preserve_record_provenance` | records + summary are served verbatim |
+| `test_05_licence_inheritance_documented` | CC BY 4.0 inheritance documented on both explorer endpoints |
+| `test_06_endpoints_expose_no_private_fields` | every CSV column is an established public dataset field |
+
+### Full-suite confirmation
+
+```text
+python3 -m unittest discover tests → Ran 109 tests in ~20s — OK
+npm run check → svelte-check found 0 errors and 0 warnings
+```
+
+---
+
 ## 5. Review Conclusion
 
 The dashboard passes all critical release checks. No blocking bugs or data integrity discrepancies remain unaddressed. Ready for production release.
