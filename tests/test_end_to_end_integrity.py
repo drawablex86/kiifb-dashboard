@@ -50,6 +50,10 @@ class TestEndToEndIntegrity(unittest.TestCase):
             self.assertIn("title", s)
             self.assertIn("publisher", s)
             self.assertIn("sha256", s)
+            # T084: multi-file sources carry authoritative per-file hashes.
+            for f in s.get("files", []):
+                self.assertRegex(f.get("sha256", ""), r"^[0-9a-f]{64}$",
+                                 f"{s['source_id']} file {f['name']} lacks sha256")
 
     def test_assertion_cross_links(self):
         """Verify each headline assertion is cross-linked in evidence_links.json."""

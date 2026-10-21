@@ -307,11 +307,18 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 - Result: Coverage 587/1,408 (41.7%) → **1,103/1,408 (78.3%)** districts; tiers `name_district_mention` (474 adds, conf 0.95 — verbatim district name/alias at word boundaries in the official title, district-only, no coords/flags), `work_containment_same_dept` (32 adds, conf 0.75 — dept-filtered, either-direction normalised title nesting, ≤ 3 hits, all hits must agree on exactly one district), `token_fuzzy_same_dept_j55` (6 adds, conf = round(J,2) — dept-filtered token Jaccard ≥ 0.55, strict unique-best, ties rejected). Pre-existing tiers (funding-join / exact title / fuzzy ≥ 0.70) untouched and keep precedence. 512 auditable entries in `data/processed/kanakku_match_log.json` (sorted keys, deterministic, byte-identical re-runs); each enriched record carries a `district_match` meta object. Stability test reads the pre-T083 committed dataset via `git show HEAD:` and asserts existing district/constituency/flag/coordinate values unchanged bit-for-bit and every new district carries audit meta. Rejected after measurement: funding work-level exact join (adds 0), unfiltered fuzzy ≥ 0.75 (adds 0), unfiltered containment over all packages (+717 but sampled umbrellas gave provably wrong districts — documented in matching-rules §3.4). 16 new offline tests (suite total 91, all pass).
 
 ### T084 — Broaden source registry (annual reports, budget line items, bonds/RTI)
-- Status: open
+- Status: done
 - Dependencies: T080
 - Objective: register and acquire follow-on financial sources — KIIFB annual reports (CAG-audited, `DS012`), state budget KIIFB line items (`DS032`), Masala bond filings/RTI disclosures, and Niyamasabha assembly questions — each with manifest checksum, rights notes, and a `datasources.md` entry.
 - Outputs: new archived sources under `data/raw/`, updated `data/manifest.json`, updated `datasources.md`.
 - Acceptance: each source is assigned a `DS###` id with documented licence terms; no source is ingested without recorded access terms; all financial aggregates remain traceable to their original locator; existing processed datasets are not silently re-baselined to the new sources (noted in `datasources.md` discrepancy register if figures differ).
+- Completed: 2026-10-21
+- Notes: **Acquired & checksum-registered** (polite single-pass, identifying UA; kiifb.org/budget.kerala.gov.in publish no robots.txt):
+  - **DS012** — KIIFB Annual Reports & Audited Accounts FY2025-26 (published 2026-09-07, 37.5 MB) and FY2024-25 (68.7 MB), from `kiifb.org/resources.jsp` fileViewer (`dPrfx=RPT`, did=760/592); the full 2016-17..2023-24 catalogue (did=50..440) documented for on-demand fetches.
+  - **DS032** — Annual Financial Statements FY2025-26 (810 KB) and FY2026-27 (1.2 MB, first post-election budget) from `budget.kerala.gov.in/keralabudgetdoc/<year>/AFS.pdf`; registered as *archived, not yet ingested* (text-layer extraction pending tooling) with DISC-T084a barring silent re-baselining.
+  - **DS044** (new id) — Masala bond document (did=99, 1-page booklet) + SEBI LODR Reg 27(2) Annual Compliance Report FY2025-26 (22.4 MB, did=761); per-bond Reg 52(7) use-of-proceeds statements identified as highest-value follow-ups; LSE prospectus gap recorded as DISC-T084b.
+  - **DS046** (RTI/CIC disclosures) and **DS047** (Niyamasabha questions) registered as candidates with acquisition plans — not acquired in this pass.
+  - `manifest.json` verification extended by `test_end_to_end_integrity.test_manifest_sources_registered` to require per-file SHA-256 in `files[]`; compound top-level `sha256` fields documented. `refresh_pipeline.py` verifies all 6 new files (137 MB) via `verify_raw_sources()` on every run. Pipeline + 91 tests green.
 
 ## Milestone 9 — Deployment, funds & trend visualisation
 

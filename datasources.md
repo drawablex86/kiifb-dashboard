@@ -110,12 +110,14 @@ Respect website terms, robots rules, rate limits, access controls, and applicabl
 
 ### DS012 — KIIFB annual reports and financial disclosures
 
-- Starting URL: https://www.kiifb.org/
-- Known annual-report document previously located: https://www.kiifb.org/includes/fileViewer.jsp?dPrfx=RPT&did=440&fmde=res&fname=AnnualReport-KIIFB-2023-24.pdf
+- Starting URL: https://www.kiifb.org/resources.jsp (`RPT` block; documents served via `fileViewer.jsp?dPrfx=RPT&did=<n>&fmde=res&fname=<file>`)
 - Purpose: Audited financial statements, debt information, project progress, annual outputs, governance and management disclosures.
-- Acquisition: Search the official KIIFB site for all available annual reports, financial statements, debt disclosures, and relevant appendices. Verify that links resolve and archive each document.
-- Download target: `data/raw/kiifb/annual-reports/<report-year>/`
-- Caveat: Annual report project counts may use a different date or definition than the committee report. Preserve report-year context.
+- **Acquired (2026-10-21, T084):**
+  - `data/raw/kiifb/annual-reports/2025-26/AnnualReport-KIIFB-2025-26.pdf` — FY 2025-26 Annual Report & Audited Accounts, published 2026-09-07 (SHA-256 `73285f74...`).
+  - `data/raw/kiifb/annual-reports/2024-25/AnnualReport-KIIFB-2024-25.pdf` — FY 2024-25 edition, published 2025-09-03 (SHA-256 `5dc2f1b4...`).
+  - Both checksum-registered under `data/manifest.json → sources[]` (compound `sha256`; per-file hashes authoritative in `files[]`).
+- The full archive listing (2016-17 through 2023-24, `did=50..440`, e.g. `AnnualReport-KIIFB-2023-24.pdf` at did=440) remains available at resources.jsp; fetch on demand if a specific fiscal year is needed.
+- Caveat: Annual report project counts may use a different date or definition than the committee report. Preserve report-year context. No explicit open licence is stated on the documents — official KIIFB publication, use with attribution and source link.
 - Initial priority: Critical.
 
 ### DS013 — KIIFB news, newsletters and project-completion releases
@@ -193,11 +195,43 @@ Respect website terms, robots rules, rate limits, access controls, and applicabl
 
 ### DS032 — State budget and Finance Department documents
 
-- Starting point: Kerala Finance Department / official State budget portal. Search official sources for budget estimates, revised estimates, actuals, borrowing limits, guarantees, public debt, transfers to KIIFB and relevant fiscal statements.
-- Search terms: `Kerala budget KIIFB transfer public debt guarantees`, `Kerala Finance Accounts KIIFB`, `Kerala budget documents 2025-26`.
-- Save exact official URLs and report periods here after verification.
-- Purpose: Verify State transfers, debt-service support, fiscal context and the treatment of KIIFB liabilities.
+- Starting point: official Kerala budget portal `budget.kerala.gov.in` (documents under `keralabudgetdoc/<fiscal-year>/` — e.g. `AFS.pdf`, `BudgetinBrief.pdf`, DBE volumes, Summary Document) and the Finance Department index at `finance.kerala.gov.in/bdgtDcs.jsp`.
+- **Acquired (2026-10-21, T084):**
+  - `data/raw/finance/budget/2025-26/AFS-2025-26.pdf` — Annual Financial Statement 2025-26, laid before the Legislature, Feb 2025 (SHA-256 `121e903b...`).
+  - `data/raw/finance/budget/2026-27/AFS-2026-27.pdf` — Annual Financial Statement 2026-27, first budget after the 2026 assembly election (SHA-256 `34c9bcca...`).
+  - Checksum-registered under `data/manifest.json → sources[]`.
+- Purpose: Verify State transfers to KIIFB, debt-service support, borrowing limits, guarantees and the treatment of KIIFB liabilities inside the receipts and public-debt statements.
+- Caveat: PDF text layers could not be verified with the tooling available (no pdftotext); KIIFB-specific line-item extraction is pending a text-extraction pass. Treat as *registered & archived*, not yet *ingested*. Later fiscal years exist at the same URL pattern.
+- Search terms: `Kerala budget KIIFB transfer public debt guarantees`, `Kerala Finance Accounts KIIFB`, `keralabudgetdoc AFS.pdf`.
 - Priority: Critical.
+
+### DS044 — KIIFB bond issuance & SEBI disclosures (acquired)
+
+- Starting URL: https://www.kiifb.org/resources.jsp (`CMPL` compliance block, row prefix `FA-6/2027/2021/KIIFB`; documents via `fileViewer.jsp?dPrfx=CMPL&did=<n>&fmde=res&fname=<file>`)
+- **Acquired (2026-10-21, T084):**
+  - `data/raw/kiifb/bonds/masala-bond-2019/KIIFB-MasalaBond.pdf` — Masala bond document (did=99; a 1-page booklet — **gap:** the full LSE prospectus/offer document was NOT located in this pass and needs manual retrieval; noted in §9).
+  - `data/raw/kiifb/sebi-filings/2025-26/KIIFB-Reg27-AnnualComplianceReport-FY2025-26.pdf` — SEBI LODR Regulation 27(2) Annual Compliance Report, FY 2025-26 (did=761).
+  - Checksum-registered under `data/manifest.json → sources[]`.
+- Purpose: Debt stock, interest obligations, use-of-proceeds (Reg 52(7) statements of utilisation), audit qualifications, and bond-servicing behaviour over time — the deepest public financial evidence after the Annual Reports.
+- High-value follow-ups in the same CMPL table: quarterly Reg 52(7) "Statement of utilisation of issue proceeds", "Audited Financial Results (Standalone and Consolidated)", "Statement of Impact of Audit Qualifications".
+- Rights: official KIIFB publication (SEBI-listed entity disclosure); no explicit licence — use with attribution and source link.
+- Initial priority: High.
+
+### DS046 — KIIFB RTI disclosures and CIC rulings (candidate; not yet acquired)
+
+- Starting point: https://www.kiifb.org/ (RTI disclosures section) and Central Information Commission decision search.
+- Purpose: Voluntary RTI disclosures, CIC decisions on KIIFB information requests (project-wise release figures, contractor information not on the portal).
+- Acquisition plan: identify the RTI disclosure page/URL and archive disclosures relevant to project finance; date-stamp every retrieval. Record access terms before ingesting.
+- Caveat: RTI disclosures are point-in-time responses; verify against portal figures before use.
+- Priority: Medium.
+
+### DS047 — Niyamasabha (Kerala Legislative Assembly) questions & papers (candidate; not yet acquired)
+
+- Starting point: https://www.niyamasabha.org/ ( starred/off-listed questions, budget documents, committee papers mentioning KIIFB).
+- Purpose: Independent legislative scrutiny — questions on KIIFB releases, stalled projects, guarantees; floor statements with project names and amounts.
+- Acquisition plan: search the 15th/16th KLA business lists for "KIIFB" questions; archive question + answer pairs with session/date metadata.
+- Caveat: answers given on the floor vary in completeness; treat as supporting evidence, never as the sole source for a financial figure.
+- Priority: Medium.
 
 ### DS033 — Kerala Economic Review and sector reports
 
@@ -300,6 +334,11 @@ Other potential discrepancies:
 - Statewide sector totals versus KIIFB-only totals.
 - Approved cost versus revised cost and actual expenditure.
 - Land-acquisition amount paid versus amount reimbursed/repaid.
+
+Registered through T084 (2026-10-21) — baseline-integrity notes:
+- **DISC-T084a — DS032 budget AFS vs committee figures.** The acquired Annual Financial Statements (2025-26, 2026-27) are *registered & archived* only: their text layers have not been extracted/ingested (no PDF text tool in the acquisition environment). Ingestion must NOT re-baseline any existing processed dataset (`committee_financial_tables.json` remains anchored to DS001); when AFS line items are extracted, they arrive as new reconciliation inputs and any figure conflicts land in this register.
+- **DISC-T084b — Masala bond prospectus gap.** KIIFB-MasalaBond.pdf (did=99) is a 1-page booklet, not the LSE offer document. The full prospectus/full national security structure filing must be retrieved manually from London Stock Exchange filings before any bond-size or use-of-proceeds claim is derived from it.
+- **DISC-T084c — annual-report vs portal date regimes.** DS012 annual reports state FY-based delivery/financial figures whose as-of dates differ from the prjStatus.jsp live register and the committee's June 2026 snapshot. Cross-referencing requires preserve-as-of-date discipline; no re-baselining of DS010 processed data.
 
 ## 10. Search and download workflow
 

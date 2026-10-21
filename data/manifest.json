@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "1.3.0",
-  "last_updated": "2026-10-21T02:58:35Z",
+  "last_updated": "2026-10-21",
   "description": "Cryptographic and provenance inventory of research datasets and sources for KIIFB Dashboard",
   "sources": [
     {
@@ -100,6 +100,87 @@
       "licence_or_terms": "Creative Commons Attribution 4.0 International (CC BY 4.0) / Code: AGPL-3.0",
       "notes": "Open data extract joining KIIFB GIS portal (gis.kiifb.org), KIIFB prjStatus.jsp, and Kerala PWD Defect Liability Period register. Provides GPS coordinates, assembly constituencies, and 5 automated rule-based flags.",
       "sha256": "6fe1527e0b841c27cb3363f36839c2a4e4502f3afe69f2e115d83fbbf36e0ea1"
+    },
+    {
+      "source_id": "DS012",
+      "title": "KIIFB Annual Reports & Audited Statements of Accounts",
+      "publisher": "Kerala Infrastructure Investment Fund Board (statutory body, KIIFB Act 1999 as amended; Government of Keralam)",
+      "publication_date": "2026-09",
+      "reporting_period": "FY 2024-25 and FY 2025-26 (annual)",
+      "retrieved_at": "2026-10-21T03:31:06Z",
+      "original_url": "https://www.kiifb.org/resources.jsp",
+      "local_path": "data/raw/kiifb/annual-reports/",
+      "files": [
+        {
+          "name": "2025-26/AnnualReport-KIIFB-2025-26.pdf",
+          "sha256": "73285f74722c4cbc5b6059ef48c4c9e8a4ee57cd5853743cbcb30404917bec5a",
+          "bytes": 37513764
+        },
+        {
+          "name": "2024-25/AnnualReport-KIIFB-2024-25.pdf",
+          "sha256": "5dc2f1b4c0bef57f318057f5b066048c9cfbed607ca1808314c650c46cdaca12",
+          "bytes": 68700692
+        }
+      ],
+      "source_type": "official_annual_report_pdf",
+      "licence_or_terms": "Official publication of KIIFB (SEBI LODR-listed disclosures). No explicit open licence stated; use with attribution and source link. Public-domain-style statutory disclosure, archived for research.",
+      "notes": "CAG-audited annual accounts and delivery/finance narrative per FY (older editions 2016-17..2023-24 remain at the resources.jsp listing; fileViewer did=50..440). 2025-26 published 2026-09-07; 2024-25 published 2025-09-03.",
+      "sha256": "7d909c62eaa5dc2e67cf07ad35224045f2ac9977bec2c79c4eecb934f8222095",
+      "sha256_note": "compound sha256 over the sorted \"name:sha256\\n\" lines of files[]; authoritative per-file hashes are in files[]."
+    },
+    {
+      "source_id": "DS032",
+      "title": "State Budget Annual Financial Statement (KIIFB-relevant line items)",
+      "publisher": "Finance Department, Government of Keralam (budget.kerala.gov.in)",
+      "publication_date": "2026-07",
+      "reporting_period": "FY 2025-26 and FY 2026-27",
+      "retrieved_at": "2026-10-21T03:31:06Z",
+      "original_url": "https://www.budget.kerala.gov.in/keralabudgetdoc/2025_26/AFS.pdf",
+      "local_path": "data/raw/finance/budget/",
+      "files": [
+        {
+          "name": "2025-26/AFS-2025-26.pdf",
+          "sha256": "121e903b70f9b4fb1457777156bc4653476bab48e47575f99a1cda8a70e36e96",
+          "bytes": 809763
+        },
+        {
+          "name": "2026-27/AFS-2026-27.pdf",
+          "sha256": "34c9bcca8bbce0db2b851da9d095364398139f8d649629571105a6ee37bda988",
+          "bytes": 1170015
+        }
+      ],
+      "source_type": "official_budget_pdf",
+      "licence_or_terms": "Government of Kerala publication (Finance Dept). Attribution requested; no explicit licence.",
+      "notes": "Annual Financial Statement laid before the Legislature; contains KIIFB borrowing/repayment flows in receipts & debt statements. PDF structure verified; text-layer KIIFB term extraction pending a PDF text tool. 2026-27 AFS retrieved under the post-election budget.",
+      "sha256": "63379541254e8f94dec7d48e2d76afc7ae89138271bb5edf459fa336e334d9d3",
+      "sha256_note": "compound sha256 over the sorted \"name:sha256\\n\" lines of files[]; authoritative per-file hashes are in files[]."
+    },
+    {
+      "source_id": "DS044",
+      "title": "KIIFB Bond Issuance & SEBI LODR Disclosures",
+      "publisher": "Kerala Infrastructure Investment Fund Board (statutory body, KIIFB Act 1999 as amended; Government of Keralam)",
+      "publication_date": "2026-09",
+      "reporting_period": "2019 issuance documents; FY 2025-26 compliance",
+      "retrieved_at": "2026-10-21T03:31:06Z",
+      "original_url": "https://www.kiifb.org/resources.jsp",
+      "local_path": "data/raw/kiifb/",
+      "files": [
+        {
+          "name": "bonds/masala-bond-2019/KIIFB-MasalaBond.pdf",
+          "sha256": "5501c2dc46c301ba555a7fdd917f2f08de88caece88ca26c365c0689d17ece54",
+          "bytes": 510380
+        },
+        {
+          "name": "sebi-filings/2025-26/KIIFB-Reg27-AnnualComplianceReport-FY2025-26.pdf",
+          "sha256": "91d94bc30ed6b453125b21c733e3d9cae04043acac295916eeb10c98002b131e",
+          "bytes": 22409493
+        }
+      ],
+      "source_type": "official_bond_sebi_disclosure_pdf",
+      "licence_or_terms": "Official publication of KIIFB (SEBI LODR-listed disclosures). No explicit open licence stated; use with attribution and source link. Public-domain-style statutory disclosure, archived for research.",
+      "notes": "Masala-bond document (did=99, 1-page booklet — the full LSE prospectus/NFS is a manual-retrieval gap) and SEBI Regulation 27(2) Annual Compliance Report FY2025-26 (did=761). Regulation 52(7) statements of utilisation of issue proceeds are the key per-bond deployment evidence; filings index lives at resources.jsp (CMPL row prefix FA-6/2027/2021/KIIFB).",
+      "sha256": "1aea31982f4dffe4fa7c9fcc1fdc93e4c91eb56e7d4eff81645b2856a849cb42",
+      "sha256_note": "compound sha256 over the sorted \"name:sha256\\n\" lines of files[]; authoritative per-file hashes are in files[]."
     }
   ],
   "institutional_and_federal_datasets": [
