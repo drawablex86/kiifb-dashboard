@@ -200,6 +200,12 @@ def main():
             print(f"[FATAL] Pipeline stopped at step {script}")
             sys.exit(1)
 
+    # T082: snapshot processed datasets, then diff against the previous
+    # run (empty-delta baseline log when no prior snapshot exists).
+    if not run_script("diff_snapshots.py"):
+        print("[FATAL] Pipeline stopped at diff_snapshots.py")
+        sys.exit(1)
+
     print("--> Step 5: Running Full Verification Test Suite...")
     test_res = subprocess.run([sys.executable, "-m", "unittest", "discover", "tests"], capture_output=True, text=True, cwd=str(PROJECT_ROOT))
     if test_res.returncode != 0:

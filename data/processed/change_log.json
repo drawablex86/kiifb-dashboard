@@ -1,0 +1,153 @@
+{
+  "computed_from": {
+    "curr": "2026-10",
+    "dataset_root": "data/processed",
+    "prev": "2026-10"
+  },
+  "datasets": {
+    "kanakku_packages.json": {
+      "added": [],
+      "baseline_run": true,
+      "coverage": {
+        "coordinates_curr": 0,
+        "coordinates_prev": 0,
+        "district_curr": 3622,
+        "district_prev": 3622,
+        "total_curr": 3622,
+        "total_prev": 3622
+      },
+      "financial_deltas": [],
+      "financial_totals_delta_inr": {
+        "approved": 0.0,
+        "released": 0.0
+      },
+      "flags_added": [],
+      "flags_resolved": [],
+      "removed": [],
+      "renamed": [],
+      "status_migrations": [],
+      "totals": {
+        "added": 0,
+        "financial_deltas": 0,
+        "flags_added": 0,
+        "flags_resolved": 0,
+        "removed": 0,
+        "renamed": 0,
+        "status_migrations": 0
+      }
+    },
+    "kiifb_projects.json": {
+      "added": [],
+      "baseline_run": true,
+      "coverage": {
+        "coordinates_curr": 591,
+        "coordinates_prev": 591,
+        "district_curr": 587,
+        "district_prev": 587,
+        "total_curr": 1408,
+        "total_prev": 1408
+      },
+      "financial_deltas": [],
+      "financial_totals_delta_inr": {
+        "approved": 0.0,
+        "released": 0.0
+      },
+      "flags_added": [],
+      "flags_resolved": [],
+      "removed": [],
+      "renamed": [],
+      "status_migrations": [],
+      "totals": {
+        "added": 0,
+        "financial_deltas": 0,
+        "flags_added": 0,
+        "flags_resolved": 0,
+        "removed": 0,
+        "renamed": 0,
+        "status_migrations": 0
+      }
+    },
+    "kite_schools.json": {
+      "added": [],
+      "baseline_run": true,
+      "coverage": {
+        "coordinates_curr": 0,
+        "coordinates_prev": 0,
+        "district_curr": 969,
+        "district_prev": 969,
+        "total_curr": 969,
+        "total_prev": 969
+      },
+      "financial_deltas": [],
+      "financial_totals_delta_inr": {
+        "approved": 0.0,
+        "released": 0.0
+      },
+      "flags_added": [],
+      "flags_resolved": [],
+      "removed": [],
+      "renamed": [],
+      "status_migrations": [],
+      "totals": {
+        "added": 0,
+        "financial_deltas": 0,
+        "flags_added": 0,
+        "flags_resolved": 0,
+        "removed": 0,
+        "renamed": 0,
+        "status_migrations": 0
+      }
+    },
+    "unified_project_explorer.json": {
+      "added": [],
+      "baseline_run": true,
+      "coverage": {
+        "coordinates_curr": 591,
+        "coordinates_prev": 591,
+        "district_curr": 1556,
+        "district_prev": 1556,
+        "total_curr": 2377,
+        "total_prev": 2377
+      },
+      "financial_deltas": [],
+      "financial_totals_delta_inr": {
+        "approved": 0.0,
+        "released": 0.0
+      },
+      "flags_added": [],
+      "flags_resolved": [],
+      "removed": [],
+      "renamed": [],
+      "status_migrations": [],
+      "totals": {
+        "added": 0,
+        "financial_deltas": 0,
+        "flags_added": 0,
+        "flags_resolved": 0,
+        "removed": 0,
+        "renamed": 0,
+        "status_migrations": 0
+      }
+    }
+  },
+  "note": "Baseline snapshot: no prior run existed to compare against.",
+  "portfolio_totals_delta_inr": {
+    "kanakku_packages.json": {
+      "approved": 0.0,
+      "released": 0.0
+    },
+    "kiifb_projects.json": {
+      "approved": 0.0,
+      "released": 0.0
+    },
+    "kite_schools.json": {
+      "approved": 0.0,
+      "released": 0.0
+    },
+    "unified_project_explorer.json": {
+      "approved": 0.0,
+      "released": 0.0
+    }
+  },
+  "schema_version": "1.0.0"
+}
