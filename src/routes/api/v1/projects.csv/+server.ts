@@ -79,7 +79,7 @@ export const GET: RequestHandler = async () => {
 			'Content-Type': 'text/csv; charset=utf-8',
 			'Content-Disposition': 'attachment; filename="kiifb_unified_project_explorer.csv"',
 			'Cache-Control': 'public, max-age=3600',
-			'X-Data-Licence': 'CC BY 4.0 for Kanakku (DS030) derivatives — preserve source_id/source_locator'
+			'X-Data-Licence': 'CC BY 4.0 for Kanakku (DS030) derivatives - preserve source_id/source_locator'
 		}
 	});
 };
