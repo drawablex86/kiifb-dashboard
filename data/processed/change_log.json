@@ -1,13 +1,13 @@
 {
   "computed_from": {
-    "curr": "2026-10",
+    "curr": "2026-10__20261021T031831Z",
     "dataset_root": "data/processed",
     "prev": "2026-10"
   },
   "datasets": {
     "kanakku_packages.json": {
       "added": [],
-      "baseline_run": true,
+      "baseline_run": false,
       "coverage": {
         "coordinates_curr": 0,
         "coordinates_prev": 0,
@@ -38,11 +38,11 @@
     },
     "kiifb_projects.json": {
       "added": [],
-      "baseline_run": true,
+      "baseline_run": false,
       "coverage": {
-        "coordinates_curr": 591,
+        "coordinates_curr": 629,
         "coordinates_prev": 591,
-        "district_curr": 587,
+        "district_curr": 1099,
         "district_prev": 587,
         "total_curr": 1408,
         "total_prev": 1408
@@ -69,7 +69,7 @@
     },
     "kite_schools.json": {
       "added": [],
-      "baseline_run": true,
+      "baseline_run": false,
       "coverage": {
         "coordinates_curr": 0,
         "coordinates_prev": 0,
@@ -100,11 +100,11 @@
     },
     "unified_project_explorer.json": {
       "added": [],
-      "baseline_run": true,
+      "baseline_run": false,
       "coverage": {
-        "coordinates_curr": 591,
+        "coordinates_curr": 629,
         "coordinates_prev": 591,
-        "district_curr": 1556,
+        "district_curr": 2068,
         "district_prev": 1556,
         "total_curr": 2377,
         "total_prev": 2377
@@ -130,7 +130,7 @@
       }
     }
   },
-  "note": "Baseline snapshot: no prior run existed to compare against.",
+  "note": "Change log computed between snapshot 2026-10 and 2026-10__20261021T031831Z.",
   "portfolio_totals_delta_inr": {
     "kanakku_packages.json": {
       "approved": 0.0,

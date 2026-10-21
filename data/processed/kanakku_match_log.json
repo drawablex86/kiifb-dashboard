@@ -1,0 +1,5256 @@
+{
+  "entries": [
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0013",
+      "project_name": "UPGRADATION OF GOVT ITI KANNUR AND E.K. NAYANAR MEMORIAL GOVT ITI KAYYUR, KASARGODE",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.6,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [
+        "CAD002-14-01"
+      ],
+      "project_id": "KIIFB-PRJ-0016",
+      "project_name": "Setting up of Cinema Theater Complex in Kakkanad",
+      "resolution": "token_fuzzy_same_dept_j55"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kottayam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0023",
+      "project_name": "Lalithambika Antharjanam Cultural Complex at Kottayam",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kottayam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0034",
+      "project_name": "Land Acquisition for Lalithambika Antharjanam Cultural Complex at Kottayam",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0035",
+      "project_name": "Land acquisition for Vagbhatanandan Cultural Complex at Kannur",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0037",
+      "project_name": "Vallathol Narayana Menon Cultural Complex at Thrissur",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0046",
+      "project_name": "Vagbhatanandan Cultural Complex at Kannur",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0053",
+      "project_name": "Pre DPR for land acquisition of Development and Construction of a Multipurpose Film Festival Complex at Kazhakootam, Thiruvananthapuram",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0055",
+      "project_name": "P Krishna Pillai Cultural Complex at Alappuzha",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0061",
+      "project_name": "KIIFB - 2017-18 - Construction of Regulator Cum Bridge at Kankakkadavu across Bharathapuzha in Kuttipuram Panchayath, Malappuram District.",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0063",
+      "project_name": "Thiruvananthapuram-Neyyar Alternative Source Laying 1422mm MS pipe of 12.5mm thk, transmission main from Neyyar Dam to PTP Nagar",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0071",
+      "project_name": "Construction of RCB across Thoothapuzha at Kezhmurikkadavu, Moothikkayam in Moorkkanadu Panchayath, Malappuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0075",
+      "project_name": "Construction of Regulator cum Foot Bridge across Chaliyar River at Kalathumkadavu in Nilambur Municipality of Malappuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0078",
+      "project_name": "Construction of Regulator cum Bridge at Muttikkal- Attathara road in Kottappuram village across Wadakkanchery river connecting S.H.50 in Muttikkal of Thalappilly Taluk in Thrissur district.",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0102",
+      "project_name": "Construction of RCB across Poonur Puzha near KWA pumping house at Poolakkadavu in Kuruvattoor Panchayath, Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0111",
+      "project_name": "Construction of Regulator cum Bridge at Keezhthandilam across Wadakkanchery River at Talappilly Taluk in Thrissur district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0112",
+      "project_name": "Construction of Regulator Cum Bridge across Chittur Puzha at Vadakarappally Palthulli Grama Panchayath in Palakkad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0114",
+      "project_name": "Construction of Regulator Cum Bridge across Thoothapuzha at the down stream of Kaladikunnu LIS in Thiruvegapura Panchayath in Palakkad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0143",
+      "project_name": "Coastal Protection Measures at Pozhiyoor (Kollamcode) at Thiruvananthapuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Pathanamthitta"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0149",
+      "project_name": "Construction of Regulator Across Achenkovil River d/s of Kaipattoor Bridge in Pathanamthitta District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0156",
+      "project_name": "Construction of Regulator cum Bridge u/s of Perincheri Kadavu across Kuttiyadi River Gulikapuzha in Kozhikode District.",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0178",
+      "project_name": "Construction of RCB across Kuppam River at Kooveri Kattampally in Chapparappadavu Panchayath, Thaliparamba Taluk, Kannur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0181",
+      "project_name": "CONSTRUCTION OF REVENUE TOWER AT MULANTHURUTHY, ERNAKULAM",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0182",
+      "project_name": "Construction of Flyover at Ulloor in Thiruvananthapuram",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0184",
+      "project_name": "Construction of Flyover at Sreekariyam in Thiruvananthapuram",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0196",
+      "project_name": "Construction of Flyover at Pattom in Thiruvananthapuram",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0203",
+      "project_name": "Construction of Digital Science Park at Technopark Phase VI,Thiruvananthapuram,Kerala",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0204",
+      "project_name": "etting up of Translational Research Centre at Kerala University of Health Sciences (KUHS)",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0207",
+      "project_name": "CONSTRUCTION OF MINI CIVILSTATION CUM COURT COMPLEX AT PATHANAPURAM IN KOLLAM DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0216",
+      "project_name": "Establishment of Science Park at Kannur",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0217",
+      "project_name": "Construction of Revenue Tower at Chalakudy in Thrissur district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0227",
+      "project_name": "Construction of Revenue Tower at Pattambi, Palakkad.",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kottayam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0235",
+      "project_name": "Development of Government Taluk Hospital Kuravilangad in Kottayam",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur",
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0238",
+      "project_name": "Development of Industrial Infrastructure in Kannur and Palakkad Districts-Land Acquisition",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0243",
+      "project_name": "Construction of Revenue Tower at Vadakara, Kozhikode.",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.67,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "CIN001-14-01"
+      ],
+      "project_id": "KIIFB-PRJ-0248",
+      "project_name": "DREDGING AND DESILTING WORKS IN EDAPALLY CANAL",
+      "resolution": "token_fuzzy_same_dept_j55"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0259",
+      "project_name": "Development of Road and Basic amenities - Second phase of Life Science Park, Thonnakkal, Thiruvananthapuram",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0260",
+      "project_name": "Construction of Revenue Tower at Nilambur, Malappuram.",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0265",
+      "project_name": "G V RAJA CENTRE FOR EXCELLENCE MENAMKULAM, THIRUVANANTHAPURAM",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0276",
+      "project_name": "Olympian Rehman Indoor Stadium and Sports Complex, Kozhikode",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0280",
+      "project_name": "Palakkad Indoor Stadium",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0282",
+      "project_name": "DHEERAJAWAN JOMON STADIUM AT PALLIPURAM, ALAPPUZHA",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0284",
+      "project_name": "Alappuzha rowing track maintenance & Construction of hostel",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0288",
+      "project_name": "MALAPPURAM P. MOIDEENKUTTY INDOOR STADIUM",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0295",
+      "project_name": "Construction of Thrissur Aquatic Complex and Mattannur Aquatic Complex",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0296",
+      "project_name": "I M Vijayan Indoor Stadium & Sports Complex, Thrissur Laloor- Additional works",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0297",
+      "project_name": "Alappuzha Rowing Track Maintenance and Construction of Hostel (Phase 1-Land acquisition)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0319",
+      "project_name": "Iringal Sargalaya - Integrated Tourism Circuit Payyoli, Vadakara, Kozhikode District with Sargalaya as Fulcrum",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Pathanamthitta"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0320",
+      "project_name": "Pathanamthitta Phase-3 Cluster 1",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0332",
+      "project_name": "Development of Mental Health Centre, Thrissur",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kasaragod"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0336",
+      "project_name": "Development of Government Medical College Kasaragod - Additional Work- Part C - Substation Building, Girls Hostel & Teaching Quarters 2 BHK",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Wayanad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0337",
+      "project_name": "WAYANAD CLUSTER Phase-7",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kasaragod"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0344",
+      "project_name": "Development of Government Medical College Kasaragod Additional Works :PART B -Residential Facilities &Other Works",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0362",
+      "project_name": "Augmentation of Infrastructure Facilities for Govt. College for Women, Thiruvananthapuram",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0366",
+      "project_name": "Phase 3: MLCP Block - Govt. Medical college, Thiruvananthapuram",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0367",
+      "project_name": "Augmentation of Infrastructural Facilities at SRV Government College of Music & Performing Arts Thrissur",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kasaragod"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0372",
+      "project_name": "Balance Civil , PHE and Fire protection works of Hospital block at GMC,Kasaragod",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0383",
+      "project_name": "Betterment of facilities at GHSS Mangalam, Alappuzha District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0385",
+      "project_name": "Office Complex for State Goods & Service Tax Department At Kannur",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0389",
+      "project_name": "Office Complex for State Goods & Service Tax Department at Alappuzha",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0392",
+      "project_name": "Development of District Hospital Nilambur",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.67,
+      "districts": [
+        "Kottayam"
+      ],
+      "pkg_codes": [
+        "HED003-01-01"
+      ],
+      "project_id": "KIIFB-PRJ-0394",
+      "project_name": "Augmentation of Infrastructural Facilities at Calicut University",
+      "resolution": "token_fuzzy_same_dept_j55"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Wayanad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0415",
+      "project_name": "Development of General Hospital Kalpetta in Wayanad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0416",
+      "project_name": "Development of District Hospital, Perinthalmanna in Malappuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Wayanad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0420",
+      "project_name": "Development of Taluk Head Quarters Hospital Vythiri in Wayanad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0434",
+      "project_name": "Development of Govt.Victoria Hospital for Women & Children, Kollam",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0439",
+      "project_name": "Development of Taluk Level Hospital, Chithirapuram",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0440",
+      "project_name": "Taluk Level Hospital at Munnar",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0446",
+      "project_name": "CONSTRUCTION OF DERMATOLOGY HOSPITAL AND ITS ALLIED FACILITIES AT CHEVAYUR, KOZHIKODE",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0451",
+      "project_name": "Construction of Isolation Ward in GMC Kozhikode",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0452",
+      "project_name": "CONSTRUCTION FOR ESTABLISHMENT OF INSTITUTE FOR ORGAN AND TISSUE TRANSPLANT CHEVAYUR, KOZHIKODE",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0454",
+      "project_name": "GENERAL HOSPITAL THRISSUR",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0455",
+      "project_name": "DEVELOPMENT OF OUT PATIENT DEPARTMENT,CASUALTY & DIAGNOSTIC FACILITIES IN TALUK HOSPITAL PATTAMBI,PALAKKAD",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Idukki"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0456",
+      "project_name": "Development of Out Patient Unit,Casualty Block & Diagnostics Facilities in Taluk Hospital, Peerumedu, Idukki",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0458",
+      "project_name": "DEVELOPMENT OF ISOLATION WARDS AT GOVERNMENT MEDICAL COLLEGE THIRUVANANTHAPURAM",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Idukki"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0470",
+      "project_name": "DEVELOPMENT OF OUT PATIENT DEPARTMENT,CASUALTY & DIAGNOSTIC FACILITIES IN TALUK HOSPITAL KATTAPPANA,IDUKKI",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0471",
+      "project_name": "Development of Mental Health Care Centre Trivandrum",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam",
+        "Idukki"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0483",
+      "project_name": "Idukki Ernakulam cluster",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam",
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0484",
+      "project_name": "Kollam Trivandrum Cluster",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0485",
+      "project_name": "Kollam cluster 3-Phase 1",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Wayanad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0488",
+      "project_name": "PPE Mission-Upgradation of one school in each constituency - Wayanad District Phase-1",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0490",
+      "project_name": "Malappuram Phase-3 Cluster 1",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0491",
+      "project_name": "PPE Mission-Upgradation of one school in each constituency - Kozhikode District -phase 1",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0494",
+      "project_name": "PPE Mission-Upgradation of one school in each constituency-Kollam District Phase 1",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0496",
+      "project_name": "PPE Mission-Upgradation of one school in each constituency- Thrissur District Phase-I",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0507",
+      "project_name": "Kannur & kasargod cluster - phase 1",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0510",
+      "project_name": "Malappuram Phase-3 Cluster 5",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0511",
+      "project_name": "PPE Mission-Upgradation of one school in each constituency- Kannur & Kasargod Districts Phase-1",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam",
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0517",
+      "project_name": "Trivandrum & Kollam cluster phase 1",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0521",
+      "project_name": "PPE Mission-Upgradation of one school in each constituency - Alappuzha District Phase 1",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0527",
+      "project_name": "Kollam Cluster 1-Phase 1",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0532",
+      "project_name": "PPE Mission-Upgradation of one school in each constituency-Ernakulam District Phase-1",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0536",
+      "project_name": "Thrissur Cluster Govt. Engineering College Thrissur, Govt. Polytechnic College Chelakkara",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha",
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0538",
+      "project_name": "Alappuzha Kollam Cluster",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0543",
+      "project_name": "Kollam Cluster 2- Phase 1",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0546",
+      "project_name": "PPE Mission-Upgradation of one school in each constituency - Palakkad District Phase-1",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0554",
+      "project_name": "Ernakulam Cluster-Phase III",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0558",
+      "project_name": "Palakkad Cluster Phase 8",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad",
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0559",
+      "project_name": "Thrissur-Palakkad Cluster",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0560",
+      "project_name": "Thrissur cluster 1 - phase 1",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram",
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0570",
+      "project_name": "Thrissur & Malappuram cluster - Phase III",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode",
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0574",
+      "project_name": "Malappuram-Kozhikode Cluster Phase 8",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0576",
+      "project_name": "Ernakulam Cluster Phase 2",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0577",
+      "project_name": "Thrissur cluster 2- phase 1",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0578",
+      "project_name": "Kozhikode Cluster",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0582",
+      "project_name": "Kozhikode cluster- Phase III",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0584",
+      "project_name": "PPE Mission-Upgradation of one school in each constituency Trivandrum District-Phase 1",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kottayam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0585",
+      "project_name": "Kottayam Cluster Phase 2",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0588",
+      "project_name": "Kasargod Kannur Cluster",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0595",
+      "project_name": "Palakkad cluster-Phase III",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0598",
+      "project_name": "Kannur-Kasargode Cluster Phase 8",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Pathanamthitta"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0602",
+      "project_name": "Pathanamthitta cluster-Phase III",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha",
+        "Kottayam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0604",
+      "project_name": "Alappuzha & Kottayam Cluster - Phase 1",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Idukki"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0605",
+      "project_name": "IDUKKI CLUSTER PHASE 2",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0607",
+      "project_name": "Kannur Kasargod cluster-Phase III",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0617",
+      "project_name": "THRISSUR CLUSTER - GEC THRISSUR, GPTC CHELAKKARA",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Idukki"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0618",
+      "project_name": "Idukki cluster-Phase III",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam",
+        "Idukki"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0620",
+      "project_name": "Ernakulam & Idukki cluster - Phase 1",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kottayam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0623",
+      "project_name": "KOTTAYAM CLUSTER-PHASE III",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha",
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0626",
+      "project_name": "Trivandrum & Alappuzha cluster-Phase III",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Idukki"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0629",
+      "project_name": "GEC Idukki",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0633",
+      "project_name": "Procurement of Medical Equipment and Hospital Furniture at TH Balussery",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0635",
+      "project_name": "Procurement of Medical Equipment & Hospital Furniture for TH Malayinkeezhu",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0639",
+      "project_name": "Procurement of Medical Equipment & Hospital Furniture for TH Adimali",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0643",
+      "project_name": "Procurement of Medical Equipment & Hospital Furniture for THQH Ottapalam",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0645",
+      "project_name": "Procurement of Medical equipments & hospital furnitures for THQH Payyannur",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0648",
+      "project_name": "Procument of Medical Equipment and Hospital Furniture to various departments functioning In Medical College Trivandrum ( Heritage Block)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0652",
+      "project_name": "Procurement of Medical Equipment & Hospital Furniture for TH Karunagapally",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0653",
+      "project_name": "Procurement of all medical equipments & hospital Furnitures for THQH Parassala",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.67,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [
+        "PWD014-05"
+      ],
+      "project_id": "KIIFB-PRJ-0655",
+      "project_name": "Coastal Highway - Rehabilitation and Resettlement",
+      "resolution": "token_fuzzy_same_dept_j55"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0656",
+      "project_name": "Shore Protection Work at Mundakkal Papanasam to Kollam beach area (Vedikunnu)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0660",
+      "project_name": "Procurement of Medical equipments & hospital furnitures for TH Chittur",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Pathanamthitta"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0662",
+      "project_name": "Modernization of Selected Markets in Various Local Self Government Institutions in Kerala - Parakode Anantharamapuram Fish Market, Pathanamthitta",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0667",
+      "project_name": "Procurement of Medical equipments & hospital furnitures for TH Neendakara",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0669",
+      "project_name": "Procurement of Medical Equipment and Hospital Furniture at TH Kothamangalam",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0672",
+      "project_name": "Procurement of Medical Equipment & Hospital Furniture for TH Vaikom",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0673",
+      "project_name": "Procurement of Medical Equipment & Hospital Furniture for TH Chettikkad",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0674",
+      "project_name": "Procurement of all medical equipments & hospital Furnitures for TH Kundara",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0675",
+      "project_name": "Procurement of Medical equipments & hospital furnitures for TH Thuravur",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0676",
+      "project_name": "Procurement of all medical equipments & hospital Furnitures for Malabar Cancer Centre",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0677",
+      "project_name": "Procurement of all medical equipments & hospital Furnitures for Cochin Cancer Research Centre",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0678",
+      "project_name": "Procurement of Medical Equipment & Hospital Furniture for TH Feroke",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0679",
+      "project_name": "Procurement of Medical equipments & hospital furnitures for GH Alappuzha",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0680",
+      "project_name": "Procurement of all medical equipments & hospital Furnitures for MCH Ernakulam",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0683",
+      "project_name": "Procurement of Medical Equipment and Hospital Furniture at THQH Alathur",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0684",
+      "project_name": "Procurement of all medical equipments & hospital Furnitures for MCH Ernakulam",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0685",
+      "project_name": "DH KANNUR- PROCUREMENT OF BIOMEDICAL EQUIPMENT AND OTHER ITEMS",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0686",
+      "project_name": "Procurement of Medical Equipment & Hospital Furniture for THQH Chirayinkeezhu",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0687",
+      "project_name": "KONNI GOVERNMENT MEDICAL COLLEGE - PHASE I - BIO MEDICAL EQUIPMENT",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kottayam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0688",
+      "project_name": "Procurement of Medical equipments & hospital furnitures for MCH Kottayam",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0689",
+      "project_name": "Procurement of Laboratory Equipment for MCH Trivandrum MLT Block",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0690",
+      "project_name": "Procurement of Medical equipments & hospital furnitures for THQH Nedumkandom",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0691",
+      "project_name": "Procurement of Medical Equipment and Hospital Furniture at THQH Kayamkulam",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0692",
+      "project_name": "Procurement of Medical Equipment and Hospital Furniture at THQH Cherthala",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0696",
+      "project_name": "Procurement of Medical Equipment & Hospital Furniture for DH Chengannur",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0699",
+      "project_name": "Development of District Hospital Tirur, Malappuram District - Phase 1",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0700",
+      "project_name": "Development of Malabar Cancer Centre, Thalasseri, Kannur - Construction of Guest House",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0704",
+      "project_name": "PALAKKAD CLUSTER 1 PHASE 4 - Government College Kozhinjampara and Chittoor",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0706",
+      "project_name": "Construction of 5 Lakh sqft IT building for proposed IT park at Kannur",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0709",
+      "project_name": "Development of General Hospital, Thiruvananthapuram",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha",
+        "Idukki"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0717",
+      "project_name": "IDUKKI ALAPPUZHA CLUSTER PHASE 4",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0726",
+      "project_name": "Development of Taluk Hospital Panoor in Kannur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0735",
+      "project_name": "Kozhikode Phase-3 Cluster 1",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad",
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0742",
+      "project_name": "Palakkad-Thrissur Phase-3 Cluster",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0746",
+      "project_name": "Setting up of Three Star Hotel Complex in the SIHMS Campus, Kozhikode",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0751",
+      "project_name": "Kozhikode Canal City project",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Wayanad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0763",
+      "project_name": "Setting up of Carbon Neutral Coffee Park at Wayanad",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0766",
+      "project_name": "Coconut Agro Park, Vengeri, Kozhikode",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.6,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [
+        "LSG001-03-01"
+      ],
+      "project_id": "KIIFB-PRJ-0769",
+      "project_name": "Office Building - Valancherry Municipality",
+      "resolution": "token_fuzzy_same_dept_j55"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0780",
+      "project_name": "COCONUT AGRO PARK at KOOTHALI, KOZHIKODE",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0788",
+      "project_name": "Kannur District Panchayath",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0789",
+      "project_name": "Construction of Court Complex at Palakkad under KIIFB",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Idukki"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0805",
+      "project_name": "Construction of Court Complex at Nedumkandom in Idukki District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0807",
+      "project_name": "Development of District Hospital, KANNUR",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Wayanad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0816",
+      "project_name": "Setting up of Carbon Neutral Coffee Park at Wayanad",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0823",
+      "project_name": "Modernization of Kottappady Market in Malappuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Idukki"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0824",
+      "project_name": "Home Department -Judiciary -Construction of Court Complex at Peerumedu in Idukki District under KIIFB",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0826",
+      "project_name": "Construction of Post Matric Hostel at Thana Kannur, Pre-matric Hostel Kathiroor, Pre-Examination Training Centre, Azheekode & Post Matric Hostel in Vellachal at Kasargod District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0828",
+      "project_name": "Procurement of Medical Equipment for IRIA Kannur",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-0830",
+      "project_name": "Development of Multi Speciality Hospital Munnar",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0831",
+      "project_name": "Construction of 8 Lane 400m Synthetic Athletic Track at EMS Stadium Alappuzha",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0834",
+      "project_name": "Construction of International Stadium in Calicut University Campus at Tirur, Malappuram",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0837",
+      "project_name": "Rectification Works of of Manavedhan Stadium, Nilambur, Malappuram",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0838",
+      "project_name": "V R Krishna Iyer Stadium, Thalassery, Kannur Rectification Proposal",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kasaragod"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0839",
+      "project_name": "EMS Stadium at Neeleswaram, Kasaragod Rectification Proposal",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kottayam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0840",
+      "project_name": "Implementation of Aksharam Museum Project in Kottayam District Phase II,III,IV",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0842",
+      "project_name": "Improvements & Providing BM and BC to Chirakkalpadi Kanhirappuzha Road from Km 0/00 to 8/00 in Palakkad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0847",
+      "project_name": "KIIFB 2016-17 Four laning works to Kakkanad Thankalam road in Ernakulam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0850",
+      "project_name": "Improvements to Pattambi Amayoor Road Ch. 7/100 to 11/316 kms in Palakkad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0852",
+      "project_name": "IMPROVEMENTS TO ARAYADATHUPALAM KARANTHUR ROAD IN KOZHIKODE DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0858",
+      "project_name": "Construction of Balussery Bustand Block Bypass Road in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0859",
+      "project_name": "FOUR LANING OF MUVATTUPUZHA KAKKANAD ROAD IN ERNAKULAM DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0864",
+      "project_name": "Improvements and providing DBM&BC to Vellora-Kakkara kadukkaram mukku via-Chakkalakkunnu road vellora -Kadukkaram road KM 0/000 11/215 in Kannur district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0865",
+      "project_name": "Improvements to Thottilpalam Kunduthode road from km 0/00 to 6/200 in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kottayam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0868",
+      "project_name": "KIIFB Improvements to Vakkethara Kapikkad road in Kottayam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0869",
+      "project_name": "Improvements to Para- Pollachi road in Palakkad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0871",
+      "project_name": "Improvements to Railway Colony- Dhoni- Muttikkulangara road Palakkad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kasaragod"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0873",
+      "project_name": "IMPROVEMENTS TO KALLADKA - PERLA - UKKINADKA ROAD 23/227 TO 32/827 IN KASARAGOD DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0875",
+      "project_name": "KIIFB 2016-17 -Construction of Kanjirappilly-Kunappilly Kadavu Bridge across Chalakudy River in Thrissur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0877",
+      "project_name": "KIIFB 2016-17 - Construction of Pazhampalakkode Pandikkadavu Kodathur Bridge and Road in Palakkad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0878",
+      "project_name": "Construction of Akalapuzha bridge across Akalapuzha river in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0880",
+      "project_name": "KIIFB 2016-17 - Construction of Kavinmunambu Bridge in Kannur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0882",
+      "project_name": "KIIFB-2016-17 Construction of Nayarambalam Herbert bridge in Vypin constituency in Ernakulam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur",
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0884",
+      "project_name": "KIIFB 2016-17 - Construction of Kallacherikkadavu Bridge across Mayyazhi river connecting Trippagottur Panchayath in Kannur District and Thonneri Panchayath in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0885",
+      "project_name": "Construction of Koolimadu Bridge across Chaliyar river in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0886",
+      "project_name": "KIIFB 2016-17 - Construction of Parayankadavu Bridge across Canoli canal in Thrissur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0890",
+      "project_name": "Construction of Kondazhy - Kuthampully bridge across Gayathri river in Thrissur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0891",
+      "project_name": "Construction of Choolakkadavu Bridge Connecting Payyanur Municipality and Ramanthali Panchayath at Choolakkadavu in Kannur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0892",
+      "project_name": "Construction of Odannur Bridge and Ezhuthumpara (Ezhuthumchira) Bridge in Palakkad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0893",
+      "project_name": "Construction of Kunduchira Bridge connecting Thalassery Municipality and Kadirur Panchayath in Kannur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0894",
+      "project_name": "Construction of Edatharakavu Kadavu Bridge across Chalakkudy river in Thrissur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0895",
+      "project_name": "1. Bridge over Thonnalippuzha in Erattakulam Vaniyampara road and 2. Arangattukadavu Bridge in Palakkad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0896",
+      "project_name": "Construction of Thorayilkadavu Bridge across Akalapuzha in Kozhikode",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Wayanad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0898",
+      "project_name": "Construction of Njettara Bridge across Kalinthi river in Thirunelli Panchayath in Wayanad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kottayam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0899",
+      "project_name": "KIIFB 2016-17 - Construction of Moolekkadavu Bridge across Moovattupuzha river in Kottayam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0900",
+      "project_name": "KIIFB 2016-17 Construction of Sreesastha Ambalakkadavu Bridge in Kollam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0904",
+      "project_name": "KIIFB 2016-17 - Construction of Cherikkal Kottam Bridge across Anjarakandy river in Kannur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0905",
+      "project_name": "CONSTRUCTION OF THRIPRAYAR BRIDGE ACROSS CANOLI CANAL IN CHERPPU ? THRIPRAYAR ROAD, NATTIKA LAC, THRISSUR DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0906",
+      "project_name": "KIIFB 2016 - 17 ? Construction of Pulinjolikadavu Bridge across Anjarakkandy River in Kannur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kasaragod"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0907",
+      "project_name": "Construction of Ramanchira Bridge across Muttoli River in Kasaragod District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0908",
+      "project_name": "KIIFB - 2016-2017 Malampuzha Ring Road Bridge across Mayiladi River in Malampuzha constituency in Palakkad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0909",
+      "project_name": "Construction of Pookkaithakkadavu Bridge across Ezhapuzha in Malappuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0910",
+      "project_name": "Construction of Gothuruth - Pullut Bridge across Kodungallurkayal in Thrissur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0911",
+      "project_name": "Construction of Konnayil Bridge across Chirayil thodu in Kollam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Pathanamthitta"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0915",
+      "project_name": "Construction of New Kozhencherry Bridge across Pamba river in T.K. road in Pathanamthitta District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Pathanamthitta"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0916",
+      "project_name": "Construction of New Bridge parallel to the existing Vadasserikkara Bridge across Kallar River in Mannarakulanji - Pampa road in Pathanamthitta District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0920",
+      "project_name": "Construction of Olambakkadavu Bridge in Ponnani & Thavanur LACs in Malappuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0923",
+      "project_name": "Improvements to Muttungal - Nadapuram - Pakramthalam road between Km 0/000 to 11/855 in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0924",
+      "project_name": "KIIFB 2017-18 Improvements of NH Karuvatta ? Mannar Road in Alappuzha District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0926",
+      "project_name": "KIIFB 2017 -18 Improvements to Karamana - Nedumcadu - Soman Nagar - Kalady Road in Thiruvananthapuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0929",
+      "project_name": "Construction of Flyover at Venjaramood in Thiruvananthapuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Idukki"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0931",
+      "project_name": "KIIFB 2017-18 Construction of Munnar flyover byepass road in Idukki District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0932",
+      "project_name": "KIIFB 2017-18- Improvements of Thammanam-Pullepady Road in Ernakulam District.",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0933",
+      "project_name": "Construction of Karma Bridge - Phase II - in Malappuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0935",
+      "project_name": "KIIFB 2017-18- Improvements of Thiruvangad Champad Road (Champad Koppalam - Thalassery Road) from km 01/807 to 5/208 and 6/126 to 7/120 in Thalassery LAC in Kannur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Wayanad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0936",
+      "project_name": "Hill highway in Wayanad District-1st Phase Kottiyoor Boys town road km. 2/500 to 6/270 and Boys town (43rd Mile)-Valat Kunkichira road km 8/300 to 19/100 and Thalasseri Bavali Road km. 68/200 to 69/780 , 70/390 to 77/790 and 78/010 to 81/000 and Mananthavady-Kalpetta Road-0/000 to 19/500",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0937",
+      "project_name": "Payyoli Perambra road between Km 0/000 & 18/105 in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0938",
+      "project_name": "Improvements to Manacaud - Attukal Temple Road (2.3km) in Thiruvananthapuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0941",
+      "project_name": "HILL HIGHWAY- GOPALAPURAM TO NEDUMANI REACH 2 - Kannimari Medu to Nedumani CH: 14/860 TO CH: 30/590 (15.730 KM) in Palakkad district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0943",
+      "project_name": "Improvements to Edappallykotta loop road in Kollam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0947",
+      "project_name": "Improvements to Kayappanachi - Kunnnumchira - Edacheri (puthiyangadi) road in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Wayanad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0949",
+      "project_name": "PROVIDING BM&BC IN BETWEEN CHAINAGE 20.540 TO 25.430 OF MANANTHAVADY PAKRAMTHALAM ROAD IN WAYANAD DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Pathanamthitta"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0951",
+      "project_name": "IMPROVEMENTS BY PROVIDING BM & BC TO KAVUMBHAGOM - IDINJILLAM ROAD IN PATHANAMTHITTA DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0952",
+      "project_name": "KIIFB-2017-18-Improvements to Mavoor-NIT-Koduvally road Km 0/000 to 12/900 in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0953",
+      "project_name": "Improvement works and DBM & BC surfacing to Thottasseriyara Illathumadu road in Malappuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0954",
+      "project_name": "KIIFB-Improvements to Padinjarangadi Manniyamperumpalam road km 0/000 to 6/020 in Palakkad District.",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0956",
+      "project_name": "KIIFB 2017-18-Extension of Ashramam Link road from near KSRTC Bus stand upto Thoppilkadavu-IVth phase from Olayilkadavu to Thoppilkadavu in Kollam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0958",
+      "project_name": "KIIFB-2017-18 - CONSTRUCTION OF L B CANAL AQUEDUCT PUZHAPPALM BRIDGE AND APPROACH ROAD IN PALAKKAD DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0959",
+      "project_name": "KIIFB 2017-18-Improvement works to Thiruvambadi-Pulloorampara-Edathara-Marippuzha road in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Idukki"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0960",
+      "project_name": "IMPROVEMENTS AND PROVIDING BM&BC TO THOOKUPALAM - KATTAPPANA ROAD IN IDUKKI DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0962",
+      "project_name": "Improvements to Kottavattom mukku Kottavattom school Road in Kollam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0964",
+      "project_name": "PROVIDING DBM AND BC TO KEEZHMADAM KALLIKANDY THOOVANKUNN VADAKKEPOILUR KUNNOTHPARAMBA ROAD 0/000 to 12/555 IN KANNUR DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0966",
+      "project_name": "KIIFB Projects 2017-18 - Kunnamkulam Municipality Ring Road Development in Thrissur district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0968",
+      "project_name": "KIIFB-Hill Highway-SH 59 Improvements to Pattikad-Vilanganur-Mannamangalam-Pulikanni-Vellikulangara-Vettilapara Road in Thrissur district-Phase II from ch0/000 to 5/300",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0969",
+      "project_name": "Hill Highway - Improvements to Vilanganoor - Vellikulangara road, Thrissur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Pathanamthitta"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0971",
+      "project_name": "Improvements to Adoor Thumpamon Kozhenchery Road in Pathanamthitta District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0972",
+      "project_name": "Improvements to Mathara - Palazhi - Kuttikattur Road in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Wayanad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0973",
+      "project_name": "Improvements and upgradation of Sulthan Bathery- Cherambadi road in Wayanad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0974",
+      "project_name": "Improvements to Ayur- Pothiyaruvila Road Ch.0/000 to 12/500 in Kollam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0976",
+      "project_name": "Improvements and Providing BM&BC surfacing to Kadungallur-Vilayil-Chaliyapuram road Km 0/000 to 8/200 in Kondotty LAC of Malappuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0977",
+      "project_name": "KIIFB 2017-18 Improvements and providing BM and BC to Alakkode-Pathenpara-Vellad (First Stretch 0/000 to 11/238) Noolittamala to Kanakakkunnu road Km (second stretch 0/000 to 4/545) in Kannur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0978",
+      "project_name": "KIIFB 2017-18 Improvements to Pulluvazhy Paniyeliporu Road (Stretch 1 - Ch.0/000 to Ch.6/400) in Ernakulam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kasaragod"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0979",
+      "project_name": "Improvements and Providing DBM & BC to Kayyur-Chebrakanam-Palakunnu Road 0/00 to12/270 in Kasaragod district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Wayanad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0984",
+      "project_name": "Improvements to Mananthavady - Ondayangadi - Thrissilery - Scenery Road km. 0/000 to 7/500 in Wayanad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0985",
+      "project_name": "KIIFB 2017-18 - Improvements to Poovathungal Velukkara Road in Thrissur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0987",
+      "project_name": "KIIFB 2017-18 Construction of Wadakkanchery Bypass road in Thrissur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0989",
+      "project_name": "Improvements to Puthiyangadi - Mavilkadavu - Krishnan Nair in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0991",
+      "project_name": "Improvements of Vaniyamkulam- Vallappuzha road in Palakkad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0992",
+      "project_name": "Improvements and Providing DBM & BC to Punnakadavu-Puthiya puzhakkara-Ezhimala Railway station-Ezhilode Road Km 0/000 Ezhilode to 9/220 Punnakadavu in Kannur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0994",
+      "project_name": "HILL HIGHWAY- Improvement to Chirakkal ? Melattur (11.215km) & Ucharakadavu-Kanjirampara (1.060km) in Malappuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0995",
+      "project_name": "KIIFB 2017-18 Improvements to Muthuswami Puthur Ancham Mile Road (Km 0/000 - 10/700) Chittur LA Constituency of Palakkad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kasaragod"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0996",
+      "project_name": "Improvements to the Hill high way road From Nandarapadvu to Chevar at KM 0/000 to 23/000 in Kasaragod District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0997",
+      "project_name": "KIIFB 2017-18-Hill highway-Improvements to Hill Highway from Vallithod to Ambayathod between Km 36/506 to 45/000,58/450 to 60/480 and 64/700 to 90/000 in Kannur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Wayanad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-0998",
+      "project_name": "Providing BM&BC to Kakkavayal Kolavayal Karyambadi Kenichira Pulpally Road in Wayanad district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1001",
+      "project_name": "Improvements of Karimannu-KulukkaparaKalliyampara-Ozhalapathy road in between km 0/000 to 10/400 Chittur LA Constituency of Palakkad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1003",
+      "project_name": "KIIFB 2017-18 - Kunnamkulam Municipality Road Development (Junction Improvement) in Thrissur district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1004",
+      "project_name": "KIIFB- IMPROVEMENTS TO THOTTILPALAM THALAYAD ROAD- PERUVANNAMUZHI TO 28TH MILE JUNCTION ( CH 41/500 to CH 57/150) PHASE II IN KOZHIKODE DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1010",
+      "project_name": "KIIFB 2017-18 Construction of Kumbalangi Kandakkadavu Road ch:0/000 to 2/500 in Ernakulam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kottayam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1011",
+      "project_name": "KIIFB 2017-18 Improvements to Kottayam-Kumarakom road phase 1- Reconstruction of Karikkathara Bridge ( Part TS) in Kottayam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1012",
+      "project_name": "Hill Highway-Vettilappara-Eucaly Jn- Abhayaranyam (Elevated road)-Chettinada road in Ernakulam district-- Stretch 4 - From Illithode to Chettinada via Abhayaranyam (Elevated road) (Ch 0/000 to Ch 1/895)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1014",
+      "project_name": "KIIFB - MANGALAM TOWER MARKET ROAD BYPASS(ch 0/000 to ch 1/658.11) in PALAKKAD District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1016",
+      "project_name": "KIIFB-2017-18-Construction of Chengannur Byepass Road in Alappuzha District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1017",
+      "project_name": "Budget speech 2016-17 Widening and providing BM & BC surfacing to Manjeri Olipuzha road between KM 0/000 to 16/200 in Manjeri LAC in Malappuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Pathanamthitta"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1018",
+      "project_name": "KIIFB - IMPROVEMENTS TO CHERUKOLPUZHA - MANIYAR ROAD IN PATHANAMTHITTA DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1019",
+      "project_name": "Hill highway - First reach in Palakkad district from Kollengode Vadakkencheri Km 100/500 to 129/000",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1020",
+      "project_name": "KIIFB 2017-18 - Improvements to Nedupuzha West Fort road Km 0/000 to 4/425 by providing DBM & BC on Ollur constituency in Thrissur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1027",
+      "project_name": "KIIFB 2017-18 - Chalakudy Mothirakanny road in Thrissur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1030",
+      "project_name": "Hill Highway - Construction of Chavaramuzhi Bridge in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1031",
+      "project_name": "KIIFB 2017-18 Improvements and Fourlane works of Thrissur Kuttipuram road at Km 15/000 to 19/650 in Thrissur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Idukki"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1034",
+      "project_name": "IMPROVEMENTS TO THODUPUZHA KARIKKODU-THEKKUMBHAGOM-ANAKKAYAM ROAD IN IDUKKI DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kottayam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1035",
+      "project_name": "Improvements to Aruvithura - Bharananganam Road in Kottayam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1036",
+      "project_name": "KIIFB- Cut and Cover IMA Junction Malampuzha Canal Civil Cut and Cover IMA Junction Malampuzha Civil Station Road in Palakkad Cut and Cover IMA Junction Malampuzha Station Road in Palakkad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1037",
+      "project_name": "HILL HIGHWAY- GOPALAPURAM TO NEDUMANI REACH I - Gopalapuram to Kannimari Medu CH0/000 TO CH14/860 in Palakkad district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1041",
+      "project_name": "IMPROVEMENTS TO KODAKARA - VELLIKULANGARA SCHOOL ROAD. 3rd REACH FROM KM 7/600 TO 13/140 IN THRISSUR DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1042",
+      "project_name": "Hill Highway 2nd reach in Palakkad District - Improvements to kuttupatha to kollengode km 72/600 to 100/500 Kootupatha to Kollengode 27.900km",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kottayam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1045",
+      "project_name": "Improvements to Kanjirappally - Manimala - Kulathoormoozhi - Karshaka Sauhruda Link Road in Kottayam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Wayanad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1047",
+      "project_name": "KIIFB ? HILL HIGHWAY ? KUNHOME ? NIRAVILPUZHA -CHUNKAKKUTTY (CH 0/000 TO CH 8/521) IN WAYANAD DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1049",
+      "project_name": "Hill Highway: KIIFB-Upgradation of Kollenkode - Vadakkancherry road in Palakkad District -Nenmara Bypass end to Thankom Junction- Stretch 3B ch 113/150 to 128/375(ch 0/000 to 15/210)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kasaragod"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1050",
+      "project_name": "KIIFB 2017-18-Hill Highway-Construction of Vallikadavu Bridge at Km 18/250 of Kolichal Cherupuzha reach in Kasaragod District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Idukki"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1051",
+      "project_name": "Hill Highway - Improvements to Myladumpara- Puliyanmala Road in Idukki District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1053",
+      "project_name": "KIIFB HILL HIGHWAY KUNHOME NIRAVILPUZHA THOTTILPALAM (STRETCH 2) POOTHAMPARA BRIDGE (CH: 13/986) TO THOTTILPALAM (CH: 21/211) 7.225 KM IN KOZHIKODE DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1054",
+      "project_name": "Chitturpuzha Palam Vandithavalam Road (Chitturpuzha Palam - Vilayodi - Vandithavalam Road) in Palakkad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1059",
+      "project_name": "KIIFB 2017-18 Improvements to Kelanmoola-Adivaram road between 0/000 to 23/700 in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1062",
+      "project_name": "Construction of Bridges coming under Hill Highway in Malappuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1064",
+      "project_name": "Kannur Airport connectivity package roads - Upgradation of Chorukkala Bavuparamba Nanicherikkadavu Chekkiyattukavu Mayyil Kololam Road",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1065",
+      "project_name": "KIIFB- Construction of Iringole ? Vallam Ring Road in Ernakulam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1066",
+      "project_name": "KIIFB-2016-2017-Improvements to Kovoor ? Chonnamthodithazham - Athani Road in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1067",
+      "project_name": "KIIFB-2017-18 Improvement works For Vanchikulam - Chettupuzha Road 0/000 to 7/180 In Thrissur District.",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1068",
+      "project_name": "Hill Highway Project- Vettilappara-Kappela-Ayyampuzha- Naduvattom-Eucaly Junction- Abhayaranyam (Elevated Road) - Chettinada (40 km) road in Ernakulam District- Stretch III ( Eucaly Junction to Illithode (6.16km)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam",
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1070",
+      "project_name": "KIIFB 2016-17 - Improvements to Kollam Nelliyadi - Meppayur road in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1072",
+      "project_name": "Improvements to Hill Highway - Cheranganal to Neriamangalam Ch 0/000 to 32/800 in Ernakulam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1073",
+      "project_name": "Improvement to Pottenkavu - Nellikkad - Cheenivila - Unnampara Road in Thiruvananthapuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1074",
+      "project_name": "KIIFB 2017-18 Providing DBM and BC to Mundumuzhi Vettukad Pulikal road from Km 0/000 to 18/000 in Kondotty LAC in Malappuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1076",
+      "project_name": "KIIFB 2017-18 Improvement works to Thadiyittaparambu, Vallamkadavu Road in Aluva LAC in Ernakulam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1078",
+      "project_name": "KIIFB 2017-18 Four Laning of SN Junction -Poothotta Road in Ernakulam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kasaragod"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1079",
+      "project_name": "KIIFB-Construction of Kavungal Bridge in Kolichal Edaparamba Hill Highway Road in Kasaragod District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Wayanad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1085",
+      "project_name": "Providing BM & BC to Kaniyambatta-Meenanagdi Road in Wayanad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1086",
+      "project_name": "Improvements to Mathuvinmel - Kunnikode - Thadikkadu - Polikkode road in Kollam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1087",
+      "project_name": "KIIFB 2017-18-Improvements to Pallikkunnu Chimminidam Road from Km 0/000 to 8/500 in Thrissur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Idukki"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1088",
+      "project_name": "Hill Highway - KIIFB 2017-18 - Improvements to Iruttukanam - Anachal - Ellackal - Rajakkadu - Myladumpara road - Stretch 1 ( Ellackal - Valiya Mullakkanam Road in Idukki District (Ch.10/250 to 15/500 ) - 5.03 km",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1092",
+      "project_name": "KIIFB 2017-18 Improvements and Providing BM & BC to ETC Poomangalam-Mazhoor-Panniyoor-Kalikkadavu-Ladappengad-Madekkad road 0/000 to 13/945(First Stretch) and Karinkayam Nellipara Km 0/000 to 2/700 in Kannur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1093",
+      "project_name": "IMPROVEMENTS TO A S CANAL EAST BANK ROAD IN ALAPPUZHA DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1094",
+      "project_name": "IMPROVEMENTS TO VATAKARA VILLIAPPALLY CHELAKKAD ROAD BETWEEN KM 0/000 TO 15/984 in KOZHIKODE DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1095",
+      "project_name": "Construction of Vypin - Pallipuram parallel road ch 0/000 to 21/160 in Ernakulam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kasaragod"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1096",
+      "project_name": "Improvements to Bovikanam - Kanthur - Erinjipuzha - Kuttikol road KM 0/000 to 17/000 in Kasaragod District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1099",
+      "project_name": "KIIFB 2017-18 - Improvements and Developments to Muvattupuzha - Koothattukulam Road Km 0/000 to 15/600 in Ernakulam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1100",
+      "project_name": "Improvements to Kozhikode Balusserry road in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1101",
+      "project_name": "Improvements to Valakom - Thadikkadu - Anchal Market - Mathra - Adukkalamoola road in Kollam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kasaragod"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1105",
+      "project_name": "IMPROVEMENTS TO MASKUMARI KURUDAPADVU ROAD 0/000 TO 7/544 IN KASARAGOD DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kottayam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1106",
+      "project_name": "KIIFB 2016-17- Improvements to Ettumanoor Town Ring Road in Kottayam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1107",
+      "project_name": "Improvements and Providing DBM & BC to Kankol - Cheemeni Road Km 0/000 to 10/135 in Kannur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1109",
+      "project_name": "KIIFB IN PALAKKAD DISTRICT - 2017-18 IMPROVEMENTS TO KAMBILICHUNGAM - PERUVEMBU ROAD KM 0/000 TO 11/000",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1110",
+      "project_name": "KIIFB - HILL HIGHWAY ? KUNHOME ? NIRAVILPUZHA? THOTTILPALAM (STRETCH 1) ? CHUNKAKUTTY TO POOTHAMPARA BRIDGE CH: 8/520 TO CH: 13/986 (5.446 KM) IN KOZHIKODE DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1111",
+      "project_name": "IMPROVEMENTS TO PUDUNAGARAM KINASSERY ROAD KM 0/000 TO 7/791 IN PALAKKAD DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Wayanad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1113",
+      "project_name": "Improvements to Kaniyaram- Arattuthara Road between km. 0/00 to 10/450 in Wayanad district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1114",
+      "project_name": "Alappuzha Ambalappuzha connectivity Roads",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1115",
+      "project_name": "Improvements of Hill Highway from Kollayil Challimukku - Palode, Vithura Iruthalamoola, Aryanad - Kallikkadu Total length 21.080Km in Thiruvananthapuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Pathanamthitta"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1117",
+      "project_name": "KIIFB 2017-18 Improvements to Puthuval Mangadu road in Pathanamthitta District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1119",
+      "project_name": "KIIFB - Improvements and Providing BM & BC surfacing to Kottakkal-Kottapadi road Tirur - Malappuram road 13/000 24/191 in Malappuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1121",
+      "project_name": "Improvements to REC Koodathai Road (11.220 Km) in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1124",
+      "project_name": "Improvements to Perambra - Cheruvannur - Vatakara road between Km 0/000 to 9/800 in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1125",
+      "project_name": "KIIFB - Hill Highway - Vettilappara - Chettinada Road via Abhayaranyam (40 km) road in Ernakulam District - Stretch 1 and 2 - Vettilapara - Nellichode - Cutting Junction - Vellappara - Eladakkad - Chulli - Manjapra - Eucali Junction (Ch. 0/000 to 23/269)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kottayam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1126",
+      "project_name": "KIIFB-Improvements to Pala Town Ring road (Phase II)in Kottayam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1127",
+      "project_name": "IMPROVEMENTS AND PROVIDING DBM&BC TO ALAKKODE-POOVENCHAL-MAVINTHATTU -KAPPIMALA ROAD KM 0/000 TO 13/000 IN KANNUR DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1129",
+      "project_name": "Improvements to Mundengara -Pullippadam - Odayikkal - Veetikunnu road between KM 0/000 and 15/350 in Malappuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1132",
+      "project_name": "KIIFB 2017-18 Improvements to Peruvamparamba Kalluvayal-Nellicampoil road 0/000 to 6/960 in Kannur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Wayanad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1134",
+      "project_name": "Improvements to Meppadi-Chooralmala Road in Wayanad District.",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1140",
+      "project_name": "Ayoor Anchal Punalur Road in Kollam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1141",
+      "project_name": "Improvements to Mulavana Perayam NSS College Road in Kollam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Idukki"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1142",
+      "project_name": "Improvements to Udumbanchola - Rajakkadu - Anachal - Randammayil - Chithirapuram Road in Idukki District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1144",
+      "project_name": "Improvements to Pattambi - Cherpullasery road in Palakkad district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1145",
+      "project_name": "Improvements and Providing DBM& BC to Cherupuzha-Muthuvam Road Km 0/000 to 7/510 in Kannur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1147",
+      "project_name": "Arammayil Parapram road (Improvements to Parapram Olayambalam sixth mile road Km 0/000 to 5/167 and Km 5/900 to 9/405) in Kannur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1149",
+      "project_name": "KIIFB 2017-18 - Improvements to Chowalloor ? Myladi Road, Nedumkuzhy ? Parunthumpara ? Myladi Road, Cat College Road in Trivandrum District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1150",
+      "project_name": "WIDENING AND PROVIDING BM & BC SURFACING TO TIRUR KADALUNDI ROAD KM 0/000 14/000 IN TANUR & TIRUR LAC MALAPPURAM DIST",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1151",
+      "project_name": "Improvements to Mayyil - Kanhirode Road in Km 0/000 to 9/700 in Kannur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1153",
+      "project_name": "KIIFB 2017-18 - Reconstruction of vayalar Bridge and Muttombazar Ettupurackal road in Alappuzha District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1155",
+      "project_name": "Improvements to Ambalamkunnu - Roadvila - Poredom Road in Kollam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1158",
+      "project_name": "KIIFB 2016-17 - Kannur Airport connectivity package roads - Thalassery Koduvally Mambaram Anjarakandy Mattannur road",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1160",
+      "project_name": "Development of Hill Highway in Kollam District: Punalur KSRTC Jn-Agasthyakode Alencherry Kulathupuzha-Madathara-Kollayil",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1161",
+      "project_name": "Improvements to Karaparamba - Thadampattuthazham- Paroppodi road KM 1/600 to 5/300 in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1162",
+      "project_name": "IMPROVEMENTS AND PROVIDING BM & BC TO KAZHANI PAZHAMBALACODE ROAD CH FROM KM 0/000 TO 8/718 IN PALAKKAD DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Idukki"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1163",
+      "project_name": "KIIFB 2017-18 - PAINAVU - IDUKKI - BYEPASS ROAD",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1164",
+      "project_name": "KIIFB 2017-18 Widening and Improvements of Paravur-Cherai Road in Ernakulam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1165",
+      "project_name": "KIIFB 2017-18 Improvements to Sreekandapuram-Chempanthatty-Naduvil road Km 0/000 to 9/760 in Kannur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1166",
+      "project_name": "KIIFB- Hill Highway-Improvements to Kollengode-Vadakkancherry Road in Palakkad District - Stretch-3A from Panangattiri to Vithanassery (Ch 103/280 to Ch 110/350)- (7.057 km)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Idukki"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1168",
+      "project_name": "KIIFB 2017-18 Hill Highway: Iruttukanam -Anachal- Ellackal- Rajakkadu- Myladumpara in Idukki District ( Stretch 2 - Iruttukanam to Anachal (Ch.0/000 to 5/350) ) and (Stretch 3 - Anachal to Ellackal Jn. (Ch.5/350 to Ch.10/250))",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1169",
+      "project_name": "KIIFB 2017-18-Improvements to Puthiyangadi-Purakkattiri-Andikkode-Atholi-Ulliyeri road (SH 38 PUKC) in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1170",
+      "project_name": "Improvement to Vattiyoorkavu Junction and connected Roads in Thiruvananthapuram District - Part 1 - (Sasthamangalam Vattiyoorkavu road ? 3.830km)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1171",
+      "project_name": "KIIFB - Improvements to PUKC road -17/600 to 42/950 in Kozhikode District.",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Idukki"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1173",
+      "project_name": "Improvements To Hill Highway Between Ch: 0/000 To 19/000 -Kuttikkanam To Chappathu in Idukki District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1174",
+      "project_name": "KIIFB 2017-18 Construction of a new road from Thazhe Chovva-Railway gate-Chovva Spinning Mill Road on 0/000 to 0/794.31 in Kannur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1176",
+      "project_name": "Improvements to Nedumbram Kottarakkara Road in Kollam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1183",
+      "project_name": "CONSTRUCTION OF KARMA BRIDGES ACROSS CANOLI CANAL CONNECTING WITH PONNANI PORT AND CHAMRAVATTOM REGULATOR IN MALAPPURAM DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kottayam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1184",
+      "project_name": "Improvements to Portion of Hill Highway by overlaying of BM and BC above old surface from Karimkallumoozhy (Erumely)- Plachery Road Ch: 0/000 to 7/500 km in Kottayam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1185",
+      "project_name": "Improvements to Mararikulam Railway station to Thumboly Railway station connectivity Roads Alappuzha District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1189",
+      "project_name": ":Construction of PANAMPALAM Bridge in TANUR LAC in Malappuram Dist",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1190",
+      "project_name": "KIIFB - Coastal Highway - Construction of Kunjalimarakkar Bridge sandbanks to Kottakkalkadvu in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1191",
+      "project_name": "Construction of ROB in lieu of existing LC No. 69 A at Vaduthala, Ernakulam",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1192",
+      "project_name": "Coastal Highway Reach 2 - Thangassery to Neendakara in Kollam district ( 6.90 km)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1193",
+      "project_name": "Coastal Highway Reach 1 - Azhikode Bridge to Valappad in Thrissur district (32 km)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1194",
+      "project_name": "KIIFB 2017-18 Construction of Naderikkadavu Bridge across Akalapuzha in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1198",
+      "project_name": "Coastal Highway Reach 4 - Onnampalam to Kappil in Thiruvananthapuram district (15.48 km)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kasaragod"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1199",
+      "project_name": "PWD008-07: Construction of Kalikkadavu bridge across Chaitravahini puzha, Madakkal kadavu Bridge & Padanna Thekkekadavu Hanging bridge in Kasaragod District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kasaragod"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1201",
+      "project_name": "KIIFB 2017-18 Construction of Kubanoor Bridge on Ichilangod village office Bekoor road in Manjeshwar LAC in Kasaragod district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Pathanamthitta"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1202",
+      "project_name": "Construction of Aban junction Over Bridge in Pathanamthitta District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1204",
+      "project_name": "Construction of Coastal Highway in Kozhikode district. Kadalundy - Chaliyam - Karuvanthuruthy 6.300 km",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kottayam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1205",
+      "project_name": "Improvement of Thengana Junction in Kottayam district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1207",
+      "project_name": "Coastal Highway Reach 2 - Kumarichantha to Pallithura in Thiruvananthapuram district (18.12km)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1213",
+      "project_name": "Improvements to Koottanad Junction in Palakkad district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1215",
+      "project_name": "Construction of Kuthiyathodu- Kundoor Bridge in Thrissur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1216",
+      "project_name": "Improvements to Ollur Junction in Thrissur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1217",
+      "project_name": "Coastal Highway - Construction of Mudhiyam Beach Bridge - Malappuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1221",
+      "project_name": "Feroke Petta Junction in Beypore Constituency Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1222",
+      "project_name": "Construction of ROB at SN College Gate (LC No. 543) in Kollam district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1224",
+      "project_name": "Coastal Highway Reach 4 - Kettungal to Ariyalloor in Malappuram district (9.29 km)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1225",
+      "project_name": "Construction of ROB at Azhiyur (LC No. 218) in Kozhikode district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1227",
+      "project_name": "Improvements to HMT Junction in Ernakulam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Wayanad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1229",
+      "project_name": "Construction of Kottathara Dam Site Bridge in Wayanad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1230",
+      "project_name": "Construction of ROB at Muchukunnu (LC No. 205) in Kozhikode district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1231",
+      "project_name": "Improvements to Perinthalmanna Junction in Malappuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1232",
+      "project_name": "KIIFB 2017-18 CONSTRUCTION OF KUMMALLOOR AND PALLIKKAMANNADI BRIDGES IN KOLLAM DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1233",
+      "project_name": "Construction of ROB at Payyoli in Kozhikode district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1237",
+      "project_name": "Reconstruction of Tanur Bridge across Canoli Canal in Tanur LAC in Malappuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1238",
+      "project_name": "Construction of ROB in lieu of existing LC No. 28 at KM 46/9-10 and LC No. 29 at KM 46/13-14 at Pudukkadu Thrissur",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1239",
+      "project_name": "Coastal Highway in Kannur District- Chal to Palakkode Reach 5 (2A)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1242",
+      "project_name": "KIIFB 2017-18 Construction of Moolakkeelkadavu (Mulakizhikkadavu) bridge in Kannur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1246",
+      "project_name": "CONSTRUCTION OF CHETTIYARAZHIKAM BRIDGE ACROSS KALLADA RIVER IN KOTTARAKARA CONSTITUENCY, KOLLAM",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1248",
+      "project_name": "Improvement of Junctions and Bypasses - Feroke IOC Bypass - Beypore in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1250",
+      "project_name": "KIIFB 2016-17 - Construction of Chelakkara Bypass road KM 0/000 to 3/865 in Thrissur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1251",
+      "project_name": "3b. Flyover at South Bazar Junction in Kannur town",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1252",
+      "project_name": "KIIFB-2017-18 CONSTRUCTION OF BYPASS AND IMPROVEMENTS TO CHERPULASSERI TOWN IN PALAKKAD DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1253",
+      "project_name": "KIIFB 2017-18-Construction of Kallurikkadavu bridge across Valapattanam river connecting Narath and Pappinissery panchayath of kannur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1256",
+      "project_name": "Coastal Highway Phase -1, Construction of coastal Highway stretch between Muzhuppilangad beach - Edakkad - Kuruva - Payyambalam - Neerkkadavu - Chal Azheekkal in Kannur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1258",
+      "project_name": "KIIFB 2017-18 Construction of Chinganattukadavu bridge across Chavakkad Canoli canal in Guruvayur LAC in Thrissur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1263",
+      "project_name": "KIIFB 2017-18 Construction of Pattambi Bridge in Palakkad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1264",
+      "project_name": "Coastal Highway Reach 4 - Kunnaru City to Pandyalakadavu in Kannur district (5.13 km)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1266",
+      "project_name": "Construction of ROB at Kozhikkal (LC No. 227) in Kannur district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1267",
+      "project_name": "Construction of ROB at Temple Road (LC NO. 189) in Kozhikode district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Pathanamthitta"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1269",
+      "project_name": "Construction of Concord bridge across Manimala in Pathanamthitta District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Wayanad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1271",
+      "project_name": "KIIFB 2017-18 Construction of Mannarkundu Bridge in Wayanad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam",
+        "Kottayam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1272",
+      "project_name": "Bridge at Avalyilkadavu, connecting Ettumanoor Ernakulam road and Kunneparampu across Murinjapuzha river in Kottayam District (Construction of Murinjapuzha - Chempuvalel Palam)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1273",
+      "project_name": "Construction of ROB at Nelliyady kadavu (LC No. 204) in Kozhikode district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1274",
+      "project_name": "Improvements to Ambalamukku and Santhwana junctions- Thiruvananthapuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1276",
+      "project_name": "Coastal Highway Reach 1 - Pozhiyoor to Kovalam in Thiruvananthapuram district (18.08 km)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1277",
+      "project_name": "Kannur International Airport connectivity packages roads Road-3- Mananthavady - Boys Town - Peravoor - Sivapuram - Mattannur road- (Reach 1- Mananthavady to Boys Town road)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1278",
+      "project_name": "KIIFB-Construction of Coastal Highway from Puthiyappa Harbour to Puthiya nirath in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1279",
+      "project_name": "Flyover at Melechovva in Kannur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1280",
+      "project_name": "Kannur International Airport connectivity packages roads Road-3- Mananthavady - Boys Town - Peravoor - Sivapuram - Mattannur road- (Reach 2- Boys Town to Ambayathode road)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1281",
+      "project_name": "Coastal Highway Reach 1 - Kappil to Thangassery in Kollam district (17.5km)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1282",
+      "project_name": "Improvements to Payyannur Central Bazar Junction in Kannur district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1283",
+      "project_name": "Coastal Highway Reach 1 - Valiyazheekkal to Thottapally in Alappuzha district ( 22.10 km)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1284",
+      "project_name": "Construction of Coastal Highway in Kozhikode district. Vengalam Poyilkavu - Koyilandy Fishing Harbour 11.110 km",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1286",
+      "project_name": "Improvement of Palayam Pushpa Junction in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1287",
+      "project_name": "Construction of Arangalikadavu (Aralikadavu) Bridge across Chalakudy River in Thrissur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1288",
+      "project_name": "Kannur International Airport connectivity packages roads Road-3- Mananthavady - Boys Town - Peravoor - Sivapuram - Mattannur road- (Reach 3- Ambayathode to Mattannur road)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1289",
+      "project_name": "Coastal Highway Reach 6 in Malappuram District, Ariyalloor Mudhiyam Bridge to Kadalundi Bridge",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1290",
+      "project_name": "KIIFB 2017-18 Construction of Kondayur ? Ongallur bridge at Desamangalam in Chelakkara constituency in Thrissur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1292",
+      "project_name": "Coastal Highway Reach 2 - Meenkunnu to Chal in Kannur district (3.53 km)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1293",
+      "project_name": "Re-Construction of Elathur - Korapuzha Bridge On NH-66 Old NH-17 in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1297",
+      "project_name": "Construction of ROB at Koottikkada (LC No. 549) in Kollam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1298",
+      "project_name": "KIIFB 2017-18 Construction of Pallippad Kodunthar Melepadam Bridge in Alappuzha District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1299",
+      "project_name": "Coastal Highway Reach 2 - Valappad to Kappirikkad in Thrissur district (38 km)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1300",
+      "project_name": "Coastal Highway Reach 2 - Unniyal to Muhayudeenpalli in Malappuram district (12.05 km)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1301",
+      "project_name": "Malappuram Police Station Kizhakkethala Chethupalam Flyover",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1303",
+      "project_name": "Coastal Highway Reach 3 - Edappallikotta to Azheekkal in Kollam district ( 26.12 km)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1305",
+      "project_name": "Improvements to Karunagappally Bypass Road in Kollam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1307",
+      "project_name": "KIIFB Coastal Highway - Francis Road Junction Road to Puthiyappa (Link L9 to L10 of NATPAC) in Kozhikode district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1308",
+      "project_name": "KIIFB 2017-18 Construction of Kayikkara bridge connecting Kayikkara and Vakkom in Thiruvananthapuram district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1310",
+      "project_name": "Construction of ROB at Moru glass Gate near IIT Palakkad in lieu of LC No. 156",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1311",
+      "project_name": "KIIFB-Construction of Coastal Highway in Kozhikode District - From Korapuzha to Koyilandy Harbour",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1313",
+      "project_name": "Coastal Highway Reach 2 - Fort Vypin to Munambam in Ernakulam district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.6,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [
+        "PWD026-01"
+      ],
+      "project_id": "KIIFB-PRJ-1315",
+      "project_name": "Development of Vazhimukku - Kalayikkavila Road",
+      "resolution": "token_fuzzy_same_dept_j55"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1316",
+      "project_name": "Construction of Sreedhari Bridge across Manalippuzha in Thrissur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1317",
+      "project_name": "Improvements to Chakkarakkal Junction in Kannur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1319",
+      "project_name": "Construction of Coastal Highway in Thrissur District Reach 1- Azheekodu to Dubai road junction Ch 0/000 to 9/890",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1321",
+      "project_name": "Construction of Coastal Highway - Improvement of Road from South Chellanam to Fort kochi Via Veli junction - Km 0/000 to km 21/400 in Ernakulam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1322",
+      "project_name": "Construction of Coastal highway in Kozhikode District- Beypore Bridge from Madathilpadam to BC Road across River Chaliyar",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1323",
+      "project_name": "Coastal Highway Reach 1 - South Chellanam to Fort Kochi in Ernakulam district (19 km)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1324",
+      "project_name": "Construction of ROB in lieu of LC 61 at Railway Km 132/14-15 near Mynagapally in Kollam District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1325",
+      "project_name": "Coastal Highway Reach 1 - Puthiyanirathu Beach to Korappuzha in Kozhikode district (3.46 km)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1328",
+      "project_name": "Construction of Flyover at Ayathil, kollam on National Highway 66 bypass",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1329",
+      "project_name": "Coastal Highway - Construction of Coastal Road in Kollam District- from Kappil Bridge to Kollam Phase1",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1331",
+      "project_name": "KIIFB Construction of Thoduve Palam - Improvements to Sivagiri Thoduve Palam - Sivagiri Palam Approach Roads in Thiruvananthapuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Wayanad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1332",
+      "project_name": "Construction of Kalpetta Chuzhali Bridge in Wayanad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1333",
+      "project_name": "Construction of Neyyattinkara Mullaravila Aayayil Bridge in Thiruvananthapuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1334",
+      "project_name": "Coastal Highway Reach 3 Koyilandy Harbour to Muthayam Beach - Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1335",
+      "project_name": "Construction of Coastal Highway- Edakkad to Muzhappilangad km 0/000 to 3/065 in Kannur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1336",
+      "project_name": "Coastal Highway- Strech-1A - Ambalappuzha to Alappuzha (Payalkulangara - SH Bypass Crossing) in Alappuzha District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1337",
+      "project_name": "Coastal Highway Reach 1 - Mahe Bridge to Payyambalam in Kannur district (31.21km)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1338",
+      "project_name": "Coastal Highway in Alappuzha District - Package I Valiyazheekkal - ESI Junction Km 1/250 to 45/650",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1339",
+      "project_name": "KIIFB 2017-18-Construction of Parakkoottam Bridge and connecting road in Chalakkudy LAC in Thrissur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1343",
+      "project_name": "KIIFB-2017-18 Construction of Arinalloor Peringalam Bridge,Kunnathoor Constituency, Kollam District.",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1344",
+      "project_name": "Construction of ROB at Chungam Gate (LC No. 190) in Kozhikode district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1345",
+      "project_name": "Coastal Highway in Kannur district- Payyambalam to Meenkunnu Reach 5 (1A)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1346",
+      "project_name": "General Hospital Junction in Alappuzha district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1347",
+      "project_name": "Construction of Kattilkkadavu bridge across TS Canal in Karunagappally constituency, Kollam",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1348",
+      "project_name": "Coastal Highway - BC Road to Kothi Beach - Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1349",
+      "project_name": "Coastal Highway Reach 2 - SH Bypass Crossing to South Chellanam in Alappuzha district ( 33 km)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1351",
+      "project_name": "Kannur International Airport connectivity packages roads (Road-2 Peringathur - Mekkunnu ? Panoor - Kuthupramba - Mattannur Road) in Kannur District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1354",
+      "project_name": "KIIFB- Coastal Highway -Construction of Coastal Highway From Sandbanks to Poozhithala in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1355",
+      "project_name": "KIIFB 2016-17 Construction of Parali bridge across Bharathapuzha at Km 12/0000 of Palakkad Ponnani road in Palakkad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1356",
+      "project_name": "Flyovers at Kizhakkekkotta and Kokkayil Junctions in Thrissur Town",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1361",
+      "project_name": "Construction of ROB in lieu of LC No. 547 at Eravipuram, Kollam",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thrissur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1362",
+      "project_name": "Construction of ROB at Nellayi in Thrissur district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1364",
+      "project_name": "Coastal Highway - Kadalundikadavu to Madathilpadam - Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1367",
+      "project_name": "Coastal Highway in Alappuzha District - Package 2 - ESI Junction to Chellanam Km 45/650 to 82/550",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1369",
+      "project_name": "KIIFB 2017-18 Construction of Pulincunnu Bridge in Kuttanadu LAC in Alappuzha District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1371",
+      "project_name": "KIIFB-2017-18-Construction of Feroke ROB Approach Road in Kozhikode District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1373",
+      "project_name": "KIIFB 2017-18 CONSTRUCTION OF KADAMAKKUDY - PIZHALA BRIDGE IN ERNAKULAM DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kottayam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1374",
+      "project_name": "Construction of ROB at Nalukody in Kottayam district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1376",
+      "project_name": "KIIFB 2017-18 CONSTRUCTION OF MUNAMELKADAVU ? SOCIETY KADAVU BRIDGE IN KAYAMKULAM LAC IN ALAPPUZHA DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1377",
+      "project_name": "Kakkathuruth Bridge in Alappuzha District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Pathanamthitta"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1380",
+      "project_name": "Improvements to Kozhencherry junction in Pathanamthitta District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1381",
+      "project_name": "Improvements of Jagathy - DPI Junctions in Thiruvananthapuram District (PHASE-I)",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kozhikode"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1382",
+      "project_name": "Construction of Coastal Highway in Kozhikode district-From Muthayam to Kodikkal",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kollam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1384",
+      "project_name": "Improvement to Pallimukku Junction in Kollam district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1386",
+      "project_name": "Construction of ROB at Punnol (LC No. 224) in Kannur district",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1388",
+      "project_name": "KIIFB 2017-18 Construction of Vellayani bridge connecting Poonkulam and Kakkamoola in Thiruvananthapuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Alappuzha"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1389",
+      "project_name": "KIIFB 2017-18 Construction of Muttel bridge in Alappuzha District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Malappuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1391",
+      "project_name": "KIIFB 2017-18-Construction of Anjudi -Kundungal bridge across canoli canal in Tanur LAC in Malappuram District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kasaragod"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1392",
+      "project_name": "KIIFB 2017-18 - CONSTRUCTION OF CHOTTA BRIDGE ACROSS PAYASWINI RIVER AT KM 4/000 OF KUNDAMKUZHI - CHOTTA- IRIYANNI ROAD IN UDMA LAC IN KASARAGOD DISTRICT",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1394",
+      "project_name": "Procurement of Medical Equipment for DH Palakkad",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-1395",
+      "project_name": "Procurement of Medical Equipment for THQH Kunnamkulam",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [
+        "HFW001-01-46",
+        "HFW001-01-73"
+      ],
+      "project_id": "KIIFB-PRJ-1396",
+      "project_name": "Procurement of Medical Equipment for Women and Child Hospital Thalassery",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kottayam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1398",
+      "project_name": "Procurement of Medical Equipment for MCH Kottayam Super Speciality Block",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.75,
+      "districts": [
+        "Kottayam"
+      ],
+      "pkg_codes": [
+        "HED003-01-01"
+      ],
+      "project_id": "KIIFB-PRJ-1400",
+      "project_name": "Augmentation of Infrastructural Facilities at MGU",
+      "resolution": "work_containment_same_dept"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Palakkad"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1401",
+      "project_name": "Balance works for the Construction of Sports Complex at Government College, Chittur, Palakkad District",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Kannur"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1403",
+      "project_name": "Balance work in Construction of Indoor Stadium at Padiyoor, Kannur",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1406",
+      "project_name": "Aerospace Control Systems Centre Veli Thiruvananthapuram",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Thiruvananthapuram"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1407",
+      "project_name": "Construction of War Memorial at Akkulam in Thiruvananthapuram District Phase 2",
+      "resolution": "name_district_mention"
+    },
+    {
+      "confidence": 0.95,
+      "districts": [
+        "Ernakulam"
+      ],
+      "pkg_codes": [],
+      "project_id": "KIIFB-PRJ-1408",
+      "project_name": "Ernakulam Cluster Phase 2",
+      "resolution": "name_district_mention"
+    }
+  ],
+  "generated_at": "2026-10-21T03:23:43.955681Z",
+  "licence": "CC BY 4.0",
+  "source": "DS030 (keralakanakku.com) enrichment audit log",
+  "tiers_applied": {
+    "name_district_mention": 474,
+    "token_fuzzy_same_dept_j55": 6,
+    "work_containment_same_dept": 32
+  },
+  "total_entries": 512,
+  "version": "1.0.0"
+}

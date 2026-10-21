@@ -149,7 +149,7 @@ This dashboard adheres to an uncompromising **Civic Evidence Standard**, ensurin
 2. **Bridging Public Portal Data Gaps (`GAP-001`) with Kerala Kanakku (`DS030`)**:
    - KIIFB's primary status database (`prjStatus.jsp`) omits geographic district tags for 100% of projects.
    - We ingested Kerala Kanakku's daily compilations of KIIFB's internal GIS portal (`gis.kiifb.org`) and PWD Defect Liability lists (`keralakanakku.com`), licensed under CC BY 4.0.
-   - **Matching Pipeline (`scripts/enrich_projects_with_kanakku.py`)**: Sub-projects and contract packages were cross-referenced against KIIFB umbrella sanctions using normalized alphanumeric titles, sub-project codes, and financial allocations to enrich 540 projects with verified districts, assembly constituencies, and GPS coordinates.
+   - **Matching Pipeline (`scripts/enrich_projects_with_kanakku.py`)**: Sub-projects and contract packages were cross-referenced against KIIFB umbrella sanctions using normalized alphanumeric titles, sub-project codes, financial allocations, and strict fill-up tiers (explicit district-name mentions, department-filtered title containment, department-filtered token fuzzy ≥ 0.55 Jaccard — see `docs/matching-rules.md` §5) to enrich 1,103 of 1,408 projects (78.3%) with verified districts, assembly constituencies, and GPS coordinates (up from 540 / 38.4% at first publication). Every fill-up-tier match is auditable in `data/processed/kanakku_match_log.json`; pre-existing verified matches are bit-for-bit unchanged.
 3. **Operational Anomaly Engine (Rule Engine v2)**:
    - Projects are evaluated against 5 objective, non-partisan criteria:
      - **Overdue**: Scheduled completion date elapsed without recorded completion.

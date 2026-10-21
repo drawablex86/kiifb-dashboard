@@ -56,6 +56,36 @@ Level 3: Individual Building / Package / Physical Work (Contract Level)
 - **Rule**: If a KIIFB project is an umbrella cluster (e.g., `Wayanad Phase-3 Cluster`), it maps to multiple institutions via an explicit 1-to-N relationship in `project_clusters`, NOT by merging rows.
 - **Rule**: No fuzzy threshold merges are performed automatically. Any ambiguous match is flagged with `match_confidence: ambiguous` and preserved for manual review.
 
+### 3.4 Kanakku Geo-Enrichment Fill-Up Tiers (T083 — auditable, order-sensitive)
+
+Applied only to records whose district is **still null** after the original
+join tiers (funding-join by normalised project name, exact package-title, and
+token fuzzy Jaccard ≥ 0.70 — unchanged, and always evaluated first). Existing
+verified matches are never re-resolved, so district/constituency/flags/coords
+assignments are bit-for-bit stable across pipeline runs. Each new tier writes
+a `district_match` audit object on the record and an entry in
+`data/processed/kanakku_match_log.json`; no silent merges at any confidence.
+
+Evaluation order (first match wins; all department-filtered tiers compare
+normalised department strings):
+
+| Order | Tier | `resolution` | Rule | Confidence |
+|---|---|---|---|---|
+| 0 | (pre-existing) funding-join / exact title / fuzzy ≥ 0.70 | — (no `district_match` meta) | Unchanged from the original enrichment; documented above. | n/a |
+| 1 | Explicit district mention | `name_district_mention` | A Kerala district name (or documented alias `Trivandrum`→`Thiruvananthapuram`, `Trichur`→`Thrissur`) appears verbatim at word boundaries in the official project title. 1–2 distinct districts accepted (multi-district umbrellas keep both, comma-joined); ≥ 3 mentions → rejected as ambiguous. Assigns **district only** — no coordinates, no flags, deliberately conservative. | 0.95 |
+| 2 | Work containment, same department | `work_containment_same_dept` | Normalised DS030 package title nests inside the project title or vice versa (either direction), package department == project department, ≤ 3 hits, and **all hits agree on exactly one district**. Coordinates averaged across hits that carry them; flags unioned. | 0.75 |
+| 3 | Token fuzzy, same department | `token_fuzzy_same_dept_j55` | Unique best package by token-set Jaccard (stopword-light, acronym-expanded: `govt`→`government`, `hss`→`higher secondary school`, `iti`→`industrial training institute`, …) with J ≥ 0.55 **and** package department == project department. Strict `>` comparison means ties are rejected, never guessed. | round(J, 2) |
+
+Determinism guarantees:
+- Sets are converted to sorted lists; the match log is sorted by `project_id`
+  and serialised with sorted keys — the log (and the diff change log it feeds)
+  is byte-identical across re-runs on the same pinned inputs.
+- Confidence values are recorded as evidence grades, never thresholds for
+  silent acceptance: every tier above 0.55 is logged with its full rule.
+- Coverage result (2026-10 pinned baselines): 1,103 / 1,408 register projects
+  with district data = **78.3%** (tier split: 474 name-mentions, 32
+  containments, 6 token-fuzzy), up from 587 / 1,408 = 41.7%.
+
 ---
 
 ## 4. Discrepancy & Ambiguity Audit Log
