@@ -1,6 +1,14 @@
 <script lang="ts">
 	import '../app.css';
+	import { page } from '$app/state';
+	import FreshnessBadge from '$lib/components/FreshnessBadge.svelte';
+	import { routeFreshness } from '$lib/data/freshness';
+
 	let { children } = $props();
+
+	// T095: persistent route-aware freshness badge — dates derive from
+	// data/manifest.json retrieval records (never hardcoded per route).
+	const freshness = $derived(routeFreshness(page.url.pathname));
 </script>
 
 <div class="min-h-screen flex flex-col bg-slate-50 text-slate-900">
@@ -37,6 +45,10 @@
 					Outcomes & Map
 				</a>
 				<span class="text-slate-300">|</span>
+				<a href="/trends" class="px-2.5 py-1.5 rounded text-indigo-700 hover:text-indigo-900 hover:bg-indigo-50 transition font-semibold">
+					Trends
+				</a>
+				<span class="text-slate-300">|</span>
 				<a href="/governance" class="px-2.5 py-1.5 rounded text-slate-700 hover:text-slate-900 hover:bg-slate-100 transition">
 					Governance
 				</a>
@@ -49,6 +61,10 @@
 					KIIFB Genesis
 				</a>
 			</nav>
+		</div>
+		<!-- T095: data-freshness strip — always visible in the sticky header (no scroll on mobile) -->
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-2 flex flex-wrap items-center">
+			<FreshnessBadge sources={freshness.map((f) => f.sourceId)} compact note="route-scoped evidence" />
 		</div>
 	</header>
 

@@ -354,18 +354,22 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 - Acceptance: stock vs flow distinction preserved per `architecture.md` §8; overlay data strictly sourced and dated; no conflation of future commitments with outstanding debt.
 
 ### T094 — Time series view `/trends`
-- Status: open
+- Status: done
 - Dependencies: T082
 - Objective: build a new `/trends` route rendering cumulative released funds over months, normalised status-migration waterfall, anomaly-flag trend, top-3-district concentration over time, and per-district release curves, driven entirely from `data/processed/change_log.json` plus archived snapshots.
 - Outputs: `src/routes/trends/+page.svelte`, `src/routes/trends/+page.server.ts`, navigation entry in `+layout.svelte`.
 - Acceptance: every series lists its as-of dates; timeline granularity matches available snapshots (documented on-page); coverage limitations from GAP-001 disclosed; passes `npm run check` and `npm run build` with zero errors.
+- Completed: 2026-10-21
+- Notes: Server load aggregates every snapshot run under `data/snapshots/` (sorted lexicographically = chronological by construction; `<YYYY-MM>` vs `__<YYYYMMDDTHHMMSSZ>` parsed into as-of labels; no dates or counts hardcoded). Current archive: 2 points (2026-10 baseline → 2026-10-21T03:18 UTC) after the T083 coverage event, so the page renders before/after comparisons plus a cadence banner explaining how curves emerge with monthly runs. Disclosures implemented inline wherever figures could mislead: (1) released/approved lines are flat because both runs regenerated from the pinned 2026-10-16 baselines — real curves start with the first `--fetch` snapshot; (2) the top-3 concentration shift (32.7% → 46.7%) is driven by coverage expansion (newly attributed umbrella sanctions, incl. the land-pool Kannur/Palakkad skew), not real redistribution; (3) status-migration waterfall renders an explicit empty state (no `normalised_status` changes between runs) with live structure; (4) GAP-001: district-attributed series cover 1099/1408 records and exclude unattributed ones rather than plotting them at zero; (5) multi-district umbrellas split released value evenly across credited districts (unit-rule note printed per docs/matching-rules.md). `npm run check` + `npm run build` pass with zero errors; `@types/node` added as devDep for the prerender-time `node:fs` snapshot walk; layout nav gained the Trends entry.
 
 ### T095 — Data freshness surfacing (as-of badges)
-- Status: open
+- Status: done
 - Dependencies: T081
 - Objective: stamp every route with a persistent "Data as of <date> • archived / live-verified" badge derived from `data/manifest.json` retrieval records so every view discloses the age of its evidence.
 - Outputs: `src/lib/components/FreshnessBadge.svelte`, layout integration on all routes.
 - Acceptance: badge reflects actual manifest dates, not hardcoded values; visible without scroll on mobile; consistent with the evidence-labelling system in `design-system.md`.
+- Completed: 2026-10-21
+- Notes: New `src/lib/data/freshness.ts` resolves each source's as-of as the later of its baseline `sources[].retrieved_at` and its newest successful T080 live crawl (`manifest.live_crawls`, statuses `success|unchanged`); mode is `live-verified` iff a crawl record exists, else `archived`. The badge renders inside the sticky header on ALL routes via the `routeSources(pathname)` mapping (verified in prerendered HTML: `/` → DS001 archived 2026-10-16; `/trends` → DS010|DS030 live-verified 2026-10-21); no date is hardcoded. Repo-hygiene bug fixed on the way: `.gitignore`'s CPython-template rootless `lib/` rule silently ignored NEW files under `src/lib/` (already-tracked files were unaffected) — scoped to `/lib/` and `/lib64/`.
 
 ## Milestone 10 — Progress, delivery analytics & distribution
 
