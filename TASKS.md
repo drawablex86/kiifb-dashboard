@@ -332,7 +332,7 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 - Acceptance: visual encodes the documented Rule Engine v2 criteria (payment-vs-progress, cost escalation, overdue); projects without progress data are excluded with an explicit count shown (not plotted at zero); respects tabular India ₹ rendering in tooltips.
 
 ### T093 — Completion trajectory overlay on the Amortisation Model (`/financials`)
-- Status: in_progress
+- Status: done
 - Dependencies: T092 (chart components)
 - Objective: overlay actual cumulative released funds on the existing Table 6.1 debt-service schedule and Table 6.3 completion-need timeline within `/financials`, showing release pace vs future fiscal need in a single comparable timeline.
 - Outputs: updated `src/routes/financials/+page.svelte`.
