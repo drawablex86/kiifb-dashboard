@@ -23,6 +23,13 @@
 	function onMobileKeydown(e: KeyboardEvent) {
 		if (e.key === 'Escape') mobileOpen = false;
 	}
+
+	// Prevent body scroll when mobile menu is open
+	$effect(() => {
+		if (typeof document !== 'undefined') {
+			document.body.style.overflow = mobileOpen ? 'hidden' : '';
+		}
+	});
 </script>
 
 <div class="min-h-screen flex flex-col bg-background text-foreground">
@@ -80,43 +87,76 @@
 
 		<!-- Mobile menu panel: full inventory with scent descriptions -->
 		{#if mobileOpen}
+			<!-- Backdrop -->
+			<div
+				class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-40 md:hidden"
+				aria-hidden="true"
+				onclick={() => (mobileOpen = false)}
+			></div>
+
+			<!-- Mobile bottom sheet -->
 			<div
 				id="mobile-menu"
 				role="dialog"
 				aria-modal="true"
 				aria-label="Main navigation"
 				tabindex="-1"
-				class="md:hidden border-t border-border bg-popover px-4 py-3 space-y-4 max-h-[70vh] overflow-y-auto"
-				onkeydown={onMobileKeydown}
+				class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-popover border-t border-border rounded-t-2xl shadow-xl transform transition-transform duration-300 ease-out"
 			>
-				<nav aria-label="Mobile main">
-				{#each NAV_GROUPS as navGroup (navGroup.id)}
-					<div>
-						<p class="text-[11px] font-semibold uppercase tracking-wide text-slate-400 px-2 mb-1">{navGroup.label}</p>
-						{#each navGroup.items as item (item.href)}
-							<a
-								href={item.href}
-								aria-current={item.href === currentPath ? 'page' : undefined}
-								class="block rounded-md px-2.5 py-2 hover:bg-slate-100 {item.href === currentPath ? 'bg-slate-50' : ''}"
-							>
-								<div class="flex items-center justify-between">
-									<span class="block text-sm font-medium text-slate-900">{item.label}</span>
-									{#if item.badge}
-										<span class="text-[10px] font-semibold px-1.5 py-0.5 rounded border bg-slate-100 text-slate-600 border-slate-200 whitespace-nowrap flex-shrink-0">
-											{item.badge}
-										</span>
-									{/if}
-								</div>
-								<span class="block text-xs text-muted-foreground mt-0.5">{item.description}</span>
-							</a>
-						{/each}
-					</div>
-				{/each}
-				<div class="flex items-center justify-between gap-3 border-t border-border pt-3 px-2">
-					<span class="text-xs font-medium text-slate-500">Information depth</span>
-					<DepthToggle compact />
+				<!-- Header with close button -->
+				<div class="flex items-center justify-between px-4 py-3 border-b border-border">
+					<h2 class="text-base font-semibold text-slate-900">Menu</h2>
+					<button
+						type="button"
+						onclick={() => (mobileOpen = false)}
+						class="p-2 rounded-lg text-slate-500 hover:text-slate-900 hover:bg-slate-100 transition-colors"
+						aria-label="Close menu"
+					>
+						<svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<path d="M18 6L6 18M6 6l12 12" />
+						</svg>
+					</button>
 				</div>
-			</nav>
+
+				<!-- Navigation content -->
+				<nav aria-label="Mobile main" class="max-h-[70vh] overflow-y-auto px-4 py-4 space-y-6">
+					{#each NAV_GROUPS as navGroup (navGroup.id)}
+						<div>
+							<p class="text-[11px] font-semibold uppercase tracking-wide text-slate-400 mb-2">{navGroup.label}</p>
+							{#each navGroup.items as item (item.href)}
+								<a
+									href={item.href}
+									aria-current={item.href === currentPath ? 'page' : undefined}
+									class="block rounded-lg px-3 py-3 hover:bg-slate-100 {item.href === currentPath ? 'bg-slate-50' : ''} active:scale-[0.98] transition-transform"
+									onclick={() => (mobileOpen = false)}
+								>
+									<div class="flex items-center justify-between">
+										<span class="text-base font-medium text-slate-900">{item.label}</span>
+										{#if item.badge}
+											<span class="text-xs font-semibold px-2 py-0.5 rounded border bg-slate-100 text-slate-600 border-slate-200 whitespace-nowrap flex-shrink-0">
+												{item.badge}
+											</span>
+										{/if}
+									</div>
+									<span class="block text-sm text-muted-foreground mt-1">{item.description}</span>
+								</a>
+							{/each}
+						</div>
+					{/each}
+
+					<!-- Depth toggle at bottom -->
+					<div class="pt-4 border-t border-border">
+						<div class="flex items-center justify-between mb-3">
+							<span class="text-sm font-medium text-slate-500">Information depth</span>
+						</div>
+						<DepthToggle compact />
+					</div>
+				</nav>
+
+				<!-- Drag handle hint -->
+				<div class="px-4 pb-4">
+					<div class="w-10 h-1 bg-slate-300 rounded-full mx-auto" aria-hidden="true"></div>
+				</div>
 			</div>
 		{/if}
 
