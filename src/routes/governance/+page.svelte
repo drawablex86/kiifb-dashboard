@@ -1,4 +1,9 @@
 <script lang="ts">
+	import PageIntro from '$lib/components/PageIntro.svelte';
+	import NudgeCallout from '$lib/components/NudgeCallout.svelte';
+	import PlainBadge from '$lib/components/PlainBadge.svelte';
+	import GlossaryTerm from '$lib/components/GlossaryTerm.svelte';
+
 	let { data } = $props();
 
 	// Tab state
@@ -29,7 +34,6 @@
 		})
 	);
 
-	// Status badge helper
 	function getStatusBadge(status: string) {
 		switch (status) {
 			case 'implemented':
@@ -61,83 +65,65 @@
 	<title>Governance, Legal Issues & Recommendations — KIIFB Accountability Dashboard</title>
 </svelte:head>
 
+<PageIntro
+	title="Recommendations & Law"
+	question="What did the committee recommend, what are the legal positions, and how are they tracked?"
+	lead="Rigorous analysis of constitutional questions (Articles 266, 293, List I Entry 37), tracking of the 8 Committee recommendations, contractor defect liability from Kerala Kanakku, and full source reproducibility methodology. Four tabs: Recommendations, Legal Register, Contractor Liability, Methodology."
+	shows={[
+		'8 restructuring recommendations tracked to target authority, legal instrument, and official action status',
+		'Legal & constitutional register: Articles 266/293, Entry 37, SCSP/TSP — committee view vs. court status',
+		'Contractor Defect Liability Period register from Kerala Kanakku (DS030)',
+		'Methodology: primary sources with SHA-256, counting units protocol, discrepancy log (DISC-001–006), reproducibility commands'
+	]}
+	doesnt={[
+		'Project-level search & filters (see Projects)',
+		'Portfolio funnel drill-down (see Where the Money Goes)',
+		'Debt amortisation schedule (see Debt & Repayments)',
+		'District map (see Districts & Map)',
+		'Committee scrutiny of legality/lapses/members (see The Committee\'s Claims)'
+	]}
+/>
+
+<NudgeCallout kind="interpret" id="gov-start" heading="Advisory ≠ binding">
+	The Committee's recommendations are <strong>advisory proposals</strong> — not statutes. 0 of 8 are fully implemented. The legal register separates committee/CAG advisory opinions from binding judicial proceedings (SC Constitution Bench referral pending). Contractor liability is from Kerala Kanakku (CC BY 4.0), not the Committee.
+</NudgeCallout>
+
 <div class="space-y-6">
-	<!-- Page Header Banner -->
-	<div class="bg-white rounded-lg border border-slate-200 p-6 shadow-sm">
-		<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
-			<div>
-				<div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-800 border border-indigo-200 mb-2">
-					<span>Milestone 5: Legal & Governance</span>
-					<span>•</span>
-					<span>Constitutional Issues, Recommendations & Methodology</span>
-				</div>
-				<h2 class="text-2xl font-bold tracking-tight text-slate-900">
-					Governance, Legal Issues, Recommendations & Methodology
-				</h2>
-				<p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl">
-					Rigorous analysis of constitutional questions (Articles 266, 293, List I Entry 37), tracking of the 8 Committee recommendations, and full source reproducibility methodology.
-				</p>
-			</div>
-
-			<!-- Top Summary Counters -->
-			<div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-left">
-				<div class="bg-slate-50 border border-slate-200/80 rounded p-3">
-					<div class="text-2xs text-slate-500 uppercase font-semibold">Recommendations</div>
-					<div class="text-lg font-bold text-slate-900 tabular-nums">8 Tracked</div>
-					<div class="text-3xs text-slate-500">Chapter VI Restructuring</div>
-				</div>
-				<div class="bg-slate-50 border border-slate-200/80 rounded p-3">
-					<div class="text-2xs text-slate-500 uppercase font-semibold">Implemented</div>
-					<div class="text-lg font-bold text-amber-700 tabular-nums">0 of 8</div>
-					<div class="text-3xs text-slate-500">Advisory Proposals Only</div>
-				</div>
-				<div class="bg-slate-50 border border-slate-200/80 rounded p-3 col-span-2 sm:col-span-1">
-					<div class="text-2xs text-slate-500 uppercase font-semibold">Sub Judice Issues</div>
-					<div class="text-lg font-bold text-indigo-700 tabular-nums">Article 293</div>
-					<div class="text-3xs text-slate-500">Supreme Court Constitution Bench</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Navigation Tabs -->
-		<div class="flex items-center space-x-2 border-b border-slate-200 mt-6 -mb-6 overflow-x-auto">
-			<button
-				onclick={() => (activeTab = 'recommendations')}
-				class="px-4 py-2 text-xs sm:text-sm font-semibold border-b-2 transition whitespace-nowrap {activeTab === 'recommendations' ? 'border-indigo-600 text-indigo-700' : 'border-transparent text-slate-500 hover:text-slate-800'}"
-			>
-				Recommendation Tracker (T051)
-			</button>
-			<button
-				onclick={() => (activeTab = 'legal_register')}
-				class="px-4 py-2 text-xs sm:text-sm font-semibold border-b-2 transition whitespace-nowrap {activeTab === 'legal_register' ? 'border-indigo-600 text-indigo-700' : 'border-transparent text-slate-500 hover:text-slate-800'}"
-			>
-				Legal & Constitutional Register (T050)
-			</button>
-			<button
-				onclick={() => (activeTab = 'liability')}
-				class="px-4 py-2 text-xs sm:text-sm font-semibold border-b-2 transition whitespace-nowrap {activeTab === 'liability' ? 'border-indigo-600 text-indigo-700' : 'border-transparent text-slate-500 hover:text-slate-800'}"
-			>
-				Contractor Defect Liability (DS030)
-			</button>
-			<button
-				onclick={() => (activeTab = 'methodology')}
-				class="px-4 py-2 text-xs sm:text-sm font-semibold border-b-2 transition whitespace-nowrap {activeTab === 'methodology' ? 'border-indigo-600 text-indigo-700' : 'border-transparent text-slate-500 hover:text-slate-800'}"
-			>
-				Methodology & Discrepancies (T052)
-			</button>
-		</div>
+	<!-- Navigation Tabs -->
+	<div class="flex items-center space-x-2 border-b border-slate-200 mb-6 overflow-x-auto">
+		<button
+			onclick={() => (activeTab = 'recommendations')}
+			class="px-4 py-2 text-xs sm:text-sm font-semibold border-b-2 transition whitespace-nowrap {activeTab === 'recommendations' ? 'border-indigo-600 text-indigo-700' : 'border-transparent text-slate-500 hover:text-slate-800'}"
+		>
+			Recommendation Tracker (T051)
+		</button>
+		<button
+			onclick={() => (activeTab = 'legal_register')}
+			class="px-4 py-2 text-xs sm:text-sm font-semibold border-b-2 transition whitespace-nowrap {activeTab === 'legal_register' ? 'border-indigo-600 text-indigo-700' : 'border-transparent text-slate-500 hover:text-slate-800'}"
+		>
+			Legal & Constitutional Register (T050)
+		</button>
+		<button
+			onclick={() => (activeTab = 'liability')}
+			class="px-4 py-2 text-xs sm:text-sm font-semibold border-b-2 transition whitespace-nowrap {activeTab === 'liability' ? 'border-indigo-600 text-indigo-700' : 'border-transparent text-slate-500 hover:text-slate-800'}"
+		>
+			Contractor Defect Liability (DS030)
+		</button>
+		<button
+			onclick={() => (activeTab = 'methodology')}
+			class="px-4 py-2 text-xs sm:text-sm font-semibold border-b-2 transition whitespace-nowrap {activeTab === 'methodology' ? 'border-indigo-600 text-indigo-700' : 'border-transparent text-slate-500 hover:text-slate-800'}"
+		>
+			Methodology & Discrepancies (T052)
+		</button>
 	</div>
 
 	<!-- TAB 1: RECOMMENDATIONS TRACKER (T051) -->
 	{#if activeTab === 'recommendations'}
 		<div class="space-y-6">
 			<!-- Critical Civic Notice -->
-			<div class="bg-amber-50/70 border border-amber-200 rounded-lg p-4 text-xs sm:text-sm text-amber-950 flex items-start gap-3">
-				<div class="font-bold text-base leading-none text-amber-700">!</div>
-				<div>
-					<span class="font-semibold">Civic Standard on Advisory Recommendations:</span> {civicNote}
-				</div>
-			</div>
+			<NudgeCallout kind="interpret" id="gov-recs" heading="Civic Standard on Advisory Recommendations">
+				{civicNote}
+			</NudgeCallout>
 
 			<!-- Recommendations Grid / Table -->
 			<div class="space-y-4">
@@ -196,12 +182,9 @@
 	{:else if activeTab === 'legal_register'}
 		<div class="space-y-6">
 			<!-- Civic Alert on Court Separation -->
-			<div class="bg-blue-50/70 border border-blue-200 rounded-lg p-4 text-xs sm:text-sm text-blue-950 flex items-start gap-3">
-				<div class="font-bold text-base leading-none text-blue-700">§</div>
-				<div>
-					<span class="font-semibold">Civic Standard on Judicial Separation:</span> An executive committee's interpretation is an advisory opinion, not a binding judicial ruling. In matters involving Article 293, Article 266, and Entry 37 of List I, the Committee itself noted that key questions have not been definitively adjudicated by the courts, or remain sub judice before a Constitution Bench of the Supreme Court of India.
-				</div>
-			</div>
+			<NudgeCallout kind="interpret" id="gov-legal" heading="Judicial separation: advisory ≠ binding">
+				An executive committee's interpretation is an advisory opinion, not a binding judicial ruling. In matters involving Article 293, Article 266, and Entry 37 of List I, the Committee itself noted that key questions have not been definitively adjudicated by the courts, or remain sub judice before a Constitution Bench of the Supreme Court of India.
+			</NudgeCallout>
 
 			<!-- Legal Issues Cards -->
 			<div class="space-y-5">
@@ -233,8 +216,8 @@
 							<!-- Left Column: Committee & CAG Interpretation -->
 							<div class="border border-slate-200 rounded-lg p-4 bg-slate-50/40">
 								<h4 class="text-2xs uppercase font-bold text-slate-700 tracking-wider mb-2 flex items-center gap-1.5">
-									<span class="w-2 h-2 rounded-full bg-amber-500"></span>
-									Committee & Audit Interpretation
+									<PlainBadge label="committee_finding" />
+									<span>Committee & Audit Interpretation</span>
 								</h4>
 								<p class="text-slate-700 mb-3 leading-relaxed">
 									{issue.committee_interpretation}
@@ -248,8 +231,8 @@
 							<!-- Right Column: Judicial Status & Court Proceedings -->
 							<div class="border border-indigo-200 rounded-lg p-4 bg-indigo-50/20">
 								<h4 class="text-2xs uppercase font-bold text-indigo-900 tracking-wider mb-2 flex items-center gap-1.5">
-									<span class="w-2 h-2 rounded-full bg-indigo-600"></span>
-									Judicial Status & Court Findings
+									<PlainBadge label="official_record" />
+									<span>Judicial Status & Court Findings</span>
 								</h4>
 								<div class="text-2xs font-semibold text-indigo-800 mb-1">
 									{issue.judicial_proceedings.forum}: {issue.judicial_proceedings.case_citation}
@@ -472,10 +455,8 @@
 									<h4 class="text-sm font-bold text-slate-900">{disc.title}</h4>
 								</div>
 								<div class="flex items-center gap-2">
+									<PlainBadge label={disc.severity} kind="flag" />
 									<span class="text-2xs text-slate-400 font-mono">{disc.source_location}</span>
-									<span class="px-2 py-0.5 rounded text-2xs uppercase tracking-wider border {getSeverityBadge(disc.severity)}">
-										{disc.severity}
-									</span>
 								</div>
 							</div>
 
@@ -529,4 +510,9 @@
 			</div>
 		</div>
 	{/if}
+
+	<!-- Provenance banner -->
+	<div class="bg-slate-100 border border-slate-200 rounded-lg p-4 text-xs text-slate-600 mt-6">
+		<span class="font-bold text-slate-900">Provenance:</span> Recommendations from DS001 Ch-VI; Legal issues from DS001 Ch-III/V + court records (SC Original Suit No. 1/2024); Liability from DS030 (CC BY 4.0). All sources in <code class="font-mono">data/manifest.json</code>. Reproducibility: <code class="font-mono">python3 -m unittest discover tests</code> + <code class="font-mono">npm run check</code> + <code class="font-mono">npm run build</code>.
+	</div>
 </div>

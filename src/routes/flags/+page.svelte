@@ -1,4 +1,13 @@
 <script lang="ts">
+	import { page } from '$app/state';
+	import { goto } from '$app/navigation';
+	import { FLAG_REGISTRY, getFlagMeta } from '$lib/data/flags';
+	import PageIntro from '$lib/components/PageIntro.svelte';
+	import NudgeCallout from '$lib/components/NudgeCallout.svelte';
+	import PlainBadge from '$lib/components/PlainBadge.svelte';
+	import ResultCount from '$lib/components/ResultCount.svelte';
+	import GlossaryTerm from '$lib/components/GlossaryTerm.svelte';
+
 	/**
 	 * /flags — T102 (Milestone 10)
 	 *
@@ -8,10 +17,6 @@
 	 * `change_log.json`, and per-flag provenance. Resolved flags retain
 	 * their history — the register never deletes.
 	 */
-	import { page } from '$app/state';
-	import { goto } from '$app/navigation';
-	import { FLAG_REGISTRY, getFlagMeta } from '$lib/data/flags';
-
 	let { data } = $props();
 
 	// Filter state is URL-shared (?flag=&q=) and restores exactly.
@@ -118,8 +123,32 @@
 </script>
 
 <svelte:head>
-	<title>Delay &amp; Anomaly Register — KIIFB Accountability Dashboard</title>
+	<title>Delay & Anomaly Register — KIIFB Accountability Dashboard</title>
 </svelte:head>
+
+<PageIntro
+	title="Alerts & Delays"
+	question="Which projects are delayed, over budget, or show payment-vs-progress divergence?"
+	lead="Single filterable register of all open anomaly flags raised by Kanakku Rule Engine v2 (DS030) and the T092 divergence logic, with flag trend history from the T082 change log. Every flag points to the objective criterion that triggered it. Filter state is URL-shared."
+	shows={[
+		'Register of all open flags: overdue, payment_vs_progress, cost_escalation, stale, above_approved',
+		'Objective trigger criterion printed per flag (never hidden)',
+		'Flag trend history from change log — resolved flags retained, never deleted',
+		'Per-flag counts reconciled with dataset totals (asserted in tests)',
+		'URL-shared filter state (`?flag=&q=&history=1`)'
+	]}
+	doesnt={[
+		'Project-level search & 7 filters (see Projects)',
+		'Portfolio funnel drill-down (see Where the Money Goes)',
+		'Debt amortisation schedule (see Debt & Repayments)',
+		'District map (see Districts & Map)',
+		'Change-over-time trends (see Change Over Time)'
+	]}
+/>
+
+<NudgeCallout kind="situate" id="flags-start" heading="Register scale">
+	{allFlagRows.length.toLocaleString('en-IN')} open flag rows across {FLAG_REGISTRY.length} flag types, reconciled with per-flag dataset counts (asserted in <code class="font-mono">tests/test_flag_register.py</code>). Each flag row carries its objective trigger criterion, source ID, locator, and as-of date.
+</NudgeCallout>
 
 <div class="space-y-6">
 	<!-- Header -->
@@ -129,12 +158,12 @@
 			<span>•</span>
 			<span>T102</span>
 		</div>
-		<h2 class="text-2xl font-bold tracking-tight text-slate-900">Delay &amp; Anomaly Register</h2>
+		<h2 class="text-2xl font-bold tracking-tight text-slate-900">Delay & Anomaly Register</h2>
 		<p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl">
 			Single filterable register of all open anomaly flags raised by Kanakku Rule Engine v2 (DS030)
 			and the T092 divergence logic, with flag trend history from the T082 change log. Every flag
 			points to the objective criterion that triggered it. Filter state is URL-shared
-			(<code class="font-mono text-2xs">?flag=&amp;q=&amp;history=1</code>).
+			(<code class="font-mono text-2xs">?flag=&q=&history=1</code>).
 		</p>
 		<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mt-4">
 			<div class="bg-slate-50 border border-slate-200 rounded p-3">
@@ -160,7 +189,8 @@
 
 	<!-- Filters -->
 	<div class="bg-white rounded-lg border border-slate-200 p-4 shadow-sm">
-		<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+		<ResultCount shown={filteredRows.length} total={allFlagRows.length} noun="flag rows" />
+		<div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-3">
 			<div>
 				<label for="flag-filter" class="block text-2xs font-semibold uppercase text-slate-500 mb-1">Flag</label>
 				<select
@@ -208,11 +238,11 @@
 				their history here permanently — deletion is not permitted.
 			</p>
 			{#if historyEntries.length === 0}
-				<p class="text-xs text-slate-500 bg-amber-50 border border-amber-200 rounded p-3">
+				<NudgeCallout kind="interpret" id="flags-history-empty" heading="No flag changes in this interval">
 					No flags were added or resolved between snapshot <span class="font-mono">{data.changeLog.computed_from.prev}</span>
 					and <span class="font-mono">{data.changeLog.computed_from.curr}</span> — the current counts above are the
 					open baseline. Resolutions will appear here as flagged records are repaired upstream.
-				</p>
+				</NudgeCallout>
 			{:else}
 				<table class="w-full text-xs border-t border-slate-100">
 					<caption class="sr-only">Flag additions and resolutions per dataset</caption>
@@ -256,13 +286,9 @@
 						{@const meta = getFlagMeta(row.flag)}
 						<tr class="hover:bg-slate-50/80 transition align-top">
 							<td class="px-4 py-3">
-								<span class="px-1.5 py-0.5 rounded text-2xs font-bold uppercase bg-amber-100 text-amber-900 border border-amber-300">
-									🚩 {meta?.label ?? row.flag}
-								</span>
+								<PlainBadge label={row.flag} kind="flag" />
 								<div class="mt-1">
-									<span class="px-1.5 py-0.5 rounded text-3xs font-semibold border {severityBadge(meta?.severity ?? 'info')}">
-										{meta?.severity ?? 'info'} severity
-									</span>
+									<PlainBadge label={meta?.severity ?? 'info'} kind="flag" />
 								</div>
 							</td>
 							<td class="px-4 py-3 max-w-md text-2xs text-slate-600 leading-relaxed">
@@ -296,5 +322,10 @@
 		{#if filteredRows.length === 0}
 			<div class="py-8 text-center text-slate-400 text-xs">No matching register rows.</div>
 		{/if}
+	</div>
+
+	<!-- Provenance banner -->
+	<div class="bg-slate-100 border border-slate-200 rounded-lg p-4 text-xs text-slate-600 mt-6">
+		<span class="font-bold text-slate-900">Provenance:</span> Flags from DS030 Rule Engine v2 (lifecycle_status + payment_vs_progress logic) and T092 divergence zone. Change log from <code class="font-mono">scripts/diff_snapshots.py</code> (T082) computed on stable <code class="font-mono">project_id</code>/<code class="font-mono">record_id</code>. Flag registry in <code class="font-mono">src/lib/data/flags.ts</code>. Data as-of: <code class="font-mono">{data.manifest?.last_updated ?? '2026-10-21'}</code>.
 	</div>
 </div>

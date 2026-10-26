@@ -454,17 +454,20 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 - Completed: 2026-10-21
 
 ### T115 — Start Here homepage (spine v1)
-- Status: ready
+- Status: done
 - Dependencies: T113, T114
 - Objective: rebuild `/` around five plain-language questions that double as the site map (designsystem.md §4.1), with welcome note, depth-gear explainer, "how this site works" spine, and the five assertions relocated under "The Committee's Claims — checked against the record" (V3 framing per §14: KIIFB first, analyses as layers).
 - Acceptance: first-visit choice set ≤5 questions (P13); assertions keep citation drawer; plain + evidence gears both pass the reviewer test.
 - Notes: design against §14 model — committee is an analytical layer, KIIFB is the subject.
+- Completed: 2026-10-21
 
 ### T116 — Page adoption phase 2 (core journey)
-- Status: backlog
+- Status: done
 - Dependencies: T115
 - Objective: adopt PageIntro/ChartFrame/Nudge/PlainBadge/ResultCount on `/projects`, `/portfolio`, `/financials` (simplify-first Sankey, trajectory, funnel question-titles).
 - Acceptance: every chart inside ChartFrame; every filterable list has live ResultCount; flags/terms humanized; can be split per-route for review.
+- Completed: 2026-10-21
+- Evidence: All three pages use PageIntro (breadcrumb, h1, question, lead, shows/doesnt), ResultCount above filterable lists, ChartFrame wrapping Sankey/Scatter (projects), NudgeCallout at point of use (situate/interpret), PlainBadge for status/flags/lifecycle, GlossaryTerm for inline terms. Provenance banners updated. `npm run check` 0 errors, `npm run build` passes.
 
 ### T117 — Page adoption phase 3 + a11y parity
 - Status: backlog

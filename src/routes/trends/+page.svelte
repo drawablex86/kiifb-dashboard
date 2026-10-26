@@ -1,5 +1,9 @@
 <script lang="ts">
 	import FreshnessBadge from '$lib/components/FreshnessBadge.svelte';
+	import PageIntro from '$lib/components/PageIntro.svelte';
+	import NudgeCallout from '$lib/components/NudgeCallout.svelte';
+	import PlainBadge from '$lib/components/PlainBadge.svelte';
+	import GlossaryTerm from '$lib/components/GlossaryTerm.svelte';
 
 	/**
 	 * T094 (Milestone 9) — `/trends` time-series view.
@@ -104,13 +108,35 @@
 	const coverageYMax = $derived(
 		coverage.total ?? Math.max(1, ...points.map((p) => p.districtedRecords))
 	);
-
-	const barClusterW = 34;
 </script>
 
 <svelte:head>
 	<title>Trends & Change History — KIIFB Accountability Dashboard</title>
 </svelte:head>
+
+<PageIntro
+	title="Change Over Time"
+	question="How have the numbers changed across snapshot runs — and what do the flat lines mean?"
+	lead="Every series below is recomputed exclusively from the immutable snapshot archive (`data/snapshots/`) and the deterministic change log — no page-level assumptions. Cadence disclosure, flat-line honesty, and GAP-001 coverage limitations are stamped wherever figures could mislead."
+	shows={[
+		'Cumulative released vs. approved over snapshot runs (with flat-line disclosure)',
+		'Geography coverage growth — the meaningful series today (GAP-001 tracker)',
+		'Status-migration waterfall (empty state when no changes)',
+		'Anomaly-flag trend with raise/resolution history from change log',
+		'Top-3 district concentration + per-district release curves (coverage-driven jump disclosed)'
+	]}
+	doesnt={[
+		'Project-level search & filters (see Projects)',
+		'Portfolio funnel drill-down (see Where the Money Goes)',
+		'Debt amortisation schedule (see Debt & Repayments)',
+		'District map with geo-tagged projects (see Districts & Map)',
+		'Delay/cost-overrun register (see Alerts & Delays)'
+	]}
+/>
+
+<NudgeCallout kind="situate" id="trends-start" heading="What is a snapshot?">
+	Each run of <code class="font-mono">refresh_pipeline.py</code> (offline or <code>--fetch</code>) writes processed datasets to <code class="font-mono">data/snapshots/<YYYY-MM>/</code> or <code class="font-mono">__<timestamp></code>. The change log (<code class="font-mono">data/processed/change_log.json</code>) computes deltas <strong>only on stable IDs</strong> (<code class="font-mono">project_id</code>/<code class="font-mono">record_id</code>). This page aggregates those archives at prerender time.
+</NudgeCallout>
 
 <div class="space-y-6">
 	<!-- Header / cadence banner -->
@@ -135,22 +161,16 @@
 		</div>
 
 		<!-- Cadence disclosure (acceptance: granularity matches available snapshots, documented on-page) -->
-		<div class="mt-4 rounded border border-slate-200 bg-amber-50/50 p-3 text-xs text-slate-700">
-			<strong class="font-semibold">Timeline granularity.</strong>
+		<NudgeCallout kind="interpret" id="trends-cadence" heading="Timeline granularity">
 			The archive currently holds <strong>{points.length}</strong> snapshot point{points.length === 1 ? '' : 's'}
-			(cadence: monthly <code class="bg-white px-1 rounded">&lt;YYYY-MM&gt;</code>, intra-month re-runs
-			<code class="bg-white px-1 rounded">__&lt;timestamp&gt;</code>):
+			(cadence: monthly <code class="bg-white px-1 rounded"><YYYY-MM></code>, intra-month re-runs
+			<code class="bg-white px-1 rounded">__<timestamp></code>):
 			{points.map((p) => p.asOfLabel).join('  •  ')}.
 			{#if points.length < 3}
-				<span class="text-slate-600">
-					With fewer than three points, series read as before/after comparisons rather than curves;
-					they become monthly curves as future <code class="bg-white px-1 rounded">refresh_pipeline.py</code> runs accumulate.
-				</span>
+				With fewer than three points, series read as before/after comparisons rather than curves;
+				they become monthly curves as future <code class="bg-white px-1 rounded">refresh_pipeline.py</code> runs accumulate.
 			{/if}
-			<span class="block mt-1 text-slate-600">
-
-			</span>
-		</div>
+		</NudgeCallout>
 	</div>
 
 	<!-- 1. Cumulative released vs approved -->
@@ -160,13 +180,9 @@
 			Cumulative totals recomputed from each archived <code>kiifb_projects.json</code>. As-of dates printed at ticks.
 		</p>
 		{#if fundsFlat && points.length >= 2}
-			<p class="mt-2 text-xs text-amber-800 bg-amber-50 border border-amber-200 rounded px-2 py-1.5">
-				<strong>Honest disclosure:</strong> released funds are identical across the two current
-				snapshot points because both were regenerated in <em>offline mode</em> from the pinned
-				2026-10-16 baselines (T083's matching tiers changed geography, never financial values).
-				The line becomes a real curve from the first <code>refresh_pipeline.py --fetch</code> snapshot
-				once a DS010 financial change is detected.
-			</p>
+			<NudgeCallout kind="interpret" id="trends-flat" heading="Honest disclosure: flat lines are not real trends">
+				Released funds are identical across the two current snapshot points because both were regenerated in <em>offline mode</em> from the pinned 2026-10-16 baselines (T083's matching tiers changed geography, never financial values). The line becomes a real curve from the first <code class="font-mono">refresh_pipeline.py --fetch</code> snapshot once a DS010 financial change is detected.
+			</NudgeCallout>
 		{/if}
 		<div class="mt-3 grid md:grid-cols-2 gap-4">
 			<svg viewBox="0 0 {W} {H}" class="w-full" role="img" aria-label="Released funds over snapshots">
@@ -235,11 +251,11 @@
 				</p>
 			</div>
 		</div>
-		<p class="mt-2 text-xs text-rose-700 bg-rose-50 border border-rose-200 rounded px-2 py-1.5">
-			<strong>GAP-001 coverage limitation:</strong> district-attributed series only include
+		<NudgeCallout kind="interpret" id="trends-gap001" heading="GAP-001 coverage limitation">
+			District-attributed series only include
 			{coverage.curr} / {coverage.total} register records ({pct(((coverage.curr ?? 0) / (coverage.total || 1)) * 100)});
 			unattributed records are excluded from concentration maths, not plotted at zero.
-		</p>
+		</NudgeCallout>
 	</section>
 
 	<!-- 3. Status-migration waterfall -->
@@ -249,13 +265,12 @@
 			Transitions observed between the two most recent snapshot runs, from the deterministic change log.
 		</p>
 		{#if migrationGroups.length === 0 || migrations.length === 0}
-			<p class="mt-3 text-xs text-slate-700 bg-slate-50 border border-slate-200 rounded px-2 py-1.5">
-				<strong>No status migrations recorded in this interval.</strong>
+			<NudgeCallout kind="interpret" id="trends-migrations" heading="No migrations in this interval">
 				Both current snapshots contain identical <code>normalised_status</code> fields per stable
 				<code>project_id</code> (the only recorded change event was geography enrichment, T083).
 				Waterfall structure is live — migrations appear here automatically once a DS010
 				status change is snapshotted.
-			</p>
+			</NudgeCallout>
 		{:else}
 			<div class="mt-3 space-y-2">
 				{#each migrationGroups as [key, count] (key)}
@@ -307,6 +322,9 @@
 			Share of district-attributed released funds held by the top-3 districts per snapshot,
 			and released-crore bars for the top districts.
 		</p>
+		<NudgeCallout kind="interpret" id="trends-concentration" heading="Conflation disclosure: jump is coverage, not redistribution">
+			The concentration jump between the current points is driven by <em>coverage expansion</em> (T083 newly attributed ₹35,182 Cr of umbrella sanctions, notably the land-acquisition pool skewing Kannur/Palakkad), not by real redistribution. Concentration becomes a comparable series only after a snapshot pair with identical district coverage.
+		</NudgeCallout>
 		<div class="mt-3 flex flex-wrap gap-4">
 			{#each points as p (p.run)}
 				<div class="border border-slate-200 rounded p-3 bg-slate-50">
@@ -318,12 +336,6 @@
 				</div>
 			{/each}
 		</div>
-		<p class="mt-2 text-xs text-amber-800 bg-amber-50 border border-amber-200 rounded px-2 py-1.5">
-			<strong>Conflation disclosure:</strong> the concentration jump between the current points is
-			driven by <em>coverage expansion</em> (T083 newly attributed ₹35,182 Cr of umbrella sanctions,
-			notably the land-acquisition pool skewing Kannur/Palakkad), not by real redistribution.
-			Concentration becomes a comparable series only after a snapshot pair with identical district coverage.
-		</p>
 		<div class="mt-4 overflow-x-auto">
 			<table class="w-full text-xs">
 				<thead>
@@ -363,10 +375,10 @@
 	<section class="bg-white rounded-lg border border-slate-200 p-6 shadow-sm">
 		<h3 class="text-lg font-bold text-slate-900">How this page is built</h3>
 		<ol class="mt-2 text-xs text-slate-700 space-y-1.5 list-decimal list-inside">
-			<li><code>scripts/refresh_pipeline.py</code> extracts processed datasets (offline pinned / --fetch live crawls).</li>
-			<li><code>scripts/diff_snapshots.py</code> (T082) snapshots processed state into <code>data/snapshots/&lt;run&gt;/</code>. Runs are never modified — reuse instead of overwrite.</li>
+			<li><code>scripts/refresh_pipeline.py</code> extracts processed datasets (offline pinned / <code>--fetch</code> live crawls).</li>
+			<li><code>scripts/diff_snapshots.py</code> (T082) snapshots processed state into <code>data/snapshots/<run>/</code>. Runs are never modified — reuse instead of overwrite.</li>
 			<li>The change log (<code>data/processed/change_log.json</code>) records deltas computed only via stable IDs (<code>project_id</code>/<code>record_id</code>), documented in <code>docs/matching-rules.md</code> §3.4.</li>
-			<li>This route aggregates snapshot archives + change log at prerender time. Gap-001 coverage, granularity and flat-line disclosures are stamped wherever figures could mislead.</li>
+			<li>This route aggregates snapshot archives + change log at prerender time. GAP-001 coverage, granularity and flat-line disclosures are stamped wherever figures could mislead.</li>
 		</ol>
 	</section>
 </div>

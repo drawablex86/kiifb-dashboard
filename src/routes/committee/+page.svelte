@@ -1,4 +1,9 @@
 <script lang="ts">
+	import PageIntro from '$lib/components/PageIntro.svelte';
+	import NudgeCallout from '$lib/components/NudgeCallout.svelte';
+	import PlainBadge from '$lib/components/PlainBadge.svelte';
+	import GlossaryTerm from '$lib/components/GlossaryTerm.svelte';
+
 	let { data } = $props();
 
 	// Tab state
@@ -21,83 +26,67 @@
 	<title>Scrutiny of the Review Committee — Legality, Lapses & Member Records</title>
 </svelte:head>
 
+<PageIntro
+	title="The Committee's Claims"
+	question="Was the October 2026 Expert Committee itself above board — and how do its findings hold up?"
+	lead="Forensic examination of the Committee's legal constitution, procedural and positional lapses by the Government, member dossiers exposing conflicts of interest, and the fiscal origins of the report. Five tabs: Constitution & Legality, Procedural Lapses, Member Dossiers & Conflicts, Report Origins & Timing, Opposing Pillars & Federal Squeeze. Cross-links to /genesis for the opposing pillar."
+	shows={[
+		'Constituting order G.O.(P) No.80/2026/FIN — executive advisory, no statutory inquiry powers',
+		'4 documented procedural lapses: ToR bias, sub judice overreach, appointment conflicts, assembly bypass',
+		'5 member dossiers with career trajectories, positional biases, and specific conflicts (Tarun Bajaj MoF Art.293; Shyam Srinivasan Federal Bank KIFML equity)',
+		'Report origins: July 2026 fiscal squeeze convergence, epistemic character as advisory opinion',
+		'7-dimension opposing pillars matrix + federalism squeeze (Art.293 deductions, Union off-budget double standards, SC Constitution Bench)'
+	]}
+	doesnt={[
+		'Project-level search & filters (see Projects)',
+		'Portfolio funnel drill-down (see Where the Money Goes)',
+		'Debt amortisation schedule (see Debt & Repayments)',
+		'District map (see Districts & Map)',
+		"KIIFB's own story: statutory evolution, architects, Keynesian premise (see Background: What is KIIFB)"
+	]}
+/>
+
+<NudgeCallout kind="interpret" id="comm-start" heading="This is the scrutiny layer">
+	This page treats the October 2026 Committee as an <strong>analytical layer (L2)</strong> — not the record base. Its findings are claims to be checked against the record. The "opposing pillar" (KIIFB's own architecture, Keynesian premise, architects) lives at <a href="/genesis" class="underline">Background: What is KIIFB</a>. Cross-links between both pages maintain the dialectic.
+</NudgeCallout>
+
 <div class="space-y-6">
-	<!-- Page Header Banner -->
-	<div class="bg-white rounded-lg border border-slate-200 p-6 shadow-sm">
-		<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
-			<div>
-				<div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-rose-50 text-rose-800 border border-rose-200 mb-2">
-					<span>Pillar 1: Institutional Scrutiny</span>
-					<span>•</span>
-					<span>G.O.(P) No.80/2026/FIN</span>
-					<span>•</span>
-					<span>October 2026 Report</span>
-				</div>
-				<h2 class="text-2xl font-bold tracking-tight text-slate-900">
-					Scrutiny of the Expert Review Committee
-				</h2>
-				<p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl">
-					Forensic examination of the Committee’s legal constitution, procedural and positional lapses by the Government, member dossiers exposing conflicts of interest, and the fiscal origins of the report.
-				</p>
-			</div>
-
-			<!-- Quick Summary Counters -->
-			<div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-left">
-				<div class="bg-slate-50 border border-slate-200/80 rounded p-3">
-					<div class="text-2xs text-slate-500 uppercase font-semibold">Legal Category</div>
-					<div class="text-sm font-bold text-slate-900">Executive Advisory</div>
-					<div class="text-3xs text-rose-600">Non-Statutory (No Inquiry Act)</div>
-				</div>
-				<div class="bg-slate-50 border border-slate-200/80 rounded p-3">
-					<div class="text-2xs text-slate-500 uppercase font-semibold">Procedural Lapses</div>
-					<div class="text-sm font-bold text-rose-700">4 Documented</div>
-					<div class="text-3xs text-slate-500">ToR Bias & Conflicts</div>
-				</div>
-				<div class="bg-slate-50 border border-slate-200/80 rounded p-3 col-span-2 sm:col-span-1">
-					<div class="text-2xs text-slate-500 uppercase font-semibold">Sub Judice Overreach</div>
-					<div class="text-sm font-bold text-indigo-700">Article 293</div>
-					<div class="text-3xs text-slate-500">SC Constitution Bench</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Navigation Tabs -->
-		<div class="flex items-center space-x-2 border-b border-slate-200 mt-6 -mb-6 overflow-x-auto">
-			<button
-				onclick={() => (activeTab = 'legality')}
-				class="px-4 py-2 text-xs sm:text-sm font-semibold border-b-2 transition whitespace-nowrap {activeTab === 'legality' ? 'border-rose-600 text-rose-700' : 'border-transparent text-slate-500 hover:text-slate-800'}"
-			>
-				1. Constitution & Legality
-			</button>
-			<button
-				onclick={() => (activeTab = 'lapses')}
-				class="px-4 py-2 text-xs sm:text-sm font-semibold border-b-2 transition whitespace-nowrap {activeTab === 'lapses' ? 'border-rose-600 text-rose-700' : 'border-transparent text-slate-500 hover:text-slate-800'}"
-			>
-				2. Procedural Lapses
-			</button>
-			<button
-				onclick={() => (activeTab = 'members')}
-				class="px-4 py-2 text-xs sm:text-sm font-semibold border-b-2 transition whitespace-nowrap {activeTab === 'members' ? 'border-rose-600 text-rose-700' : 'border-transparent text-slate-500 hover:text-slate-800'}"
-			>
-				3. Member Dossiers & Conflicts
-			</button>
-			<button
-				onclick={() => (activeTab = 'origins')}
-				class="px-4 py-2 text-xs sm:text-sm font-semibold border-b-2 transition whitespace-nowrap {activeTab === 'origins' ? 'border-rose-600 text-rose-700' : 'border-transparent text-slate-500 hover:text-slate-800'}"
-			>
-				4. Report Origins & Timing
-			</button>
-			<button
-				onclick={() => (activeTab = 'dialectic')}
-				class="px-4 py-2 text-xs sm:text-sm font-semibold border-b-2 transition whitespace-nowrap {activeTab === 'dialectic' ? 'border-rose-600 text-rose-700' : 'border-transparent text-slate-500 hover:text-slate-800'}"
-			>
-				5. Opposing Pillars & Federal Squeeze
-			</button>
-		</div>
+	<!-- Navigation Tabs -->
+	<div class="flex items-center space-x-2 border-b border-slate-200 mb-6 overflow-x-auto">
+		<button
+			onclick={() => (activeTab = 'legality')}
+			class="px-4 py-2 text-xs sm:text-sm font-semibold border-b-2 transition whitespace-nowrap {activeTab === 'legality' ? 'border-rose-600 text-rose-700' : 'border-transparent text-slate-500 hover:text-slate-800'}"
+		>
+			1. Constitution & Legality
+		</button>
+		<button
+			onclick={() => (activeTab = 'lapses')}
+			class="px-4 py-2 text-xs sm:text-sm font-semibold border-b-2 transition whitespace-nowrap {activeTab === 'lapses' ? 'border-rose-600 text-rose-700' : 'border-transparent text-slate-500 hover:text-slate-800'}"
+		>
+			2. Procedural Lapses
+		</button>
+		<button
+			onclick={() => (activeTab = 'members')}
+			class="px-4 py-2 text-xs sm:text-sm font-semibold border-b-2 transition whitespace-nowrap {activeTab === 'members' ? 'border-rose-600 text-rose-700' : 'border-transparent text-slate-500 hover:text-slate-800'}"
+		>
+			3. Member Dossiers & Conflicts
+		</button>
+		<button
+			onclick={() => (activeTab = 'origins')}
+			class="px-4 py-2 text-xs sm:text-sm font-semibold border-b-2 transition whitespace-nowrap {activeTab === 'origins' ? 'border-rose-600 text-rose-700' : 'border-transparent text-slate-500 hover:text-slate-800'}"
+		>
+			4. Report Origins & Timing
+		</button>
+		<button
+			onclick={() => (activeTab = 'dialectic')}
+			class="px-4 py-2 text-xs sm:text-sm font-semibold border-b-2 transition whitespace-nowrap {activeTab === 'dialectic' ? 'border-rose-600 text-rose-700' : 'border-transparent text-slate-500 hover:text-slate-800'}"
+		>
+			5. Opposing Pillars & Federal Squeeze
+		</button>
 	</div>
 
 	<!-- Cross-Link Perspective Callout -->
-	<div class="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200/80 rounded-lg p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs sm:text-sm">
+	<div class="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200/80 rounded-lg p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs sm:text-sm mb-6">
 		<div>
 			<span class="font-bold text-blue-900">Explore the Opposing Pillar:</span>
 			<span class="text-blue-800 ml-1">Understand the Keynesian theoretical premise, revenue hypothecation, and architects of KIIFB.</span>
@@ -114,15 +103,9 @@
 	{#if activeTab === 'legality'}
 		<div class="space-y-6">
 			<!-- Critical Legal Alert -->
-			<div class="bg-rose-50/70 border border-rose-200 rounded-lg p-5 text-slate-800">
-				<h3 class="text-base font-bold text-rose-900 mb-2 flex items-center gap-2">
-					<span class="w-2.5 h-2.5 rounded-full bg-rose-600"></span>
-					The Jurisdictional Paradox: Executive Fiat vs Statutory Law
-				</h3>
-				<p class="text-xs sm:text-sm text-rose-950 leading-relaxed">
-					{legal.jurisdictional_paradox}
-				</p>
-			</div>
+			<NudgeCallout kind="interpret" id="comm-legality" heading="The Jurisdictional Paradox: Executive Fiat vs Statutory Law">
+				{legal.jurisdictional_paradox}
+			</NudgeCallout>
 
 			<!-- Legal Order Details Card -->
 			<div class="bg-white rounded-lg border border-slate-200 p-6 shadow-sm">
@@ -147,7 +130,7 @@
 				<div class="mt-6 pt-4 border-t border-slate-100">
 					<h4 class="text-xs uppercase font-semibold text-slate-500 mb-2">Executive Order Terms of Reference (ToR) Scope</h4>
 					<p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
-						{legal.mandate_summary} The Committee was tasked with reviewing KIIFB’s deviation from the 2014 SBI Caps model, resource mobilisation costs (including Masala Bonds), compliance with Constitutional provisions (Articles 266, 293, and Entry 37 of List I), regional distribution, establishment costs, and recommending a future restructuring path.
+						{legal.mandate_summary} The Committee was tasked with reviewing KIIFB's deviation from the 2014 SBI Caps model, resource mobilisation costs (including Masala Bonds), compliance with Constitutional provisions (Articles 266, 293, and Entry 37 of List I), regional distribution, establishment costs, and recommending a future restructuring path.
 					</p>
 				</div>
 			</div>
@@ -156,6 +139,10 @@
 	<!-- TAB 2: PROCEDURAL & POSITIONAL LAPSES -->
 	{:else if activeTab === 'lapses'}
 		<div class="space-y-6">
+			<NudgeCallout kind="situate" id="comm-lapses" heading="Four structural lapses">
+				These are not minor procedural errors — they are structural choices by the Government that shaped the Committee's conclusions before it began work. Each lapse is sourced to an official record.
+			</NudgeCallout>
+
 			<div class="bg-white rounded-lg border border-slate-200 p-6 shadow-sm">
 				<h3 class="text-lg font-bold text-slate-900 mb-2">
 					Documented Procedural and Positional Lapses
@@ -172,13 +159,9 @@
 									<span class="font-mono text-xs font-bold px-2 py-0.5 rounded {lapse.severity === 'critical' ? 'bg-rose-100 text-rose-800' : 'bg-amber-100 text-amber-800'}">
 										{lapse.lapse_id}
 									</span>
-									<span class="text-xs font-semibold uppercase text-slate-500 tracking-wide">
-										{lapse.category}
-									</span>
+									<PlainBadge label={lapse.category} />
 								</div>
-								<span class="text-3xs font-mono uppercase px-2 py-0.5 rounded border {lapse.severity === 'critical' ? 'bg-rose-100 border-rose-300 text-rose-800' : 'bg-amber-100 border-amber-300 text-amber-800'}">
-									Severity: {lapse.severity}
-								</span>
+								<PlainBadge label={lapse.severity} />
 							</div>
 
 							<h4 class="text-base font-bold text-slate-900 mb-2">
@@ -205,59 +188,55 @@
 	<!-- TAB 3: MEMBER DOSSIERS & CONFLICTS -->
 	{:else if activeTab === 'members'}
 		<div class="space-y-6">
-			<!-- Explanatory note -->
-			<div class="bg-white rounded-lg border border-slate-200 p-6 shadow-sm">
-				<h3 class="text-lg font-bold text-slate-900 mb-2">
-					Member Dossiers & Documented Conflicts of Interest
-				</h3>
-				<p class="text-xs sm:text-sm text-slate-600 mb-6">
-					Rigorous analysis of each panel member's career trajectory, institutional worldview, and specific positional conflicts—demonstrating how personal records grounded the conclusions of the report.
-				</p>
+			<NudgeCallout kind="situate" id="comm-members" heading="Positional bias is not personal bias">
+				Each member's career trajectory and institutional worldview grounded the Committee's conclusions. Conflicts are documented from public records (MoF Art.293 deduction policy; Federal Bank KIFML equity in Table 5.6). This is forensic transparency, not ad hominem.
+			</NudgeCallout>
 
-				<!-- Members Grid -->
-				<div class="space-y-6">
-					{#each members as m}
-						<div class="border border-slate-200 rounded-lg p-5 bg-white shadow-sm hover:border-slate-300 transition">
-							<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-3 mb-4">
-								<div>
-									<div class="flex items-center gap-2">
-										<span class="font-mono text-xs font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">{m.member_id}</span>
-										<h4 class="text-lg font-bold text-slate-900">{m.name}</h4>
-										<span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-700">{m.designation}</span>
-									</div>
-									<div class="text-xs text-slate-500 mt-1">{m.service_cadre}</div>
+			<!-- Members Grid -->
+			<div class="space-y-6">
+				{#each members as m}
+					<div class="border border-slate-200 rounded-lg p-5 bg-white shadow-sm hover:border-slate-300 transition">
+						<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-3 mb-4">
+							<div>
+								<div class="flex items-center gap-2">
+									<span class="font-mono text-xs font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded">{m.member_id}</span>
+									<h4 class="text-lg font-bold text-slate-900">{m.name}</h4>
+									<PlainBadge label="committee_finding" />
 								</div>
-								<div class="text-2xs font-semibold uppercase tracking-wider text-slate-500 bg-slate-50 px-2.5 py-1 rounded border border-slate-200/80">
-									Expertise: {m.primary_expertise.split(',')[0]}
-								</div>
+								<div class="text-xs text-slate-500 mt-1">{m.service_cadre}</div>
 							</div>
-
-							<!-- Career Background -->
-							<div class="mb-4 text-xs sm:text-sm text-slate-700">
-								<span class="font-semibold text-slate-900">Career Trajectory:</span> {m.career_background}
-							</div>
-
-							<!-- Positional Bias -->
-							<div class="mb-4 text-xs sm:text-sm text-slate-700 bg-slate-50 p-3 rounded border border-slate-100">
-								<span class="font-semibold text-slate-900">Documented Positional Bias:</span> {m.positional_bias}
-							</div>
-
-							<!-- Conflict of Interest Callout -->
-							<div class="rounded-lg p-3.5 text-xs sm:text-sm {m.documented_conflict.includes('CONFLICT') ? 'bg-rose-50 border border-rose-200 text-rose-950' : 'bg-slate-50 border border-slate-200 text-slate-700'}">
-								<span class="font-bold {m.documented_conflict.includes('CONFLICT') ? 'text-rose-800' : 'text-slate-800'}">Positional Record & Conflict Analysis:</span>
-								<div class="mt-1 leading-relaxed">{m.documented_conflict}</div>
+							<div class="text-2xs font-semibold uppercase tracking-wider text-slate-500 bg-slate-50 px-2.5 py-1 rounded border border-slate-200/80">
+								Expertise: {m.primary_expertise.split(',')[0]}
 							</div>
 						</div>
-					{/each}
-				</div>
 
-				<!-- Advisory Apparatus Behind the Scenes -->
+						<!-- Career Background -->
+						<div class="mb-4 text-xs sm:text-sm text-slate-700">
+							<span class="font-semibold text-slate-900">Career Trajectory:</span> {m.career_background}
+						</div>
+
+						<!-- Positional Bias -->
+						<div class="mb-4 text-xs sm:text-sm text-slate-700 bg-slate-50 p-3 rounded border border-slate-100">
+							<span class="font-semibold text-slate-900">Documented Positional Bias:</span> {m.positional_bias}
+						</div>
+
+						<!-- Conflict of Interest Callout -->
+						<div class="rounded-lg p-3.5 text-xs sm:text-sm {m.documented_conflict.includes('CONFLICT') ? 'bg-rose-50 border border-rose-200 text-rose-950' : 'bg-slate-50 border border-slate-200 text-slate-700'}">
+							<span class="font-bold {m.documented_conflict.includes('CONFLICT') ? 'text-rose-800' : 'text-slate-800'}">Positional Record & Conflict Analysis:</span>
+							<div class="mt-1 leading-relaxed">{m.documented_conflict}</div>
+						</div>
+					</div>
+				{/each}
+			</div>
+
+			<!-- Advisory Apparatus Behind the Scenes -->
+			<div class="bg-white rounded-lg border border-slate-200 p-6 shadow-sm mt-6">
 				<div class="mt-8 pt-6 border-t border-slate-200">
 					<h4 class="text-base font-bold text-slate-900 mb-3">
 						The Advisory Secretariat & External Mentorship
 					</h4>
 					<p class="text-xs text-slate-600 mb-4">
-						The Committee’s Foreword explicitly acknowledges external guidance from key architects of past restructuring committees:
+						The Committee's Foreword explicitly acknowledges external guidance from key architects of past restructuring committees:
 					</p>
 
 					<div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs sm:text-sm">
@@ -281,6 +260,10 @@
 	<!-- TAB 4: ORIGINS, TIMING & NATURE OF REPORT -->
 	{:else if activeTab === 'origins'}
 		<div class="space-y-6">
+			<NudgeCallout kind="interpret" id="comm-origins" heading="Why July 2026?">
+				The Committee was constituted in July 2026 amid a converging fiscal squeeze: Article 293 deductions mounting, Union off-budget double standards visible, and state elections approaching. The report's epistemic character is an advisory opinion — not a statutory inquiry finding.
+			</NudgeCallout>
+
 			<div class="bg-white rounded-lg border border-slate-200 p-6 shadow-sm">
 				<h3 class="text-lg font-bold text-slate-900 mb-2">
 					Origins, Political Timing & Nature of the Report
@@ -311,7 +294,7 @@
 				<div class="border border-slate-200 rounded-lg p-5 bg-white space-y-3">
 					<div class="flex items-center justify-between">
 						<span class="text-xs font-bold uppercase text-slate-500">Document Genre</span>
-						<span class="text-xs font-semibold px-2 py-0.5 bg-slate-100 rounded text-slate-800">{origins.nature_of_the_report.genre}</span>
+						<PlainBadge label="committee_finding" />
 					</div>
 					<h4 class="text-base font-bold text-slate-900">
 						Epistemic Character & Political Utility
@@ -376,7 +359,7 @@
 				<!-- Article 293 Deductions Card -->
 				<div class="bg-slate-50 rounded-lg border border-slate-200 p-5">
 					<div class="flex items-center justify-between mb-2">
-						<span class="text-xs font-bold uppercase text-rose-800 bg-rose-100 px-2 py-0.5 rounded">Article 293(3) Net Borrowing Ceiling Penalty</span>
+						<PlainBadge label="contested_interpretation" />
 						<span class="font-mono font-bold text-rose-700 text-base">{formatCrore(federalism.article_293_weaponisation?.total_deduction_crore || 25932.55)}</span>
 					</div>
 					<h4 class="text-base font-bold text-slate-900 mb-2">
@@ -423,8 +406,8 @@
 				<!-- Supreme Court Constitution Bench Case -->
 				<div class="bg-indigo-50/50 rounded-lg border border-indigo-200 p-5">
 					<div class="flex items-center justify-between mb-2">
-						<span class="text-xs font-bold uppercase text-indigo-900 bg-indigo-100 px-2 py-0.5 rounded">Supreme Court of India (Article 131)</span>
-						<span class="text-xs font-semibold text-indigo-800">5-Judge Constitution Bench</span>
+						<PlainBadge label="official_record" />
+						<PlainBadge label="committee_finding" />
 					</div>
 					<h4 class="text-base font-bold text-slate-900 mb-2">
 						{federalism.supreme_court_constitution_bench?.title}
@@ -446,4 +429,9 @@
 			</div>
 		</div>
 	{/if}
+
+	<!-- Provenance banner -->
+	<div class="bg-slate-100 border border-slate-200 rounded-lg p-4 text-xs text-slate-600 mt-6">
+		<span class="font-bold text-slate-900">Provenance:</span> All datasets from DS001 (Committee Report Oct 2026) + court records (SC Original Suit No. 1/2024) + public member records. Cryptographic hashes in <code class="font-mono">data/manifest.json</code>. Unit tests in <code class="font-mono">tests/test_committee_and_genesis.py</code> (12 tests, 41 total). This page is an <strong>analytical layer (L2)</strong> — the opposing pillar is at <a href="/genesis" class="underline">Background: What is KIIFB</a>.
+	</div>
 </div>
