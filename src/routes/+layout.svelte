@@ -99,7 +99,14 @@
 								aria-current={item.href === currentPath ? 'page' : undefined}
 								class="block rounded-md px-2.5 py-2 hover:bg-slate-100 {item.href === currentPath ? 'bg-slate-50' : ''}"
 							>
-								<span class="block text-sm font-medium text-slate-900">{item.label}</span>
+								<div class="flex items-center justify-between">
+									<span class="block text-sm font-medium text-slate-900">{item.label}</span>
+									{#if item.badge}
+										<span class="text-[10px] font-semibold px-1.5 py-0.5 rounded border bg-slate-100 text-slate-600 border-slate-200 whitespace-nowrap flex-shrink-0">
+											{item.badge}
+										</span>
+									{/if}
+								</div>
 								<span class="block text-xs text-muted-foreground mt-0.5">{item.description}</span>
 							</a>
 						{/each}

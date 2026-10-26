@@ -46,6 +46,12 @@
 	]}
 />
 
+<div class="mb-4 inline-flex items-center gap-2">
+	<span class="text-xs font-semibold px-2 py-0.5 rounded border bg-amber-50 text-amber-800 border-amber-200">
+		Analytical layer · Oct 2026 Expert Committee
+	</span>
+</div>
+
 <NudgeCallout kind="interpret" id="comm-start" heading="This is the scrutiny layer">
 	This page treats the October 2026 Committee as an <strong>analytical layer (L2)</strong> — not the record base. Its findings are claims to be checked against the record. The "opposing pillar" (KIIFB's own architecture, Keynesian premise, architects) lives at <a href="/genesis" class="underline">Background: What is KIIFB</a>. Cross-links between both pages maintain the dialectic.
 </NudgeCallout>

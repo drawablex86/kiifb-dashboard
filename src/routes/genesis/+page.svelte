@@ -47,6 +47,12 @@
 	]}
 />
 
+<div class="mb-4 inline-flex items-center gap-2">
+	<span class="text-xs font-semibold px-2 py-0.5 rounded border bg-emerald-50 text-emerald-800 border-emerald-200">
+		KIIFB story
+	</span>
+</div>
+
 <NudgeCallout kind="situate" id="gen-start" heading="KIIFB-first, analyses-as-layers">
 	This is the <strong>L1 KIIFB story</strong> — the subject matter. The October 2026 Committee is an <strong>analytical layer (L2)</strong> scrutinising KIIFB. Cross-links between both pages maintain the dialectic: the Committee's fiscal orthodoxy vs. KIIFB's Keynesian developmentalism.
 </NudgeCallout>
