@@ -2,6 +2,12 @@
 	import SankeyFlow from '$lib/components/SankeyFlow.svelte';
 	import ProjectTimeline from '$lib/components/ProjectTimeline.svelte';
 	import FundsProgressScatter from '$lib/components/FundsProgressScatter.svelte';
+	import PageIntro from '$lib/components/PageIntro.svelte';
+	import NudgeCallout from '$lib/components/NudgeCallout.svelte';
+	import ChartFrame from '$lib/components/ChartFrame.svelte';
+	import PlainBadge from '$lib/components/PlainBadge.svelte';
+	import ResultCount from '$lib/components/ResultCount.svelte';
+	import GlossaryTerm from '$lib/components/GlossaryTerm.svelte';
 
 	let { data } = $props();
 
@@ -117,304 +123,365 @@
 	<title>Project Explorer — KIIFB Accountability Dashboard</title>
 </svelte:head>
 
-<div class="space-y-6">
-	<!-- Page Header / Metric Cards -->
-	<div class="bg-white rounded-lg border border-slate-200 p-6 shadow-sm">
-		<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
-			<div>
-				<div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-blue-50 text-blue-800 border border-blue-200 mb-2">
-					<span>Milestone 2 Explorer</span>
-					<span>•</span>
-					<span>Official Disclosed Delivery</span>
-				</div>
-				<h2 class="text-2xl font-bold tracking-tight text-slate-900">
-					Official Project & Delivery Explorer
-				</h2>
-				<p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl">
-					Exploration of 1,408 KIIFB project sanctions joined with 969 KITE public school institutions. Distinguishes umbrella project sanctions from delivery institutions.
-				</p>
+<PageIntro
+	title="Projects"
+	question="What projects has KIIFB sanctioned, and how far have they come?"
+	lead="Search 2,377 records (1,408 KIIFB project sanctions + 969 KITE school campuses) joined with Kerala Kanakku delivery data. Filter by sector, district, status, and anomaly flags. Every record carries its source locator and evidence badge."
+	shows={[
+		'Searchable table with 7 filters (keyword, sector, district, flag, status, entity type)',
+		'Sankey flow of portfolio through Kanakku lifecycle stages (toggle)',
+		'Funds vs. Progress scatter with divergence zone and anomaly markers (toggle)',
+		'Inspection drawer with milestone ladder, financials, provenance, and Kanakku matches',
+		'CSV/JSON exports + change log download'
+	]}
+	doesnt={[
+		'Portfolio funnel drill-down (see Where the Money Goes)',
+		'District map with geo-tagged projects (see Districts & Map)',
+		'Debt amortisation detail (see Debt & Repayments)',
+		'Change-over-time trends (see Change Over Time)'
+	]}
+/>
+
+<NudgeCallout kind="situate" id="projects-start" heading="Scale check">
+	2,377 records = 1,408 KIIFB project sanctions (DS010) + 969 KITE school campuses (DS021), enriched with 3,622 Kanakku PWD work packages (DS030). Approved outlay sums to ₹81,161 Cr across all records.
+</NudgeCallout>
+
+<!-- Page Header / Metric Cards -->
+<div class="bg-white rounded-lg border border-slate-200 p-6 shadow-sm mb-6">
+	<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+		<div>
+			<div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-blue-50 text-blue-800 border border-blue-200 mb-2">
+				<span>Record Base (L0)</span>
+				<span>•</span>
+				<span>Official Disclosed Delivery</span>
 			</div>
-			<div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-left">
-				<div class="bg-slate-50 border border-slate-200/80 rounded p-3">
-					<div class="text-2xs text-slate-500 uppercase font-semibold">Total Records</div>
-					<div class="text-lg font-bold text-slate-900 tabular-nums">{data.summary.total_records.toLocaleString('en-IN')}</div>
-				</div>
-				<div class="bg-slate-50 border border-slate-200/80 rounded p-3">
-					<div class="text-2xs text-slate-500 uppercase font-semibold">Project Sanctions (DS010)</div>
-					<div class="text-lg font-bold text-slate-900 tabular-nums">{data.summary.kiifb_project_sanctions.toLocaleString('en-IN')}</div>
-				</div>
-				<div class="bg-slate-50 border border-slate-200/80 rounded p-3 col-span-2 sm:col-span-1">
-					<div class="text-2xs text-slate-500 uppercase font-semibold">KITE Schools (DS021)</div>
-					<div class="text-lg font-bold text-emerald-800 tabular-nums">{data.summary.kite_school_institutions.toLocaleString('en-IN')}</div>
-				</div>
+			<h2 class="text-2xl font-bold tracking-tight text-slate-900">
+				Official Project & Delivery Explorer
+			</h2>
+			<p class="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl">
+				Exploration of 1,408 KIIFB project sanctions joined with 969 KITE public school institutions. Distinguishes umbrella project sanctions from delivery institutions.
+			</p>
+		</div>
+		<div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-left">
+			<div class="bg-slate-50 border border-slate-200/80 rounded p-3">
+				<div class="text-2xs text-slate-500 uppercase font-semibold">Total Records</div>
+				<div class="text-lg font-bold text-slate-900 tabular-nums">{data.summary.total_records.toLocaleString('en-IN')}</div>
+			</div>
+			<div class="bg-slate-50 border border-slate-200/80 rounded p-3">
+				<div class="text-2xs text-slate-500 uppercase font-semibold">Project Sanctions (DS010)</div>
+				<div class="text-lg font-bold text-slate-900 tabular-nums">{data.summary.kiifb_project_sanctions.toLocaleString('en-IN')}</div>
+			</div>
+			<div class="bg-slate-50 border border-slate-200/80 rounded p-3 col-span-2 sm:col-span-1">
+				<div class="text-2xs text-slate-500 uppercase font-semibold">KITE Schools (DS021)</div>
+				<div class="text-lg font-bold text-emerald-800 tabular-nums">{data.summary.kite_school_institutions.toLocaleString('en-IN')}</div>
 			</div>
 		</div>
 	</div>
+</div>
 
-	<!-- Filter Controls -->
-	<div class="bg-white rounded-lg border border-slate-200 p-4 shadow-sm space-y-3">
-		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-3">
-			<div class="lg:col-span-2">
-				<label for="search" class="block text-2xs font-semibold uppercase text-slate-500 mb-1">Search Keyword / ID</label>
-				<input 
-					id="search"
-					type="text" 
-					bind:value={searchQuery}
-					oninput={() => currentPage = 1}
-					placeholder="Search project, school, constituency, SPV..." 
-					class="w-full text-xs px-3 py-2 border border-slate-300 rounded focus:ring-1 focus:ring-slate-900 focus:outline-none"
-				/>
-			</div>
-			<div>
-				<label for="district" class="block text-2xs font-semibold uppercase text-slate-500 mb-1">District (Enriched)</label>
-				<select 
-					id="district"
-					bind:value={selectedDistrict}
-					onchange={() => currentPage = 1}
-					class="w-full text-xs px-3 py-2 border border-slate-300 rounded focus:ring-1 focus:ring-slate-900 focus:outline-none bg-white"
-				>
-					{#each districts as dist}
-						<option value={dist}>{dist}</option>
-					{/each}
-				</select>
-			</div>
-			<div>
-				<label for="flag" class="block text-2xs font-semibold uppercase text-slate-500 mb-1">Rule Flags (Kanakku)</label>
-				<select 
-					id="flag"
-					bind:value={selectedFlag}
-					onchange={() => currentPage = 1}
-					class="w-full text-xs px-3 py-2 border border-slate-300 rounded focus:ring-1 focus:ring-slate-900 focus:outline-none bg-white font-medium text-slate-800"
-				>
-					{#each flags as flg}
-						<option value={flg}>{flg === 'ALL' ? 'ALL PROJECTS' : flg === 'FLAGGED' ? '🚩 ANY OPEN FLAG' : flg}</option>
-					{/each}
-				</select>
-			</div>
-			<div>
-				<label for="sector" class="block text-2xs font-semibold uppercase text-slate-500 mb-1">Sector</label>
-				<select 
-					id="sector"
-					bind:value={selectedSector}
-					onchange={() => currentPage = 1}
-					class="w-full text-xs px-3 py-2 border border-slate-300 rounded focus:ring-1 focus:ring-slate-900 focus:outline-none bg-white"
-				>
-					{#each sectors as sec}
-						<option value={sec}>{sec}</option>
-					{/each}
-				</select>
-			</div>
-			<div>
-				<label for="status" class="block text-2xs font-semibold uppercase text-slate-500 mb-1">Normalised Status</label>
-				<select 
-					id="status"
-					bind:value={selectedStatus}
-					onchange={() => currentPage = 1}
-					class="w-full text-xs px-3 py-2 border border-slate-300 rounded focus:ring-1 focus:ring-slate-900 focus:outline-none bg-white"
-				>
-					{#each statuses as st}
-						<option value={st}>{st}</option>
-					{/each}
-				</select>
-			</div>
+<!-- Filter Controls -->
+<div class="bg-white rounded-lg border border-slate-200 p-4 shadow-sm space-y-3 mb-6">
+	<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-3">
+		<div class="lg:col-span-2">
+			<label for="search" class="block text-2xs font-semibold uppercase text-slate-500 mb-1">Search Keyword / ID</label>
+			<input 
+				id="search"
+				type="text" 
+				bind:value={searchQuery}
+				oninput={() => currentPage = 1}
+				placeholder="Search project, school, constituency, SPV..." 
+				class="w-full text-xs px-3 py-2 border border-slate-300 rounded focus:ring-1 focus:ring-slate-900 focus:outline-none"
+			/>
 		</div>
-
-		<div class="flex flex-col sm:flex-row sm:items-center justify-between text-xs text-slate-500 pt-2 border-t border-slate-100 gap-2">
-			<div class="flex items-center gap-2">
-				<span>Showing <strong>{filteredRecords.length.toLocaleString('en-IN')}</strong> matching records</span>
-				<span class="text-slate-300">|</span>
-				<span class="inline-flex items-center gap-1 text-2xs px-2 py-0.5 rounded bg-emerald-50 text-emerald-800 border border-emerald-200">
-					<span>✨ Enriched with Kerala Kanakku (DS030)</span>
-				</span>
-			</div>
-			<div class="flex items-center gap-3 flex-wrap">
-				<!-- T103: processed-data exports (URL-shared filters apply to /portfolio & /flags, not to these full-dataset files) -->
-				<span class="text-2xs uppercase font-semibold text-slate-500">Export:</span>
-				<a
-					href="/api/v1/projects.csv"
-					download
-					class="inline-flex items-center gap-1 text-2xs px-2 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-300 hover:bg-slate-200 transition font-medium"
-				>⬇ CSV</a>
-				<a
-					href="/api/v1/projects.json"
-					download
-					class="inline-flex items-center gap-1 text-2xs px-2 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-300 hover:bg-slate-200 transition font-medium"
-				>⬇ JSON</a>
-				<a
-					href="/api/v1/change-log.json"
-					download
-					class="inline-flex items-center gap-1 text-2xs px-2 py-0.5 rounded bg-amber-50 text-amber-800 border border-amber-200 hover:bg-amber-100 transition font-medium"
-				>⬇ Change log</a>
-				{#if searchQuery || selectedSector !== 'ALL' || selectedDistrict !== 'ALL' || selectedFlag !== 'ALL' || selectedStatus !== 'ALL' || selectedEntityType !== 'ALL'}
-					<button
-						onclick={() => { searchQuery = ''; selectedSector = 'ALL'; selectedDistrict = 'ALL'; selectedFlag = 'ALL'; selectedStatus = 'ALL'; selectedEntityType = 'ALL'; currentPage = 1; }}
-						class="text-blue-600 hover:underline cursor-pointer font-medium"
-					>
-						Reset all filters
-					</button>
-				{/if}
-			</div>
-		</div>
-	</div>
-
-	<!-- Sankey Flow View Toggle -->
-	<div class="bg-white rounded-lg border border-slate-200 p-4 shadow-sm">
-		<div class="flex items-center justify-between">
-			<div>
-				<h3 class="text-sm font-bold text-slate-900">Portfolio Deployment Flow (Sankey)</h3>
-				<p class="text-2xs text-slate-500">Visualize capital flow through Kanakku lifecycle stages</p>
-			</div>
-			<button
-				onclick={() => showSankey = !showSankey}
-				class="px-3 py-1.5 text-xs font-medium rounded border transition {showSankey ? 'bg-slate-900 text-white border-slate-900' : 'bg-white text-slate-700 border-slate-300 hover:bg-slate-50'}"
+		<div>
+			<label for="district" class="block text-2xs font-semibold uppercase text-slate-500 mb-1">District (Enriched)</label>
+			<select 
+				id="district"
+				bind:value={selectedDistrict}
+				onchange={() => currentPage = 1}
+				class="w-full text-xs px-3 py-2 border border-slate-300 rounded focus:ring-1 focus:ring-slate-900 focus:outline-none bg-white"
 			>
-				{showSankey ? 'Hide Sankey' : 'Show Sankey'}
-			</button>
+				{#each districts as dist}
+					<option value={dist}>{dist}</option>
+				{/each}
+			</select>
 		</div>
-		{#if showSankey}
-			<SankeyFlow records={data.records} />
-		{/if}
-	</div>
-
-	<!-- Funds vs Progress Scatter (T092) -->
-	<div class="bg-white rounded-lg border border-slate-200 p-4 shadow-sm">
-		<div class="flex items-center justify-between">
-			<div>
-				<h3 class="text-sm font-bold text-slate-900">Funds Released vs Physical Progress Scatter</h3>
-				<p class="text-2xs text-slate-500">Scatter of % released vs % progress with divergence zone and anomaly markers</p>
-			</div>
-			<button
-				onclick={() => showScatter = !showScatter}
-				class="px-3 py-1.5 text-xs font-medium rounded border transition {showScatter ? 'bg-slate-900 text-white border-slate-900' : 'bg-white text-slate-700 border-slate-300 hover:bg-slate-50'}"
+		<div>
+			<label for="flag" class="block text-2xs font-semibold uppercase text-slate-500 mb-1">Rule Flags (Kanakku)</label>
+			<select 
+				id="flag"
+				bind:value={selectedFlag}
+				onchange={() => currentPage = 1}
+				class="w-full text-xs px-3 py-2 border border-slate-300 rounded focus:ring-1 focus:ring-slate-900 focus:outline-none bg-white font-medium text-slate-800"
 			>
-				{showScatter ? 'Hide Scatter' : 'Show Scatter'}
-			</button>
+				{#each flags as flg}
+					<option value={flg}>{flg === 'ALL' ? 'ALL PROJECTS' : flg === 'FLAGGED' ? '🚩 ANY OPEN FLAG' : flg}</option>
+				{/each}
+			</select>
 		</div>
-		{#if showScatter}
-			<FundsProgressScatter records={data.records} />
-		{/if}
+		<div>
+			<label for="sector" class="block text-2xs font-semibold uppercase text-slate-500 mb-1">Sector</label>
+			<select 
+				id="sector"
+				bind:value={selectedSector}
+				onchange={() => currentPage = 1}
+				class="w-full text-xs px-3 py-2 border border-slate-300 rounded focus:ring-1 focus:ring-slate-900 focus:outline-none bg-white"
+			>
+				{#each sectors as sec}
+					<option value={sec}>{sec}</option>
+				{/each}
+			</select>
+		</div>
+		<div>
+			<label for="status" class="block text-2xs font-semibold uppercase text-slate-500 mb-1">Normalised Status</label>
+			<select 
+				id="status"
+				bind:value={selectedStatus}
+				onchange={() => currentPage = 1}
+				class="w-full text-xs px-3 py-2 border border-slate-300 rounded focus:ring-1 focus:ring-slate-900 focus:outline-none bg-white"
+			>
+				{#each statuses as st}
+					<option value={st}>{st}</option>
+				{/each}
+			</select>
+		</div>
+		<div>
+			<label for="entity" class="block text-2xs font-semibold uppercase text-slate-500 mb-1">Entity Type</label>
+			<select 
+				id="entity"
+				bind:value={selectedEntityType}
+				onchange={() => currentPage = 1}
+				class="w-full text-xs px-3 py-2 border border-slate-300 rounded focus:ring-1 focus:ring-slate-900 focus:outline-none bg-white"
+			>
+				{#each entityTypes as et}
+					<option value={et}>{et === 'project_sanction' ? 'Project Sanction' : 'School Campus'}</option>
+				{/each}
+			</select>
+		</div>
 	</div>
 
-	<!-- Project Explorer Table -->
-	<div class="bg-white rounded-lg border border-slate-200 overflow-hidden shadow-sm">
-		<div class="overflow-x-auto">
-			<table class="w-full text-left text-xs text-slate-700">
-				<thead class="bg-slate-50 border-b border-slate-200 text-slate-500 font-semibold uppercase text-2xs tracking-wider">
+	<div class="flex flex-col sm:flex-row sm:items-center justify-between text-xs text-slate-500 pt-2 border-t border-slate-100 gap-2">
+		<ResultCount shown={filteredRecords.length} total={data.records.length} />
+		<div class="flex items-center gap-3 flex-wrap">
+			<span class="text-2xs uppercase font-semibold text-slate-500">Export:</span>
+			<a
+				href="/api/v1/projects.csv"
+				download
+				class="inline-flex items-center gap-1 text-2xs px-2 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-300 hover:bg-slate-200 transition font-medium"
+			>⬇ CSV</a>
+			<a
+				href="/api/v1/projects.json"
+				download
+				class="inline-flex items-center gap-1 text-2xs px-2 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-300 hover:bg-slate-200 transition font-medium"
+			>⬇ JSON</a>
+			<a
+				href="/api/v1/change-log.json"
+				download
+				class="inline-flex items-center gap-1 text-2xs px-2 py-0.5 rounded bg-amber-50 text-amber-800 border border-amber-200 hover:bg-amber-100 transition font-medium"
+			>⬇ Change log</a>
+			{#if searchQuery || selectedSector !== 'ALL' || selectedDistrict !== 'ALL' || selectedFlag !== 'ALL' || selectedStatus !== 'ALL' || selectedEntityType !== 'ALL'}
+				<button
+					onclick={() => { searchQuery = ''; selectedSector = 'ALL'; selectedDistrict = 'ALL'; selectedFlag = 'ALL'; selectedStatus = 'ALL'; selectedEntityType = 'ALL'; currentPage = 1; }}
+					class="text-blue-600 hover:underline cursor-pointer font-medium"
+				>
+					Reset all filters
+				</button>
+			{/if}
+		</div>
+	</div>
+</div>
+
+<!-- Sankey Flow View Toggle -->
+<ChartFrame
+	question="How does approved capital flow through the delivery pipeline?"
+	takeaway="The Sankey visualises the full 7-stage Kanakku lifecycle; most records concentrate in early stages (Approved → Tendered)."
+	howToRead="Ribbon thickness = number of records. Hover a stage for count and ₹ value. 'Sources disagree' means DS010/DS030 statuses conflict."
+	provenance="Source: DS030 (Kanakku), lifecycle_status field per package, as of {data.manifest?.last_updated ?? '2026-10-21'}"
+>
+	{#snippet children()}
+		<div class="bg-white rounded-lg border border-slate-200 p-4 shadow-sm">
+			<div class="flex items-center justify-between">
+				<div>
+					<h3 class="text-sm font-bold text-slate-900">Portfolio Deployment Flow (Sankey)</h3>
+					<p class="text-2xs text-slate-500">Visualize capital flow through Kanakku lifecycle stages</p>
+				</div>
+				<button
+					onclick={() => showSankey = !showSankey}
+					class="px-3 py-1.5 text-xs font-medium rounded border transition {showSankey ? 'bg-slate-900 text-white border-slate-900' : 'bg-white text-slate-700 border-slate-300 hover:bg-slate-50'}"
+				>
+					{showSankey ? 'Hide Sankey' : 'Show Sankey'}
+				</button>
+			</div>
+			{#if showSankey}
+				<NudgeCallout kind="interpret" id="projects-sankey" heading="Approved ≠ built">
+					The Sankey shows pipeline position, not completion. A record in 'In Progress' has money flowing but may be years from handover. See the milestone ladder in the inspection drawer for stage-by-stage provenance.
+				</NudgeCallout>
+				<SankeyFlow records={data.records} />
+			{/if}
+		</div>
+	{/snippet}
+</ChartFrame>
+
+<!-- Funds vs Progress Scatter (T092) -->
+<ChartFrame
+	question="Is money released matching physical progress on the ground?"
+	takeaway="Most projects lack published progress data; the divergence zone (paid ≥25pp ahead of progress) flags payment-vs-progress anomalies."
+	howToRead="X-axis = % released, Y-axis = % physical progress. Shaded zone = paid ahead of progress. Red = overdue, Orange = cost escalation, Amber = stale. Projects without progress data are excluded (count shown)."
+	provenance="Source: DS030 (Kanakku), released_pct/progress_pct fields, as of {data.manifest?.last_updated ?? '2026-10-21'}"
+>
+	{#snippet children()}
+		<div class="bg-white rounded-lg border border-slate-200 p-4 shadow-sm">
+			<div class="flex items-center justify-between">
+				<div>
+					<h3 class="text-sm font-bold text-slate-900">Funds Released vs Physical Progress Scatter</h3>
+					<p class="text-2xs text-slate-500">Scatter of % released vs % progress with divergence zone and anomaly markers</p>
+				</div>
+				<button
+					onclick={() => showScatter = !showScatter}
+					class="px-3 py-1.5 text-xs font-medium rounded border transition {showScatter ? 'bg-slate-900 text-white border-slate-900' : 'bg-white text-slate-700 border-slate-300 hover:bg-slate-50'}"
+				>
+					{showScatter ? 'Hide Scatter' : 'Show Scatter'}
+				</button>
+			</div>
+			{#if showScatter}
+				<NudgeCallout kind="interpret" id="projects-scatter" heading="Missing progress is the finding">
+					The scatter only plots records with BOTH released % and progress % published. The excluded count (shown in the chart) is itself the evidence: without published progress, payment-vs-progress cannot be verified.
+				</NudgeCallout>
+				<FundsProgressScatter records={data.records} />
+			{/if}
+		</div>
+	{/snippet}
+</ChartFrame>
+
+<!-- Project Explorer Table -->
+<div class="bg-white rounded-lg border border-slate-200 overflow-hidden shadow-sm">
+	<div class="overflow-x-auto">
+		<table class="w-full text-left text-xs text-slate-700">
+			<thead class="bg-slate-50 border-b border-slate-200 text-slate-500 font-semibold uppercase text-2xs tracking-wider">
+				<tr>
+					<th class="px-4 py-3">ID & Entity</th>
+					<th class="px-4 py-3">Project / School Name</th>
+					<th class="px-4 py-3">Sector & SPV</th>
+					<th class="px-4 py-3 text-right">Approved Outlay</th>
+					<th class="px-4 py-3 text-right">Disbursed</th>
+					<th class="px-4 py-3 text-center">Status</th>
+					<th class="px-4 py-3 text-center">Flags</th>
+					<th class="px-4 py-3 text-center">Actions</th>
+				</tr>
+			</thead>
+			<tbody class="divide-y divide-slate-100">
+				{#if paginatedRecords.length === 0}
 					<tr>
-						<th class="px-4 py-3">ID & Entity</th>
-						<th class="px-4 py-3">Project / School Name</th>
-						<th class="px-4 py-3">Sector & SPV</th>
-						<th class="px-4 py-3 text-right">Approved Outlay</th>
-						<th class="px-4 py-3 text-right">Disbursed</th>
-						<th class="px-4 py-3 text-center">Status</th>
-						<th class="px-4 py-3 text-center">Actions</th>
+						<td colspan="8" class="text-center py-8 text-slate-400">
+							No matching records found.
+						</td>
 					</tr>
-				</thead>
-				<tbody class="divide-y divide-slate-100">
-					{#if paginatedRecords.length === 0}
-						<tr>
-							<td colspan="7" class="text-center py-8 text-slate-400">
-								No matching records found.
+				{:else}
+					{#each paginatedRecords as rec}
+						<tr class="hover:bg-slate-50/80 transition">
+							<td class="px-4 py-3 font-mono">
+								<div class="font-bold text-slate-900">{rec.record_id}</div>
+								<div class="text-2xs text-slate-400">
+									{rec.entity_type === 'project_sanction' ? 'Project Sanction' : 'School Campus'}
+								</div>
+							</td>
+							<td class="px-4 py-3 max-w-sm">
+								<div class="font-semibold text-slate-900 leading-snug">{rec.name}</div>
+								{#if rec.district || rec.constituency}
+									<div class="text-2xs text-slate-500 mt-0.5">
+										{rec.district || ''}{rec.constituency ? ` (${rec.constituency})` : ''}
+									</div>
+								{/if}
+								{#if rec.school_code}
+									<div class="text-2xs font-mono text-emerald-700 mt-0.5">
+										School Code: {rec.school_code}
+									</div>
+								{/if}
+							</td>
+							<td class="px-4 py-3">
+								<div class="font-medium text-slate-800">{rec.sector}</div>
+								<div class="text-2xs text-slate-500 truncate max-w-xs">{rec.spv || rec.department}</div>
+							</td>
+							<td class="px-4 py-3 text-right font-mono tabular-nums">
+								{formatCrore(rec.financials?.approved_crore)}
+							</td>
+							<td class="px-4 py-3 text-right font-mono tabular-nums">
+								{#if rec.financials?.released_crore !== undefined}
+									<span class="font-medium text-slate-900">{formatCrore(rec.financials.released_crore)}</span>
+									{#if rec.financials.release_ratio_pct > 0}
+										<div class="text-2xs text-slate-400">({rec.financials.release_ratio_pct}%)</div>
+									{/if}
+								{:else}
+									<span class="text-slate-400">—</span>
+								{/if}
+							</td>
+							<td class="px-4 py-3 text-center">
+								<PlainBadge label={rec.status.normalised_status} />
+							</td>
+							<td class="px-4 py-3 text-center">
+								{#if rec.open_flags && rec.open_flags.length > 0}
+									<div class="flex flex-wrap gap-1 justify-center">
+										{#each rec.open_flags as flg}
+											<PlainBadge label={flg} />
+										{/each}
+									</div>
+								{:else}
+									<span class="text-2xs text-slate-400">—</span>
+								{/if}
+							</td>
+							<td class="px-4 py-3 text-center">
+								<button 
+									onclick={() => openRecordModal(rec)}
+									class="px-2.5 py-1 text-2xs font-medium text-blue-700 bg-blue-50 border border-blue-200 rounded hover:bg-blue-100 transition cursor-pointer"
+								>
+									Inspect
+								</button>
 							</td>
 						</tr>
-					{:else}
-						{#each paginatedRecords as rec}
-							<tr class="hover:bg-slate-50/80 transition">
-								<td class="px-4 py-3 font-mono">
-									<div class="font-bold text-slate-900">{rec.record_id}</div>
-									<div class="text-2xs text-slate-400">
-										{rec.entity_type === 'project_sanction' ? 'Project Sanction' : 'School Campus'}
-									</div>
-								</td>
-								<td class="px-4 py-3 max-w-sm">
-									<div class="font-semibold text-slate-900 leading-snug">{rec.name}</div>
-									{#if rec.district || rec.constituency}
-										<div class="text-2xs text-slate-500 mt-0.5">
-											{rec.district || ''}{rec.constituency ? ` (${rec.constituency})` : ''}
-										</div>
-									{/if}
-									{#if rec.open_flags && rec.open_flags.length > 0}
-										<div class="flex flex-wrap gap-1 mt-1">
-											{#each rec.open_flags as flg}
-												<span class="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-3xs font-bold uppercase bg-amber-100 text-amber-900 border border-amber-300">
-													<span>🚩 {flg.replace('_', ' ')}</span>
-												</span>
-											{/each}
-										</div>
-									{/if}
-									{#if rec.school_code}
-										<div class="text-2xs font-mono text-emerald-700 mt-0.5">
-											School Code: {rec.school_code}
-										</div>
-									{/if}
-								</td>
-								<td class="px-4 py-3">
-									<div class="font-medium text-slate-800">{rec.sector}</div>
-									<div class="text-2xs text-slate-500 truncate max-w-xs">{rec.spv || rec.department}</div>
-								</td>
-								<td class="px-4 py-3 text-right font-mono tabular-nums">
-									{formatCrore(rec.financials?.approved_crore)}
-								</td>
-								<td class="px-4 py-3 text-right font-mono tabular-nums">
-									{#if rec.financials?.released_crore !== undefined}
-										<span class="font-medium text-slate-900">{formatCrore(rec.financials.released_crore)}</span>
-										{#if rec.financials.release_ratio_pct > 0}
-											<div class="text-2xs text-slate-400">({rec.financials.release_ratio_pct}%)</div>
-										{/if}
-									{:else}
-										<span class="text-slate-400">—</span>
-									{/if}
-								</td>
-								<td class="px-4 py-3 text-center">
-									<span class="inline-block px-2 py-0.5 rounded text-2xs font-semibold border {getStatusBadge(rec.status.normalised_status)}">
-										{rec.status.normalised_status}
-									</span>
-								</td>
-								<td class="px-4 py-3 text-center">
-									<button 
-										onclick={() => openRecordModal(rec)}
-										class="px-2.5 py-1 text-2xs font-medium text-blue-700 bg-blue-50 border border-blue-200 rounded hover:bg-blue-100 transition cursor-pointer"
-									>
-										Inspect
-									</button>
-								</td>
-							</tr>
-						{/each}
-					{/if}
-				</tbody>
-			</table>
-		</div>
-
-		<!-- Pagination Footer -->
-		{#if totalPages > 1}
-			<div class="bg-slate-50 px-4 py-3 border-t border-slate-200 flex items-center justify-between text-xs text-slate-600">
-				<div>
-					Page {currentPage} of {totalPages}
-				</div>
-				<div class="flex items-center space-x-2">
-					<button 
-						disabled={currentPage === 1}
-						onclick={() => currentPage = Math.max(1, currentPage - 1)}
-						class="px-3 py-1 border border-slate-300 rounded bg-white disabled:opacity-50 disabled:cursor-not-allowed hover:bg-slate-100"
-					>
-						Previous
-					</button>
-					<button 
-						disabled={currentPage === totalPages}
-						onclick={() => currentPage = Math.min(totalPages, currentPage + 1)}
-						class="px-3 py-1 border border-slate-300 rounded bg-white disabled:opacity-50 disabled:cursor-not-allowed hover:bg-slate-100"
-					>
-						Next
-					</button>
-				</div>
-			</div>
-		{/if}
+					{/each}
+				{/if}
+			</tbody>
+		</table>
 	</div>
+
+	<!-- Pagination Footer -->
+	{#if totalPages > 1}
+		<div class="bg-slate-50 px-4 py-3 border-t border-slate-200 flex items-center justify-between text-xs text-slate-600">
+			<div>
+				Page {currentPage} of {totalPages}
+			</div>
+			<div class="flex items-center space-x-2">
+				<button 
+					disabled={currentPage === 1}
+					onclick={() => currentPage = Math.max(1, currentPage - 1)}
+					class="px-3 py-1 border border-slate-300 rounded bg-white disabled:opacity-50 disabled:cursor-not-allowed hover:bg-slate-100"
+				>
+					Previous
+				</button>
+				<button 
+					disabled={currentPage === totalPages}
+					onclick={() => currentPage = Math.min(totalPages, currentPage + 1)}
+					class="px-3 py-1 border border-slate-300 rounded bg-white disabled:opacity-50 disabled:cursor-not-allowed hover:bg-slate-100"
+				>
+					Next
+				</button>
+			</div>
+		</div>
+	{/if}
+</div>
+
+<!-- Provenance banner -->
+<div class="bg-slate-100 border border-slate-200 rounded-lg p-4 text-xs text-slate-600 mt-6">
+	<span class="font-bold text-slate-900">Reconciliation standard:</span> table aggregates
+	<code class="font-mono">records[]</code> of
+	<code class="font-mono">unified_project_explorer.json</code>;
+	Sankey uses DS030 lifecycle_status; Scatter uses DS030 released_pct/progress_pct.
+	Data: DS010/DS021/DS030 processed derivatives; as-of
+	<code class="font-mono">{data.manifest?.last_updated ?? '2026-10-21'}</code>.
 </div>
 
 <!-- Detailed Record Inspection Modal -->
 {#if activeRecord}
-	<!-- svelte-ignore a11y_click_events_have_key_events -->
 	<div 
 		class="fixed inset-0 z-50 overflow-hidden bg-slate-900/50 backdrop-blur-xs flex justify-end transition-opacity"
 		onclick={closeRecordModal}
@@ -423,11 +490,9 @@
 		tabindex="-1"
 		onkeydown={(e) => e.key === 'Escape' && closeRecordModal()}
 	>
-		<!-- svelte-ignore a11y_click_events_have_key_events -->
-		<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
 		<div 
 			class="w-full max-w-xl bg-white h-full shadow-2xl p-6 overflow-y-auto flex flex-col justify-between"
-			onclick={(e) => e.stopPropagation()}
+			onkeydown={(e) => e.stopPropagation()}
 			role="document"
 		>
 			<div class="space-y-6">
@@ -438,9 +503,7 @@
 							<span class="font-mono text-xs font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded">
 								{activeRecord.record_id}
 							</span>
-							<span class="text-2xs font-semibold px-2 py-0.5 rounded border {getStatusBadge(activeRecord.status.normalised_status)}">
-								{activeRecord.status.normalised_status}
-							</span>
+							<PlainBadge label={activeRecord.status.normalised_status} />
 						</div>
 						<h3 class="text-base font-bold text-slate-900 leading-snug">
 							{activeRecord.name}
@@ -469,14 +532,14 @@
 				</div>
 
 				<!-- Delivery Milestone Ladder (T100) -->
-			<ProjectTimeline record={activeRecord} kanakkuPackages={activeKanakkuPackages} />
+				<ProjectTimeline record={activeRecord} kanakkuPackages={activeKanakkuPackages} />
 
-			<!-- Normalised Status Explanation -->
+				<!-- Normalised Status Explanation -->
 				<div>
 					<h4 class="text-2xs font-bold uppercase text-slate-500 mb-1">Status Disambiguation</h4>
 					<div class="bg-slate-50 p-3 rounded border border-slate-200/80 text-xs space-y-1">
 						<div><strong>Source Portal Label:</strong> "{activeRecord.status.source_status_text}"</div>
-						<div><strong>Normalised Status:</strong> {activeRecord.status.normalised_status}</div>
+						<div><strong>Normalised Status:</strong> <PlainBadge label={activeRecord.status.normalised_status} /></div>
 						{#if activeRecord.status.normalisation_rule}
 							<div class="text-slate-500 text-2xs pt-1 border-t border-slate-200">
 								Rule: {activeRecord.status.normalisation_rule}
