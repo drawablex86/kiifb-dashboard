@@ -76,9 +76,9 @@
 				<path d="M5 12h14" /><path d="M13 6l6 6-6 6" />
 			</svg>
 		{/if}
-		<p class="min-w-0 flex-1 text-sm text-slate-700 leading-relaxed">
+		<div class="min-w-0 flex-1 text-sm text-slate-700 leading-relaxed">
 			<span class="font-semibold text-indigo-900">{meta.label}</span>{heading ? ` — ${heading}` : ''} {@render children()}
-		</p>
+		</div>
 		{#if dismissible}
 			<button
 				type="button"

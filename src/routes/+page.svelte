@@ -120,9 +120,9 @@
 {#if !welcomeDismissed}
 	<div class="mb-6 p-4 bg-amber-50 border border-amber-200 rounded-lg flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3" role="status">
 		<div class="flex-1">
-			<p class="text-sm text-amber-900">
+			<div class="text-sm text-amber-900">
 				<strong>Welcome.</strong> This dashboard covers KIIFB's finances, projects, and the October 2026 Expert Committee's findings. The <DepthToggle compact /> switch in the header (and below) lets you toggle between Plain English and Evidence modes at any time.
-			</p>
+			</div>
 		</div>
 		<button
 			onclick={dismissWelcome}

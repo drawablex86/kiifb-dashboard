@@ -52,7 +52,7 @@
 	{/if}
 
 	{#if lead}
-		<p class="mt-3 text-sm sm:text-base text-slate-700 leading-relaxed max-w-3xl">{lead}</p>
+		<p class="mt-3 text-sm sm:text-base text-slate-700 leading-relaxed max-w-3xl">{@html lead}</p>
 	{/if}
 
 	{#if shows.length || doesnt.length}
