@@ -80,12 +80,16 @@
 
 		<!-- Mobile menu panel: full inventory with scent descriptions -->
 		{#if mobileOpen}
-			<nav
+			<div
 				id="mobile-menu"
-				aria-label="Main"
+				role="dialog"
+				aria-modal="true"
+				aria-label="Main navigation"
+				tabindex="-1"
 				class="md:hidden border-t border-border bg-popover px-4 py-3 space-y-4 max-h-[70vh] overflow-y-auto"
 				onkeydown={onMobileKeydown}
 			>
+				<nav aria-label="Mobile main">
 				{#each NAV_GROUPS as navGroup (navGroup.id)}
 					<div>
 						<p class="text-[11px] font-semibold uppercase tracking-wide text-slate-400 px-2 mb-1">{navGroup.label}</p>
@@ -106,6 +110,7 @@
 					<DepthToggle compact />
 				</div>
 			</nav>
+			</div>
 		{/if}
 
 		<!-- T095: data-freshness strip — always visible in the sticky header -->

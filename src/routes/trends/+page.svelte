@@ -135,7 +135,7 @@
 />
 
 <NudgeCallout kind="situate" id="trends-start" heading="What is a snapshot?">
-	Each run of <code class="font-mono">refresh_pipeline.py</code> (offline or <code>--fetch</code>) writes processed datasets to <code class="font-mono">data/snapshots/<YYYY-MM>/</code> or <code class="font-mono">__<timestamp></code>. The change log (<code class="font-mono">data/processed/change_log.json</code>) computes deltas <strong>only on stable IDs</strong> (<code class="font-mono">project_id</code>/<code class="font-mono">record_id</code>). This page aggregates those archives at prerender time.
+	Each run of <code class="font-mono">refresh_pipeline.py</code> (offline or <code>--fetch</code>) writes processed datasets to <code class="font-mono">data/snapshots/&lt;YYYY-MM&gt;/</code> or <code class="font-mono">__&lt;timestamp&gt;</code>. The change log (<code class="font-mono">data/processed/change_log.json</code>) computes deltas <strong>only on stable IDs</strong> (<code class="font-mono">project_id</code>/<code class="font-mono">record_id</code>). This page aggregates those archives at prerender time.
 </NudgeCallout>
 
 <div class="space-y-6">
@@ -163,8 +163,8 @@
 		<!-- Cadence disclosure (acceptance: granularity matches available snapshots, documented on-page) -->
 		<NudgeCallout kind="interpret" id="trends-cadence" heading="Timeline granularity">
 			The archive currently holds <strong>{points.length}</strong> snapshot point{points.length === 1 ? '' : 's'}
-			(cadence: monthly <code class="bg-white px-1 rounded"><YYYY-MM></code>, intra-month re-runs
-			<code class="bg-white px-1 rounded">__<timestamp></code>):
+			(cadence: monthly <code class="bg-white px-1 rounded">&lt;YYYY-MM&gt;</code>, intra-month re-runs
+			<code class="bg-white px-1 rounded">__&lt;timestamp&gt;</code>):
 			{points.map((p) => p.asOfLabel).join('  •  ')}.
 			{#if points.length < 3}
 				With fewer than three points, series read as before/after comparisons rather than curves;
@@ -376,7 +376,7 @@
 		<h3 class="text-lg font-bold text-slate-900">How this page is built</h3>
 		<ol class="mt-2 text-xs text-slate-700 space-y-1.5 list-decimal list-inside">
 			<li><code>scripts/refresh_pipeline.py</code> extracts processed datasets (offline pinned / <code>--fetch</code> live crawls).</li>
-			<li><code>scripts/diff_snapshots.py</code> (T082) snapshots processed state into <code>data/snapshots/<run>/</code>. Runs are never modified — reuse instead of overwrite.</li>
+			<li><code>scripts/diff_snapshots.py</code> (T082) snapshots processed state into <code>data/snapshots/&lt;run&gt;/</code>. Runs are never modified — reuse instead of overwrite.</li>
 			<li>The change log (<code>data/processed/change_log.json</code>) records deltas computed only via stable IDs (<code>project_id</code>/<code>record_id</code>), documented in <code>docs/matching-rules.md</code> §3.4.</li>
 			<li>This route aggregates snapshot archives + change log at prerender time. GAP-001 coverage, granularity and flat-line disclosures are stamped wherever figures could mislead.</li>
 		</ol>

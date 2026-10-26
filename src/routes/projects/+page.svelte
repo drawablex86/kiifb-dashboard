@@ -488,11 +488,10 @@
 		role="dialog"
 		aria-modal="true"
 		tabindex="-1"
-		onkeydown={(e) => e.key === 'Escape' && closeRecordModal()}
+		onkeydown={(e) => { e.key === 'Escape' && closeRecordModal(); e.stopPropagation(); }}
 	>
 		<div 
 			class="w-full max-w-xl bg-white h-full shadow-2xl p-6 overflow-y-auto flex flex-col justify-between"
-			onkeydown={(e) => e.stopPropagation()}
 			role="document"
 		>
 			<div class="space-y-6">

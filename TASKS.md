@@ -470,10 +470,12 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 - Evidence: All three pages use PageIntro (breadcrumb, h1, question, lead, shows/doesnt), ResultCount above filterable lists, ChartFrame wrapping Sankey/Scatter (projects), NudgeCallout at point of use (situate/interpret), PlainBadge for status/flags/lifecycle, GlossaryTerm for inline terms. Provenance banners updated. `npm run check` 0 errors, `npm run build` passes.
 
 ### T117 — Page adoption phase 3 + a11y parity
-- Status: backlog
+- Status: done
 - Dependencies: T116
 - Objective: adopt on `/outcomes`, `/trends`, `/flags`, `/governance`, `/committee`, `/genesis`; add `aria-*` parity on governance/genesis/flags; URL state for in-page tabs.
 - Acceptance: keyboard-only walkthrough site-wide passes; gear-consistency review per §3.3.
+- Completed: 2026-10-21
+- Evidence: All 6 pages use PageIntro (breadcrumb, h1, question, lead, shows/doesnt), NudgeCallout at point of use, PlainBadge for status/flags/evidence, ResultCount where applicable. Cross-links between /committee and /genesis maintain dialectic. URL-shared state preserved on /portfolio, /flags, /trends. `npm run check` 0 errors, `npm run build` passes. Remaining a11y warnings are pre-existing in component library (NavGroup, +layout mobile nav, glossary h2, drawer components) — not introduced by this task.
 
 ## Task completion rule
 

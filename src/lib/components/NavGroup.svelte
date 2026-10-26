@@ -17,7 +17,7 @@
 	let open = $state(false);
 	let root: HTMLDivElement | null = $state(null);
 	let trigger: HTMLButtonElement | null = $state(null);
-	const panelId = `nav-panel-${group.id}`;
+	const panelId = $derived(`nav-panel-${group.id}`);
 	const currentPath = $derived(page.url.pathname);
 	const active = $derived(group.items.some((i) => i.href === currentPath));
 
@@ -31,7 +31,7 @@
 		if (open && root && !root.contains(e.target as Node)) open = false;
 	}
 
-	function onRootKeydown(e: KeyboardEvent) {
+	function onTriggerKeydown(e: KeyboardEvent) {
 		if (e.key === 'Escape' && open) {
 			open = false;
 			trigger?.focus();
@@ -41,13 +41,14 @@
 
 <svelte:document onclick={onDocumentClick} />
 
-<div class="relative" bind:this={root} onkeydown={onRootKeydown}>
+<div class="relative" bind:this={root}>
 	<button
 		bind:this={trigger}
 		type="button"
 		aria-expanded={open}
 		aria-controls={panelId}
 		onclick={() => (open = !open)}
+		onkeydown={onTriggerKeydown}
 		class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-md text-sm font-medium transition-all outline-2 outline-offset-2 outline-transparent hover:outline-slate-300 {active
 			? 'bg-slate-100 text-slate-900'
 			: 'text-slate-600 hover:text-slate-900 hover:bg-slate-100/70'}"

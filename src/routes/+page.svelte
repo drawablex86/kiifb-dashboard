@@ -396,11 +396,10 @@
 		role="dialog"
 		aria-modal="true"
 		tabindex="-1"
-		onkeydown={(e) => e.key === 'Escape' && closeEvidenceDrawer()}
+		onkeydown={(e) => { e.key === 'Escape' && closeEvidenceDrawer(); e.stopPropagation(); }}
 	>
 		<div
 			class="w-full max-w-2xl bg-white h-full shadow-2xl p-6 overflow-y-auto flex flex-col justify-between"
-			onkeydown={(e) => e.stopPropagation()}
 			role="document"
 		>
 			<div class="space-y-6">

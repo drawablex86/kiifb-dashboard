@@ -93,7 +93,7 @@
 		<section class="space-y-8">
 			{#each groups as [letter, entries], gi (letter + gi)}
 				<div>
-					<h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2" aria-hidden="true">{letter}</h2>
+					<h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">{letter}</h2>
 					<div class="space-y-3">
 						{#each entries as entry (entry.id)}
 							<article
