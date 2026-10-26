@@ -9,6 +9,7 @@ import type { PageServerLoad } from './$types';
  * in shareable URL search params (`?sector=&district=`) and restored
  * exactly on reload / link sharing.
  */
+export const prerender = false;
 export const load: PageServerLoad = async () => {
 	return {
 		summary: explorerData.summary,

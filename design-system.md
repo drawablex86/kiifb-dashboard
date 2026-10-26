@@ -1,5 +1,7 @@
 # Design System — KIIFB Accountability & Public Value Dashboard
 
+> **Note (Oct 2026 UX rework):** This file is **extended (not replaced)** by [`designsystem.md`](./designsystem.md), which adds the two-persona depth system (`Plain English ⇄ Evidence`), humanized vocabulary, ChartFrame/Nudge/Term component specs, and signifier/motion tokens. Token definitions in §2–§4 remain canonical and unchanged.
+
 ## 1. Design Principles & UI Truths
 
 The KIIFB Accountability & Public Value Dashboard is a public-interest research tool, not an advocacy platform or a marketing site. The UI design must establish neutrality, rigorous provenance, and clear delineation of evidence states.

@@ -9,6 +9,7 @@ import type { PageServerLoad } from './$types';
  * the per-flag trend history retained in `change_log.json` (T082).
  * Resolved flags are never deleted — they remain in the change log.
  */
+export const prerender = false;
 export const load: PageServerLoad = async () => {
 	return {
 		records: explorerData.records,

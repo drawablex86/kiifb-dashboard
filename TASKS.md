@@ -406,6 +406,72 @@ Statuses: `backlog` · `ready` · `in_progress` · `blocked` · `done`
 - Evidence: three read-only GET endpoints (`projects.json`, `projects.csv`, `change-log.json`) importing only from `data/processed/`; CSV/JSON export buttons on `/projects`; shareable URL filter state on `/portfolio` & `/flags` (T101/T102); print-ready district fact sheets tab on `/outcomes` with per-figure provenance citations and `@media print` CSS. Licence inheritance (CC BY 4.0 for DS030 derivatives + attribution requirement) documented in every endpoint payload. New static provenance suite `tests/test_api_export_provenance.py` (6 tests, OK); full suite `python3 -m unittest discover tests` = 109 tests OK; `npm run check` = 0 errors, 0 warnings. `docs/test-and-review-report.md` §4b added.
 - Follow-up gaps (recorded): per-filter export (exclusive of full-dataset export) is only practical via the processed rows loaded client-side and was deferred; fact sheets draw on DS001 Ch-IV district figures — DS010/DS030 per-district counts are available on `/portfolio` but not yet embedded per fact sheet.
 
+## Milestone 12 — UX Rework v2: two-gear reader model (designsystem.md)
+
+> Plan of record: `designsystem.md` (personas, P1–P14 principles, depth contract, IA, vocabulary, nudges, ChartFrame, theming §13, KIIFB-first V3 direction §14). Milestones below are the execution slice of that spec.
+
+### T110 — UX rework spec authored & recorded
+- Status: done
+- Dependencies: T103
+- Objective: author `designsystem.md` (two-persona depth model, principles, IA, vocabulary, nudge taxonomy, ChartFrame spec) and cross-reference `design-system.md` without altering its canon.
+- Outputs: `designsystem.md`; banner in `design-system.md`.
+- Acceptance: spec covers two personas, both gears, component contracts, QA per component; decision log keeps rationale.
+- Completed: 2026-10-21
+- Notes: V3 "KIIFB-first, analyses-as-layers" direction recorded in §14 (recorded, deliberately not executed — committee report is one analytical layer over KIIFB, per maintainer direction).
+
+### T111 — Depth store & foundational components
+- Status: done
+- Dependencies: T110
+- Objective: implement the two-gear depth system and shared components: `depth.svelte.ts` store (localStorage + `?depth=`, SSR-safe), `DepthToggle`, `GlossaryTerm`, `PlainBadge`, `NudgeCallout`, `ChartFrame`, `PageIntro`, `ResultCount`; `vocabulary.ts` (humanized label maps) and `glossary.ts` (37 terms).
+- Outputs: `src/lib/stores/depth.svelte.ts`, `src/lib/data/vocabulary.ts`, `src/lib/data/glossary.ts`, 7 components in `src/lib/components/`.
+- Acceptance: `npm run check` 0/0; components type-safe, a11y-contract compliant (disclosure popovers, aria-live counts, aria-pressed toggle); depth never lies in Plain gear.
+- Completed: 2026-10-21
+- Evidence: dev-only review gallery at `/components-preview` (+ `Button`/`Card` demos); `svelte-check` 0 errors 0 warnings.
+
+### T112 — Theming layer: shadcn-svelte-aligned tokens & primitives
+- Status: done
+- Dependencies: T111
+- Objective: semantic CSS-variable token architecture in `app.css` + Tailwind mapping (bg-card, border-border, primary/secondary/destructive/muted/accent variants, --radius scale), reserved `.dark` block; primitives `Button` (5 variants × 3 sizes, href-aware) and `Card` (header/body/footer slots); stratified interaction signals (soft hover ring → blue keyboard focus ring).
+- Outputs: `src/app.css` rewrite, `tailwind.config.js`, `src/lib/components/Button.svelte`, `src/lib/components/Card.svelte`; designsystem.md §13.
+- Acceptance: build clean; radius override changes no existing visuals (verified); semantic tokens documented with reserved-color rules.
+- Completed: 2026-10-21
+- Notes: Nudge indigo remains a component treatment, never a token.
+
+### T113 — Navigation rework: grouped humanized nav
+- Status: done
+- Dependencies: T112
+- Objective: replace the flat 10-item nav with 4 disclosure groups (Start / Follow the money / Watch / Claims & verify) carrying scent descriptions, nasal aria-current, mobile disclosure menu, skip-link, DepthToggle placement.
+- Outputs: `src/lib/nav.ts`, `src/lib/components/NavGroup.svelte`, rewritten `src/routes/+layout.svelte`.
+- Acceptance: labels match designsystem.md §4.1 route map; Esc/outside-click/route-change close; keyboard reachable throughout; old jargon labels retired.
+- Completed: 2026-10-21
+
+### T114 — Glossary & Sources route
+- Status: done
+- Dependencies: T111
+- Objective: `/glossary` searchable A–Z built on `glossary.ts` with depth-aware definitions, seeAlso anchors matching GlossaryTerm deep-links, honest empty state, and verification entry points (source register, CSV/JSON exports, evidence taxonomy doc).
+- Outputs: `src/routes/glossary/+page.svelte`.
+- Acceptance: prerenders clean; anchors align with popover links; ResultCount announces search results; no data claims added.
+- Completed: 2026-10-21
+
+### T115 — Start Here homepage (spine v1)
+- Status: ready
+- Dependencies: T113, T114
+- Objective: rebuild `/` around five plain-language questions that double as the site map (designsystem.md §4.1), with welcome note, depth-gear explainer, "how this site works" spine, and the five assertions relocated under "The Committee's Claims — checked against the record" (V3 framing per §14: KIIFB first, analyses as layers).
+- Acceptance: first-visit choice set ≤5 questions (P13); assertions keep citation drawer; plain + evidence gears both pass the reviewer test.
+- Notes: design against §14 model — committee is an analytical layer, KIIFB is the subject.
+
+### T116 — Page adoption phase 2 (core journey)
+- Status: backlog
+- Dependencies: T115
+- Objective: adopt PageIntro/ChartFrame/Nudge/PlainBadge/ResultCount on `/projects`, `/portfolio`, `/financials` (simplify-first Sankey, trajectory, funnel question-titles).
+- Acceptance: every chart inside ChartFrame; every filterable list has live ResultCount; flags/terms humanized; can be split per-route for review.
+
+### T117 — Page adoption phase 3 + a11y parity
+- Status: backlog
+- Dependencies: T116
+- Objective: adopt on `/outcomes`, `/trends`, `/flags`, `/governance`, `/committee`, `/genesis`; add `aria-*` parity on governance/genesis/flags; URL state for in-page tabs.
+- Acceptance: keyboard-only walkthrough site-wide passes; gear-consistency review per §3.3.
+
 ## Task completion rule
 
 A task is `done` only when acceptance criteria are met, relevant tests have run, sources and metadata are recorded, documentation is updated, and remaining gaps are captured in follow-up tasks.
